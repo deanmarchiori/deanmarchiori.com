@@ -1,0 +1,59 @@
+---
+title: Three Stick Statistics
+author: Dean Marchiori
+date: '2022-09-24'
+categories: [statistics]
+---
+
+When I was a teenager I was very popular among my peers, which is why I spent every
+second Saturday playing in a retiree's social golf club.  For each event we would travel
+via air-conditioned coach to a local public golf course and play some sort of themed
+game. The most exciting event was the *three stick event*. This game requires 
+players to pick just **three** golf clubs out of their bag (plus a putter) to play their entire round (you can take up to 14 clubs
+on a normal round).  
+
+So which three clubs do you pick? 
+
+This was easy for me as I could only reliably hit two clubs: the five iron and the
+seven iron. I usually included a driver so as not be mocked by the septuagenarians 
+at the par-5 tees. 
+
+I also have an embarrassingly crap collection of golf clubs as many have been sent
+to an early retirement in water features.
+
+![my crap golf clubs](featured.jpg)
+
+However, many friends who now play golf have a bewildering selection
+of exotic clubs from hybrid driving irons to 60-degree lob-wedges. 
+
+It seems like in there is always some new technology or method to master in 
+data science broadly. This is interesting, but also exhausting and fills me with
+existential dread that I am becoming irrelevant. 
+
+It got me thinking, if you had to play statistics (or data science) for the rest of your
+career with just three algorithms/models, what would they be?  
+
+## My three sticks:
+
+1. **Random Forest**: Uncontroversial ensemble method that can quickly get a performance
+ceiling with minimal fuss. It lacks some interpretability, but
+I'll keep it in my bag for when I want to squeeze as much AUC as I can in a 
+prediction setting. 
+
+2. **Generalised Additive Model (GAM)**: You could argue this is quite broad, but that's okay. 
+I've had good luck with GAMs as they provide a solid statistical approach that I am 
+comfortable with, along with the flexibility of using smooths for non-linear terms that
+seems to be a key feature in the problems I have to solve. If I had to only pick one club
+this would probably be it. 
+
+3. **k-medoids clustering:** Clustering methods are a great third club to have in your bag. 
+They solve a different problem to the modelling tasks above and provide a good hedge for those 
+unsupervised tasks that come along fairly regularly. While everyone knows k-means, I enjoy
+the increased interpretation of k-medoids as the cluster centers are always one of the 
+input data points. It also allows for more generalised distance methods (such as Gower's 
+distance) which I have found useful for mixed data types. 
+
+We can include `lm()` as the default putter you get for free. 
+
+Which three clubs would you pick in your bag?  
+

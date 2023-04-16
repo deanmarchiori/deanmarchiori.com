@@ -1,0 +1,17 @@
+---
+date: 2018-10-16
+title: Unsupervised outlier detection systems for e-commerce
+venue: University of Wollongong SMART Infrastructure Facility
+image: "featured.png"
+---
+
+## Abstract 
+
+For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses.  
+
+![](featured.png)
+
+## Links  
+
+[Recorded Video](https://www.youtube.com/watch?v=BMODMydyrR8)
+

@@ -1,0 +1,18 @@
+---
+date: 2021-12-01
+title: Statistics Early Career Talk
+venue: SSA NSW - Early Career and Student Statisticians Event 2021
+image: "featured.png"
+---
+
+## Abstract 
+
+The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station.   
+
+![](featured.png)  
+
+
+## Links  
+
+[Slides](SSA_2021.pdf)
+

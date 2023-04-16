@@ -1,0 +1,80 @@
+---
+title: "Deploy Your Own R Data Science Lab in the Cloud"
+author: "Dean Marchiori"
+date: "2023-03-26"
+categories: [R, azure]
+image: "featured.png"
+---
+
+In a previous post I linked to a project that makes it easy to deploy and
+extend an existing [Rocker Project](https://rocker-project.org/) Docker image to quickly set up a fully 
+featured RStudio Server environment locally on your machine.   
+
+Here I'll cover some options to deploy this environment to the cloud so you can access 
+it anywhere. 
+
+## Option 1: Deploy to a Virtual Machine  
+
+A common pattern is to create a Virtual Machine (VM) with a cloud service 
+provider (such as AWS, Azure, GCP) and run your code there. I'll cover an example using 
+Microsoft Azure.  
+
+1. Deploy a VM with an Ubuntu operating system. Go ahead and choose the compute
+power you need.
+
+![](rstudio-rg.png) 
+
+2. Configure a custom network rule to allow traffic on port 8787 for RStudio  
+
+![](nsg.png)  
+3. Log into your new VM terminal using SSH 
+
+![](term.png)
+
+3. Install Docker Engine by following [these steps](https://docs.docker.com/engine/install/ubuntu/)  
+ 
+4. Clone and Deploy the docker container from Step 2 [in my guide.](https://github.com/deanmarchiori/ds-env-setup)  
+
+## Option 2: Deploy using Azure App Service   
+
+The above is fine, but arguably if you are setting up a VM from scratch for development
+purposes I'm not sure what benefit there is from using a docker container. You may as well just directly 
+install what you want and consider the VM a 'container'.  
+
+However, if you plan to make this available to other users in your organisation,
+or to adapt this guide for Shiny App development you may be interested in other features 
+such as TLS/SSL security, scale up, advanced networking, continuous integration, 
+continuous deployment, staging/production deployment slots etc. This represents
+a shift from development sandpit to 'web app'. For this case, 
+[Azure App Service](https://azure.microsoft.com/en-au/products/app-service/) may
+be a lower hassle option. This is Microsoft's enterprise grade, web app deployment
+managed service.  
+
+In the **Virtual Machine** model you are setting up compute infrastructure, deploying and 
+running containers directly - then fiddling with the infrastructure layer for everything else. 
+In **App Service** you deploy your custom docker container (here containing RStudio Server) to
+Azure Container Registry (kind of like DockerHub). Azure App Services then builds
+and serves your app from there - without you having to stand up and manage an Infra 
+layer directly. 
+
+![](appservices.png)
+
+1. Create Azure Container Registry (ACR) (or some other Docker repository) using this [help guide](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-portal&pivots=container-linux#ii-create-a-container-registry)
+ 
+2. Run and test your container locally  
+
+3. Deploy your local container to ACR using this [help guide](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-portal&pivots=container-linux#iii-push-the-sample-image-to-azure-container-registry)
+
+4. Create a new web app in Azure App Services using this [help guide](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-portal&pivots=container-linux#v-create-the-web-app)
+
+5. Configuration:
+  - I didn't have to fiddle with ports, presumably it reads the exposed ports
+in the docker file and does this magically.   
+  - For custom environment variables like the RStudio Server password, I had to 
+manually add this in the config section. 
+
+![](env.png)
+
+and it worked just fine: 
+
+![](deploy.png)

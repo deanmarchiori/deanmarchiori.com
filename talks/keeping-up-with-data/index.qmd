@@ -1,0 +1,19 @@
+---
+date: 2022-02-09
+title: Keeping Up with Data - Podcast S2E1
+venue: Podcast Episode
+image: "featured.png"
+---
+
+
+## Abstract 
+
+This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes.  
+
+![](featured.png)
+
+## Links  
+
+[URL](https://keeping-up-with-data.castos.com/episodes/push-ego-to-the-side-with-dean-marchiori)   
+[Video](https://www.youtube.com/watch?v=QC6yLHkG3u8)
+

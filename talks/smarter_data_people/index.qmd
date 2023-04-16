@@ -1,0 +1,16 @@
+---
+date: 2020-03-23
+title: Smarter Data People
+venue: Podcast Episode 
+image: "featured.png"
+---
+
+
+## Abstract 
+
+Podcast Episode - Smarter Data People - Building Data Capability
+
+## Links  
+
+[URL](https://smarterdatapeople.com/episode/dean-marchiori/)
+

@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Dean Marchiori"
+  site-url: "https://deanmarchiori.com"
+  description: "Data Science and Statistical Consulting"
+  open-graph: true
+  google-analytics: "UA-XXXXXXXX"
+  navbar:
+    right:
+      - icon: rss
+        href: index.xml
+    left:
+      - href: index.qmd
+        text: Home
+      - href: consulting/index.qmd  
+        text: Consulting
+      - href: talks/index.qmd
+        text: Talks
+      - href: posts/index.qmd
+        text: Blog
+      - href: contact/index.qmd
+        text: Contact
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://code.com
+          - text: Report a Bug
+            url:  https://bugs.com
+  page-footer:
+    left: "Copyright 2023, Dean Marchiori"
+  
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+
+
+

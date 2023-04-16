@@ -1,0 +1,44 @@
+---
+title: "Dean Marchiori"
+subtitle: "Applied Statistician"
+about:
+  id: hero-heading
+  template: trestles
+  image: img/profile.png
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/deanmarchiori
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/deanmarchiori
+    - icon: file-pdf
+      text: CV
+      href: https://github.com/deanmarchiori/CV/raw/master/CV/CV.pdf
+---
+
+
+#### I help organisations solve complex problems using mathematics, statistics and data. If you have an interesting project you want to work together on [contact me here.](contact/index.qmd)
+
+:::{#hero-heading}
+
+### Bio 
+Dean Marchiori is a Director and Principal Data Scientist at Placeholder Inc where he consults on statistical modelling, applied mathematics and advanced analytics. Dean holds a BSc in Mathematics with University Medal from Charles Sturt University, a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics. He has been named one of the top 10 analytics leaders in Australia by the Institute of Analytics Professionals of Australia (IAPA). He is also recognised as an Accredited Statistician with the Statistical Society of Australia where he sits on the committee for Statistical Computing and Visualisation.
+
+:::   
+
+## Some of my work 
+
+You can check out my writing in the [blog](posts/index.qmd) or you can 
+watch some of my recorded [talks.](talks/index.qmd)
+
+If you want to see how I code, my open source analysis and software projects are hosted on [github.](https://github.com/deanmarchiori)
+
+
+## Licence and Accreditation  
+
+ **Accredited Statistician** - *Statistical Society of Australia*   
+ ([Lic 53250221](https://www.statsoc.org.au/Sys/PublicProfile/53250221/4702721), Exp 12/25)
+
+![](img/SSA_2025.png)
+

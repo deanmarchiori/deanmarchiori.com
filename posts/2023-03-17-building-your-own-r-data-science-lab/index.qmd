@@ -1,0 +1,38 @@
+---
+title: Building your own R Data Science Lab in the browser
+author: Dean Marchiori
+date: '2023-03-15'
+categories: [R, docker]
+image: "featured.png"
+---
+
+Most R users probably just run [RStudio Desktop](https://posit.co/download/rstudio-desktop/) 
+from Posit on their local computers. This involves manually installing R, RStudio and all other packages.
+
+However it is often the case that users are operating in a restricted computing
+environment, such as in a corporate or government setting. Alternatively you may wish to 
+create a custom development environment to test or replicate some other specific setup. 
+This is a good case to move away from locally managed software to containerization, 
+such as Docker.   
+
+I have set up a [Github repository](https://github.com/deanmarchiori/ds-env-setup) that sets up a local data science development environment in the browser.
+
+It builds a docker container including:
+
++ Ubuntu 20.04 LTS
++ R version 4.2
++ RStudio Server 2022.02.3+492
++ All tidyverse packages and devtools
++ tex & publishing-related package
+
+The image builds on the rocker/verse image from [Rocker Project.](https://rocker-project.org/)  
+
+Some other enhanced configuration options are included in the Dockerfile, such as preloading
+you RStudio preferences to get the same look and feel you have locally, the option to install other 
+CRAN packages & mounting local volumes to persist your work locally.  
+
+Go here for Step by step instructions:
+
+[https://github.com/deanmarchiori/ds-env-setup](https://github.com/deanmarchiori/ds-env-setup)
+
+

@@ -1,0 +1,20 @@
+---
+title: "Data Science & Statistical Consulting"
+subtitle: "All science, no hype."
+listing: "default"
+---
+
+I am open to discussing short or long term consulting and contract opportunities 
+in a range of fields. If you are interesting in hiring me [get in touch here.](contact.qmd)
+
++ Statistical Modelling 
++ Advanced Analytics
++ R Programming  
++ Data Visualisation 
++ Geospatial Analysis  
++ Time Series Forecasting
++ Anomaly and Outlier Detection 
++ A/B Testing and Experimentation
+
+## Some of my work  
+

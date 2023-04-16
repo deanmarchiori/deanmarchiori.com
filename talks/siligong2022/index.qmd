@@ -1,0 +1,17 @@
+---
+date: 2022-11-24
+title: Building and deploying a Bluey episode recommendation system in R
+venue: Siligong.Data
+image: "featured.png"
+---
+
+## Abstract 
+
+Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R  
+
+![](featured.png)
+
+## Links  
+
+[Github](https://github.com/deanmarchiori/siligong-data-talk)  
+[Slides](https://deanmarchiori.github.io/siligong-data-talk)

@@ -1,0 +1,73 @@
+---
+title: Beware of Boundaries in Binominal Proportion Confidence Intervals  
+author: Dean Marchiori
+date: '2023-03-13'
+categories: [R, statistics]
+image: "featured.png"
+---
+
+Binomial proportion confidence intervals are often employed when attempting to 
+perform tests for significance, or sample size calculations around sample
+measurements resulting from a [Bernoulli process.](https://en.wikipedia.org/wiki/Bernoulli_process)
+
+The typical choice when calculating binomial proportion confidence intervals is the 
+asymptotic, or normally approximated 'Wald' interval where success probability
+is measured by:
+
+$$
+\hat{p} \pm z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+$$  
+
+In many settings, such as marketing analytics or manufacturing processes the 
+sample proportion is close to 0 or 1. Evaluating asymptotic confidence intervals
+near these boundary conditions will lead to underestimation of the error, and in some
+cases producing an interval outside $[0, 1]$. 
+
+Fortunately other methods exist, such as Wilson's score interval, exact methods and Bayesian
+approaches. The recommendation here is to examine the probability coverage and explore alternative
+methods for sample size and CI calculation, especially when the parameter is
+near the boundary conditions, or in cases of very small n.  
+
+```{r message=FALSE, warning=FALSE}
+library(binom)
+library(tidyverse)
+
+n <- 50
+p <- c(0.01, 0.5, 0.99)
+```
+
+```{r}
+x <- purrr::map_df(p, .f =  ~binom.confint(x = n * .x, n = n, methods = 'all'))
+```
+
+```{r}
+ggplot(x, aes(colour = factor(x))) +
+  geom_point(aes(mean, method), show.legend = F) +
+  geom_errorbarh(aes(xmin = lower, xmax = upper, y = method), show.legend = F) +
+  geom_vline(xintercept =  c(0, 1), lty = 2, col = "grey") +
+  facet_wrap(~(x*2/100)) +
+  theme_bw() +
+  labs(title = "A variety of binomial confidence interval methods for p = 0.01, 0.5 & 0.99",
+       subtitle = "Note unusual behaviour near 0.01 and 0.99")
+```
+
+```{r}
+cov <- purrr::map_df(p, ~binom.coverage(.x, n, conf.level = 0.95, method = "all"))
+```
+
+```{r}
+ggplot(cov, aes(colour = factor(p))) +
+  geom_point(aes(coverage, method), show.legend = F) +
+  geom_vline(xintercept =  0.95, lty = 2) +
+  facet_wrap(~(p)) +
+  theme_bw() +
+  labs(title = "Probability coverage for a variety of binomial confidence interval methods",
+       subtitle = "Reference line at 0.95 coverage")
+```
+
+A good discussion is contained in:
+
+Wallis, Sean A. (2013). "Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods" (PDF). **Journal of Quantitative Linguistics.** 20 (3): 178–208. doi:10.1080/09296174.2013.799918. S2CID 16741749.
+
+https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval
+

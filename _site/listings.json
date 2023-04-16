@@ -1,0 +1,38 @@
+[
+  {
+    "listing": "/consulting/index.html",
+    "items": [
+      "/consulting/fire/index.html",
+      "/consulting/data-viz/index.html",
+      "/consulting/bluey/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/siligong2022/index.html",
+      "/talks/keeping-up-with-data/index.html",
+      "/talks/SSA_early_career/index.html",
+      "/talks/rstudioconf_2021/index.html",
+      "/talks/smarter_data_people/index.html",
+      "/talks/WOMBAT_2019/index.html",
+      "/talks/smart-r-academics/index.html",
+      "/talks/smart-outlier/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
+      "/posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
+      "/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
+      "/posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html",
+      "/posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html",
+      "/posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html",
+      "/posts/2022-09-25-three-stick-statistics/index.html",
+      "/posts/2022-02-03-what-was-that-bluey-episode/index.html",
+      "/posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
+      "/posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html"
+    ]
+  }
+]

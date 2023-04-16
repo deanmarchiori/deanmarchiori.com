@@ -1,0 +1,24 @@
+---
+title: "What was thay Bluey Episode?"
+author: "Dean Marchiori"
+date: "2023-03-26"
+categories: [R, analysis]
+image: "bluey.png"
+---
+
+
+Does your child explain [Bluey](https://en.wikipedia.org/wiki/Bluey_(2018_TV_series)) episodes 
+to you but you have no idea what episode they are talking about and can't handle
+flicking through all 131 of them?  
+
+Problem solved.   
+
+This website lets you type in the vague descriptions of a small child and it will
+return a mathematically ranked list of closest matching Bluey episodes.  
+
+[Shiny App](https://deanmarchiori.shinyapps.io/blueysearch/)  
+[Slides](https://deanmarchiori.github.io/siligong-data-talk/#/title-slide)  
+[Github](https://github.com/deanmarchiori/bluey-search)  
+
+
+![](bluey.png)
