@@ -4,16 +4,16 @@ title: "Contact Me"
 
 Want to get in touch? Drop me an email or book in a chat. 
 
-{{< fa envelope title="An envelope" size=2xl >}} [deanmarchiori@gmail.com](mailto:deanmarchiori@gmail.com)    
+{{< fa envelope title="An envelope" size=2xl >}} [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)    
 
 
-{{< fa calendar-days size=2xl >}} [Book a meeting](https://calendly.com/deanmarchiori)  
+{{< fa calendar-days size=2xl >}} [Book a meeting](https://calendly.com/wavedata)  
 
 
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/deanmarchiori', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/wavedata', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
 <!-- Calendly badge widget end -->
 
 
@@ -22,13 +22,13 @@ Want to get in touch? Drop me an email or book in a chat.
 {{< fa location-dot size=2xl >}} UOW Innovation Campus, 239 Squires Way, North Wollongong NSW 2522
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1206.4911787403153!2d150.8972656353768!3d-34.40330764798802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b13191858c4e7fd%3A0x83aeda37060100da!2sUOW%20Innovation%20Campus!5e0!3m2!1sen!2sau!4v1679875668084!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4316.372124123278!2d150.898285!3d-34.403118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b13191858c4e7fd%3A0x83aeda37060100da!2sUOW%20Innovation%20Campus!5e1!3m2!1sen!2sau!4v1682287365085!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## Other platforms  
 
 {{< fa brands linkedin size=2xl >}} [LinkedIn](https://www.linkedin.com/in/deanmarchiori)  <br>  
 {{< fa brands github size=2xl >}} [Github](https://github.com/deanmarchiori)   <br>  
 {{< fa brands twitter size=2xl >}} [Twitter](https://twitter.com/deanmarchiori)   <br>  
-{{< fa brands mastodon size=2xl >}} [Mastodon]()   <br>  
+{{< fa brands mastodon size=2xl >}} [Mastodon](https://fosstodon.org/@deanmarchiori)   <br>  
 
 
