@@ -3,12 +3,12 @@ project:
 
 website:
   title: "Dean Marchiori"
-  site-url: "https://deanmarchiori.com"
+  site-url: "https://www.deanmarchiori.com"
   description: "Data Science and Statistical Consulting"
   open-graph: true
-  image: "https://github.com/deanmarchiori/deanmarchiori.com/blob/main/img/profile.png"
+  image: "https://www.deanmarchiori.com/img/profile.png"
   twitter-card:
-    image: "https://github.com/deanmarchiori/deanmarchiori.com/blob/main/img/profile.png"
+    image: "https://www.deanmarchiori.com/img/profile.png"
   google-analytics: "UA-XXXXXXXX"
   navbar:
     right:

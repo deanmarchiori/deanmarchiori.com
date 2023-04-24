@@ -1,10 +1,12 @@
 ---
 title: "Dean Marchiori"
 subtitle: "Applied Statistician"
+description: "Data Science and Statistical Consulting"
+image: "https://www.deanmarchiori.com/img/profile.png"
 about:
   id: hero-heading
   template: trestles
-  image: "https://github.com/deanmarchiori/deanmarchiori.com/blob/main/img/profile.png"
+  image: "https://www.deanmarchiori.com/img/profile.png"
   links:
     - icon: github
       text: Github
