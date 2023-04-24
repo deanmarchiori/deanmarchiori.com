@@ -4,7 +4,7 @@ subtitle: "Applied Statistician"
 about:
   id: hero-heading
   template: trestles
-  image: img/profile.png
+  image: /img/profile.png
   links:
     - icon: github
       text: Github
