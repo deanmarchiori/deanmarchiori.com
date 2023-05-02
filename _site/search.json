@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "contact/index.html",
-    "href": "contact/index.html",
-    "title": "Contact Me",
-    "section": "",
-    "text": "Want to get in touch? Drop me an email or book in a chat.\ndean@wavedatalabs.com.au\nBook a meeting"
-  },
-  {
-    "objectID": "contact/index.html#location",
-    "href": "contact/index.html#location",
-    "title": "Contact Me",
-    "section": "Location",
-    "text": "Location\n UOW Innovation Campus, 239 Squires Way, North Wollongong NSW 2522"
-  },
-  {
-    "objectID": "contact/index.html#other-platforms",
-    "href": "contact/index.html#other-platforms",
-    "title": "Contact Me",
-    "section": "Other platforms",
-    "text": "Other platforms\n LinkedIn \n Github \n Twitter \n Mastodon"
-  },
-  {
     "objectID": "consulting/bluey/index.html",
     "href": "consulting/bluey/index.html",
     "title": "What was thay Bluey Episode?",
@@ -266,6 +245,41 @@
     "text": "Links\nSlides"
   },
   {
+    "objectID": "index.html#some-of-my-work",
+    "href": "index.html#some-of-my-work",
+    "title": "Dean Marchiori",
+    "section": "Some of my work",
+    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github."
+  },
+  {
+    "objectID": "index.html#licence-and-accreditation",
+    "href": "index.html#licence-and-accreditation",
+    "title": "Dean Marchiori",
+    "section": "Licence and Accreditation",
+    "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)"
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Want to get in touch? Drop me an email or book in a chat.\ndean@wavedatalabs.com.au\nBook a meeting"
+  },
+  {
+    "objectID": "contact/index.html#location",
+    "href": "contact/index.html#location",
+    "title": "Contact Me",
+    "section": "Location",
+    "text": "Location\n UOW Innovation Campus, 239 Squires Way, North Wollongong NSW 2522"
+  },
+  {
+    "objectID": "contact/index.html#other-platforms",
+    "href": "contact/index.html#other-platforms",
+    "title": "Contact Me",
+    "section": "Other platforms",
+    "text": "Other platforms\n LinkedIn \n Github \n Twitter \n Mastodon"
+  },
+  {
     "objectID": "posts/2022-09-25-three-stick-statistics/index.html",
     "href": "posts/2022-09-25-three-stick-statistics/index.html",
     "title": "Three Stick Statistics",
@@ -509,19 +523,5 @@
     "title": "Running Shiny in a Docker container",
     "section": "Load and Run Archive",
     "text": "Load and Run Archive\ndocker load -i myapp.tar\ndocker run myapp"
-  },
-  {
-    "objectID": "index.html#some-of-my-work",
-    "href": "index.html#some-of-my-work",
-    "title": "Dean Marchiori",
-    "section": "Some of my work",
-    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github."
-  },
-  {
-    "objectID": "index.html#licence-and-accreditation",
-    "href": "index.html#licence-and-accreditation",
-    "title": "Dean Marchiori",
-    "section": "Licence and Accreditation",
-    "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)"
   }
 ]

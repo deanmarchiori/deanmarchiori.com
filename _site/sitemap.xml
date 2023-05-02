@@ -1,115 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deanmarchiori.com/contact/index.html</loc>
-    <lastmod>2023-04-23T22:11:44.033Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/bluey/index.html</loc>
+    <lastmod>2023-05-02T04:42:58.692Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/consulting/bluey/index.html</loc>
-    <lastmod>2023-04-23T22:11:21.196Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/index.html</loc>
+    <lastmod>2023-05-02T04:42:59.100Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/consulting/index.html</loc>
-    <lastmod>2023-04-23T22:11:21.600Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/fire/index.html</loc>
+    <lastmod>2023-05-02T04:42:59.416Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/consulting/fire/index.html</loc>
-    <lastmod>2023-04-23T22:11:21.892Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/data-viz/index.html</loc>
+    <lastmod>2023-05-02T04:42:59.668Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/consulting/data-viz/index.html</loc>
-    <lastmod>2023-04-23T22:11:22.200Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/siligong2022/index.html</loc>
+    <lastmod>2023-05-02T04:42:59.916Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/siligong2022/index.html</loc>
-    <lastmod>2023-04-23T22:11:22.436Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/smart-r-academics/index.html</loc>
+    <lastmod>2023-05-02T04:43:00.156Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/smart-r-academics/index.html</loc>
-    <lastmod>2023-04-23T22:11:22.692Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/index.html</loc>
+    <lastmod>2023-05-02T04:43:00.552Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/index.html</loc>
-    <lastmod>2023-04-23T22:11:23.116Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/smart-outlier/index.html</loc>
+    <lastmod>2023-05-02T04:43:00.812Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/smart-outlier/index.html</loc>
-    <lastmod>2023-04-23T22:11:23.388Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/keeping-up-with-data/index.html</loc>
+    <lastmod>2023-05-02T04:43:01.064Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/keeping-up-with-data/index.html</loc>
-    <lastmod>2023-04-23T22:11:23.636Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/smarter_data_people/index.html</loc>
+    <lastmod>2023-05-02T04:43:01.300Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/smarter_data_people/index.html</loc>
-    <lastmod>2023-04-23T22:11:23.892Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/WOMBAT_2019/index.html</loc>
+    <lastmod>2023-05-02T04:43:01.552Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/WOMBAT_2019/index.html</loc>
-    <lastmod>2023-04-23T22:11:24.180Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/rstudioconf_2021/index.html</loc>
+    <lastmod>2023-05-02T04:43:01.840Z</lastmod>
   </url>
   <url>
-    <loc>https://deanmarchiori.com/talks/rstudioconf_2021/index.html</loc>
-    <lastmod>2023-04-23T22:11:24.472Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/talks/SSA_early_career/index.html</loc>
-    <lastmod>2023-04-23T22:11:24.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2022-09-25-three-stick-statistics/index.html</loc>
-    <lastmod>2023-04-23T22:11:25.352Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html</loc>
-    <lastmod>2023-04-23T22:11:25.888Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html</loc>
-    <lastmod>2023-04-23T22:11:26.212Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/index.html</loc>
-    <lastmod>2023-04-23T22:11:26.480Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/index.html</loc>
-    <lastmod>2023-04-23T22:11:27.289Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html</loc>
-    <lastmod>2023-04-23T22:11:27.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html</loc>
-    <lastmod>2023-04-23T22:11:28.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html</loc>
-    <lastmod>2023-04-23T22:11:28.681Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html</loc>
-    <lastmod>2023-04-23T22:11:29.321Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/index.html</loc>
-    <lastmod>2023-04-23T22:11:29.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/index.html</loc>
-    <lastmod>2023-04-23T22:11:29.901Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deanmarchiori.com/index.html</loc>
-    <lastmod>2023-04-24T05:55:38.284Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/SSA_early_career/index.html</loc>
+    <lastmod>2023-05-02T04:43:02.084Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/index.html</loc>
-    <lastmod>2023-04-24T06:49:02.606Z</lastmod>
+    <lastmod>2023-05-02T04:43:02.376Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/contact/index.html</loc>
+    <lastmod>2023-05-02T04:43:02.908Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2022-09-25-three-stick-statistics/index.html</loc>
+    <lastmod>2023-05-02T04:43:03.200Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html</loc>
+    <lastmod>2023-05-02T04:43:03.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html</loc>
+    <lastmod>2023-05-02T04:43:04.156Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/index.html</loc>
+    <lastmod>2023-05-02T04:43:04.440Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/posts/index.html</loc>
-    <lastmod>2023-04-24T06:46:54.100Z</lastmod>
+    <lastmod>2023-05-02T04:43:05.272Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html</loc>
+    <lastmod>2023-05-02T04:43:05.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html</loc>
+    <lastmod>2023-05-02T04:43:06.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html</loc>
+    <lastmod>2023-05-02T04:43:06.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html</loc>
+    <lastmod>2023-05-02T04:43:07.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/index.html</loc>
+    <lastmod>2023-05-02T04:43:07.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/index.html</loc>
+    <lastmod>2023-05-02T04:43:07.816Z</lastmod>
   </url>
 </urlset>
