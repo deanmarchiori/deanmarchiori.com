@@ -6,9 +6,9 @@ website:
   site-url: "https://www.deanmarchiori.com"
   description: "Data Science and Statistical Consulting"
   open-graph: true
-  image: "https://www.deanmarchiori.com/img/profile.png"
+  image: "img/profile.png"
   twitter-card:
-    image: "https://www.deanmarchiori.com/img/profile.png"
+    image: "img/profile.png"
   google-analytics: "UA-XXXXXXXX"
   navbar:
     right:
