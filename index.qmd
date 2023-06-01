@@ -43,4 +43,7 @@ If you want to see how I code, my open source analysis and software projects are
  ([Lic 53250221](https://www.statsoc.org.au/Sys/PublicProfile/53250221/4702721), Exp 12/25)
 
 ![](img/SSA_2025.png)
-
+ 
+ **Azure Certified Data Science Associate** - *Microsoft*   
+ 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="80e6017b-6e52-4d87-a9e4-d84781bf7280" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
