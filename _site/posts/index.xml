@@ -17,7 +17,275 @@
 <width>144</width>
 </image>
 <generator>quarto-1.3.340</generator>
-<lastBuildDate>Sat, 25 Mar 2023 13:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 01 Jun 2023 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Man vs Machine Learning</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Over the past few years I have been doing more and more work in Microsoft Azure and the Azure Machine Learning Studio. One feature of the Azure ML studio is an <a href="https://azure.microsoft.com/en-au/products/machine-learning/automatedml/#overview">automated machine learning feature</a>. This is essentially a no-code UI that ‘empowers professional and <em>nonprofessional</em> data scientists to build machine learning models rapidly’ (emphasis mine).</p>
+<p>While many (including me) have leveled a fair amount of criticism towards such solutions, I thought it would be worth seeing what the fuss was about.</p>
+<p>Could I go head-to-head on the same predictive modelling challenge and compete with the might of Microsoft’s AutoML solution? Even worse, would I enjoy it? Even more worse, could I win??</p>
+<section id="time-series-forecasting-challenge" class="level1">
+<h1>Time Series Forecasting Challenge</h1>
+<p><strong>Objective</strong>: Create the most accurate time series forecasting model</p>
+<p><strong>Data Source</strong>: Half-hourly electricity demand for Victoria, Australia<sup>1</sup></p>
+<p><strong>Training data</strong>: 51,120 records from 2012-01-01 to 2014-11-30</p>
+<p><strong>Test data</strong>: 1488 records from 2014-12-01 to 2014-12-31</p>
+<p><strong>Method 1</strong>: Use Microsoft Azure’s <a href="https://azure.microsoft.com/en-au/products/machine-learning/automatedml/#overview">Automatic ML</a> product.</p>
+<p><strong>Method 2</strong>: Hand code a statistical time series model in R</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">names</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Time</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time stamp</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Demand</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">Target Variable: Electricity Demand</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">Temperature for the day</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">Date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Holiday</td>
+<td style="text-align: left;">logical</td>
+<td style="text-align: left;">Was it a holiday date?</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/plot_1.png" class="img-fluid"></p>
+<section id="method-1-azure-automl" class="level2">
+<h2 class="anchored" data-anchor-id="method-1-azure-automl">Method 1: Azure AutoML</h2>
+<p>The process to set up a new AutoML job was very easy and assumes you are working under somewhat sanitized conditions (which I was in this case).</p>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/automl.png" class="img-fluid"></p>
+<p>Once you kick it off, it chugged away for an hour and 33 minutes. To my horror, I realized it takes the ‘kitchen sink’ approach and fits a suite of 41 (!) different machine learning models at the training data. Hyperparameter tuning is done by constructing a validation set using K-Fold cross validation.</p>
+<p><video src="models.webm" class="img-fluid" controls=""><a href="models.webm">Video</a></video></p>
+<p>The best performing model is then selected and then predictions are run on the test set. It’s a little concerning that Test set evaluation is only in ‘Preview’ mode. It was also very confusing to dig out the results on the test set. Most of the metrics prominently displayed are overly confident in-sample accuracy results.</p>
+<p>The winning model in my case was a ‘Voting Ensemble’ of three models</p>
+<ul>
+<li>MaxAbsScaler, ExtremeRandomTrees</li>
+<li>StandardScalerWrapper, XGBoostRegressor<br>
+</li>
+<li>StandardScalerWrapper, LightGBM</li>
+</ul>
+<p>Overall the process was very easy and user friendly. It look a long time to train, but I didn’t have to think about anything - at all (which is usually time consuming) so overall it was a quick solution. I trained the model on a Standard_DS11_v2 (2 cores, 14 GB RAM, 28 GB disk) compute instance which costs $0.2 per hour. So it cost money, but not much.</p>
+<p>Performance evaluation to follow below…</p>
+</section>
+<section id="method-2-manual-time-series-model-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="method-2-manual-time-series-model-in-r">Method 2: Manual Time Series Model in R</h2>
+<p>The process for doing this myself involved much more thought and brain-effort. Here are some notes.</p>
+<p>The data set is quite complicated as its sub-daily and has (probably) three seasonal periods (daily, weekly, yearly). There was also maybe some trend and outliers to deal with. The data set also contained covariates such as Temperature and Holiday indicators.</p>
+<p>Due to the seasonal complexity many traditional statistical methods were not appropriate like straight ARIMA (autoregressive integrated moving average) and ETS (exponential smoothing). While STL (Seasonal and Trend decomposition using Loess) can handle multiple seasonal periods I wanted a method to handle the covariates (like Temperature and Holidays). My next step was to think of Time Series Linear Regression models. However, accounting for yearly seasonality with 30min data meant fitting 17,520 (2 * 24 * 365) parameters just for this seasonal period. Which seemed excessive.</p>
+<p>For longer, multiple-seasonal periods, using Fourier terms can be a good idea. Here a smaller number of terms in a <a href="https://en.wikipedia.org/wiki/Fourier_series">fourier series</a> can be estimated to approximate a more complex function. This type of <em>Dynamic Harmonic Regression</em><sup>2</sup> can also handle exogenous covariates and we can even fit the model with ARIMA errors to account for the short term dynamics of time series data.</p>
+<p>In fact, this very approach was outlined in the excellent <em>Forecasting: Principles and Practice</em><sup>3</sup> using this very same example data set. I decided to borrow (steal) the ideas of creating a piece-wise linear trend for temperature. I also went a bit crazy with encoding specific holiday dummy variables and some other tweaks.</p>
+<p>Overall I found this method slow to fit, and not overly performant. I decided next to try fitting a Prophet<sup>4</sup> model. Prophet is an open-source automated algorithm for time series forecasting developed by Facebook. It uses a Bayesian framework to fit complex, non-linear, piece-wise regression models. For complex time series data, it provides a decent, fast framework including exogenous variables, holiday and seasonal effects. I didn’t do any principled hyperparameter tuning, but I did fiddle around with the model a bit.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>So who won?</p>
+<p>The AutoML platform did :( , but only just. Below is the comparison of RMSE and MAPE. The AutoML is red, my predictions are in blue. I stuffed up over Christmas a bit, which admittedly is a tricky hold-out month for testing.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Azure AutoML</td>
+<td>RMSE</td>
+<td>213</td>
+</tr>
+<tr class="even">
+<td>Azure AutoML</td>
+<td>MAPE</td>
+<td>3.56</td>
+</tr>
+<tr class="odd">
+<td>Me</td>
+<td>RMSE</td>
+<td>274</td>
+</tr>
+<tr class="even">
+<td>Me</td>
+<td>MAPE</td>
+<td>4.96</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/plot_2.png" class="img-fluid"></p>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>So overall it was pretty close, but in terms of pure predictive performance, the AutoML platform did pip me at the post. Admittedly, the solution I arrived at was probably more of an ML solution than a ‘classical’ time series method given it is still an automated algorithm. If I had more time and patience I probably could have pursued a more complex regression model. In fact in <em>Forecasting: Principles and Practice</em>, the authors also cite the performance of a straight Dynamic Harmonic Regression is limited, however they go on to propose other innovative approaches<sup>5</sup><sup>6</sup>, including splitting the problem into separate models for each 30min period and using regression splines to better capture exogenous effects. So it can be done, but not without a huge amount of effort.</p>
+</section>
+</section>
+<section id="bonus-round-medicare-cost-forecast" class="level1">
+<h1>Bonus Round: Medicare Cost Forecast</h1>
+<p>This all led me to think: If the data are quite complex for a time series problem, then of course a more Machine Learn-y solution would outperform. I wonder what would happen if we repeated the same exercise but with many fewer data points and some quirky time series characteristics.</p>
+<p>My hypothesis is, the machine learning models will not have sufficient data to fit well. On the other hand, my experience and gestalt will enable me to select and encode a statistical model that is appropriate and gain an edge on a black-box type of solution.</p>
+<p><strong>Objective</strong>: Create the most accurate time series forecasting model</p>
+<p><strong>Data Source</strong>: Monthly Medicare Australia prescription data<sup>7</sup>, Anatomical Therapeutic Chemical index classification A10</p>
+<p><strong>Training data</strong>: 163 records from Jul 1991 to Jan 2005 (black line)</p>
+<p><strong>Test data</strong>: 41 records from Feb 2005 to Jun 2008 (grey line)</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">names</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cost</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">Cost of the scripts in $AUD</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">Month time stamp</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/plot_3.png" class="img-fluid"></p>
+<p>Here we have less than 200 data points, but we can visually inspect the time series and see that there is a clear trend, the process is multiplicative and there is a single, yearly seasonal pattern.</p>
+<section id="automl-solution" class="level2">
+<h2 class="anchored" data-anchor-id="automl-solution">AutoML solution</h2>
+<p>The AutoML platform again used a Voting Ensemble, churned out in 43 minutes, but this time using:</p>
+<ul>
+<li>ProphetModel (it must have copied me from last round ;))<br>
+</li>
+<li>Exponential Smoothing</li>
+</ul>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/ml2.png" class="img-fluid"></p>
+</section>
+<section id="my-solution" class="level2">
+<h2 class="anchored" data-anchor-id="my-solution">My solution</h2>
+<p>Given the multiplicative process here, I modeled the log transformed data. (I did try a more generalized Box-Cox transformation, but got better performance with a straight natural log transform). I tried an ARIMA model, using model selection via the Hyndman-Khandakar algorithm<sup>8</sup>, which resulted in a <code>ARIMA(2,0,1)(1,1,2)[12] w/ drift&gt;</code>.</p>
+</section>
+<section id="results-1" class="level2">
+<h2 class="anchored" data-anchor-id="results-1">Results</h2>
+<p>Yay! I won this round. Quite easily.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Azure AutoML</td>
+<td>RMSE</td>
+<td>2.43</td>
+</tr>
+<tr class="even">
+<td>Azure AutoML</td>
+<td>MAPE</td>
+<td>9.22</td>
+</tr>
+<tr class="odd">
+<td>Me</td>
+<td>RMSE</td>
+<td>1.63</td>
+</tr>
+<tr class="even">
+<td>Me</td>
+<td>MAPE</td>
+<td>7.23</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/plot_4.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="who-is-the-winner" class="level1">
+<h1>Who is the winner?</h1>
+<p>Well, I call it a draw.</p>
+<p>Here are some of my closing thoughts from this experiment.</p>
+<p>An ML solution might be a good choice if:</p>
+<ul>
+<li>You have lots of data<br>
+</li>
+<li>You care a lot about prediction<br>
+</li>
+<li>You don’t have to be too transparent<br>
+</li>
+<li>Interpretation is not very important<br>
+</li>
+<li>You have a very complex time series data set</li>
+</ul>
+<p>I would caveat this with not just blindly modelling your problems away. You still need to understand the process to ensure your predictions are well calibrated and you don’t fall prey to over fitting.</p>
+<p>A more classical statistical modelling approach might be a good choice if:</p>
+<ul>
+<li>You want a more flexible framework<br>
+</li>
+<li>You need to / want to encode domain knowledge<br>
+</li>
+<li>You want a more interpretable model</li>
+<li>You have fewer data</li>
+</ul>
+<p>The good news is, if you are sufficiently smart and motivated (which I am sure you are) you can certainly compete in terms of model performance with an ML solution, even on complex problems. The bad news is, it’s harder and you need to think a bit. You can’t just delegate all your thinking to the machines. Not yet anyway.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). <em>tsibbledata: Diverse Datasets for ‘tsibble’</em>. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.</p>
+<p>Hyndman, R.J., &amp; Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2023-06-05.</p>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">Other</h2>
+<p>Thanks to the Tidyverts team <a href="https://tidyverts.org/">https://tidyverts.org/</a>. The new an improved time series stack in R makes all this so easy.</p>
+<p><strong>Note</strong>: None of this was super-rigorous, and I certainly tilted the board in my favour here and there. It was just fun and a chance to play around with a tool that I have previously avoided for no real reason.</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Source: Australian Energy Market Operator; <em>tsibbledata</em> R package↩︎</p></li>
+<li id="fn2"><p>Young, P. C., Pedregal, D. J., &amp; Tych, W. (1999). Dynamic harmonic regression. Journal of Forecasting, 18, 369–394. https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1099-131X(199911)18:6%3C369::AID-FOR748%3E3.0.CO;2-K↩︎</p></li>
+<li id="fn3"><p>Hyndman, R.J., &amp; Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2023-06-05.↩︎</p></li>
+<li id="fn4"><p>Taylor SJ, Letham B. 2017. Forecasting at scale. PeerJ Preprints 5:e3190v2 https://doi.org/10.7287/peerj.preprints.3190v2↩︎</p></li>
+<li id="fn5"><p>Fan, S., &amp; Hyndman, R. J. (2012). Short-term load forecasting based on a semi-parametric additive model. IEEE Transactions on Power Systems, 27(1), 134–141. https://ieeexplore.ieee.org/document/5985500↩︎</p></li>
+<li id="fn6"><p>Hyndman, R. J., &amp; Fan, S. (2010). Density forecasting for long-term peak electricity demand. IEEE Transactions on Power Systems, 25(2), 1142–1153. https://ieeexplore.ieee.org/document/5345698↩︎</p></li>
+<li id="fn7"><p>Source: Medicare Australia; <em>tsibbledata</em> R package↩︎</p></li>
+<li id="fn8"><p>Hyndman, R. J., &amp; Khandakar, Y. (2008). Automatic time series forecasting: The forecast package for R. Journal of Statistical Software, 27(1), 1–22. https://doi.org/10.18637/jss.v027.i03↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>R</category>
+  <category>Azure</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html</guid>
+  <pubDate>Thu, 01 Jun 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Deploy Your Own R Data Science Lab in the Cloud</title>
   <dc:creator>Dean Marchiori</dc:creator>
