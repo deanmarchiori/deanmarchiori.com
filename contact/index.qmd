@@ -19,7 +19,7 @@ Want to get in touch? Drop me an email or book in a chat.
 
 ## Location  
 
-{{< fa location-dot size=2xl >}} UOW Innovation Campus, 239 Squires Way, North Wollongong NSW 2522
+{{< fa location-dot size=2xl >}} Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500 Australia
 
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4316.372124123278!2d150.898285!3d-34.403118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b13191858c4e7fd%3A0x83aeda37060100da!2sUOW%20Innovation%20Campus!5e1!3m2!1sen!2sau!4v1682287365085!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
