@@ -578,7 +578,7 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Man vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
+    "text": "Geolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
@@ -600,5 +600,40 @@
     "title": "Dean Marchiori",
     "section": "Licence and Accreditation",
     "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)\n\nAzure Certified Data Science Associate - Microsoft"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html",
+    "href": "posts/2023-09-17-geolocating/index.html",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "",
+    "text": "A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.\nIs this real? Where is it? Could I geolocate it using just OSINT1 techniques?… Yeah of course.\nI have a loose theory that no matter who or where you are, there is probably sufficient data for a sufficiently motivated person to find you."
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "href": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nOpen Source Intelligence↩︎\nhttps://x.com/historyinmemes/status/1671673688683413504?s=20↩︎"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "href": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Challenge",
+    "text": "The Challenge\nI saw this pop up on Twitter2 and other tabloid sites a while ago and thought it would be fun to try and geolocate it from the Twitter post alone.\n\n\nA family in Australia has remained defiant in selling their nearly 5-acre property in the last few years as developers have been forced to build around them. Most recently, they declined a whopping $50 million offer for their home. Slap bang in the middle of a new-build… pic.twitter.com/pULUqpe1em\n\n— Historic Vids (@historyinmemes) June 22, 2023\n\n\nThe main clue we get is:\n\nAbout 40 minutes from Sydney’s central core, the property offers panoramic views of the Blue Mountains.\n\n(Actually the tweet and some articles do mention the suburb, but let’s ignore that so we don’t spoil the fun)"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-method",
+    "href": "posts/2023-09-17-geolocating/index.html#the-method",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Method",
+    "text": "The Method\n\nIf the property is 40 minutes from Sydney and has views of the Blue Mountains, its likely to be somewhere West of the city.\n\n\n\nWe can use the {osrm} package in R to construct drive time isochrones. This leverages the Open Source Routing Machine, based on Open Street Map data to calculate polygons that represent a given drive time from a set of coordinates. If we set this as 35-45 min drive time from the center of Sydney, we should get a ‘ring’ around Sydney containing the property location.\n\n\n\n\n\n\n\n\n\nBy looking at the final frame we can see some distinguishing features in the image:\n\n\nThere is a roundabout nearby\n\nThere is a ‘Secondary Road’ (not a primary or trunk road, but more significant than roads found in villages etc)\nThere are several ‘dead-end’ roads. Defined as cul-de-sacs that are not turning-circle roundabouts, but have no other exit point.\n\n\nWe can now construct a query to the OpenStreetMap Overpass API which stores features about the metadata of the street network. Let’s look for roundabouts on secondary roads within 500m of a no-exit road.\n[out:json];\n\n(  \nway[junction=roundabout][highway=secondary]\n   ({{bbox}});\n  ) -&gt; .roundabout;\n\n(\nnode[noexit=yes]\n ({{bbox}});\n) -&gt; .culdesac;\n\n(\n way.roundabout(around.culdesac:500);\n);\n\nout body;\n&gt;;\nout skel qt;\n\nThe above query was run over all of Sydney, and exported as a geojson file, which I then intersected with our drive-time ring above.\n\n\n\n\n\n\n\n\n\n\nThis creates a shortlist of 101 candidate roundabouts. We now need to manually inspect each one to match it to the tweet. As these are unsorted, the average search time to find our roundabout of interest will be \\(n/2\\) which means I have have to manually check 50 images on average. To streamline this, I wrote a function to loop through all the candidate roundabouts, and automatically export a satellite image at roughly the level of zoom that would help me identify the right frame.\n\nVideo"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#found-it",
+    "href": "posts/2023-09-17-geolocating/index.html#found-it",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Found it!",
+    "text": "Found it!\nAnd found it. Don’t think I need to share the exact address, not that it’s a secret or anything."
   }
 ]
