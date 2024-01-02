@@ -2,6 +2,7 @@
   {
     "listing": "/talks/index.html",
     "items": [
+      "/talks/SSA-tutorial/index.html",
       "/talks/siligong2022/index.html",
       "/talks/keeping-up-with-data/index.html",
       "/talks/SSA_early_career/index.html",
