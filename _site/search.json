@@ -578,7 +578,7 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Geolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
+    "text": "Is the share market just random noise?\n\n\nModelling market prices using a random walk model\n\n\n\n\nR\n\n\nMarkets\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nGeolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
@@ -656,5 +656,47 @@
     "title": "Deploying your model code into production with Microsoft Azure",
     "section": "Links",
     "text": "Links\nEvent\nSlides"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html",
+    "href": "posts/2024-01-04-randomshares/index.html",
+    "title": "Is the share market just random noise?",
+    "section": "",
+    "text": "Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.\nIt’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.\nI had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.\nHaving formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity1).\nIt got me thinking, was this all just random noise. Was this all just a giant circle-jerk based on psychology, sales targets and the need to fill column inches?\nI recently completed Michael Kemp’s excellent book The Ulysses Contract: How to never worry about the share market again.2\nKemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.\nAuthor and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.3. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening to us?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#the-test",
+    "href": "posts/2024-01-04-randomshares/index.html#the-test",
+    "title": "Is the share market just random noise?",
+    "section": "The Test",
+    "text": "The Test\nI have simulated 1000 values of a random walk (AR(1)) model and placed this next to 1000 recent observations of a randomly selected Australian stock’s daily closing price.\nCan you tell which is which?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#the-test-1",
+    "href": "posts/2024-01-04-randomshares/index.html#the-test-1",
+    "title": "Geo",
+    "section": "The test",
+    "text": "The test\n\nI will simulate 1000 values of a random walk (AR(1)) model, and place this next to 1000 observations of a random Australian stock’s daily closing price. Can you tell which is which?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "href": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "title": "Is the share market just random noise?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Self-similarity↩︎\nhttps://www.goodreads.com/en/book/show/88826560↩︎\nhttps://www.goodreads.com/book/show/38315.Fooled_by_Randomness↩︎\nhttps://otexts.com/fpp3/stationarity.html#random-walk-model↩︎\nhttps://en.wikipedia.org/wiki/Random_walk_hypothesis↩︎"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "href": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "title": "Is the share market just random noise?",
+    "section": "A random market?",
+    "text": "A random market?\nIt got me thinking, could the average punter tell the difference between the stock market and random noise?\nTo test this, I simulated a type of data called a ‘random walk’. A random walk is a type of mathematical, time-series model. It describes a process of sequential observations (say, daily share prices). Each day’s share price is simulated by taking yesterday’s price and just adding randomly generated ‘noise’. It doesn’t try to emulate the shape or style of share market. It’s really dumb. It just takes the price one day and either adds or subtracts a small random amount (of normally distributed noise).\nThe funny thing about this model is it often contains4:\n\nlong periods of apparent trends up or down\nsudden and unpredictable changes in direction.\n\nSound like the share market anyone??\nThis can be written as:\n\\[\ny_t = y_{t-1} + e_t\n\\] Really, this is just a special case of a class of time-series models called ARIMA models. In particular it is an Autoregressive model, that is, a model that is formed from linear combination of previous values.\n\\[\ny_t = c + \\phi_1 y_{t-1} + \\phi_2 y_{t-2} + ... + \\phi_p y_{t-p} + e_t\n\\] Where we set just one term \\(\\phi_1 = 1\\), \\(c = 0\\) and specify \\(e_t \\sim N(0, s)\\)"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "href": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "title": "Is the share market just random noise?",
+    "section": "So are the markets actually random?",
+    "text": "So are the markets actually random?\nI don’t really know. In the short term, it does look random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.\nThere is even a formal theory in finance called the Random Walk hypothesis5 in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - unpredictable.\nRandomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.\nRather, we can think of stock prices being modelled well by a random walk process. So what you can do about a process that is modelled well by a random walk?\nYou can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit."
   }
 ]
