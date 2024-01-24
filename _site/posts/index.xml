@@ -13,6 +13,8 @@
 <url>https://www.deanmarchiori.com/img/profile.png</url>
 <title>Dean Marchiori</title>
 <link>https://www.deanmarchiori.com/posts/index.html</link>
+<height>138</height>
+<width>144</width>
 </image>
 <generator>quarto-1.3.340</generator>
 <lastBuildDate>Wed, 03 Jan 2024 13:00:00 GMT</lastBuildDate>
@@ -25,13 +27,13 @@
 
 
 
-<p>Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion. Investors day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.</p>
+<p>Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.</p>
 <p>It’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.</p>
 <p>I had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.</p>
 <p>Having formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity<sup>1</sup>).</p>
 <p><img src="https://www.deanmarchiori.com/posts/2024-01-04-randomshares/img/selfsim.gif" class="img-fluid"></p>
-<p>It got me thinking, was this all just random noise. Was this all just a giant circle-jerk based on psychology, sales targets and the need to fill column inches?</p>
-<p>I recently completed Michael Kemp’s book <em>The Ulysses Contract: How to never worry about the share market again.</em><sup>2</sup></p>
+<p>It got me thinking, was this all just random noise. Was this all just a giant illusion based on psychology, sales targets and the need to fill column inches?</p>
+<p>I recently completed Michael Kemp’s excellent book <em>The Ulysses Contract: How to never worry about the share market again.</em><sup>2</sup></p>
 <p>Kemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.</p>
 <p>Author and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic <em>Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.</em><sup>3</sup>. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening <em>to</em> us?</p>
 <section id="a-random-market" class="level2">
@@ -63,7 +65,7 @@
 <p>I don’t really know. In the short term, it does <em>look</em> random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.</p>
 <p>There is even a formal theory in finance called the Random Walk hypothesis<sup>5</sup> in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - <strong>unpredictable.</strong></p>
 <p>Randomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.</p>
-<p>Rather, we can think of stock prices being <em>modelled</em> well by a random walk process. But the implication here is what you can do about a process that is modelled well by a random walk?</p>
+<p>Rather, we can think of stock prices being <em>modelled</em> well by a random walk process. So what you can do about a process that is modelled well by a random walk?</p>
 <p>You can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit.</p>
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Dean Marchiori"
 subtitle: "Applied Statistician"
-description: "Data Science and Statistical Consulting"
+description: "Wave Data Labs"
 image: "img/profile.png"
 about:
   id: hero-heading
@@ -20,12 +20,10 @@ about:
 ---
 
 
-#### I help organisations solve complex problems using mathematics, statistics and data. If you have an interesting project you want to work together on [contact me here.](contact/index.qmd)
-
 :::{#hero-heading}
 
 ### Bio 
-Dean Marchiori is Director and Principal Data Scientist at [Wave Data Labs](https://wavedatalabs.com.au) where he consults on statistical modelling, applied mathematics and advanced analytics. Dean holds a BSc in Mathematics with University Medal from Charles Sturt University, a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics. He has been named one of the top 10 analytics leaders in Australia by the Institute of Analytics Professionals of Australia (IAPA). He is also recognised as an Accredited Statistician with the Statistical Society of Australia where he is co-chair of the committee for Statistical Computing and Visualisation.
+Dean Marchiori is an applied statistician and specialist consultant in statistical modelling, applied mathematics and data science. He is the Director and Principal Data Scientist at [Wave Data Labs](www.wavedatalabs.com.au) and co-chair of the Statistical Society of Australia's section for statistical computing and graphics. Dean is also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his BSc in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA). 
 
 :::   
 
@@ -34,7 +32,10 @@ Dean Marchiori is Director and Principal Data Scientist at [Wave Data Labs](http
 You can check out my writing in the [blog](posts/index.qmd) or you can 
 watch some of my recorded [talks.](talks/index.qmd)
 
-If you want to see how I code, my open source analysis and software projects are hosted on [github.](https://github.com/deanmarchiori)
+If you want to see how I code, my open source analysis and software projects are hosted on [github.](https://github.com/deanmarchiori)  
+
+If you are interested in hiring me for a project, you can [contact me here](contact/index.qmd) or head over 
+to [wavedatalabs.com.au](wavedatalabs.com.au)
 
 
 ## Licence and Accreditation  

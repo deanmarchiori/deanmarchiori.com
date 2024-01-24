@@ -33,7 +33,7 @@ website:
           - text: Report a Bug
             url:  https://github.com/deanmarchiori/deanmarchiori.com/issues
   page-footer:
-    left: "Copyright 2023, Dean Marchiori"
+    left: "Copyright 2024, Dean Marchiori"
   
 format:
   html:

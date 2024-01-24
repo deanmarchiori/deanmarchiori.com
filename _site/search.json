@@ -105,6 +105,27 @@
     "text": "Links\nRecorded Video"
   },
   {
+    "objectID": "talks/SSA-tutorial/index.html",
+    "href": "talks/SSA-tutorial/index.html",
+    "title": "Deploying your model code into production with Microsoft Azure",
+    "section": "",
+    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
+  },
+  {
+    "objectID": "talks/SSA-tutorial/index.html#abstract",
+    "href": "talks/SSA-tutorial/index.html#abstract",
+    "title": "Deploying your model code into production with Microsoft Azure",
+    "section": "",
+    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
+  },
+  {
+    "objectID": "talks/SSA-tutorial/index.html#links",
+    "href": "talks/SSA-tutorial/index.html#links",
+    "title": "Deploying your model code into production with Microsoft Azure",
+    "section": "Links",
+    "text": "Links\nEvent\nSlides"
+  },
+  {
     "objectID": "talks/rstudioconf_2021/index.html",
     "href": "talks/rstudioconf_2021/index.html",
     "title": "How reproducible am I? A retrospective on a year of commercial data science projects in R",
@@ -263,7 +284,7 @@
     "href": "contact/index.html#other-platforms",
     "title": "Contact Me",
     "section": "Other platforms",
-    "text": "Other platforms\n LinkedIn \n Github \n Twitter \n Mastodon"
+    "text": "Other platforms\n LinkedIn \n Github \n Mastodon"
   },
   {
     "objectID": "posts/2022-09-25-three-stick-statistics/index.html",
@@ -299,6 +320,41 @@
     "title": "Mapping NSW Fire Incidents in R",
     "section": "Code",
     "text": "Code\nLoad packages\n\nlibrary(sf)\nlibrary(mapview)\nlibrary(tidyverse)\n\nPull incidents\n\nurl &lt;- \"http://www.rfs.nsw.gov.au/feeds/majorIncidents.json\"\nfires &lt;- st_read(url)\n\nReading layer `majorIncidents' from data source \n  `http://www.rfs.nsw.gov.au/feeds/majorIncidents.json' using driver `GeoJSON'\nSimple feature collection with 22 features and 7 fields\nGeometry type: GEOMETRY\nDimension:     XY\nBounding box:  xmin: 141.9267 ymin: -37.06285 xmax: 153.0005 ymax: -29.11298\nGeodetic CRS:  WGS 84\n\n\nOptional step to get points only\n\n# points only\nfire_pt &lt;- fires %&gt;% \n  st_cast(\"POINT\") \n\nOptional Step to get Polygons only. Note the hack to aply a zero distance buffer.\n\n#' Polygons only\nfire_poly &lt;- fires %&gt;% \n  st_buffer(dist = 0) %&gt;% \n  st_union(by_feature = TRUE)\n\nMapping data interactively\n\nmapview(fire_poly, layer.name = \"RFS Current Incident Polygons\", zcol = \"category\") +\n  mapview(fire_pt, layer.name = \"RFS Current Incident Locations\", zcol = \"category\")\n\n\n\n\nscreenshot of leafet interactive map of fire incidents"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html",
+    "href": "posts/2023-09-17-geolocating/index.html",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "",
+    "text": "A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.\nIs this real? Where is it? Could I geolocate it using just OSINT1 techniques?… Yeah of course.\nI have a loose theory that no matter who or where you are, there is probably sufficient data for a sufficiently motivated person to find you."
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "href": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Challenge",
+    "text": "The Challenge\nI saw this pop up on Twitter2 and other tabloid sites a while ago and thought it would be fun to try and geolocate it from the Twitter post alone.\n\n\nA family in Australia has remained defiant in selling their nearly 5-acre property in the last few years as developers have been forced to build around them. Most recently, they declined a whopping $50 million offer for their home. Slap bang in the middle of a new-build… pic.twitter.com/pULUqpe1em\n\n— Historic Vids (@historyinmemes) June 22, 2023\n\n\nThe main clue we get is:\n\nAbout 40 minutes from Sydney’s central core, the property offers panoramic views of the Blue Mountains.\n\n(Actually the tweet and some articles do mention the suburb, but let’s ignore that so we don’t spoil the fun)"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-method",
+    "href": "posts/2023-09-17-geolocating/index.html#the-method",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Method",
+    "text": "The Method\n\nIf the property is 40 minutes from Sydney and has views of the Blue Mountains, its likely to be somewhere West of the city.\n\n\n\nWe can use the {osrm} package in R to construct drive time isochrones. This leverages the Open Source Routing Machine, based on Open Street Map data to calculate polygons that represent a given drive time from a set of coordinates. If we set this as 35-45 min drive time from the center of Sydney, we should get a ‘ring’ around Sydney containing the property location.\n\n\n\n\n\n\n\n\n\nBy looking at the final frame we can see some distinguishing features in the image:\n\n\nThere is a roundabout nearby\n\nThere is a ‘Secondary Road’ (not a primary or trunk road, but more significant than roads found in villages etc)\nThere are several ‘dead-end’ roads. Defined as cul-de-sacs that are not turning-circle roundabouts, but have no other exit point.\n\n\nWe can now construct a query to the OpenStreetMap Overpass API which stores features about the metadata of the street network. Let’s look for roundabouts on secondary roads within 500m of a no-exit road.\n[out:json];\n\n(  \nway[junction=roundabout][highway=secondary]\n   ({{bbox}});\n  ) -&gt; .roundabout;\n\n(\nnode[noexit=yes]\n ({{bbox}});\n) -&gt; .culdesac;\n\n(\n way.roundabout(around.culdesac:500);\n);\n\nout body;\n&gt;;\nout skel qt;\n\nThe above query was run over all of Sydney, and exported as a geojson file, which I then intersected with our drive-time ring above.\n\n\n\n\n\n\n\n\n\n\nThis creates a shortlist of 101 candidate roundabouts. We now need to manually inspect each one to match it to the tweet. As these are unsorted, the average search time to find our roundabout of interest will be \\(n/2\\) which means I have have to manually check 50 images on average. To streamline this, I wrote a function to loop through all the candidate roundabouts, and automatically export a satellite image at roughly the level of zoom that would help me identify the right frame.\n\nVideo"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#found-it",
+    "href": "posts/2023-09-17-geolocating/index.html#found-it",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Found it!",
+    "text": "Found it!\nAnd found it. Don’t think I need to share the exact address, not that it’s a secret or anything."
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "href": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nOpen Source Intelligence↩︎\nhttps://x.com/historyinmemes/status/1671673688683413504?s=20↩︎"
   },
   {
     "objectID": "posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
@@ -476,6 +532,41 @@
     "text": "References\nMost of the material and code is taken from a variety of sources below. In particular the lme4 github issue. Also, the merTools package has a nice vignette comparing these methods with their own solution.\nhttps://tmalsburg.github.io/predict-vs-simulate.html https://github.com/lme4/lme4/issues/388 https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html http://bbolker.github.io/mixedmodels-misc/glmmFAQ.html#predictions-andor-confidence-or-prediction-intervals-on-predictions"
   },
   {
+    "objectID": "posts/2024-01-04-randomshares/index.html",
+    "href": "posts/2024-01-04-randomshares/index.html",
+    "title": "Is the share market just random noise?",
+    "section": "",
+    "text": "Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.\nIt’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.\nI had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.\nHaving formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity1).\nIt got me thinking, was this all just random noise. Was this all just a giant illusion based on psychology, sales targets and the need to fill column inches?\nI recently completed Michael Kemp’s excellent book The Ulysses Contract: How to never worry about the share market again.2\nKemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.\nAuthor and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.3. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening to us?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "href": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "title": "Is the share market just random noise?",
+    "section": "A random market?",
+    "text": "A random market?\nIt got me thinking, could the average punter tell the difference between the stock market and random noise?\nTo test this, I simulated a type of data called a ‘random walk’. A random walk is a type of mathematical, time-series model. It describes a process of sequential observations (say, daily share prices). Each day’s share price is simulated by taking yesterday’s price and just adding randomly generated ‘noise’. It doesn’t try to emulate the shape or style of share market. It’s really dumb. It just takes the price one day and either adds or subtracts a small random amount (of normally distributed noise).\nThe funny thing about this model is it often contains4:\n\nlong periods of apparent trends up or down\nsudden and unpredictable changes in direction.\n\nSound like the share market anyone??\nThis can be written as:\n\\[\ny_t = y_{t-1} + e_t\n\\] Really, this is just a special case of a class of time-series models called ARIMA models. In particular it is an Autoregressive model, that is, a model that is formed from linear combination of previous values.\n\\[\ny_t = c + \\phi_1 y_{t-1} + \\phi_2 y_{t-2} + ... + \\phi_p y_{t-p} + e_t\n\\] Where we set just one term \\(\\phi_1 = 1\\), \\(c = 0\\) and specify \\(e_t \\sim N(0, s)\\)"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#the-test",
+    "href": "posts/2024-01-04-randomshares/index.html#the-test",
+    "title": "Is the share market just random noise?",
+    "section": "The Test",
+    "text": "The Test\nI have simulated 1000 values of a random walk (AR(1)) model and placed this next to 1000 recent observations of a randomly selected Australian stock’s daily closing price.\nCan you tell which is which?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "href": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "title": "Is the share market just random noise?",
+    "section": "So are the markets actually random?",
+    "text": "So are the markets actually random?\nI don’t really know. In the short term, it does look random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.\nThere is even a formal theory in finance called the Random Walk hypothesis5 in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - unpredictable.\nRandomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.\nRather, we can think of stock prices being modelled well by a random walk process. So what you can do about a process that is modelled well by a random walk?\nYou can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit."
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "href": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "title": "Is the share market just random noise?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Self-similarity↩︎\nhttps://www.goodreads.com/en/book/show/88826560↩︎\nhttps://www.goodreads.com/book/show/38315.Fooled_by_Randomness↩︎\nhttps://otexts.com/fpp3/stationarity.html#random-walk-model↩︎\nhttps://en.wikipedia.org/wiki/Random_walk_hypothesis↩︎"
+  },
+  {
     "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
     "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
     "title": "Deploy Your Own R Data Science Lab in the Cloud",
@@ -578,7 +669,7 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Is the share market just random noise?\n\n\nModelling market prices using a random walk model\n\n\n\n\nR\n\n\nMarkets\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nGeolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
+    "text": "Is the share market just random noise?\n\n\nModelling market prices using a random walk\n\n\n\n\nR\n\n\nMarkets\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nGeolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n  \n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
@@ -588,11 +679,18 @@
     "text": "Binomial proportion confidence intervals are often employed when attempting to perform tests for significance, or sample size calculations around sample measurements resulting from a Bernoulli process.\nThe typical choice when calculating binomial proportion confidence intervals is the asymptotic, or normally approximated ‘Wald’ interval where success probability is measured by:\n\\[\n\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\n\\]\nIn many settings, such as marketing analytics or manufacturing processes the sample proportion is close to 0 or 1. Evaluating asymptotic confidence intervals near these boundary conditions will lead to underestimation of the error, and in some cases producing an interval outside \\([0, 1]\\).\nFortunately other methods exist, such as Wilson’s score interval, exact methods and Bayesian approaches. The recommendation here is to examine the probability coverage and explore alternative methods for sample size and CI calculation, especially when the parameter is near the boundary conditions, or in cases of very small n. \n\nlibrary(binom)\nlibrary(tidyverse)\n\nn &lt;- 50\np &lt;- c(0.01, 0.5, 0.99)\n\n\nx &lt;- purrr::map_df(p, .f =  ~binom.confint(x = n * .x, n = n, methods = 'all'))\n\n\nggplot(x, aes(colour = factor(x))) +\n  geom_point(aes(mean, method), show.legend = F) +\n  geom_errorbarh(aes(xmin = lower, xmax = upper, y = method), show.legend = F) +\n  geom_vline(xintercept =  c(0, 1), lty = 2, col = \"grey\") +\n  facet_wrap(~(x*2/100)) +\n  theme_bw() +\n  labs(title = \"A variety of binomial confidence interval methods for p = 0.01, 0.5 & 0.99\",\n       subtitle = \"Note unusual behaviour near 0.01 and 0.99\")\n\n\n\n\n\ncov &lt;- purrr::map_df(p, ~binom.coverage(.x, n, conf.level = 0.95, method = \"all\"))\n\n\nggplot(cov, aes(colour = factor(p))) +\n  geom_point(aes(coverage, method), show.legend = F) +\n  geom_vline(xintercept =  0.95, lty = 2) +\n  facet_wrap(~(p)) +\n  theme_bw() +\n  labs(title = \"Probability coverage for a variety of binomial confidence interval methods\",\n       subtitle = \"Reference line at 0.95 coverage\")\n\n\n\n\nA good discussion is contained in:\nWallis, Sean A. (2013). “Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods” (PDF). Journal of Quantitative Linguistics. 20 (3): 178–208. doi:10.1080/09296174.2013.799918. S2CID 16741749.\nhttps://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dean Marchiori",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     CV\n  \n\n  \n  \n\n\nDean Marchiori is an applied statistician and specialist consultant in statistical modelling, applied mathematics and data science. He is the Director and Principal Data Scientist at Wave Data Labs and co-chair of the Statistical Society of Australia’s section for statistical computing and graphics. Dean is also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his BSc in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA)."
+  },
+  {
     "objectID": "index.html#some-of-my-work",
     "href": "index.html#some-of-my-work",
     "title": "Dean Marchiori",
     "section": "Some of my work",
-    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github."
+    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github.\nIf you are interested in hiring me for a project, you can contact me here or head over to wavedatalabs.com.au"
   },
   {
     "objectID": "index.html#licence-and-accreditation",
@@ -600,103 +698,5 @@
     "title": "Dean Marchiori",
     "section": "Licence and Accreditation",
     "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)\n\nAzure Certified Data Science Associate - Microsoft"
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html",
-    "href": "posts/2023-09-17-geolocating/index.html",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "",
-    "text": "A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.\nIs this real? Where is it? Could I geolocate it using just OSINT1 techniques?… Yeah of course.\nI have a loose theory that no matter who or where you are, there is probably sufficient data for a sufficiently motivated person to find you."
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html#footnotes",
-    "href": "posts/2023-09-17-geolocating/index.html#footnotes",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nOpen Source Intelligence↩︎\nhttps://x.com/historyinmemes/status/1671673688683413504?s=20↩︎"
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html#the-challenge",
-    "href": "posts/2023-09-17-geolocating/index.html#the-challenge",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "The Challenge",
-    "text": "The Challenge\nI saw this pop up on Twitter2 and other tabloid sites a while ago and thought it would be fun to try and geolocate it from the Twitter post alone.\n\n\nA family in Australia has remained defiant in selling their nearly 5-acre property in the last few years as developers have been forced to build around them. Most recently, they declined a whopping $50 million offer for their home. Slap bang in the middle of a new-build… pic.twitter.com/pULUqpe1em\n\n— Historic Vids (@historyinmemes) June 22, 2023\n\n\nThe main clue we get is:\n\nAbout 40 minutes from Sydney’s central core, the property offers panoramic views of the Blue Mountains.\n\n(Actually the tweet and some articles do mention the suburb, but let’s ignore that so we don’t spoil the fun)"
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html#the-method",
-    "href": "posts/2023-09-17-geolocating/index.html#the-method",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "The Method",
-    "text": "The Method\n\nIf the property is 40 minutes from Sydney and has views of the Blue Mountains, its likely to be somewhere West of the city.\n\n\n\nWe can use the {osrm} package in R to construct drive time isochrones. This leverages the Open Source Routing Machine, based on Open Street Map data to calculate polygons that represent a given drive time from a set of coordinates. If we set this as 35-45 min drive time from the center of Sydney, we should get a ‘ring’ around Sydney containing the property location.\n\n\n\n\n\n\n\n\n\nBy looking at the final frame we can see some distinguishing features in the image:\n\n\nThere is a roundabout nearby\n\nThere is a ‘Secondary Road’ (not a primary or trunk road, but more significant than roads found in villages etc)\nThere are several ‘dead-end’ roads. Defined as cul-de-sacs that are not turning-circle roundabouts, but have no other exit point.\n\n\nWe can now construct a query to the OpenStreetMap Overpass API which stores features about the metadata of the street network. Let’s look for roundabouts on secondary roads within 500m of a no-exit road.\n[out:json];\n\n(  \nway[junction=roundabout][highway=secondary]\n   ({{bbox}});\n  ) -&gt; .roundabout;\n\n(\nnode[noexit=yes]\n ({{bbox}});\n) -&gt; .culdesac;\n\n(\n way.roundabout(around.culdesac:500);\n);\n\nout body;\n&gt;;\nout skel qt;\n\nThe above query was run over all of Sydney, and exported as a geojson file, which I then intersected with our drive-time ring above.\n\n\n\n\n\n\n\n\n\n\nThis creates a shortlist of 101 candidate roundabouts. We now need to manually inspect each one to match it to the tweet. As these are unsorted, the average search time to find our roundabout of interest will be \\(n/2\\) which means I have have to manually check 50 images on average. To streamline this, I wrote a function to loop through all the candidate roundabouts, and automatically export a satellite image at roughly the level of zoom that would help me identify the right frame.\n\nVideo"
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html#found-it",
-    "href": "posts/2023-09-17-geolocating/index.html#found-it",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "Found it!",
-    "text": "Found it!\nAnd found it. Don’t think I need to share the exact address, not that it’s a secret or anything."
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html",
-    "href": "talks/SSA-tutorial/index.html",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "",
-    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html#abstract",
-    "href": "talks/SSA-tutorial/index.html#abstract",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "",
-    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html#links",
-    "href": "talks/SSA-tutorial/index.html#links",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "Links",
-    "text": "Links\nEvent\nSlides"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html",
-    "href": "posts/2024-01-04-randomshares/index.html",
-    "title": "Is the share market just random noise?",
-    "section": "",
-    "text": "Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.\nIt’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.\nI had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.\nHaving formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity1).\nIt got me thinking, was this all just random noise. Was this all just a giant illusion based on psychology, sales targets and the need to fill column inches?\nI recently completed Michael Kemp’s excellent book The Ulysses Contract: How to never worry about the share market again.2\nKemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.\nAuthor and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.3. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening to us?"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#the-test",
-    "href": "posts/2024-01-04-randomshares/index.html#the-test",
-    "title": "Is the share market just random noise?",
-    "section": "The Test",
-    "text": "The Test\nI have simulated 1000 values of a random walk (AR(1)) model and placed this next to 1000 recent observations of a randomly selected Australian stock’s daily closing price.\nCan you tell which is which?"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#the-test-1",
-    "href": "posts/2024-01-04-randomshares/index.html#the-test-1",
-    "title": "Geo",
-    "section": "The test",
-    "text": "The test\n\nI will simulate 1000 values of a random walk (AR(1)) model, and place this next to 1000 observations of a random Australian stock’s daily closing price. Can you tell which is which?"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#footnotes",
-    "href": "posts/2024-01-04-randomshares/index.html#footnotes",
-    "title": "Is the share market just random noise?",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Self-similarity↩︎\nhttps://www.goodreads.com/en/book/show/88826560↩︎\nhttps://www.goodreads.com/book/show/38315.Fooled_by_Randomness↩︎\nhttps://otexts.com/fpp3/stationarity.html#random-walk-model↩︎\nhttps://en.wikipedia.org/wiki/Random_walk_hypothesis↩︎"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#a-random-market",
-    "href": "posts/2024-01-04-randomshares/index.html#a-random-market",
-    "title": "Is the share market just random noise?",
-    "section": "A random market?",
-    "text": "A random market?\nIt got me thinking, could the average punter tell the difference between the stock market and random noise?\nTo test this, I simulated a type of data called a ‘random walk’. A random walk is a type of mathematical, time-series model. It describes a process of sequential observations (say, daily share prices). Each day’s share price is simulated by taking yesterday’s price and just adding randomly generated ‘noise’. It doesn’t try to emulate the shape or style of share market. It’s really dumb. It just takes the price one day and either adds or subtracts a small random amount (of normally distributed noise).\nThe funny thing about this model is it often contains4:\n\nlong periods of apparent trends up or down\nsudden and unpredictable changes in direction.\n\nSound like the share market anyone??\nThis can be written as:\n\\[\ny_t = y_{t-1} + e_t\n\\] Really, this is just a special case of a class of time-series models called ARIMA models. In particular it is an Autoregressive model, that is, a model that is formed from linear combination of previous values.\n\\[\ny_t = c + \\phi_1 y_{t-1} + \\phi_2 y_{t-2} + ... + \\phi_p y_{t-p} + e_t\n\\] Where we set just one term \\(\\phi_1 = 1\\), \\(c = 0\\) and specify \\(e_t \\sim N(0, s)\\)"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
-    "href": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
-    "title": "Is the share market just random noise?",
-    "section": "So are the markets actually random?",
-    "text": "So are the markets actually random?\nI don’t really know. In the short term, it does look random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.\nThere is even a formal theory in finance called the Random Walk hypothesis5 in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - unpredictable.\nRandomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.\nRather, we can think of stock prices being modelled well by a random walk process. So what you can do about a process that is modelled well by a random walk?\nYou can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit."
   }
 ]
