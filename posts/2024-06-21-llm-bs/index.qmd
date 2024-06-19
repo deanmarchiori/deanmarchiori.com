@@ -1,0 +1,62 @@
+---
+title: "Is ChatGPT is a bullshit machine?"  
+subtitle: "And what you should do about it"
+author: "Dean Marchiori"
+date: "2024-06-19"
+categories: [AI]
+image: "featured.jpg"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+A recent paper published in 'Ethics and Information Technology' titled *ChatGPT is bullshit* [^1] is fast becoming one of my favorite papers. Not least because it uses the word bullshit 165 times.
+
+![](featured.jpg)
+
+The hype surrounding the use of Large Language Models (LLM's) such as ChatGPT, Bard, Llama, Claude etc has been inescapable lately.
+
+I have become increasingly concerned with the general willingness to accept that these systems are generating knowledge, truth and reason.
+
+Here is the key message:
+
+1) They are bullshit machines.[^2]
+2) They have no regard or intention to convey truth.
+3) They are programmed to sound plausible.
+4) There are loads of interesting use-cases when deployed properly but;
+5) You (the human) need to take responsiblity for its use and outputs.
+
+ChatGPT-like models are more kindly described as [stochastic parrots](https://en.wikipedia.org/wiki/Stochastic_parrot)[^3].  As the authors of the above paper put it "This means that their primary goal, insofar as they have one, is to produce human-like text. They do so by estimating the likelihood that a particular word will appear next, given the text that has come before."
+
+They are not searching for truth, they are not concerned with the truthyness of their statements. They just
+want to give a plausible looking response. Without any regard for if it's right.
+
+We often hear about these models 'hallucinating' as if its an occassional abberation from its otherwise
+sensical answers. But this is wrong. It's a poor metaphor that attempts to anthropomorphize the technology. It's something
+that I've always hated about recent AI technology. Its need to be 'human-like'.
+
+> "The problem here isn’t that large language models hallucinate, lie, or misrepresent the world in some way. It’s that they are not designed to represent the world at all; instead, they are designed to convey convincing lines of text."
+
+The reason so many are fooled by the randomness is that humans are, on average more likely to be right than wrong. So
+a model driven emulation will often be correct. These applications also act as 'agent-like' systems when in fact they don't have
+agency or cognitive reasoning - but they are designed to be interacted with like they do.
+
+So should you use this type of AI? Sure, but consider where it's appropriate.
+
+The benefits in generative and creative applications are impressive and exciting. Applications
+in pattern recognition, and information retrieval are exciting new ways to think
+about our relationship with computers.
+
+To do nothing and be a luddite would be a mistake. We need more advanced use of algorithmic
+and model based decisions, but they need to be applied and built in consultation with experts.
+
+To surrender your analytical and cognitive reasoning to AI doesn't make you look hip and smart, it just puts the stochastic parrot on your shoulder.
+
+The key here is to understand the fundamentals and take ownership and accountability for the outputs it produces. 
+
+[^1]: Hicks, M.T., Humphries, J. & Slater, J. ChatGPT is bullshit. Ethics Inf Technol 26, 38 (2024). https://doi.org/10.1007/s10676-024-09775-5
+[^2]: Frankfurt, H. (2005). On Bullshit, Princeton.
+[^3]: Bender, Emily M.; Gebru, Timnit; McMillan-Major, Angelina; Shmitchell, Shmargaret (2021-03-01). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜". Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. FAccT '21. New York, NY, USA: Association for Computing Machinery. pp. 610–623. doi:10.1145/3442188.3445922.

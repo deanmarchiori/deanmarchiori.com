@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -107,12 +115,37 @@ ga('send', {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Dean Marchiori" href="index.xml"><meta property="og:title" content="Dean Marchiori - Blog">
-<meta property="og:image" content="https://www.deanmarchiori.com/posts/2024-01-04-randomshares/featured.png">
-<meta property="og:site-name" content="Dean Marchiori">
-<meta property="og:image:height" content="416">
-<meta property="og:image:width" content="855">
+<link rel="alternate" type="application/rss+xml" title="Dean Marchiori" href="index.xml" data-external="1"><meta property="og:title" content="Dean Marchiori - Blog">
+<meta property="og:image" content="https://www.deanmarchiori.com/posts/2024-06-21-llm-bs/featured.jpg">
+<meta property="og:site_name" content="Dean Marchiori">
 <meta name="twitter:title" content="Dean Marchiori - Blog">
 <meta name="twitter:image" content="https://www.deanmarchiori.com/posts/img/profile.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -121,10 +154,10 @@ ga('send', {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dean Marchiori</span>
     </a>
@@ -136,34 +169,35 @@ ga('send', {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../consulting/index.html" rel="" target="">
- <span class="menu-text">Consulting</span></a>
+    <a class="nav-link" href="../consulting/index.html"> 
+<span class="menu-text">Consulting</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html" rel="" target="">
- <span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../talks/index.html"> 
+<span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../posts/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact/index.html" rel="" target="">
- <span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="../contact/index.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../posts/index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../posts/index.xml"> <i class="bi bi-rss" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -180,7 +214,6 @@ ga('send', {
       </ul>
     </div>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -205,7 +238,7 @@ ga('send', {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Azure">Azure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Markets">Markets <span class="quarto-category-count">(1)</span></div><div class="category" data-category="OSM">OSM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(12)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="azure">azure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="docker">docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="shiny">shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="statistics">statistics <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Azure">Azure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Markets">Markets <span class="quarto-category-count">(1)</span></div><div class="category" data-category="OSM">OSM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(12)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="azure">azure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="docker">docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="shiny">shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="statistics">statistics <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -216,21 +249,55 @@ ga('send', {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R,Markets" data-listing-date-sort="1704286800000" data-listing-file-modified-sort="1704333968568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="0" data-categories="AI" data-listing-date-sort="1718719200000" data-listing-file-modified-sort="1718765761682" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
 <div class="thumbnail">
-<p><a href="../posts/2024-01-04-randomshares/index.html"> <img src="../posts/2024-01-04-randomshares/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024-06-21-llm-bs/index.html" class="no-external"></a></p><a href="../posts/2024-06-21-llm-bs/index.html" class="no-external">
+<p><img src="../posts/2024-06-21-llm-bs/featured.jpg" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024-06-21-llm-bs/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024-01-04-randomshares/index.html">
 <h3 class="no-anchor listing-title">
-Is the share market just random noise?
+<a href="../posts/2024-06-21-llm-bs/index.html" class="no-external">Is ChatGPT is a bullshit machine?</a>
 </h3>
 <div class="listing-subtitle">
-Modelling market prices using a random walk
+<a href="../posts/2024-06-21-llm-bs/index.html" class="no-external">And what you should do about it</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
+AI
+</div>
+</div>
+<div class="listing-description">
+<a href="../posts/2024-06-21-llm-bs/index.html" class="no-external">A recent paper published in ‘Ethics and Information Technology’ titled <em>ChatGPT is bullshit</em> <sup>1</sup> is fast becoming one of my favorite papers. Not least because it uses the word…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/2024-06-21-llm-bs/index.html" class="no-external">
+<div class="listing-date">
+Jun 19, 2024
+</div>
+<div class="listing-author">
+Dean Marchiori
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="R,Markets" data-listing-date-sort="1704286800000" data-listing-file-modified-sort="1718763593213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="920">
+<div class="thumbnail">
+<p><a href="../posts/2024-01-04-randomshares/index.html" class="no-external"></a></p><a href="../posts/2024-01-04-randomshares/index.html" class="no-external">
+<p><img src="../posts/2024-01-04-randomshares/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024-01-04-randomshares/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2024-01-04-randomshares/index.html" class="no-external">Is the share market just random noise?</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/2024-01-04-randomshares/index.html" class="no-external">Modelling market prices using a random walk</a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -239,14 +306,12 @@ R
 Markets
 </div>
 </div>
-<a href="../posts/2024-01-04-randomshares/index.html">
 <div class="listing-description">
-Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform.…
+<a href="../posts/2024-01-04-randomshares/index.html" class="no-external">Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024-01-04-randomshares/index.html">
+<a href="../posts/2024-01-04-randomshares/index.html" class="no-external">
 <div class="listing-date">
 Jan 4, 2024
 </div>
@@ -256,19 +321,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="R,OSM" data-listing-date-sort="1694872800000" data-listing-file-modified-sort="1704228473703" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="2" data-categories="R,OSM" data-listing-date-sort="1694872800000" data-listing-file-modified-sort="1718763593209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="747">
 <div class="thumbnail">
-<p><a href="../posts/2023-09-17-geolocating/index.html"> <img src="../posts/2023-09-17-geolocating/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-09-17-geolocating/index.html" class="no-external"></a></p><a href="../posts/2023-09-17-geolocating/index.html" class="no-external">
+<p><img src="../posts/2023-09-17-geolocating/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-09-17-geolocating/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-09-17-geolocating/index.html">
 <h3 class="no-anchor listing-title">
-Geolocating Sydney’s weirdest property
+<a href="../posts/2023-09-17-geolocating/index.html" class="no-external">Geolocating Sydney’s weirdest property</a>
 </h3>
 <div class="listing-subtitle">
-Using Open Street Map and R to geolocate an image
+<a href="../posts/2023-09-17-geolocating/index.html" class="no-external">Using Open Street Map and R to geolocate an image</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -277,14 +342,12 @@ R
 OSM
 </div>
 </div>
-<a href="../posts/2023-09-17-geolocating/index.html">
 <div class="listing-description">
-A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.
+<a href="../posts/2023-09-17-geolocating/index.html" class="no-external">A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-09-17-geolocating/index.html">
+<a href="../posts/2023-09-17-geolocating/index.html" class="no-external">
 <div class="listing-date">
 Sep 17, 2023
 </div>
@@ -294,19 +357,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,Azure" data-listing-date-sort="1685628000000" data-listing-file-modified-sort="1704228473643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="3" data-categories="R,Azure" data-listing-date-sort="1685628000000" data-listing-file-modified-sort="1718763593157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1907">
 <div class="thumbnail">
-<p><a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html"> <img src="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external"></a></p><a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external">
+<p><img src="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html">
 <h3 class="no-anchor listing-title">
-Man vs Machine Learning
+<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external">Man vs Machine Learning</a>
 </h3>
 <div class="listing-subtitle">
-I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.
+<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external">I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -315,14 +378,12 @@ R
 Azure
 </div>
 </div>
-<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html">
 <div class="listing-description">
-Over the past few years I have been doing more and more work in Microsoft Azure and the Azure Machine Learning Studio. One feature of the Azure ML studio is an automated machine…<em></em>
+<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external">Over the past few years I have been doing more and more work in Microsoft Azure and the Azure Machine Learning Studio. One feature of the Azure ML studio is an automated…<em></em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html">
+<a href="../posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html" class="no-external">
 <div class="listing-date">
 Jun 2, 2023
 </div>
@@ -332,19 +393,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R,azure" data-listing-date-sort="1679749200000" data-listing-file-modified-sort="1704228473643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="4" data-categories="R,azure" data-listing-date-sort="1679749200000" data-listing-file-modified-sort="1718763593153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="456">
 <div class="thumbnail">
-<p><a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html"> <img src="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external"></a></p><a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external">
+<p><img src="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html">
 <h3 class="no-anchor listing-title">
-Deploy Your Own R Data Science Lab in the Cloud
+<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external">Deploy Your Own R Data Science Lab in the Cloud</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -353,14 +414,12 @@ R
 azure
 </div>
 </div>
-<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html">
 <div class="listing-description">
-In a previous post I linked to a project that makes it easy to deploy and extend an existing Rocker Project Docker image to quickly set…
+<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external">In a previous post I linked to a project that makes it easy to deploy and extend an existing Rocker Project Docker image to quickly set up a fully featured RStudio Server…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html">
+<a href="../posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html" class="no-external">
 <div class="listing-date">
 Mar 26, 2023
 </div>
@@ -370,19 +429,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="R,docker" data-listing-date-sort="1678798800000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="5" data-categories="R,docker" data-listing-date-sort="1678798800000" data-listing-file-modified-sort="1718763593153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
 <div class="thumbnail">
-<p><a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html"> <img src="../posts/2023-03-17-building-your-own-r-data-science-lab/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external"></a></p><a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external">
+<p><img src="../posts/2023-03-17-building-your-own-r-data-science-lab/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html">
 <h3 class="no-anchor listing-title">
-Building your own R Data Science Lab in the browser
+<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external">Building your own R Data Science Lab in the browser</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -391,14 +450,12 @@ R
 docker
 </div>
 </div>
-<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html">
 <div class="listing-description">
-Most R users probably just run RStudio Desktop from Posit on their local computers. This involves manually installing R, RStudio and all other packages.
+<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external">Most R users probably just run RStudio Desktop from Posit on their local computers. This involves manually installing R, RStudio and all other packages.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html">
+<a href="../posts/2023-03-17-building-your-own-r-data-science-lab/index.html" class="no-external">
 <div class="listing-date">
 Mar 15, 2023
 </div>
@@ -408,19 +465,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="R,statistics" data-listing-date-sort="1678626000000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="6" data-categories="R,statistics" data-listing-date-sort="1678626000000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
 <div class="thumbnail">
-<p><a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html"> <img src="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external"></a></p><a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external">
+<p><img src="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html">
 <h3 class="no-anchor listing-title">
-Beware of Boundaries in Binominal Proportion Confidence Intervals
+<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external">Beware of Boundaries in Binominal Proportion Confidence Intervals</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -429,14 +486,12 @@ R
 statistics
 </div>
 </div>
-<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html">
 <div class="listing-description">
-Binomia…
+<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external">Binomial proportion confidence intervals are often employed when attempting to perform tests for significance, or sample size calculations around sample measurements…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html">
+<a href="../posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html" class="no-external">
 <div class="listing-date">
 Mar 13, 2023
 </div>
@@ -446,19 +501,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="R,statistics" data-listing-date-sort="1676811600000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="7" data-categories="R,statistics" data-listing-date-sort="1676811600000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="770">
 <div class="thumbnail">
-<p><a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html"> <img src="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external"></a></p><a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external">
+<p><img src="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html">
 <h3 class="no-anchor listing-title">
-When should you be using the Hypergeometric distribution in practice?
+<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external">When should you be using the Hypergeometric distribution in practice?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -467,14 +522,12 @@ R
 statistics
 </div>
 </div>
-<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html">
 <div class="listing-description">
-We have a manufacturing process in the day job that is subject to sample auditing.
+<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external">We have a manufacturing process in the day job that is subject to sample auditing.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html">
+<a href="../posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html" class="no-external">
 <div class="listing-date">
 Feb 20, 2023
 </div>
@@ -484,19 +537,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="R,statistics" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="8" data-categories="R,statistics" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1303">
 <div class="thumbnail">
-<p><a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html"> <img src="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external"></a></p><a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external">
+<p><img src="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html">
 <h3 class="no-anchor listing-title">
-Prediction Intervals for Linear Mixed Effects Models
+<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external">Prediction Intervals for Linear Mixed Effects Models</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -505,14 +558,12 @@ R
 statistics
 </div>
 </div>
-<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html">
 <div class="listing-description">
-A recent project with repeated measures data involved fitting a random intercept term, and eventually making predictions for new groups not in the training sample.…
+<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external">A recent project with repeated measures data involved fitting a random intercept term, and eventually making predictions for new groups not in the training sample.…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html">
+<a href="../posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html" class="no-external">
 <div class="listing-date">
 Feb 6, 2023
 </div>
@@ -522,19 +573,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="R,statistics" data-listing-date-sort="1664287200000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="9" data-categories="R,statistics" data-listing-date-sort="1664287200000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1108">
 <div class="thumbnail">
-<p><a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html"> <img src="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external"></a></p><a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external">
+<p><img src="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html">
 <h3 class="no-anchor listing-title">
-Optimal Stopping Problems
+<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external">Optimal Stopping Problems</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -543,14 +594,12 @@ R
 statistics
 </div>
 </div>
-<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html">
 <div class="listing-description">
-The August 2022 edition of Significance Magazine posts a challenge:
+<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external">The August 2022 edition of Significance Magazine posts a challenge:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html">
+<a href="../posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html" class="no-external">
 <div class="listing-date">
 Sep 28, 2022
 </div>
@@ -560,32 +609,30 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="statistics" data-listing-date-sort="1663941600000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="10" data-categories="statistics" data-listing-date-sort="1663941600000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
 <div class="thumbnail">
-<p><a href="../posts/2022-09-25-three-stick-statistics/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external"></a></p><a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022-09-25-three-stick-statistics/index.html">
 <h3 class="no-anchor listing-title">
-Three Stick Statistics
+<a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external">Three Stick Statistics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('statistics'); return false;">
 statistics
 </div>
 </div>
-<a href="../posts/2022-09-25-three-stick-statistics/index.html">
 <div class="listing-description">
-When I was a teenager I was very popular among my peers, which is why I spent every second Saturday playing in a…<em></em><strong></strong>
+<a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external">When I was a teenager I was very popular among my peers, which is why I spent every second Saturday playing in a retiree’s social golf club. For each event we would travel…<em></em><strong></strong></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022-09-25-three-stick-statistics/index.html">
+<a href="../posts/2022-09-25-three-stick-statistics/index.html" class="no-external">
 <div class="listing-date">
 Sep 24, 2022
 </div>
@@ -595,19 +642,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="R,shiny" data-listing-date-sort="1643806800000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="11" data-categories="R,shiny" data-listing-date-sort="1643806800000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
 <div class="thumbnail">
-<p><a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html"> <img src="../posts/2022-02-03-what-was-that-bluey-episode/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external"></a></p><a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external">
+<p><img src="../posts/2022-02-03-what-was-that-bluey-episode/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html">
 <h3 class="no-anchor listing-title">
-What was that Bluey Episode?
+<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external">What was that Bluey Episode?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -616,14 +663,12 @@ R
 shiny
 </div>
 </div>
-<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html">
 <div class="listing-description">
-Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?
+<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external">Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html">
+<a href="../posts/2022-02-03-what-was-that-bluey-episode/index.html" class="no-external">
 <div class="listing-date">
 Feb 3, 2022
 </div>
@@ -633,19 +678,19 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="R,analysis" data-listing-date-sort="1642338000000" data-listing-file-modified-sort="1704228473639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="12" data-categories="R,analysis" data-listing-date-sort="1642338000000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="405">
 <div class="thumbnail">
-<p><a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html"> <img src="../posts/2022-01-17-running-shiny-in-a-docker-container/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external"></a></p><a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external">
+<p><img src="../posts/2022-01-17-running-shiny-in-a-docker-container/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html">
 <h3 class="no-anchor listing-title">
-Running Shiny in a Docker container
+<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external">Running Shiny in a Docker container</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -654,14 +699,12 @@ R
 analysis
 </div>
 </div>
-<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html">
 <div class="listing-description">
-Basic minimal example for running shiny in Docker. It is assumed you have Docker installed.
+<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external">Basic minimal example for running shiny in Docker. It is assumed you have Docker installed.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html">
+<a href="../posts/2022-01-17-running-shiny-in-a-docker-container/index.html" class="no-external">
 <div class="listing-date">
 Jan 17, 2022
 </div>
@@ -671,32 +714,30 @@ Dean Marchiori
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="R" data-listing-date-sort="1610802000000" data-listing-file-modified-sort="1704228473635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="13" data-categories="R" data-listing-date-sort="1610802000000" data-listing-file-modified-sort="1718763593149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 <div class="thumbnail">
-<p><a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html"> <img src="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/featured.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external"></a></p><a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external">
+<p><img src="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html">
 <h3 class="no-anchor listing-title">
-Mapping NSW Fire Incidents in R
+<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external">Mapping NSW Fire Incidents in R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html">
 <div class="listing-description">
-This feed contains a list of current incidents from the…
+<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external">This feed contains a list of current incidents from the NSW RFS, and includes location data and Major Fire Update summary information where available. Click through from the…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html">
+<a href="../posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html" class="no-external">
 <div class="listing-date">
 Jan 17, 2021
 </div>
@@ -790,10 +831,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -803,8 +843,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -817,6 +866,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -860,6 +1028,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -885,6 +1054,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -947,7 +1142,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2024, Dean Marchiori</div>   
+    <div class="nav-footer-left">
+<p>Copyright 2024, Dean Marchiori</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -956,6 +1153,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

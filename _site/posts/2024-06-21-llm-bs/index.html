@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-02-09">
+<meta name="author" content="Dean Marchiori">
+<meta name="dcterms.date" content="2024-06-19">
 
-<title>Dean Marchiori - Keeping Up with Data - Podcast S2E1</title>
+<title>Dean Marchiori - Is ChatGPT is a bullshit machine?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,17 +85,13 @@ ga('send', {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Dean Marchiori - Keeping Up with Data - Podcast S2E1">
-<meta property="og:description" content="Data Science and Statistical Consulting">
-<meta property="og:image" content="https://www.deanmarchiori.com/talks/keeping-up-with-data/featured.png">
+<meta property="og:title" content="Dean Marchiori - Is ChatGPT is a bullshit machine?">
+<meta property="og:description" content="And what you should do about it">
+<meta property="og:image" content="https://www.deanmarchiori.com/posts/2024-06-21-llm-bs/featured.jpg">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="189">
-<meta property="og:image:width" content="244">
-<meta name="twitter:title" content="Dean Marchiori - Keeping Up with Data - Podcast S2E1">
-<meta name="twitter:description" content="Data Science and Statistical Consulting">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/talks/keeping-up-with-data/featured.png">
-<meta name="twitter:image-height" content="189">
-<meta name="twitter:image-width" content="244">
+<meta name="twitter:title" content="Dean Marchiori - Is ChatGPT is a bullshit machine?">
+<meta name="twitter:description" content="And what you should do about it">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2024-06-21-llm-bs/featured.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -168,18 +165,28 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Keeping Up with Data - Podcast S2E1</h1>
-                      </div>
+      <h1 class="title">Is ChatGPT is a bullshit machine?</h1>
+            <p class="subtitle lead">And what you should do about it</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">AI</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dean Marchiori </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 9, 2022</p>
+        <p class="date">June 19, 2024</p>
       </div>
     </div>
     
@@ -198,20 +205,42 @@ ga('send', {
 
 
 
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes.</p>
-<p><img src="featured.png" class="img-fluid"></p>
-</section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<p><a href="https://keeping-up-with-data.castos.com/episodes/push-ego-to-the-side-with-dean-marchiori">URL</a><br>
-<a href="https://www.youtube.com/watch?v=QC6yLHkG3u8">Video</a></p>
+<p>A recent paper published in ‘Ethics and Information Technology’ titled <em>ChatGPT is bullshit</em> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is fast becoming one of my favorite papers. Not least because it uses the word bullshit 165 times.</p>
+<p><img src="featured.jpg" class="img-fluid"></p>
+<p>The hype surrounding the use of Large Language Models (LLM’s) such as ChatGPT, Bard, Llama, Claude etc has been inescapable lately.</p>
+<p>I have become increasingly concerned with the general willingness to accept that these systems are generating knowledge, truth and reason.</p>
+<p>Here is the key message:</p>
+<ol type="1">
+<li>They are bullshit machines.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li>They have no regard or intention to convey truth.</li>
+<li>They are programmed to sound plausible.</li>
+<li>There are loads of interesting use-cases when deployed properly but;</li>
+<li>You (the human) need to take responsiblity for its use and outputs.</li>
+</ol>
+<p>ChatGPT-like models are more kindly described as <a href="https://en.wikipedia.org/wiki/Stochastic_parrot">stochastic parrots</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. As the authors of the above paper put it “This means that their primary goal, insofar as they have one, is to produce human-like text. They do so by estimating the likelihood that a particular word will appear next, given the text that has come before.”</p>
+<p>They are not searching for truth, they are not concerned with the truthyness of their statements. They just want to give a plausible looking response. Without any regard for if it’s right.</p>
+<p>We often hear about these models ‘hallucinating’ as if its an occassional abberation from its otherwise sensical answers. But this is wrong. It’s a poor metaphor that attempts to anthropomorphize the technology. It’s something that I’ve always hated about recent AI technology. Its need to be ‘human-like’.</p>
+<blockquote class="blockquote">
+<p>“The problem here isn’t that large language models hallucinate, lie, or misrepresent the world in some way. It’s that they are not designed to represent the world at all; instead, they are designed to convey convincing lines of text.”</p>
+</blockquote>
+<p>The reason so many are fooled by the randomness is that humans are, on average more likely to be right than wrong. So a model driven emulation will often be correct. These applications also act as ‘agent-like’ systems when in fact they don’t have agency or cognitive reasoning - but they are designed to be interacted with like they do.</p>
+<p>So should you use this type of AI? Sure, but consider where it’s appropriate.</p>
+<p>The benefits in generative and creative applications are impressive and exciting. Applications in pattern recognition, and information retrieval are exciting new ways to think about our relationship with computers.</p>
+<p>To do nothing and be a luddite would be a mistake. We need more advanced use of algorithmic and model based decisions, but they need to be applied and built in consultation with experts.</p>
+<p>To surrender your analytical and cognitive reasoning to AI doesn’t make you look hip and smart, it just puts the stochastic parrot on your shoulder.</p>
+<p>The key here is to understand the fundamentals and take ownership and accountability for the outputs it produces.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Hicks, M.T., Humphries, J. &amp; Slater, J. ChatGPT is bullshit. Ethics Inf Technol 26, 38 (2024). https://doi.org/10.1007/s10676-024-09775-5<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Frankfurt, H. (2005). On Bullshit, Princeton.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Bender, Emily M.; Gebru, Timnit; McMillan-Major, Angelina; Shmitchell, Shmargaret (2021-03-01). “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜”. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. FAccT ’21. New York, NY, USA: Association for Computing Machinery. pp.&nbsp;610–623. doi:10.1145/3442188.3445922.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
