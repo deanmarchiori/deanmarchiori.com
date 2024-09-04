@@ -1,0 +1,76 @@
+---
+title: "Deploying Enterprise Scale AI & Machine Learning Infrastucture"  
+subtitle: "5 things you need to know before using Azure ML Studio"
+author: "Dean Marchiori"
+date: "2023-09-11"
+categories: [analysis, statistics]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---
+
+Are you about to scale up your data analytics team to do more
+AI/ML work? Here are 5 things you need to know up front to make your life easier.   
+
+These are tips focused on enterprise-level organisations wanting to implement Microsoft's [Azure
+Machine Learning studio](https://azure.microsoft.com/en-au/products/machine-learning). But I'm sure the content translates well to other settings.  
+
+
+![](featured.png) 
+
+
+
+## 1) People - Process - Platform (pick any three)
+
+Effective analytics and machine learning requires coordination of **People, Process & Platform**. But do you need all three?
+
+Yes. But you don't need all three to get started.  
+
+Most Data Scientists will not care about and will not identify as owning MLOps. They want to lead 
+experimentation and innovation, not building production-grade ML pipelines. You will either have to:
+
+a) Find an internal champion to lead this and train others.
+b) Hire an ML engineer if you have enough work to keep them busy (A recent ML Engineer job ad I saw was around $650k, so bear that in mind).  
+c) Work with a specialist partner / consultant to fill this gap and support your teams doing what they are good at.  
+
+Converting experimental analytics POCs into robust MLOps-style pipelines is not trivial. It takes real, behind the scenes work which is kind of thankless. But sometimes you need to eat your vegetables and do this. Ensuring you have a well crafted process for governing how, when and why MLOps should exist will help secure the time, funding and social
+capital you need.   
+
+
+## 2) Don't overlook security  
+
+Want to know where you are going to face challenges and delays implementing an AI/Ml platform?   
+
+Wonder no more: Network Security. 
+
+Azure ML Studio (and any ML platform) will require serious planning around network architecture and
+security, and for good reason. It's not as scary as it sounds, but it does require expertise. You need to have strong representation on your project from a decision maker and a 'doer' in network security. If these people aren't inside the tent with you, your project will grind to a halt. 
+ 
+## 3) Think about dev work, not just MLOps
+
+If we are being honest, not many organisations are ready for scalable, reproducible, high performance ML deployments. But almost all orgs are building toward this in the next 5 years. So what's most useful in the here and now?
+
+a) Easy to access online notebooks with various kernels
+b) Click of a button scalable compute, without fussing about with the infra layer
+c) AutoML tools to find performance ceilings and explore the solution space of new problems
+
+Want to get your data scientist on board? Tell them they wont have to run jobs on their laptops overnight anymore. 
+
+
+## 4) It's Python heavy (sorry R users)
+
+There a lot to complain about if you are an R user. Azure ML studio is decidedly a Python oriented tool. While admittedly, most high-level AI development work is in Python, in reality a lot of so called "ML" projects are classical statistical models anyway. There are nice tools within R ecosystem for [putting R in prod](https://putrinprod.com/). However if you work in an enterprise setting, you may need to deploy your models on the chosen enterprise analytics platform. This is not ideal for R users, but hopefully in a future post I can show you how to have the best of both worlds.
+
+
+## 5) Its not an ETL environment
+
+Like any tool its only good for what it's good for. When we think of true end-to-end machine learning projects there are steps in that process that are better fit in other tools. A common suspect here is the data import and processing. It's nice to coordinate ML deployments with your data engineering teams to ensure you are using the right tools for the right jobs.   
+
+## Want to learn more?  
+
+If you are wanting to take the next steps in setting up people, process and platforms for high performance machine learning, [get in touch for a chat.](https://www.wavedatalabs.com.au/contact/)  
+

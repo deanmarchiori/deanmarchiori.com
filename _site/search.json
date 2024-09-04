@@ -1,108 +1,24 @@
 [
   {
-    "objectID": "talks/smarter_data_people/index.html",
-    "href": "talks/smarter_data_people/index.html",
-    "title": "Smarter Data People",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dean Marchiori",
     "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     CV\n  \n\n  \n  \n\n\nDean Marchiori is an applied mathematician and specialist in statistical analysis, data science and R programming. He is the Director and Principal Statistician at Wave Data Labs and co-chair of the Statistical Society of Australia’s section for statistical computing and visualisation. Previously Dean was also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA)."
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#abstract",
-    "href": "talks/smarter_data_people/index.html#abstract",
-    "title": "Smarter Data People",
-    "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "objectID": "index.html#some-of-my-work",
+    "href": "index.html#some-of-my-work",
+    "title": "Dean Marchiori",
+    "section": "Some of my work",
+    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github.\nIf you are interested in hiring me for a project, you can contact me here or head over to wavedatalabs.com.au"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#links",
-    "href": "talks/smarter_data_people/index.html#links",
-    "title": "Smarter Data People",
-    "section": "Links",
-    "text": "Links\nURL"
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html",
-    "href": "talks/WOMBAT_2019/index.html",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "",
-    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html#abstract",
-    "href": "talks/WOMBAT_2019/index.html#abstract",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "",
-    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html#links",
-    "href": "talks/WOMBAT_2019/index.html#links",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "Links",
-    "text": "Links\nSlides"
-  },
-  {
-    "objectID": "talks/keeping-up-with-data/index.html",
-    "href": "talks/keeping-up-with-data/index.html",
-    "title": "Keeping Up with Data - Podcast S2E1",
-    "section": "",
-    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
-  },
-  {
-    "objectID": "talks/keeping-up-with-data/index.html#abstract",
-    "href": "talks/keeping-up-with-data/index.html#abstract",
-    "title": "Keeping Up with Data - Podcast S2E1",
-    "section": "",
-    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
-  },
-  {
-    "objectID": "talks/keeping-up-with-data/index.html#links",
-    "href": "talks/keeping-up-with-data/index.html#links",
-    "title": "Keeping Up with Data - Podcast S2E1",
-    "section": "Links",
-    "text": "Links\nURL\nVideo"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html",
-    "href": "talks/smart-r-academics/index.html",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "",
-    "text": "R for Research - Essential Tools for Academics"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html#abstract",
-    "href": "talks/smart-r-academics/index.html#abstract",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "",
-    "text": "R for Research - Essential Tools for Academics"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html#links",
-    "href": "talks/smart-r-academics/index.html#links",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "Links",
-    "text": "Links\nSlides"
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html",
-    "href": "talks/smart-outlier/index.html",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "",
-    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html#abstract",
-    "href": "talks/smart-outlier/index.html#abstract",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "",
-    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html#links",
-    "href": "talks/smart-outlier/index.html#links",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "Links",
-    "text": "Links\nRecorded Video"
+    "objectID": "index.html#licence-and-accreditation",
+    "href": "index.html#licence-and-accreditation",
+    "title": "Dean Marchiori",
+    "section": "Licence and Accreditation",
+    "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)\n\nAzure Certified Data Science Associate - Microsoft"
   },
   {
     "objectID": "talks/SSA-tutorial/index.html",
@@ -147,44 +63,23 @@
     "text": "Links\nVideo\nslides"
   },
   {
-    "objectID": "talks/siligong2022/index.html",
-    "href": "talks/siligong2022/index.html",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "objectID": "talks/WOMBAT_2019/index.html",
+    "href": "talks/WOMBAT_2019/index.html",
+    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
     "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
   },
   {
-    "objectID": "talks/siligong2022/index.html#abstract",
-    "href": "talks/siligong2022/index.html#abstract",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "objectID": "talks/WOMBAT_2019/index.html#abstract",
+    "href": "talks/WOMBAT_2019/index.html#abstract",
+    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
     "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
   },
   {
-    "objectID": "talks/siligong2022/index.html#links",
-    "href": "talks/siligong2022/index.html#links",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
-    "section": "Links",
-    "text": "Links\nGithub\nSlides"
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html",
-    "href": "talks/SSA_early_career/index.html",
-    "title": "Statistics Early Career Talk",
-    "section": "",
-    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html#abstract",
-    "href": "talks/SSA_early_career/index.html#abstract",
-    "title": "Statistics Early Career Talk",
-    "section": "",
-    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html#links",
-    "href": "talks/SSA_early_career/index.html#links",
-    "title": "Statistics Early Career Talk",
+    "objectID": "talks/WOMBAT_2019/index.html#links",
+    "href": "talks/WOMBAT_2019/index.html#links",
+    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
     "section": "Links",
     "text": "Links\nSlides"
   },
@@ -196,67 +91,32 @@
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\n01 Dec 2023\n\n\nDeploying your model code into production with Microsoft Azure\n\n\nStatistical Society of Australia - Tutorial\n\n\n\n\n24 Nov 2022\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\nSiligong.Data\n\n\n\n\n09 Feb 2022\n\n\nKeeping Up with Data - Podcast S2E1\n\n\nPodcast Episode\n\n\n\n\n01 Dec 2021\n\n\nStatistics Early Career Talk\n\n\nSSA NSW - Early Career and Student Statisticians Event 2021\n\n\n\n\n21 Jan 2021\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\nrstudio::global 2021\n\n\n\n\n23 Mar 2020\n\n\nSmarter Data People\n\n\nPodcast Episode\n\n\n\n\n29 Nov 2019\n\n\nPearls and pitfalls of time series analysis using Google Analytics data\n\n\nMonash University Business Analytics Team- WOMBAT 2019 Workshop\n\n\n\n\n21 May 2019\n\n\nR for Research - Essential Tools for Academics\n\n\nUniversity of Wollongong - SMART Infrastructure Facility\n\n\n\n\n16 Oct 2018\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\nUniversity of Wollongong SMART Infrastructure Facility\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "consulting/data-viz/index.html",
-    "href": "consulting/data-viz/index.html",
-    "title": "Data Visualisations",
+    "objectID": "talks/smarter_data_people/index.html",
+    "href": "talks/smarter_data_people/index.html",
+    "title": "Smarter Data People",
     "section": "",
-    "text": "These data visualizations are all scripted and made 100% in R.\nFor the full collection go to the Github Repo"
+    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
   },
   {
-    "objectID": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
-    "href": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
-    "title": "Data Visualisations",
-    "section": "Entry for Pacific DataViz Competition",
-    "text": "Entry for Pacific DataViz Competition"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Trees of San Francisco - Tidy Tuesday Project",
-    "text": "Trees of San Francisco - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Simpsons Guest Stars - Tidy Tuesday Project",
-    "text": "Simpsons Guest Stars - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
-    "href": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
-    "title": "Data Visualisations",
-    "section": "Town Map Made From Open Street Map (OSM) Data",
-    "text": "Town Map Made From Open Street Map (OSM) Data"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Australian Meterorite Strikes - Tidy Tuesday Project",
-    "text": "Australian Meterorite Strikes - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "consulting/fire/index.html",
-    "href": "consulting/fire/index.html",
-    "title": "An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions",
+    "objectID": "talks/smarter_data_people/index.html#abstract",
+    "href": "talks/smarter_data_people/index.html#abstract",
+    "title": "Smarter Data People",
     "section": "",
-    "text": "Electrical infrastructure is one of the major causes of bushfire in Australia alongside arson and lightning strikes. The two main causes of electrical-infrastructure-initiated fires are asset failure and powerline vegetation interactions. In this paper, we focus on powerline–vegetation interactions that are caused by vegetation falling onto or blowing onto electrical infrastructure. Currently, there is very limited understanding of both the spatio-temporal variability of these events and their causative factors. Bridging this knowledge gap provides an opportunity for electricity utility companies to optimally allocate vegetation management resources and to understand the risk profile presented by vegetation fall-in initiated fires, thereby improving both operational planning and strategic resource allocation. To bridge this knowledge gap, we developed a statistical rare-event modelling and simulation framework based on Endeavour Energy’s fire start and incident records from the last 10 years. The modelling framework consists of nested, rare-event-corrected, conditional probability models for vegetation events and consequent ignition events that provide an overall model for vegetation-initiated ignitions. Model performance was tested on an out-of-time test set to determine the predictive utility of the models. Predictive performance was reasonable with test set AUC values of 0.79 and 0.66 for the vegetation event and ignition event models, respectively. The modelling indicates that wind speed and vegetation features are strongly associated with vegetation events, and that Forest Fire Danger Index (FFDI) and soil type are strongly associated with ignition events. The framework can be used by energy utilities to optimize resource allocation and prepare future networks for climate change.\nLink: https://www.mdpi.com/2571-6255/6/2/61"
+    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
   },
   {
-    "objectID": "consulting/bluey/index.html",
-    "href": "consulting/bluey/index.html",
-    "title": "What was thay Bluey Episode?",
-    "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?\nProblem solved.\nThis website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.\nShiny App\nSlides\nGithub"
+    "objectID": "talks/smarter_data_people/index.html#links",
+    "href": "talks/smarter_data_people/index.html#links",
+    "title": "Smarter Data People",
+    "section": "Links",
+    "text": "Links\nURL"
   },
   {
     "objectID": "consulting/index.html",
     "href": "consulting/index.html",
     "title": "Data Science & Statistical Consulting",
     "section": "",
-    "text": "I am open to discussing short or long term consulting and contract opportunities in a range of fields. If you are interesting in hiring me get in touch here."
+    "text": "I am open to discussing short or long term consulting projects through my company Wave Data Labs. If you are interesting in hiring me get in touch here."
   },
   {
     "objectID": "consulting/index.html#some-of-my-work",
@@ -266,39 +126,11 @@
     "text": "Some of my work"
   },
   {
-    "objectID": "contact/index.html",
-    "href": "contact/index.html",
-    "title": "Contact Me",
+    "objectID": "consulting/bluey/index.html",
+    "href": "consulting/bluey/index.html",
+    "title": "What was thay Bluey Episode?",
     "section": "",
-    "text": "Want to get in touch? Drop me an email or book in a chat.\ndean@wavedatalabs.com.au\nBook a meeting"
-  },
-  {
-    "objectID": "contact/index.html#location",
-    "href": "contact/index.html#location",
-    "title": "Contact Me",
-    "section": "Location",
-    "text": "Location\n Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500 Australia"
-  },
-  {
-    "objectID": "contact/index.html#other-platforms",
-    "href": "contact/index.html#other-platforms",
-    "title": "Contact Me",
-    "section": "Other platforms",
-    "text": "Other platforms\n LinkedIn \n Github \n Mastodon"
-  },
-  {
-    "objectID": "posts/2022-09-25-three-stick-statistics/index.html",
-    "href": "posts/2022-09-25-three-stick-statistics/index.html",
-    "title": "Three Stick Statistics",
-    "section": "",
-    "text": "When I was a teenager I was very popular among my peers, which is why I spent every second Saturday playing in a retiree’s social golf club. For each event we would travel via air-conditioned coach to a local public golf course and play some sort of themed game. The most exciting event was the three stick event. This game requires players to pick just three golf clubs out of their bag (plus a putter) to play their entire round (you can take up to 14 clubs on a normal round).\nSo which three clubs do you pick?\nThis was easy for me as I could only reliably hit two clubs: the five iron and the seven iron. I usually included a driver so as not be mocked by the septuagenarians at the par-5 tees.\nI also have an embarrassingly crap collection of golf clubs as many have been sent to an early retirement in water features.\nHowever, many friends who now play golf have a bewildering selection of exotic clubs from hybrid driving irons to 60-degree lob-wedges.\nIt seems like in there is always some new technology or method to master in data science broadly. This is interesting, but also exhausting and fills me with existential dread that I am becoming irrelevant.\nIt got me thinking, if you had to play statistics (or data science) for the rest of your career with just three algorithms/models, what would they be?"
-  },
-  {
-    "objectID": "posts/2022-09-25-three-stick-statistics/index.html#my-three-sticks",
-    "href": "posts/2022-09-25-three-stick-statistics/index.html#my-three-sticks",
-    "title": "Three Stick Statistics",
-    "section": "My three sticks:",
-    "text": "My three sticks:\n\nRandom Forest: Uncontroversial ensemble method that can quickly get a performance ceiling with minimal fuss. It lacks some interpretability, but I’ll keep it in my bag for when I want to squeeze as much AUC as I can in a prediction setting.\nGeneralised Additive Model (GAM): You could argue this is quite broad, but that’s okay. I’ve had good luck with GAMs as they provide a solid statistical approach that I am comfortable with, along with the flexibility of using smooths for non-linear terms that seems to be a key feature in the problems I have to solve. If I had to only pick one club this would probably be it.\nk-medoids clustering: Clustering methods are a great third club to have in your bag. They solve a different problem to the modelling tasks above and provide a good hedge for those unsupervised tasks that come along fairly regularly. While everyone knows k-means, I enjoy the increased interpretation of k-medoids as the cluster centers are always one of the input data points. It also allows for more generalised distance methods (such as Gower’s distance) which I have found useful for mixed data types.\n\nWe can include lm() as the default putter you get for free.\nWhich three clubs would you pick in your bag?"
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?\nProblem solved.\nThis website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.\nShiny App\nSlides\nGithub"
   },
   {
     "objectID": "posts/2021-01-17-mapping-nsw-current-incidents-in-r/index.html",
@@ -322,270 +154,32 @@
     "text": "Code\nLoad packages\n\nlibrary(sf)\nlibrary(mapview)\nlibrary(tidyverse)\n\nPull incidents\n\nurl &lt;- \"http://www.rfs.nsw.gov.au/feeds/majorIncidents.json\"\nfires &lt;- st_read(url)\n\nReading layer `majorIncidents' from data source \n  `http://www.rfs.nsw.gov.au/feeds/majorIncidents.json' using driver `GeoJSON'\nSimple feature collection with 22 features and 7 fields\nGeometry type: GEOMETRY\nDimension:     XY\nBounding box:  xmin: 141.9267 ymin: -37.06285 xmax: 153.0005 ymax: -29.11298\nGeodetic CRS:  WGS 84\n\n\nOptional step to get points only\n\n# points only\nfire_pt &lt;- fires %&gt;% \n  st_cast(\"POINT\") \n\nOptional Step to get Polygons only. Note the hack to aply a zero distance buffer.\n\n#' Polygons only\nfire_poly &lt;- fires %&gt;% \n  st_buffer(dist = 0) %&gt;% \n  st_union(by_feature = TRUE)\n\nMapping data interactively\n\nmapview(fire_poly, layer.name = \"RFS Current Incident Polygons\", zcol = \"category\") +\n  mapview(fire_pt, layer.name = \"RFS Current Incident Locations\", zcol = \"category\")\n\n\n\n\nscreenshot of leafet interactive map of fire incidents"
   },
   {
-    "objectID": "posts/2023-09-17-geolocating/index.html",
-    "href": "posts/2023-09-17-geolocating/index.html",
-    "title": "Geolocating Sydney’s weirdest property",
+    "objectID": "posts/2023-07-12-three-questions/index.html",
+    "href": "posts/2023-07-12-three-questions/index.html",
+    "title": "Three Questions to Ask Your Data Scientist",
     "section": "",
-    "text": "A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.\nIs this real? Where is it? Could I geolocate it using just OSINT1 techniques?… Yeah of course.\nI have a loose theory that no matter who or where you are, there is probably sufficient data for a sufficiently motivated person to find you."
+    "text": "If you have hired a data scientist or run a team of data people, you may not be an expert yourself (that’s why you hired an expert, right?). So how do you know you are receiving a quality predictive model and not some BS that was thrown carelessly at a black-box machine learning model.\nThe consequences of poorly built statistical models are not trivial. In 2015, Amazon realized its ‘AI recruiting tool’ didn’t like women1. In the US, facial recognition models used by police were found to have biases that more commonly misidentified underrepresented communities.2\nSo what can you do about it?"
   },
   {
-    "objectID": "posts/2023-09-17-geolocating/index.html#the-challenge",
-    "href": "posts/2023-09-17-geolocating/index.html#the-challenge",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "The Challenge",
-    "text": "The Challenge\nI saw this pop up on Twitter2 and other tabloid sites a while ago and thought it would be fun to try and geolocate it from the Twitter post alone.\n\n\nA family in Australia has remained defiant in selling their nearly 5-acre property in the last few years as developers have been forced to build around them. Most recently, they declined a whopping $50 million offer for their home. Slap bang in the middle of a new-build… pic.twitter.com/pULUqpe1em\n\n— Historic Vids (@historyinmemes) June 22, 2023\n\n\nThe main clue we get is:\n\nAbout 40 minutes from Sydney’s central core, the property offers panoramic views of the Blue Mountains.\n\n(Actually the tweet and some articles do mention the suburb, but let’s ignore that so we don’t spoil the fun)"
+    "objectID": "posts/2023-07-12-three-questions/index.html#three-questions-you-can-ask-your-data-scientist",
+    "href": "posts/2023-07-12-three-questions/index.html#three-questions-you-can-ask-your-data-scientist",
+    "title": "Three Questions to Ask Your Data Scientist",
+    "section": "Three questions you can ask your data scientist",
+    "text": "Three questions you can ask your data scientist\n\n1. How could the model be unfair?\n\nWhat training data was used, and how was this collected?\nCould certain sub-populations be over or under-represented in this data?\nHave customer details been anonymised?\n\nAre sensitive features used in the model training (race, religion, gender, political preferences).\n\nAlgorithmic unfairness and biases are already huge issues which are only getting worse. Further reading on this topic is covered by Cathy O’Neil’s excellent book Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy3.\n\n\n2. What assumptions does the model make, and how have these been tested?\nAll statistical models have assumptions that are made in order for the math to work out. Models are intended to be simplified representations of reality, deliberately so statisticians can exploit properties like the Central Limit Theorem to help make inferences. For example the assumptions behind a simple linear regression include:\n\nThe response variable can be expressed as a linear combination of the predictors.\n\nThe variance of the error terms is homoscedastic (has constant variance).\n\nThe errors in the response are independent.\n\nIn many cases these can be checked using standard diagnostics tests and plots. However in most cases it requires more in depth domain knowledge and context.\n\n\n3. How accurate is the model?\nEver been told a model is 99% accurate? I’d be very worried if you had. Be skeptical of very high performance.\nxkcd.com highlight this well with their ‘Is it Christmas?’ predictive model.\n\n\nOn what data has the model been tested? Is it a completely independent test set? Was there any leakage from the training data? Was the feature engineering done before or after the training/test split (hint: it usually needs to be after).\nIf your model is a binary classification model, you should know what the ‘null model’ is and whether it outperforms this.\nAccuracy is just one measure and is the proportion of correct classifications (both positive and negative class) but you may have different tolerance for misclassifications of each class. For example, you might be predicting the presence of a disease from a test. If you make a false positive, will the risk of side-effects or cost outweigh the risk the making a false negative and having the patient get sicker or die? It’s tricky.\nIn addition to accuracy ask for the following metrics, along with an explanation of what they mean.\n\nSensitivity / Recall\nSpecificity\nPrecision / Positive Predictive Value\nNegative Predictive Value\nROC AUC\n\nAsk for a confusion matrix. All of the above measures (except ROC) can be calculated from the confusion matrix. Despite its name, it will be instantly clear where the model is working well versus not.\nAsk what cut-off or threshold was used to make the predicted classifications. Many classification models return conditional class probabilities, which need to be converted into labels such as (Yes/No, Cancer/Not Cancer, Churn/Not Churn). A default value is to use a 0.5 probability for the crisp cutoff, but it’s subjective and depends on the desired trade off in sensitivity / specificity as well as other complicated factors like training class imbalance."
   },
   {
-    "objectID": "posts/2023-09-17-geolocating/index.html#the-method",
-    "href": "posts/2023-09-17-geolocating/index.html#the-method",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "The Method",
-    "text": "The Method\n\nIf the property is 40 minutes from Sydney and has views of the Blue Mountains, its likely to be somewhere West of the city.\n\n\n\nWe can use the {osrm} package in R to construct drive time isochrones. This leverages the Open Source Routing Machine, based on Open Street Map data to calculate polygons that represent a given drive time from a set of coordinates. If we set this as 35-45 min drive time from the center of Sydney, we should get a ‘ring’ around Sydney containing the property location.\n\n\n\n\n\n\n\n\nBy looking at the final frame we can see some distinguishing features in the image:\n\n\nThere is a roundabout nearby\n\nThere is a ‘Secondary Road’ (not a primary or trunk road, but more significant than roads found in villages etc)\nThere are several ‘dead-end’ roads. Defined as cul-de-sacs that are not turning-circle roundabouts, but have no other exit point.\n\n\nWe can now construct a query to the OpenStreetMap Overpass API which stores features about the metadata of the street network. Let’s look for roundabouts on secondary roads within 500m of a no-exit road.\n[out:json];\n\n(  \nway[junction=roundabout][highway=secondary]\n   ({{bbox}});\n  ) -&gt; .roundabout;\n\n(\nnode[noexit=yes]\n ({{bbox}});\n) -&gt; .culdesac;\n\n(\n way.roundabout(around.culdesac:500);\n);\n\nout body;\n&gt;;\nout skel qt;\n\nThe above query was run over all of Sydney, and exported as a geojson file, which I then intersected with our drive-time ring above.\n\n\n\n\n\n\n\n\n\nThis creates a shortlist of 101 candidate roundabouts. We now need to manually inspect each one to match it to the tweet. As these are unsorted, the average search time to find our roundabout of interest will be \\(n/2\\) which means I have have to manually check 50 images on average. To streamline this, I wrote a function to loop through all the candidate roundabouts, and automatically export a satellite image at roughly the level of zoom that would help me identify the right frame.\n\nVideo"
+    "objectID": "posts/2023-07-12-three-questions/index.html#what-now",
+    "href": "posts/2023-07-12-three-questions/index.html#what-now",
+    "title": "Three Questions to Ask Your Data Scientist",
+    "section": "What now?",
+    "text": "What now?\nIf you don’t get good answers to these questions, you should probably give me a call.\nHave I missed something? Let me know!"
   },
   {
-    "objectID": "posts/2023-09-17-geolocating/index.html#found-it",
-    "href": "posts/2023-09-17-geolocating/index.html#found-it",
-    "title": "Geolocating Sydney’s weirdest property",
-    "section": "Found it!",
-    "text": "Found it!\nAnd found it. Don’t think I need to share the exact address, not that it’s a secret or anything."
-  },
-  {
-    "objectID": "posts/2023-09-17-geolocating/index.html#footnotes",
-    "href": "posts/2023-09-17-geolocating/index.html#footnotes",
-    "title": "Geolocating Sydney’s weirdest property",
+    "objectID": "posts/2023-07-12-three-questions/index.html#footnotes",
+    "href": "posts/2023-07-12-three-questions/index.html#footnotes",
+    "title": "Three Questions to Ask Your Data Scientist",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nOpen Source Intelligence↩︎\nhttps://x.com/historyinmemes/status/1671673688683413504?s=20↩︎"
-  },
-  {
-    "objectID": "posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
-    "href": "posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
-    "title": "Building your own R Data Science Lab in the browser",
-    "section": "",
-    "text": "Most R users probably just run RStudio Desktop from Posit on their local computers. This involves manually installing R, RStudio and all other packages.\nHowever it is often the case that users are operating in a restricted computing environment, such as in a corporate or government setting. Alternatively you may wish to create a custom development environment to test or replicate some other specific setup. This is a good case to move away from locally managed software to containerization, such as Docker.\nI have set up a Github repository that sets up a local data science development environment in the browser.\nIt builds a docker container including:\n\nUbuntu 20.04 LTS\nR version 4.2\nRStudio Server 2022.02.3+492\nAll tidyverse packages and devtools\ntex & publishing-related package\n\nThe image builds on the rocker/verse image from Rocker Project.\nSome other enhanced configuration options are included in the Dockerfile, such as preloading you RStudio preferences to get the same look and feel you have locally, the option to install other CRAN packages & mounting local volumes to persist your work locally.\nGo here for Step by step instructions:\nhttps://github.com/deanmarchiori/ds-env-setup"
-  },
-  {
-    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html",
-    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html",
-    "title": "When should you be using the Hypergeometric distribution in practice?",
-    "section": "",
-    "text": "We have a manufacturing process in the day job that is subject to sample auditing.\nThere are \\(N\\) widgets produced and we need to audit \\(n\\) of them. Some sort of rejection threshold is needed on that sample to decide if the whole batch of widgets has met a specified quality level.\nTypically, a binomial distribution would be appropriate for measuring the probability of \\(k\\) successes (in this case defects found) in \\(n\\) independent trials with probability \\(p\\).\n\\[\nPr(X=k) = {n \\choose k} p^k(1-p)^{n-k}\n\\]\nThe word independent is doing a lot of work here as it implies that we are sampling with replacement in order to maintain a fixed probability parameter \\(p\\).\nIn cases where you are taking draws from a population without replacement (such as when you do destructive inspections on a widget) the underlying population changes with each draw and so does the probability \\(p\\).\nIn this case, modelling the process using a hypergeometric distribution may be a more appropriate choice.\n\\[\nPr(X=k) = \\frac{{K \\choose k}{N-K \\choose n-k}}{{N \\choose n}}\n\\]\nIt similarly describes the probability of \\(k\\) successes in \\(n\\) draws without replacement. However, instead of specifying a parameter \\(p\\), we provide the population size \\(N\\), which contains \\(K\\) success states in the population."
-  },
-  {
-    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#example",
-    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#example",
-    "title": "When should you be using the Hypergeometric distribution in practice?",
-    "section": "Example",
-    "text": "Example\nLet’s say we have 2000 widgets manufactured and we want to sample 50 (ignore why 50, that is a whole separate question). We have an assumed quality level of 10% defective units (which we define as ‘success’ for complicated reasons).\nQ: Based on a sample of 50 widgets how many defective units would be considered unlikely (95% CI) to occur randomly given our assumed quality level, and therefore result in us rejecting the entire batch?\nWe can compare the binomial probability mass function with the hypergeometric and observe they are essentially the same.\n\nlibrary(tidyverse)\n\n\ntibble(\n       x =  seq.int(0, 50, by = 1),\n       binomial = dbinom(x, size = 50, prob = 0.1),\n       hypergeom_2000 = dhyper(x, m = 200, n = 1800, k = 50),\n       ) |&gt; \n  pivot_longer(cols = -1, names_to = 'distribution', values_to = 'density') |&gt; \n  ggplot(aes(x, density, col = distribution)) +\n  geom_line() +\n  geom_point() +\n  xlim(c(0, 20)) +\n  theme_bw() +\n  labs(x = \"Observed defective units in sample\")\n\n\n\n\n\n\n\n\nHowever, if we had a smaller population of say 100 or 70 widgets, how would this compare?\n\ntibble(\n       x =  seq.int(0, 50, by = 1),\n       binomial = dbinom(x, size = 50, prob = 0.1),\n       hypergeom_2000 = dhyper(x, m = 200, n = 1800, k = 50),\n       hypergeom_100 = dhyper(x, m = 10, n = 90, k = 50),\n       hypergeom_070 = dhyper(x, m = 7, n = 63, k = 50)\n       ) |&gt; \n  pivot_longer(cols = -1, names_to = 'distribution', values_to = 'density') |&gt; \n  ggplot(aes(x, density, col = distribution)) +\n  geom_line() +\n  geom_point() +\n  xlim(c(0, 20)) +\n  theme_bw() +\n  labs(x = \"Observed defective units in sample\")\n\n\n\n\n\n\n\n\nWe can see these curves are markedly different. And indeed the 95% confidence intervals obtained are narrower for the hypergeometric case.\n\nqbinom(p = c(0.025, 0.975), size = 50, prob = 0.1)\n\n[1] 1 9\n\nqhyper(p = c(0.025, 0.975), m = 10, n = 90, k = 50)\n\n[1] 2 8\n\n\nWe can see from a random draw of 1 million samples from each PMF that they both have the same expected values, but the variance is smaller in the hypergeometric case.\n\nX &lt;- rbinom(n = 1e6, size = 50, prob = 0.1)\nY &lt;- rhyper(nn = 1e6, m = 10, n = 90, k = 50)\n\nmean(X)\n\n[1] 5.003297\n\nvar(X)\n\n[1] 4.503315\n\nmean(Y)\n\n[1] 5.000162\n\nvar(Y)\n\n[1] 2.27195"
-  },
-  {
-    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#does-it-matter-which-one-you-use",
-    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#does-it-matter-which-one-you-use",
-    "title": "When should you be using the Hypergeometric distribution in practice?",
-    "section": "Does it matter which one you use?",
-    "text": "Does it matter which one you use?\nAs a consequence of removing samples in each draw we influence the probability of a subsequent success. If our \\(N\\) and \\(K\\) is very large relative to our sample \\(n\\) this wont make much of an impact, but it can be impactful for smaller populations, or relatively larger samples.\nFrom our example above, failing to use a hypergeometric distribution to model this process for smaller populations will result in wider, more conservative acceptance regions which can increase consumer risk in a manufacturing process.\nTypical guidance on when to use each distribution is given in manufacturing standards such as AS 1199.1-2003: Sampling Procedures for Inspection by Attributes and typically involves how you structure your sampling scheme."
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
-    "title": "Running Shiny in a Docker container",
-    "section": "",
-    "text": "Basic minimal example for running shiny in Docker. It is assumed you have Docker installed."
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#dockerfile",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#dockerfile",
-    "title": "Running Shiny in a Docker container",
-    "section": "Dockerfile",
-    "text": "Dockerfile\nThis should be adapted as required.\n# Using rocker/rver::version, update version as appropriate\nFROM rocker/r-ver:3.5.0\n\n# install dependencies\nRUN apt-get update && apt-get install -y \\\n    sudo \\\n    gdebi-core \\\n    pandoc \\\n    pandoc-citeproc \\\n    libcurl4-gnutls-dev \\\n    libcairo2-dev \\\n    libxt-dev \\  \n    libxml2-dev \\  \n    libssl-dev \\  \n    wget\n\n\n# Download and install shiny server\nRUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION -O \"version.txt\" && \\\n    VERSION=$(cat version.txt)  && \\\n    wget --no-verbose \"https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb\" -O ss-latest.deb && \\\n    gdebi -n ss-latest.deb && \\\n    rm -f version.txt ss-latest.deb && \\\n    . /etc/environment && \\\n    R -e \"install.packages(c('shiny', 'rmarkdown'), repos='$MRAN')\" && \\\n    cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/\n\n# Copy configuration files into the Docker image\nCOPY shiny-server.conf  /etc/shiny-server/shiny-server.conf\nCOPY shiny-server.sh /usr/bin/shiny-server.sh\n\n# Copy shiny app to Docker image\nCOPY /myapp /srv/shiny-server/myapp\n\n# Expose desired port\nEXPOSE 80\n\nCMD [\"/usr/bin/shiny-server.sh\"]"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-images",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-images",
-    "title": "Running Shiny in a Docker container",
-    "section": "List Images",
-    "text": "List Images\ndocker images"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-all-containers",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-all-containers",
-    "title": "Running Shiny in a Docker container",
-    "section": "List All Containers",
-    "text": "List All Containers\ndocker ps -a"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#remove-containers",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#remove-containers",
-    "title": "Running Shiny in a Docker container",
-    "section": "Remove Containers",
-    "text": "Remove Containers\nFor individual containers add the container ID\n$ docker rm\nTo remove all exited containers :\n$ docker rm $(docker ps -a -q -f status=exited)"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#system-prune",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#system-prune",
-    "title": "Running Shiny in a Docker container",
-    "section": "System Prune",
-    "text": "System Prune\nRemove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.\ndocker system prune -a"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#save-as-tar-archive",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#save-as-tar-archive",
-    "title": "Running Shiny in a Docker container",
-    "section": "Save as tar-archive",
-    "text": "Save as tar-archive\ndocker save -o ~/myapp.tar myapp"
-  },
-  {
-    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#load-and-run-archive",
-    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#load-and-run-archive",
-    "title": "Running Shiny in a Docker container",
-    "section": "Load and Run Archive",
-    "text": "Load and Run Archive\ndocker load -i myapp.tar\ndocker run myapp"
-  },
-  {
-    "objectID": "posts/2022-02-03-what-was-that-bluey-episode/index.html",
-    "href": "posts/2022-02-03-what-was-that-bluey-episode/index.html",
-    "title": "What was that Bluey Episode?",
-    "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?\nProblem solved.\nThis website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.\nhttps://deanmarchiori.shinyapps.io/blueysearch/"
-  },
-  {
-    "objectID": "posts/2022-02-03-what-was-that-bluey-episode/index.html#development-notes",
-    "href": "posts/2022-02-03-what-was-that-bluey-episode/index.html#development-notes",
-    "title": "What was that Bluey Episode?",
-    "section": "Development notes",
-    "text": "Development notes\nThe website is a Shiny app (deployed to shinyapps.io), which contains all 130 episode titles, descriptions and thumbnails.\nAll of the episode descriptions were tokenized into ‘terms’ using the {tidytext} R package and formed into a Document-Term-Matrix. Rather than use the typical term counts, a binary indicator was used if a term appears in an episode. This was preferred as the user’s text input is unlikely to really mimic the detail of an episode description, which threw the similarity measure out a bit.\nOnce a user inputs text, the Shiny app dynamically forms a new term vector and compares it to the all-episode’s matrix using cosine distance. The episodes are then ranked based on smallest cosine distance and displayed to the users.\nFor the source code visit: https://github.com/deanmarchiori/bluey-search"
-  },
-  {
-    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html",
-    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html",
-    "title": "Optimal Stopping Problems",
-    "section": "",
-    "text": "The August 2022 edition of Significance Magazine posts a challenge:\nThe questions are:\nThis is a well known problem in Optimal Stopping theory. When you look at the first few knights you have no information about how they rank relative to all 100. But by the time you have assessed most of the 100 knights you have information but you have no agency. The knights have all moved on and you either miss out or have to settle for whoever is left.\nThis problem comes up every time I look for a parking spot on a busy day. Do I take the first spot I find a long way from the beach? I could try to get a closer spot but may not find one and could miss out entirely. Most likely the earlier spots are now taken.\nWhen is the optimal time to stop looking and take the leap?\nThe strategy here is:\nWe assume we look at least one knight before stopping our search and assume that if we fail to find a superior knight after our looking period - we miss out! We obviously wont settle for less. (I guess I could force this to accept the last one in line - not a big deal)."
-  },
-  {
-    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#simulation-in-r",
-    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#simulation-in-r",
-    "title": "Optimal Stopping Problems",
-    "section": "Simulation in R",
-    "text": "Simulation in R\nWe can simulate this problem by sampling 100 random knights and assigning them a random ranking of 1-100 (assume 100 is best).\n\nset.seed(111)\nsample(100)\n\n  [1]  78  84  83  47  25  59  69  35  72  26  49  45  74   8 100  96  24  48\n [19]  95   7  21  15   1   9  63  40  85  93  71  52  28  38  88  61  92  30\n [37]   5  53  37   6  36  41  70  42  18  27  29  23  32  89  86  57  16  90\n [55]  39   4  68  55  99  98  79  43  54  97  65  50  94  44  10  91  56  80\n [73]  19  73  33  11  12  67  81  62  76  60  77  34   2  20  13  51  14  64\n [91]  75  87  66  17  22   3  31  46  82  58\n\n\nNext we can look at the cumulative maximum ranking. This will track the score of the best knight seen so far. We also run, say, 10,000 simulations of this problem to analyse.\n\nlibrary(tidyverse)\n\nset.seed(111)\nn &lt;- 100\nsims &lt;- 1e4\n\nknight_sims &lt;- expand_grid(sim = 1:sims) |&gt; \n  mutate(rankings = map(sim, ~sample(1:n))) |&gt; \n  unnest(rankings) |&gt; \n  group_by(sim) |&gt; \n  mutate(stop_after_days = 1:n,\n         max_rank = cummax(rankings))\n\nknight_sims\n\n# A tibble: 1,000,000 × 4\n# Groups:   sim [10,000]\n     sim rankings stop_after_days max_rank\n   &lt;int&gt;    &lt;int&gt;           &lt;int&gt;    &lt;int&gt;\n 1     1       78               1       78\n 2     1       84               2       84\n 3     1       83               3       84\n 4     1       47               4       84\n 5     1       25               5       84\n 6     1       59               6       84\n 7     1       69               7       84\n 8     1       35               8       84\n 9     1       72               9       84\n10     1       26              10       84\n# … with 999,990 more rows\n\n\nWe can write a function that can map over each day and determine what rank knight we would end up with if we stopped searching after x days and committed to the next best knight.\n\noptimal_stop &lt;- function(samp, i) {\n  if (i == 0) {\n    samp[1]\n  }\n  \n  if (i &gt; length(samp) | i &lt; 0) {\n    stop(\"Invalid choice\")\n  }\n  \n  if (any(samp &gt; cummax(samp)[i]) == FALSE) {\n    # if you want to default to the last option\n    #samp[length(samp)]\n    \n    # if you would rather miss out if no superior choice\n    NA\n  } else{\n    idx &lt;- which.max(samp &gt; cummax(samp)[i])\n    samp[idx]\n  }\n}\n\nWe want to know how often we end up with the optimal (top ranked) knight depending on which day we stop looking."
-  },
-  {
-    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#results",
-    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#results",
-    "title": "Optimal Stopping Problems",
-    "section": "Results",
-    "text": "Results\n\nresults &lt;- knight_sims |&gt;  \n  mutate(result = map_int(stop_after_days, ~optimal_stop(rankings, .x))) |&gt; \n  mutate(is_optimal = result == max(rankings, na.rm = TRUE)) |&gt; \n  group_by(stop_after_days) |&gt; \n  summarise(optimal_stops = sum(is_optimal, na.rm = TRUE),\n            n = n(),\n            optimal_stop_pct = optimal_stops / n,\n            var = sqrt(optimal_stop_pct * (1 - optimal_stop_pct) / n))\n\nresults\n\n# A tibble: 100 × 5\n   stop_after_days optimal_stops     n optimal_stop_pct     var\n             &lt;int&gt;         &lt;int&gt; &lt;int&gt;            &lt;dbl&gt;   &lt;dbl&gt;\n 1               1           533 10000           0.0533 0.00225\n 2               2           846 10000           0.0846 0.00278\n 3               3          1116 10000           0.112  0.00315\n 4               4          1352 10000           0.135  0.00342\n 5               5          1572 10000           0.157  0.00364\n 6               6          1771 10000           0.177  0.00382\n 7               7          1941 10000           0.194  0.00396\n 8               8          2098 10000           0.210  0.00407\n 9               9          2225 10000           0.222  0.00416\n10              10          2360 10000           0.236  0.00425\n# … with 90 more rows\n\n\nWe can plot the success proportion of bagging the most optimal knight for each stopping day.\n\nggplot(results, aes(stop_after_days, optimal_stop_pct)) +\n  geom_line() +\n  geom_ribbon(aes(stop_after_days, ymax = optimal_stop_pct + 1.96 * var, \n                  ymin = optimal_stop_pct - 1.96 * var), \n              alpha = 0.22) +\n  theme_bw() +\n  geom_vline(xintercept = 37, lty = 2, col = 'red') +\n  geom_hline(yintercept = 0.368, lty = 2, col = 'blue') +\n  scale_y_continuous(labels = scales::percent) +\n  labs(title = \"What is the probability of picking the best knight?\",\n       subtitle = \"Based on stopping searching at x days and choosing the next best knight\",\n       x = \"Look for this many days\",\n       y = \"Probability of optimal choice\")\n\n\n\n\n\n\n\n\nHere is the number of knights we should observe without picking any\n\nwhich.max(results$optimal_stop_pct)\n\n[1] 37\n\n\nAnd here is the probability of choosing the best knight with this strategy\n\nmax(results$optimal_stop_pct)\n\n[1] 0.3755\n\n\nSo we should let the first 37 knights pass, just like Merlin said. If we do this, we will give ourselves roughly 37% probability of picking the most optimal knight, which is the best we can do."
-  },
-  {
-    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#mathematical-derivation",
-    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#mathematical-derivation",
-    "title": "Optimal Stopping Problems",
-    "section": "Mathematical Derivation",
-    "text": "Mathematical Derivation\nSo why 37 days and 37% probability?\nIf we assume we reject the first \\(r-1\\) knights and then choose the next best knight we get to probability\n\\[\nP(r) = \\sum_{j = r}^{n}P(\\text{jth knight is best and you select it})\n\\]\n\\[\nP(r) = \\sum_{j = r}^{n}(\\frac{1}{n})(\\frac{r-1}{j-1}) = (\\frac{r-1}{n})\\sum_{j=r}^{n}\\frac{1}{j-1}\n\\]\nWe want to know which \\(r\\) maximises the probability for large \\(n\\). As \\(n\\) approaches infinity we can let \\(x\\) be the limit of \\(r/n\\) and use \\(t\\) for \\(j/n\\) and \\(dt\\) for \\(1/n\\) we get the integral\n\\[\nP(x) = x \\int_{x}^{1}(\\frac{1}{t})dt = -x\\log(x)\n\\]\nIf we take the derivative with respect to x and set the equation to zero we can find the value of \\(x\\) which maximises this probability:\n\\[\n\\text{optimal x} = \\frac{1}{e} = 0.3678...\n\\]\nand gives the optimal stopping number (for any large n) of \\(\\frac{n}{e} \\approx 37\\)\n\n1/exp(1)\n\n[1] 0.3678794\n\n\n\n100/exp(1)\n\n[1] 36.78794"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "",
-    "text": "A recent project with repeated measures data involved fitting a random intercept term, and eventually making predictions for new groups not in the training sample. Importantly there was a need for individual predictions rather than population mean level predictions. Now, you obviously cannot include the random effect for a level that is not in your data, so the idea was to make a population level prediction with an adequate prediction interval that reflected the variation from both the fixed and random effects. This is complicated.\nIn the help page for lme4::predict.merMod() is the following note:\nThere are some useful resources out there but it took a while to track down, so this post may serve as a good reference in the future.\nLet’s go through an example using the famous sleepstudy data showing the average reaction time per day (in milliseconds) for subjects in a sleep deprivation study.\nlibrary(lme4)\nlibrary(tidyverse)\n\ndata(\"sleepstudy\")"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-model",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-model",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "Linear Model",
-    "text": "Linear Model\nWe would like to model the relationship between Reaction and Days\n\nggplot(sleepstudy, aes(Days, Reaction)) +\n  geom_point(show.legend = FALSE) +\n  theme_bw()\n\n\n\n\n\n\n\n\nFitting a basic linear model:\n\nfit_lm &lt;- lm(Reaction ~ Days, data = sleepstudy)\n\nsummary(fit_lm)\n\n\nCall:\nlm(formula = Reaction ~ Days, data = sleepstudy)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-110.848  -27.483    1.546   26.142  139.953 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  251.405      6.610  38.033  &lt; 2e-16 ***\nDays          10.467      1.238   8.454 9.89e-15 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 47.71 on 178 degrees of freedom\nMultiple R-squared:  0.2865,    Adjusted R-squared:  0.2825 \nF-statistic: 71.46 on 1 and 178 DF,  p-value: 9.894e-15\n\n\n\nggplot(sleepstudy, aes(Days, Reaction)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw()\n\n\n\n\n\n\n\n\nBut this ignores the fact these data are not independent. We have multiple observation per subject. Some look like a good fit, others not.\n\nggplot(sleepstudy, aes(Days, Reaction, col = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  facet_wrap(~Subject) +\n  theme_bw()"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-mixed-effects-model",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-mixed-effects-model",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "Linear Mixed Effects Model",
-    "text": "Linear Mixed Effects Model\nLet’s add a random intercept term for Subject. For simplicity we will leave out any other random effects.\n\nfit &lt;- lme4::lmer(Reaction ~ Days + (1|Subject), data = sleepstudy)\n\nsummary(fit)\n\nLinear mixed model fit by REML ['lmerMod']\nFormula: Reaction ~ Days + (1 | Subject)\n   Data: sleepstudy\n\nREML criterion at convergence: 1786.5\n\nScaled residuals: \n    Min      1Q  Median      3Q     Max \n-3.2257 -0.5529  0.0109  0.5188  4.2506 \n\nRandom effects:\n Groups   Name        Variance Std.Dev.\n Subject  (Intercept) 1378.2   37.12   \n Residual              960.5   30.99   \nNumber of obs: 180, groups:  Subject, 18\n\nFixed effects:\n            Estimate Std. Error t value\n(Intercept) 251.4051     9.7467   25.79\nDays         10.4673     0.8042   13.02\n\nCorrelation of Fixed Effects:\n     (Intr)\nDays -0.371\n\n\nNew fitted lines can be drawn, showing the adjusted intercept for each subject (original regression line kept for reference).\n\nsleepstudy |&gt; \n  mutate(pred = predict(fit, re.form = NULL)) |&gt; \n  ggplot(aes(Days, Reaction, col = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1], col = \"grey\") +\n  geom_line(aes(Days, pred), show.legend = FALSE) +\n  facet_wrap(~Subject) +\n  theme_bw()"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#bootstrapped-prediction-intervals-observed-data",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#bootstrapped-prediction-intervals-observed-data",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "Bootstrapped Prediction Intervals (observed data)",
-    "text": "Bootstrapped Prediction Intervals (observed data)\nLet’s try and generate prediction intervals using lme4::bootMer() as suggested.\nFirst on the in-sample data.\n\n# predict function for bootstrapping\npredfn &lt;- function(.) {\n  predict(., newdata=new, re.form=NULL)\n}\n\n# summarise output of bootstrapping\nsumBoot &lt;- function(merBoot) {\n  return(\n    data.frame(fit = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.5, na.rm=TRUE))),\n               lwr = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.025, na.rm=TRUE))),\n               upr = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.975, na.rm=TRUE)))\n    )\n  )\n}\n\n# 'new' data\nnew &lt;- sleepstudy\n\nNotes:\n\nIn the predict() function we specify re.form=NULL which identifies which random effects to condition on. Here NULL includes all random effects. Obviously here you can compute individual predictions assuming you feed it with the correct grouping level in your data.\nIn the lme4::bootMer() function we set use.u=TRUE. This conditions on the random effects and only provides uncertainly estimates for the i.i.d. errors resulting from the fixed effects of the model.\n\n\nIf use.u is TRUE and type==“parametric”, only the i.i.d. errors are resampled, with the values of u staying fixed at their estimated values.\n\n\nboot &lt;- lme4::bootMer(fit, predfn, nsim=250, use.u=TRUE, type=\"parametric\")\n\n\nnew |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  ggplot(aes(Days, Reaction, col = Subject, fill = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  facet_wrap(~Subject) +\n  theme_bw()"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#dealing-with-unobserved-data",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#dealing-with-unobserved-data",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "Dealing with unobserved data",
-    "text": "Dealing with unobserved data\nHowever, this gets complicated if we want to make predictions for new subjects.\nWe can no longer condition on the random effects, as the new subject level will not have a fitted random intercept value. Instead we need to effectively make a population level prediction (i.e. set the random effect to zero.). This makes sense as we don’t know what the random effect ought to be for a given, unobserved subject.\nBut we don’t want the prediction interval to just cover the uncertainty in the population level estimate. If we are interested in individual predictions, how can we incorporate the uncertainly of the random effects in the prediction intervals?\nLets generate a new, unobserved subject.\n\nnew_subject &lt;- tibble(\n  Days = 0:9,\n  Subject = factor(\"999\")\n  )\n\nWe provide a new predict function that doesn’t condition on the random effects by using re.form = ~0. This lets us input and obtain predictions for new subjects.\n\npredfn &lt;- function(.) {\n  predict(., newdata=new_subject, re.form=~0, allow.new.levels=TRUE)\n}\n\n\nnew_subject |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nHowever using predict just results in a completely deterministic prediction as shown above.\nAn alternative approach is to use lme4::simulate() which will simulate responses for subjects non-deterministically using the fitted model object.\nBelow we can see a comparison on both approaches.\n\npredfn &lt;- function(.) {\n  predict(., newdata=new_subject, re.form=~0, allow.new.levels=TRUE)\n}\n\nsfun &lt;- function(.) {\n    simulate(., newdata=new_subject, re.form=NULL, allow.new.levels=TRUE)[[1]]\n}\n\n\nnew_subject |&gt; \n  bind_cols(simulated = sfun(fit)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  pivot_longer(cols = c(3, 4), names_to = \"type\", values_to = \"val\") |&gt; \n  ggplot(aes(Days, val, col = type)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nWe can use this simulate() function in our bootstrapping to resample responses from the fitted model (rather than resampling deterministic population predictions).\nThis time we set use.u=FALSE to provide uncertainly estimates from both the model errors and the random effects.\n\nIf use.u is FALSE and type is “parametric”, each simulation generates new values of both the “spherical” random effects uu and the i.i.d. errors , using rnorm() with parameters corresponding to the fitted model x.\n\n\nboot &lt;- lme4::bootMer(fit, sfun, nsim=250, use.u=FALSE, type=\"parametric\", seed = 100)\n\n\nnew_subject |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject, fill = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nSo while we don’t have a conditional mode of the random effect (because its a new subject) we can derive a bootstrapped estimate of the prediction interval by resampling the random effects and model errors on simulated data values."
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#aside",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#aside",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "Aside",
-    "text": "Aside\nFor comparison, here is what the same prediction interval would look like if we just used an unconditional population prediction. While the overall gist is the same, despite also resampling both the random effects and the i.i.d. errors, the interval is narrower as it is resampling just the deterministic population predictions of the model.\n\nboot &lt;- lme4::bootMer(fit, predfn, nsim=250, use.u=FALSE, type=\"parametric\", seed = 100)\n\n\nnew_subject |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject, fill = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  theme_bw() +\n  ylim(c(150, 450))"
-  },
-  {
-    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#references",
-    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#references",
-    "title": "Prediction Intervals for Linear Mixed Effects Models",
-    "section": "References",
-    "text": "References\nMost of the material and code is taken from a variety of sources below. In particular the lme4 github issue. Also, the merTools package has a nice vignette comparing these methods with their own solution.\nhttps://tmalsburg.github.io/predict-vs-simulate.html https://github.com/lme4/lme4/issues/388 https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html http://bbolker.github.io/mixedmodels-misc/glmmFAQ.html#predictions-andor-confidence-or-prediction-intervals-on-predictions"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html",
-    "href": "posts/2024-01-04-randomshares/index.html",
-    "title": "Is the share market just random noise?",
-    "section": "",
-    "text": "Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.\nIt’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.\nI had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.\nHaving formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity1).\nIt got me thinking, was this all just random noise. Was this all just a giant illusion based on psychology, sales targets and the need to fill column inches?\nI recently completed Michael Kemp’s excellent book The Ulysses Contract: How to never worry about the share market again.2\nKemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.\nAuthor and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.3. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening to us?"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#a-random-market",
-    "href": "posts/2024-01-04-randomshares/index.html#a-random-market",
-    "title": "Is the share market just random noise?",
-    "section": "A random market?",
-    "text": "A random market?\nIt got me thinking, could the average punter tell the difference between the stock market and random noise?\nTo test this, I simulated a type of data called a ‘random walk’. A random walk is a type of mathematical, time-series model. It describes a process of sequential observations (say, daily share prices). Each day’s share price is simulated by taking yesterday’s price and just adding randomly generated ‘noise’. It doesn’t try to emulate the shape or style of share market. It’s really dumb. It just takes the price one day and either adds or subtracts a small random amount (of normally distributed noise).\nThe funny thing about this model is it often contains4:\n\nlong periods of apparent trends up or down\nsudden and unpredictable changes in direction.\n\nSound like the share market anyone??\nThis can be written as:\n\\[\ny_t = y_{t-1} + e_t\n\\] Really, this is just a special case of a class of time-series models called ARIMA models. In particular it is an Autoregressive model, that is, a model that is formed from linear combination of previous values.\n\\[\ny_t = c + \\phi_1 y_{t-1} + \\phi_2 y_{t-2} + ... + \\phi_p y_{t-p} + e_t\n\\] Where we set just one term \\(\\phi_1 = 1\\), \\(c = 0\\) and specify \\(e_t \\sim N(0, s)\\)"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#the-test",
-    "href": "posts/2024-01-04-randomshares/index.html#the-test",
-    "title": "Is the share market just random noise?",
-    "section": "The Test",
-    "text": "The Test\nI have simulated 1000 values of a random walk (AR(1)) model and placed this next to 1000 recent observations of a randomly selected Australian stock’s daily closing price.\nCan you tell which is which?"
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
-    "href": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
-    "title": "Is the share market just random noise?",
-    "section": "So are the markets actually random?",
-    "text": "So are the markets actually random?\nI don’t really know. In the short term, it does look random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.\nThere is even a formal theory in finance called the Random Walk hypothesis5 in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - unpredictable.\nRandomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.\nRather, we can think of stock prices being modelled well by a random walk process. So what you can do about a process that is modelled well by a random walk?\nYou can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit."
-  },
-  {
-    "objectID": "posts/2024-01-04-randomshares/index.html#footnotes",
-    "href": "posts/2024-01-04-randomshares/index.html#footnotes",
-    "title": "Is the share market just random noise?",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Self-similarity↩︎\nhttps://www.goodreads.com/en/book/show/88826560↩︎\nhttps://www.goodreads.com/book/show/38315.Fooled_by_Randomness↩︎\nhttps://otexts.com/fpp3/stationarity.html#random-walk-model↩︎\nhttps://en.wikipedia.org/wiki/Random_walk_hypothesis↩︎"
-  },
-  {
-    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
-    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
-    "title": "Deploy Your Own R Data Science Lab in the Cloud",
-    "section": "",
-    "text": "In a previous post I linked to a project that makes it easy to deploy and extend an existing Rocker Project Docker image to quickly set up a fully featured RStudio Server environment locally on your machine.\nHere I’ll cover some options to deploy this environment to the cloud so you can access it anywhere."
-  },
-  {
-    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-1-deploy-to-a-virtual-machine",
-    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-1-deploy-to-a-virtual-machine",
-    "title": "Deploy Your Own R Data Science Lab in the Cloud",
-    "section": "Option 1: Deploy to a Virtual Machine",
-    "text": "Option 1: Deploy to a Virtual Machine\nA common pattern is to create a Virtual Machine (VM) with a cloud service provider (such as AWS, Azure, GCP) and run your code there. I’ll cover an example using Microsoft Azure.\n\nDeploy a VM with an Ubuntu operating system. Go ahead and choose the compute power you need.\n\n\n\nConfigure a custom network rule to allow traffic on port 8787 for RStudio\n\n\n3. Log into your new VM terminal using SSH\n\n\nInstall Docker Engine by following these steps\nClone and Deploy the docker container from Step 2 in my guide."
-  },
-  {
-    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-2-deploy-using-azure-app-service",
-    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-2-deploy-using-azure-app-service",
-    "title": "Deploy Your Own R Data Science Lab in the Cloud",
-    "section": "Option 2: Deploy using Azure App Service",
-    "text": "Option 2: Deploy using Azure App Service\nThe above is fine, but arguably if you are setting up a VM from scratch for development purposes I’m not sure what benefit there is from using a docker container. You may as well just directly install what you want and consider the VM a ‘container’.\nHowever, if you plan to make this available to other users in your organisation, or to adapt this guide for Shiny App development you may be interested in other features such as TLS/SSL security, scale up, advanced networking, continuous integration, continuous deployment, staging/production deployment slots etc. This represents a shift from development sandpit to ‘web app’. For this case, Azure App Service may be a lower hassle option. This is Microsoft’s enterprise grade, web app deployment managed service.\nIn the Virtual Machine model you are setting up compute infrastructure, deploying and running containers directly - then fiddling with the infrastructure layer for everything else. In App Service you deploy your custom docker container (here containing RStudio Server) to Azure Container Registry (kind of like DockerHub). Azure App Services then builds and serves your app from there - without you having to stand up and manage an Infra layer directly.\n\n\nCreate Azure Container Registry (ACR) (or some other Docker repository) using this help guide\nRun and test your container locally\nDeploy your local container to ACR using this help guide\nCreate a new web app in Azure App Services using this help guide\nConfiguration:\n\n\nI didn’t have to fiddle with ports, presumably it reads the exposed ports in the docker file and does this magically.\n\nFor custom environment variables like the RStudio Server password, I had to manually add this in the config section.\n\n\nand it worked just fine:"
+    "text": "Footnotes\n\n\nhttps://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G↩︎\nhttps://www.nytimes.com/2019/07/08/us/detroit-facial-recognition-cameras.html↩︎\nhttps://www.goodreads.com/book/show/28186015-weapons-of-math-destruction↩︎"
   },
   {
     "objectID": "posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/index.html",
@@ -665,39 +259,81 @@
     "text": "Footnotes\n\n\nSource: Australian Energy Market Operator; tsibbledata R package↩︎\nYoung, P. C., Pedregal, D. J., & Tych, W. (1999). Dynamic harmonic regression. Journal of Forecasting, 18, 369–394. https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1099-131X(199911)18:6%3C369::AID-FOR748%3E3.0.CO;2-K↩︎\nHyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2023-06-05.↩︎\nTaylor SJ, Letham B. 2017. Forecasting at scale. PeerJ Preprints 5:e3190v2 https://doi.org/10.7287/peerj.preprints.3190v2↩︎\nFan, S., & Hyndman, R. J. (2012). Short-term load forecasting based on a semi-parametric additive model. IEEE Transactions on Power Systems, 27(1), 134–141. https://ieeexplore.ieee.org/document/5985500↩︎\nHyndman, R. J., & Fan, S. (2010). Density forecasting for long-term peak electricity demand. IEEE Transactions on Power Systems, 25(2), 1142–1153. https://ieeexplore.ieee.org/document/5345698↩︎\nSource: Medicare Australia; tsibbledata R package↩︎\nHyndman, R. J., & Khandakar, Y. (2008). Automatic time series forecasting: The forecast package for R. Journal of Statistical Software, 27(1), 1–22. https://doi.org/10.18637/jss.v027.i03↩︎"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Blog",
+    "objectID": "posts/2022-02-03-what-was-that-bluey-episode/index.html",
+    "href": "posts/2022-02-03-what-was-that-bluey-episode/index.html",
+    "title": "What was that Bluey Episode?",
     "section": "",
-    "text": "Is ChatGPT is a bullshit machine?\n\n\nAnd what you should do about it\n\n\n\nAI\n\n\n\n\n\n\n\n\n\nJun 19, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nIs the share market just random noise?\n\n\nModelling market prices using a random walk\n\n\n\nR\n\n\nMarkets\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nGeolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?\nProblem solved.\nThis website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.\nhttps://deanmarchiori.shinyapps.io/blueysearch/"
   },
   {
-    "objectID": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
-    "href": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
-    "title": "Beware of Boundaries in Binominal Proportion Confidence Intervals",
+    "objectID": "posts/2022-02-03-what-was-that-bluey-episode/index.html#development-notes",
+    "href": "posts/2022-02-03-what-was-that-bluey-episode/index.html#development-notes",
+    "title": "What was that Bluey Episode?",
+    "section": "Development notes",
+    "text": "Development notes\nThe website is a Shiny app (deployed to shinyapps.io), which contains all 130 episode titles, descriptions and thumbnails.\nAll of the episode descriptions were tokenized into ‘terms’ using the {tidytext} R package and formed into a Document-Term-Matrix. Rather than use the typical term counts, a binary indicator was used if a term appears in an episode. This was preferred as the user’s text input is unlikely to really mimic the detail of an episode description, which threw the similarity measure out a bit.\nOnce a user inputs text, the Shiny app dynamically forms a new term vector and compares it to the all-episode’s matrix using cosine distance. The episodes are then ranked based on smallest cosine distance and displayed to the users.\nFor the source code visit: https://github.com/deanmarchiori/bluey-search"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html",
+    "href": "posts/2023-09-17-geolocating/index.html",
+    "title": "Geolocating Sydney’s weirdest property",
     "section": "",
-    "text": "Binomial proportion confidence intervals are often employed when attempting to perform tests for significance, or sample size calculations around sample measurements resulting from a Bernoulli process.\nThe typical choice when calculating binomial proportion confidence intervals is the asymptotic, or normally approximated ‘Wald’ interval where success probability is measured by:\n\\[\n\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\n\\]\nIn many settings, such as marketing analytics or manufacturing processes the sample proportion is close to 0 or 1. Evaluating asymptotic confidence intervals near these boundary conditions will lead to underestimation of the error, and in some cases producing an interval outside \\([0, 1]\\).\nFortunately other methods exist, such as Wilson’s score interval, exact methods and Bayesian approaches. The recommendation here is to examine the probability coverage and explore alternative methods for sample size and CI calculation, especially when the parameter is near the boundary conditions, or in cases of very small n. \n\nlibrary(binom)\nlibrary(tidyverse)\n\nn &lt;- 50\np &lt;- c(0.01, 0.5, 0.99)\n\n\nx &lt;- purrr::map_df(p, .f =  ~binom.confint(x = n * .x, n = n, methods = 'all'))\n\n\nggplot(x, aes(colour = factor(x))) +\n  geom_point(aes(mean, method), show.legend = F) +\n  geom_errorbarh(aes(xmin = lower, xmax = upper, y = method), show.legend = F) +\n  geom_vline(xintercept =  c(0, 1), lty = 2, col = \"grey\") +\n  facet_wrap(~(x*2/100)) +\n  theme_bw() +\n  labs(title = \"A variety of binomial confidence interval methods for p = 0.01, 0.5 & 0.99\",\n       subtitle = \"Note unusual behaviour near 0.01 and 0.99\")\n\n\n\n\n\n\n\n\n\ncov &lt;- purrr::map_df(p, ~binom.coverage(.x, n, conf.level = 0.95, method = \"all\"))\n\n\nggplot(cov, aes(colour = factor(p))) +\n  geom_point(aes(coverage, method), show.legend = F) +\n  geom_vline(xintercept =  0.95, lty = 2) +\n  facet_wrap(~(p)) +\n  theme_bw() +\n  labs(title = \"Probability coverage for a variety of binomial confidence interval methods\",\n       subtitle = \"Reference line at 0.95 coverage\")\n\n\n\n\n\n\n\n\nA good discussion is contained in:\nWallis, Sean A. (2013). “Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods” (PDF). Journal of Quantitative Linguistics. 20 (3): 178–208. doi:10.1080/09296174.2013.799918. S2CID 16741749.\nhttps://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval"
+    "text": "A defiant Aussie family has refused to sell their farm-land property despite the entire neighborhood being converted into a new housing estate.\nIs this real? Where is it? Could I geolocate it using just OSINT1 techniques?… Yeah of course.\nI have a loose theory that no matter who or where you are, there is probably sufficient data for a sufficiently motivated person to find you."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Dean Marchiori",
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "href": "posts/2023-09-17-geolocating/index.html#the-challenge",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Challenge",
+    "text": "The Challenge\nI saw this pop up on Twitter2 and other tabloid sites a while ago and thought it would be fun to try and geolocate it from the Twitter post alone.\n\n\nA family in Australia has remained defiant in selling their nearly 5-acre property in the last few years as developers have been forced to build around them. Most recently, they declined a whopping $50 million offer for their home. Slap bang in the middle of a new-build… pic.twitter.com/pULUqpe1em\n\n— Historic Vids (@historyinmemes) June 22, 2023\n\n\nThe main clue we get is:\n\nAbout 40 minutes from Sydney’s central core, the property offers panoramic views of the Blue Mountains.\n\n(Actually the tweet and some articles do mention the suburb, but let’s ignore that so we don’t spoil the fun)"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#the-method",
+    "href": "posts/2023-09-17-geolocating/index.html#the-method",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "The Method",
+    "text": "The Method\n\nIf the property is 40 minutes from Sydney and has views of the Blue Mountains, its likely to be somewhere West of the city.\n\n\n\nWe can use the {osrm} package in R to construct drive time isochrones. This leverages the Open Source Routing Machine, based on Open Street Map data to calculate polygons that represent a given drive time from a set of coordinates. If we set this as 35-45 min drive time from the center of Sydney, we should get a ‘ring’ around Sydney containing the property location.\n\n\n\n\n\n\n\n\nBy looking at the final frame we can see some distinguishing features in the image:\n\n\nThere is a roundabout nearby\n\nThere is a ‘Secondary Road’ (not a primary or trunk road, but more significant than roads found in villages etc)\nThere are several ‘dead-end’ roads. Defined as cul-de-sacs that are not turning-circle roundabouts, but have no other exit point.\n\n\nWe can now construct a query to the OpenStreetMap Overpass API which stores features about the metadata of the street network. Let’s look for roundabouts on secondary roads within 500m of a no-exit road.\n[out:json];\n\n(  \nway[junction=roundabout][highway=secondary]\n   ({{bbox}});\n  ) -&gt; .roundabout;\n\n(\nnode[noexit=yes]\n ({{bbox}});\n) -&gt; .culdesac;\n\n(\n way.roundabout(around.culdesac:500);\n);\n\nout body;\n&gt;;\nout skel qt;\n\nThe above query was run over all of Sydney, and exported as a geojson file, which I then intersected with our drive-time ring above.\n\n\n\n\n\n\n\n\n\nThis creates a shortlist of 101 candidate roundabouts. We now need to manually inspect each one to match it to the tweet. As these are unsorted, the average search time to find our roundabout of interest will be \\(n/2\\) which means I have have to manually check 50 images on average. To streamline this, I wrote a function to loop through all the candidate roundabouts, and automatically export a satellite image at roughly the level of zoom that would help me identify the right frame.\n\nVideo"
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#found-it",
+    "href": "posts/2023-09-17-geolocating/index.html#found-it",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Found it!",
+    "text": "Found it!\nAnd found it. Don’t think I need to share the exact address, not that it’s a secret or anything."
+  },
+  {
+    "objectID": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "href": "posts/2023-09-17-geolocating/index.html#footnotes",
+    "title": "Geolocating Sydney’s weirdest property",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nOpen Source Intelligence↩︎\nhttps://x.com/historyinmemes/status/1671673688683413504?s=20↩︎"
+  },
+  {
+    "objectID": "posts/2023-05-18-RNG-Testing/index.html",
+    "href": "posts/2023-05-18-RNG-Testing/index.html",
+    "title": "Random Number Generator Testing",
     "section": "",
-    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     CV\n  \n\n  \n  \n\n\nDean Marchiori is an applied statistician and specialist consultant in statistical modelling, applied mathematics and data science. He is the Director and Principal Data Scientist at Wave Data Labs and co-chair of the Statistical Society of Australia’s section for statistical computing and graphics. Dean is also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his BSc in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA)."
+    "text": "We had really interesting discussion with a company recently who needed a random number generator certified.\nRandomness, like time or space, is one of these deep concepts that are super hard to reason about. Despite this, it’s fairly common to see random number generators in practice. A casino will use one in their gaming software to randomise outcomes; A lottery or competition website will use one to pick winners; Scientists use them to run simulations and cryptographic applications are powered by some form of randomness.\nFlash back to the 1980’s where down-on-his-luck unemployed ice cream man Michael Larsen cracked the (non-random) pattern in TV game show Press Your Luck and took them for over $100k. Sadly it didnt end well for Larsen with Ponzi schemes, radio station challenges awry and a break and enter. But it goes to show what can happen if you don’t take randomness seriously."
   },
   {
-    "objectID": "index.html#some-of-my-work",
-    "href": "index.html#some-of-my-work",
-    "title": "Dean Marchiori",
-    "section": "Some of my work",
-    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nIf you want to see how I code, my open source analysis and software projects are hosted on github.\nIf you are interested in hiring me for a project, you can contact me here or head over to wavedatalabs.com.au"
+    "objectID": "posts/2023-05-18-RNG-Testing/index.html#aside-ok-but-what-is-random-and-who-is-ramsey",
+    "href": "posts/2023-05-18-RNG-Testing/index.html#aside-ok-but-what-is-random-and-who-is-ramsey",
+    "title": "Random Number Generator Testing",
+    "section": "(Aside) Ok but what is random? And who is Ramsey?",
+    "text": "(Aside) Ok but what is random? And who is Ramsey?\nRandomness is an actual or apparent lack of pattern, but it’s kind of hard to test and even its very nature is somewhat unclear. In 1903, a British mathematician called Frank Ramsey was born. Ramsey was a militant atheist, but interestingly his brother went on to become Archbishop of Canterbury. He went on to study mathematics and economics, becoming a student of famous economist John Maynard Keynes. Somehow he ended up also translating a German book of logical philosophy into English and joined a secret intellectual society just after the war. A minor discovery of his ended up blossoming into what is known as Ramsey theory, which is a theory in mathematical combinatorics showing that in any sufficiently large system, however disordered, there is always some order. This has had interesting (and conspiratorial) implications for whether there is even such a thing as ‘random’. Oh and by the way, all this happened before he died at age 26 after complications from liver disease likely caused by swimming in a river."
   },
   {
-    "objectID": "index.html#licence-and-accreditation",
-    "href": "index.html#licence-and-accreditation",
-    "title": "Dean Marchiori",
-    "section": "Licence and Accreditation",
-    "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)\n\nAzure Certified Data Science Associate - Microsoft"
+    "objectID": "posts/2023-05-18-RNG-Testing/index.html#types-of-random-number-generators-rngs",
+    "href": "posts/2023-05-18-RNG-Testing/index.html#types-of-random-number-generators-rngs",
+    "title": "Random Number Generator Testing",
+    "section": "Types of Random Number Generators (RNGs)",
+    "text": "Types of Random Number Generators (RNGs)\nGenerally RNG’s can generate True random numbers or Pseudo random numbers. True RNGs generate random bits from natural stochastic sources like background radiation, quantum effects, atmospheric noise etc. Next time you are tempted to toss a coin, perhaps head over to random.org instead for some ‘true’ randomness.\nThere is a fun history lesson for how random.org got started with true RNG’s generated using random static from a cheap $10 radio, laden with a post-it note advising passers by not to fiddle with the knobs.\n\n\n\nEarly true RNG using atmospheric noise from a cheap radio\n\n\nPseudo-random numbers are generated using a ‘seed’ that deterministically produces numbers that look random, but can be entirely reproduced from the initial seed condition. This is often useful (and used by me all the time) when you need a random sample, but you need it to replicated exactly for scientific reproducibility purposes."
+  },
+  {
+    "objectID": "posts/2023-05-18-RNG-Testing/index.html#statistical-tests",
+    "href": "posts/2023-05-18-RNG-Testing/index.html#statistical-tests",
+    "title": "Random Number Generator Testing",
+    "section": "Statistical Tests",
+    "text": "Statistical Tests\nGiven randomness itself is hard to test, there are a number of statistical test suites that perform a battery of diagnostics on a large sample of random numbers in order to test various aspects of randomness. One prominent test suite for cryptographic random bits is developed by NIST which uses 15 different statistical tests.\n\nThe Frequency (Monobit) Test\nFrequency Test within a Block\nThe Runs Test\nTests for the Longest-Run-of-Ones in a Block\nThe Binary Matrix Rank Test\nThe Discrete Fourier Transform (Spectral) Test\nThe Non-overlapping Template Matching Test\nThe Overlapping Template Matching Test\nMaurer’s “Universal Statistical” Test\nThe Linear Complexity Test\nThe Serial Test\nThe Approximate Entropy Test\nThe Cumulative Sums (Cusums) Test\nThe Random Excursions Test\nThe Random Excursions Variant Test\n\nSo, like much of the mathematics behind every day scenarios there is a fascinating history and deep technical and philosophical implications. Given what is on the line for organisations relying on randomness, its useful to engage a specialist to help run and interpret these test suites.\nAnd remember, if you get it wrong, someone unemployed ice-cream man is just waiting to swoop in and take advantage."
   },
   {
     "objectID": "posts/2024-06-21-llm-bs/index.html",
@@ -712,5 +348,544 @@
     "title": "Is ChatGPT is a bullshit machine?",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nHicks, M.T., Humphries, J. & Slater, J. ChatGPT is bullshit. Ethics Inf Technol 26, 38 (2024). https://doi.org/10.1007/s10676-024-09775-5↩︎\nFrankfurt, H. (2005). On Bullshit, Princeton.↩︎\nBender, Emily M.; Gebru, Timnit; McMillan-Major, Angelina; Shmitchell, Shmargaret (2021-03-01). “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜”. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. FAccT ’21. New York, NY, USA: Association for Computing Machinery. pp. 610–623. doi:10.1145/3442188.3445922.↩︎"
+  },
+  {
+    "objectID": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
+    "href": "posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index.html",
+    "title": "Beware of Boundaries in Binominal Proportion Confidence Intervals",
+    "section": "",
+    "text": "Binomial proportion confidence intervals are often employed when attempting to perform tests for significance, or sample size calculations around sample measurements resulting from a Bernoulli process.\nThe typical choice when calculating binomial proportion confidence intervals is the asymptotic, or normally approximated ‘Wald’ interval where success probability is measured by:\n\\[\n\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\n\\]\nIn many settings, such as marketing analytics or manufacturing processes the sample proportion is close to 0 or 1. Evaluating asymptotic confidence intervals near these boundary conditions will lead to underestimation of the error, and in some cases producing an interval outside \\([0, 1]\\).\nFortunately other methods exist, such as Wilson’s score interval, exact methods and Bayesian approaches. The recommendation here is to examine the probability coverage and explore alternative methods for sample size and CI calculation, especially when the parameter is near the boundary conditions, or in cases of very small n. \n\nlibrary(binom)\nlibrary(tidyverse)\n\nn &lt;- 50\np &lt;- c(0.01, 0.5, 0.99)\n\n\nx &lt;- purrr::map_df(p, .f =  ~binom.confint(x = n * .x, n = n, methods = 'all'))\n\n\nggplot(x, aes(colour = factor(x))) +\n  geom_point(aes(mean, method), show.legend = F) +\n  geom_errorbarh(aes(xmin = lower, xmax = upper, y = method), show.legend = F) +\n  geom_vline(xintercept =  c(0, 1), lty = 2, col = \"grey\") +\n  facet_wrap(~(x*2/100)) +\n  theme_bw() +\n  labs(title = \"A variety of binomial confidence interval methods for p = 0.01, 0.5 & 0.99\",\n       subtitle = \"Note unusual behaviour near 0.01 and 0.99\")\n\n\n\n\n\n\n\n\n\ncov &lt;- purrr::map_df(p, ~binom.coverage(.x, n, conf.level = 0.95, method = \"all\"))\n\n\nggplot(cov, aes(colour = factor(p))) +\n  geom_point(aes(coverage, method), show.legend = F) +\n  geom_vline(xintercept =  0.95, lty = 2) +\n  facet_wrap(~(p)) +\n  theme_bw() +\n  labs(title = \"Probability coverage for a variety of binomial confidence interval methods\",\n       subtitle = \"Reference line at 0.95 coverage\")\n\n\n\n\n\n\n\n\nA good discussion is contained in:\nWallis, Sean A. (2013). “Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods” (PDF). Journal of Quantitative Linguistics. 20 (3): 178–208. doi:10.1080/09296174.2013.799918. S2CID 16741749.\nhttps://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval"
+  },
+  {
+    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
+    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html",
+    "title": "Deploy Your Own R Data Science Lab in the Cloud",
+    "section": "",
+    "text": "In a previous post I linked to a project that makes it easy to deploy and extend an existing Rocker Project Docker image to quickly set up a fully featured RStudio Server environment locally on your machine.\nHere I’ll cover some options to deploy this environment to the cloud so you can access it anywhere."
+  },
+  {
+    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-1-deploy-to-a-virtual-machine",
+    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-1-deploy-to-a-virtual-machine",
+    "title": "Deploy Your Own R Data Science Lab in the Cloud",
+    "section": "Option 1: Deploy to a Virtual Machine",
+    "text": "Option 1: Deploy to a Virtual Machine\nA common pattern is to create a Virtual Machine (VM) with a cloud service provider (such as AWS, Azure, GCP) and run your code there. I’ll cover an example using Microsoft Azure.\n\nDeploy a VM with an Ubuntu operating system. Go ahead and choose the compute power you need.\n\n\n\nConfigure a custom network rule to allow traffic on port 8787 for RStudio\n\n\n3. Log into your new VM terminal using SSH\n\n\nInstall Docker Engine by following these steps\nClone and Deploy the docker container from Step 2 in my guide."
+  },
+  {
+    "objectID": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-2-deploy-using-azure-app-service",
+    "href": "posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/index.html#option-2-deploy-using-azure-app-service",
+    "title": "Deploy Your Own R Data Science Lab in the Cloud",
+    "section": "Option 2: Deploy using Azure App Service",
+    "text": "Option 2: Deploy using Azure App Service\nThe above is fine, but arguably if you are setting up a VM from scratch for development purposes I’m not sure what benefit there is from using a docker container. You may as well just directly install what you want and consider the VM a ‘container’.\nHowever, if you plan to make this available to other users in your organisation, or to adapt this guide for Shiny App development you may be interested in other features such as TLS/SSL security, scale up, advanced networking, continuous integration, continuous deployment, staging/production deployment slots etc. This represents a shift from development sandpit to ‘web app’. For this case, Azure App Service may be a lower hassle option. This is Microsoft’s enterprise grade, web app deployment managed service.\nIn the Virtual Machine model you are setting up compute infrastructure, deploying and running containers directly - then fiddling with the infrastructure layer for everything else. In App Service you deploy your custom docker container (here containing RStudio Server) to Azure Container Registry (kind of like DockerHub). Azure App Services then builds and serves your app from there - without you having to stand up and manage an Infra layer directly.\n\n\nCreate Azure Container Registry (ACR) (or some other Docker repository) using this help guide\nRun and test your container locally\nDeploy your local container to ACR using this help guide\nCreate a new web app in Azure App Services using this help guide\nConfiguration:\n\n\nI didn’t have to fiddle with ports, presumably it reads the exposed ports in the docker file and does this magically.\n\nFor custom environment variables like the RStudio Server password, I had to manually add this in the config section.\n\n\nand it worked just fine:"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
+    "title": "Running Shiny in a Docker container",
+    "section": "",
+    "text": "Basic minimal example for running shiny in Docker. It is assumed you have Docker installed."
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#dockerfile",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#dockerfile",
+    "title": "Running Shiny in a Docker container",
+    "section": "Dockerfile",
+    "text": "Dockerfile\nThis should be adapted as required.\n# Using rocker/rver::version, update version as appropriate\nFROM rocker/r-ver:3.5.0\n\n# install dependencies\nRUN apt-get update && apt-get install -y \\\n    sudo \\\n    gdebi-core \\\n    pandoc \\\n    pandoc-citeproc \\\n    libcurl4-gnutls-dev \\\n    libcairo2-dev \\\n    libxt-dev \\  \n    libxml2-dev \\  \n    libssl-dev \\  \n    wget\n\n\n# Download and install shiny server\nRUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION -O \"version.txt\" && \\\n    VERSION=$(cat version.txt)  && \\\n    wget --no-verbose \"https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb\" -O ss-latest.deb && \\\n    gdebi -n ss-latest.deb && \\\n    rm -f version.txt ss-latest.deb && \\\n    . /etc/environment && \\\n    R -e \"install.packages(c('shiny', 'rmarkdown'), repos='$MRAN')\" && \\\n    cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/\n\n# Copy configuration files into the Docker image\nCOPY shiny-server.conf  /etc/shiny-server/shiny-server.conf\nCOPY shiny-server.sh /usr/bin/shiny-server.sh\n\n# Copy shiny app to Docker image\nCOPY /myapp /srv/shiny-server/myapp\n\n# Expose desired port\nEXPOSE 80\n\nCMD [\"/usr/bin/shiny-server.sh\"]"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-images",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-images",
+    "title": "Running Shiny in a Docker container",
+    "section": "List Images",
+    "text": "List Images\ndocker images"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-all-containers",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#list-all-containers",
+    "title": "Running Shiny in a Docker container",
+    "section": "List All Containers",
+    "text": "List All Containers\ndocker ps -a"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#remove-containers",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#remove-containers",
+    "title": "Running Shiny in a Docker container",
+    "section": "Remove Containers",
+    "text": "Remove Containers\nFor individual containers add the container ID\n$ docker rm\nTo remove all exited containers :\n$ docker rm $(docker ps -a -q -f status=exited)"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#system-prune",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#system-prune",
+    "title": "Running Shiny in a Docker container",
+    "section": "System Prune",
+    "text": "System Prune\nRemove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.\ndocker system prune -a"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#save-as-tar-archive",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#save-as-tar-archive",
+    "title": "Running Shiny in a Docker container",
+    "section": "Save as tar-archive",
+    "text": "Save as tar-archive\ndocker save -o ~/myapp.tar myapp"
+  },
+  {
+    "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#load-and-run-archive",
+    "href": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html#load-and-run-archive",
+    "title": "Running Shiny in a Docker container",
+    "section": "Load and Run Archive",
+    "text": "Load and Run Archive\ndocker load -i myapp.tar\ndocker run myapp"
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Want to get in touch? Drop me an email or book in a chat.\ndean@wavedatalabs.com.au\nBook a meeting"
+  },
+  {
+    "objectID": "contact/index.html#location",
+    "href": "contact/index.html#location",
+    "title": "Contact Me",
+    "section": "Location",
+    "text": "Location\n Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500 Australia"
+  },
+  {
+    "objectID": "contact/index.html#other-platforms",
+    "href": "contact/index.html#other-platforms",
+    "title": "Contact Me",
+    "section": "Other platforms",
+    "text": "Other platforms\n LinkedIn \n Github \n Mastodon"
+  },
+  {
+    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html",
+    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html",
+    "title": "Optimal Stopping Problems",
+    "section": "",
+    "text": "The August 2022 edition of Significance Magazine posts a challenge:\nThe questions are:\nThis is a well known problem in Optimal Stopping theory. When you look at the first few knights you have no information about how they rank relative to all 100. But by the time you have assessed most of the 100 knights you have information but you have no agency. The knights have all moved on and you either miss out or have to settle for whoever is left.\nThis problem comes up every time I look for a parking spot on a busy day. Do I take the first spot I find a long way from the beach? I could try to get a closer spot but may not find one and could miss out entirely. Most likely the earlier spots are now taken.\nWhen is the optimal time to stop looking and take the leap?\nThe strategy here is:\nWe assume we look at least one knight before stopping our search and assume that if we fail to find a superior knight after our looking period - we miss out! We obviously wont settle for less. (I guess I could force this to accept the last one in line - not a big deal)."
+  },
+  {
+    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#simulation-in-r",
+    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#simulation-in-r",
+    "title": "Optimal Stopping Problems",
+    "section": "Simulation in R",
+    "text": "Simulation in R\nWe can simulate this problem by sampling 100 random knights and assigning them a random ranking of 1-100 (assume 100 is best).\n\nset.seed(111)\nsample(100)\n\n  [1]  78  84  83  47  25  59  69  35  72  26  49  45  74   8 100  96  24  48\n [19]  95   7  21  15   1   9  63  40  85  93  71  52  28  38  88  61  92  30\n [37]   5  53  37   6  36  41  70  42  18  27  29  23  32  89  86  57  16  90\n [55]  39   4  68  55  99  98  79  43  54  97  65  50  94  44  10  91  56  80\n [73]  19  73  33  11  12  67  81  62  76  60  77  34   2  20  13  51  14  64\n [91]  75  87  66  17  22   3  31  46  82  58\n\n\nNext we can look at the cumulative maximum ranking. This will track the score of the best knight seen so far. We also run, say, 10,000 simulations of this problem to analyse.\n\nlibrary(tidyverse)\n\nset.seed(111)\nn &lt;- 100\nsims &lt;- 1e4\n\nknight_sims &lt;- expand_grid(sim = 1:sims) |&gt; \n  mutate(rankings = map(sim, ~sample(1:n))) |&gt; \n  unnest(rankings) |&gt; \n  group_by(sim) |&gt; \n  mutate(stop_after_days = 1:n,\n         max_rank = cummax(rankings))\n\nknight_sims\n\n# A tibble: 1,000,000 × 4\n# Groups:   sim [10,000]\n     sim rankings stop_after_days max_rank\n   &lt;int&gt;    &lt;int&gt;           &lt;int&gt;    &lt;int&gt;\n 1     1       78               1       78\n 2     1       84               2       84\n 3     1       83               3       84\n 4     1       47               4       84\n 5     1       25               5       84\n 6     1       59               6       84\n 7     1       69               7       84\n 8     1       35               8       84\n 9     1       72               9       84\n10     1       26              10       84\n# … with 999,990 more rows\n\n\nWe can write a function that can map over each day and determine what rank knight we would end up with if we stopped searching after x days and committed to the next best knight.\n\noptimal_stop &lt;- function(samp, i) {\n  if (i == 0) {\n    samp[1]\n  }\n  \n  if (i &gt; length(samp) | i &lt; 0) {\n    stop(\"Invalid choice\")\n  }\n  \n  if (any(samp &gt; cummax(samp)[i]) == FALSE) {\n    # if you want to default to the last option\n    #samp[length(samp)]\n    \n    # if you would rather miss out if no superior choice\n    NA\n  } else{\n    idx &lt;- which.max(samp &gt; cummax(samp)[i])\n    samp[idx]\n  }\n}\n\nWe want to know how often we end up with the optimal (top ranked) knight depending on which day we stop looking."
+  },
+  {
+    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#results",
+    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#results",
+    "title": "Optimal Stopping Problems",
+    "section": "Results",
+    "text": "Results\n\nresults &lt;- knight_sims |&gt;  \n  mutate(result = map_int(stop_after_days, ~optimal_stop(rankings, .x))) |&gt; \n  mutate(is_optimal = result == max(rankings, na.rm = TRUE)) |&gt; \n  group_by(stop_after_days) |&gt; \n  summarise(optimal_stops = sum(is_optimal, na.rm = TRUE),\n            n = n(),\n            optimal_stop_pct = optimal_stops / n,\n            var = sqrt(optimal_stop_pct * (1 - optimal_stop_pct) / n))\n\nresults\n\n# A tibble: 100 × 5\n   stop_after_days optimal_stops     n optimal_stop_pct     var\n             &lt;int&gt;         &lt;int&gt; &lt;int&gt;            &lt;dbl&gt;   &lt;dbl&gt;\n 1               1           533 10000           0.0533 0.00225\n 2               2           846 10000           0.0846 0.00278\n 3               3          1116 10000           0.112  0.00315\n 4               4          1352 10000           0.135  0.00342\n 5               5          1572 10000           0.157  0.00364\n 6               6          1771 10000           0.177  0.00382\n 7               7          1941 10000           0.194  0.00396\n 8               8          2098 10000           0.210  0.00407\n 9               9          2225 10000           0.222  0.00416\n10              10          2360 10000           0.236  0.00425\n# … with 90 more rows\n\n\nWe can plot the success proportion of bagging the most optimal knight for each stopping day.\n\nggplot(results, aes(stop_after_days, optimal_stop_pct)) +\n  geom_line() +\n  geom_ribbon(aes(stop_after_days, ymax = optimal_stop_pct + 1.96 * var, \n                  ymin = optimal_stop_pct - 1.96 * var), \n              alpha = 0.22) +\n  theme_bw() +\n  geom_vline(xintercept = 37, lty = 2, col = 'red') +\n  geom_hline(yintercept = 0.368, lty = 2, col = 'blue') +\n  scale_y_continuous(labels = scales::percent) +\n  labs(title = \"What is the probability of picking the best knight?\",\n       subtitle = \"Based on stopping searching at x days and choosing the next best knight\",\n       x = \"Look for this many days\",\n       y = \"Probability of optimal choice\")\n\n\n\n\n\n\n\n\nHere is the number of knights we should observe without picking any\n\nwhich.max(results$optimal_stop_pct)\n\n[1] 37\n\n\nAnd here is the probability of choosing the best knight with this strategy\n\nmax(results$optimal_stop_pct)\n\n[1] 0.3755\n\n\nSo we should let the first 37 knights pass, just like Merlin said. If we do this, we will give ourselves roughly 37% probability of picking the most optimal knight, which is the best we can do."
+  },
+  {
+    "objectID": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#mathematical-derivation",
+    "href": "posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/index.html#mathematical-derivation",
+    "title": "Optimal Stopping Problems",
+    "section": "Mathematical Derivation",
+    "text": "Mathematical Derivation\nSo why 37 days and 37% probability?\nIf we assume we reject the first \\(r-1\\) knights and then choose the next best knight we get to probability\n\\[\nP(r) = \\sum_{j = r}^{n}P(\\text{jth knight is best and you select it})\n\\]\n\\[\nP(r) = \\sum_{j = r}^{n}(\\frac{1}{n})(\\frac{r-1}{j-1}) = (\\frac{r-1}{n})\\sum_{j=r}^{n}\\frac{1}{j-1}\n\\]\nWe want to know which \\(r\\) maximises the probability for large \\(n\\). As \\(n\\) approaches infinity we can let \\(x\\) be the limit of \\(r/n\\) and use \\(t\\) for \\(j/n\\) and \\(dt\\) for \\(1/n\\) we get the integral\n\\[\nP(x) = x \\int_{x}^{1}(\\frac{1}{t})dt = -x\\log(x)\n\\]\nIf we take the derivative with respect to x and set the equation to zero we can find the value of \\(x\\) which maximises this probability:\n\\[\n\\text{optimal x} = \\frac{1}{e} = 0.3678...\n\\]\nand gives the optimal stopping number (for any large n) of \\(\\frac{n}{e} \\approx 37\\)\n\n1/exp(1)\n\n[1] 0.3678794\n\n\n\n100/exp(1)\n\n[1] 36.78794"
+  },
+  {
+    "objectID": "posts/2022-09-25-three-stick-statistics/index.html",
+    "href": "posts/2022-09-25-three-stick-statistics/index.html",
+    "title": "Three Stick Statistics",
+    "section": "",
+    "text": "When I was a teenager I was very popular among my peers, which is why I spent every second Saturday playing in a retiree’s social golf club. For each event we would travel via air-conditioned coach to a local public golf course and play some sort of themed game. The most exciting event was the three stick event. This game requires players to pick just three golf clubs out of their bag (plus a putter) to play their entire round (you can take up to 14 clubs on a normal round).\nSo which three clubs do you pick?\nThis was easy for me as I could only reliably hit two clubs: the five iron and the seven iron. I usually included a driver so as not be mocked by the septuagenarians at the par-5 tees.\nI also have an embarrassingly crap collection of golf clubs as many have been sent to an early retirement in water features.\nHowever, many friends who now play golf have a bewildering selection of exotic clubs from hybrid driving irons to 60-degree lob-wedges.\nIt seems like in there is always some new technology or method to master in data science broadly. This is interesting, but also exhausting and fills me with existential dread that I am becoming irrelevant.\nIt got me thinking, if you had to play statistics (or data science) for the rest of your career with just three algorithms/models, what would they be?"
+  },
+  {
+    "objectID": "posts/2022-09-25-three-stick-statistics/index.html#my-three-sticks",
+    "href": "posts/2022-09-25-three-stick-statistics/index.html#my-three-sticks",
+    "title": "Three Stick Statistics",
+    "section": "My three sticks:",
+    "text": "My three sticks:\n\nRandom Forest: Uncontroversial ensemble method that can quickly get a performance ceiling with minimal fuss. It lacks some interpretability, but I’ll keep it in my bag for when I want to squeeze as much AUC as I can in a prediction setting.\nGeneralised Additive Model (GAM): You could argue this is quite broad, but that’s okay. I’ve had good luck with GAMs as they provide a solid statistical approach that I am comfortable with, along with the flexibility of using smooths for non-linear terms that seems to be a key feature in the problems I have to solve. If I had to only pick one club this would probably be it.\nk-medoids clustering: Clustering methods are a great third club to have in your bag. They solve a different problem to the modelling tasks above and provide a good hedge for those unsupervised tasks that come along fairly regularly. While everyone knows k-means, I enjoy the increased interpretation of k-medoids as the cluster centers are always one of the input data points. It also allows for more generalised distance methods (such as Gower’s distance) which I have found useful for mixed data types.\n\nWe can include lm() as the default putter you get for free.\nWhich three clubs would you pick in your bag?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html",
+    "href": "posts/2024-01-04-randomshares/index.html",
+    "title": "Is the share market just random noise?",
+    "section": "",
+    "text": "Earlier in my career, in the afternath of the GFC I worked as trader for an online share trading platform. Everyday I would get blasted with a firehose of emotion from investors. People day-trading on their accounts, needing help placing exotic trades or dealing during volatile markets.\nIt’s easy to get swept up in the excitement. Sweating on every tick of the market. Listening to the live market news and updates, trying to time it just right.\nI had a holiday booked with my partner, so I took a couple of weeks off and didn’t look at the markets. When I returned, it was like I never left. Everyone was still on the same hamster wheel. The market had moved, but it was kind of the same.\nHaving formal mathematics training lent me some perspective. It reminded me of the famous fractal pattern popularised by Benoit Mandelbrot where certain geometric shapes look similar to themselves as you continually zoom in (a process known as self-similarity1).\nIt got me thinking, was this all just random noise. Was this all just a giant illusion based on psychology, sales targets and the need to fill column inches?\nI recently completed Michael Kemp’s excellent book The Ulysses Contract: How to never worry about the share market again.2\nKemp breaks down common myths around ‘authority’ in financial markets and the tendancy for humans to fall prey to cognitive biases and essentially forgetting history when it comes to the markets. I agreed with nearly every word in the book. Although admitedly, I did blush at how my attitudes differed when I was a freshly minted finance graduate.\nAuthor and interesting person Nassim Nicholas Taleb also writes about this in his 2001 classic Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets.3. Despite his writing style being extrememly abrasive, the underlying points are compelling. Are we all blinded by randomness? Commentating, analysing and taking credit for what is essentially random noise happening to us?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "href": "posts/2024-01-04-randomshares/index.html#a-random-market",
+    "title": "Is the share market just random noise?",
+    "section": "A random market?",
+    "text": "A random market?\nIt got me thinking, could the average punter tell the difference between the stock market and random noise?\nTo test this, I simulated a type of data called a ‘random walk’. A random walk is a type of mathematical, time-series model. It describes a process of sequential observations (say, daily share prices). Each day’s share price is simulated by taking yesterday’s price and just adding randomly generated ‘noise’. It doesn’t try to emulate the shape or style of share market. It’s really dumb. It just takes the price one day and either adds or subtracts a small random amount (of normally distributed noise).\nThe funny thing about this model is it often contains4:\n\nlong periods of apparent trends up or down\nsudden and unpredictable changes in direction.\n\nSound like the share market anyone??\nThis can be written as:\n\\[\ny_t = y_{t-1} + e_t\n\\] Really, this is just a special case of a class of time-series models called ARIMA models. In particular it is an Autoregressive model, that is, a model that is formed from linear combination of previous values.\n\\[\ny_t = c + \\phi_1 y_{t-1} + \\phi_2 y_{t-2} + ... + \\phi_p y_{t-p} + e_t\n\\] Where we set just one term \\(\\phi_1 = 1\\), \\(c = 0\\) and specify \\(e_t \\sim N(0, s)\\)"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#the-test",
+    "href": "posts/2024-01-04-randomshares/index.html#the-test",
+    "title": "Is the share market just random noise?",
+    "section": "The Test",
+    "text": "The Test\nI have simulated 1000 values of a random walk (AR(1)) model and placed this next to 1000 recent observations of a randomly selected Australian stock’s daily closing price.\nCan you tell which is which?"
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "href": "posts/2024-01-04-randomshares/index.html#so-are-the-markets-actually-random",
+    "title": "Is the share market just random noise?",
+    "section": "So are the markets actually random?",
+    "text": "So are the markets actually random?\nI don’t really know. In the short term, it does look random. In the long term, the Australian share market has continued to exhibit long term growth. This doesn’t mean its dynamics aren’t driven my a random walk, after all these models can incorporate drift.\nThere is even a formal theory in finance called the Random Walk hypothesis5 in which some financial heavyweights have argued that stock prices evolve based on a random walk process and are thus - unpredictable.\nRandomness is very tricky - the implication here isn’t that the markets are meaningless or the underlying dynamics are random or that you cant make money.\nRather, we can think of stock prices being modelled well by a random walk process. So what you can do about a process that is modelled well by a random walk?\nYou can start by calling bullshit on attempts to explain or predict short term price fluctuations. Even if they sound confident and wear a suit."
+  },
+  {
+    "objectID": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "href": "posts/2024-01-04-randomshares/index.html#footnotes",
+    "title": "Is the share market just random noise?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Self-similarity↩︎\nhttps://www.goodreads.com/en/book/show/88826560↩︎\nhttps://www.goodreads.com/book/show/38315.Fooled_by_Randomness↩︎\nhttps://otexts.com/fpp3/stationarity.html#random-walk-model↩︎\nhttps://en.wikipedia.org/wiki/Random_walk_hypothesis↩︎"
+  },
+  {
+    "objectID": "posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
+    "href": "posts/2023-03-17-building-your-own-r-data-science-lab/index.html",
+    "title": "Building your own R Data Science Lab in the browser",
+    "section": "",
+    "text": "Most R users probably just run RStudio Desktop from Posit on their local computers. This involves manually installing R, RStudio and all other packages.\nHowever it is often the case that users are operating in a restricted computing environment, such as in a corporate or government setting. Alternatively you may wish to create a custom development environment to test or replicate some other specific setup. This is a good case to move away from locally managed software to containerization, such as Docker.\nI have set up a Github repository that sets up a local data science development environment in the browser.\nIt builds a docker container including:\n\nUbuntu 20.04 LTS\nR version 4.2\nRStudio Server 2022.02.3+492\nAll tidyverse packages and devtools\ntex & publishing-related package\n\nThe image builds on the rocker/verse image from Rocker Project.\nSome other enhanced configuration options are included in the Dockerfile, such as preloading you RStudio preferences to get the same look and feel you have locally, the option to install other CRAN packages & mounting local volumes to persist your work locally.\nGo here for Step by step instructions:\nhttps://github.com/deanmarchiori/ds-env-setup"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Is ChatGPT is a bullshit machine?\n\n\nAnd what you should do about it\n\n\n\nAI\n\n\n\n\n\n\n\n\n\nJun 19, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nIs the share market just random noise?\n\n\nModelling market prices using a random walk\n\n\n\nR\n\n\nMarkets\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nGeolocating Sydney’s weirdest property\n\n\nUsing Open Street Map and R to geolocate an image\n\n\n\nR\n\n\nOSM\n\n\n\n\n\n\n\n\n\nSep 17, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nDeploying Enterprise Scale AI & Machine Learning Infrastucture\n\n\n5 things you need to know before using Azure ML Studio\n\n\n\nanalysis\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 11, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nThree Questions to Ask Your Data Scientist\n\n\nAre your predictive models doing what you think they are?\n\n\n\nanalysis\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nJul 12, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nWhy your data science projects are failing\n\n\nand what you can’t do about it\n\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nMan vs Machine Learning\n\n\nI went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.\n\n\n\nR\n\n\nAzure\n\n\n\n\n\n\n\n\n\nJun 2, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nLevel up your Forecasting\n\n\nQuantify uncertainty with distributional forecasts\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nMay 29, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nRandom Number Generator Testing\n\n\nA tale of an unemployed ice-cream man, secret societies and a $10 radio\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nDeploy Your Own R Data Science Lab in the Cloud\n\n\n\n\n\n\nR\n\n\nazure\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding your own R Data Science Lab in the browser\n\n\n\n\n\n\nR\n\n\ndocker\n\n\n\n\n\n\n\n\n\nMar 15, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nBeware of Boundaries in Binominal Proportion Confidence Intervals\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nWhen should you be using the Hypergeometric distribution in practice?\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction Intervals for Linear Mixed Effects Models\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nFeb 6, 2023\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nOptimal Stopping Problems\n\n\n\n\n\n\nR\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nThree Stick Statistics\n\n\n\n\n\n\nstatistics\n\n\n\n\n\n\n\n\n\nSep 24, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nWhat was that Bluey Episode?\n\n\n\n\n\n\nR\n\n\nshiny\n\n\n\n\n\n\n\n\n\nFeb 3, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nRunning Shiny in a Docker container\n\n\n\n\n\n\nR\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 17, 2022\n\n\nDean Marchiori\n\n\n\n\n\n\n\n\n\n\n\n\nMapping NSW Fire Incidents in R\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\nJan 17, 2021\n\n\nDean Marchiori\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html",
+    "href": "posts/2023-05-29-forecasting/index.html",
+    "title": "Level up your Forecasting",
+    "section": "",
+    "text": "This is a time series data set of half-hourly electricity demand for Victoria, Australia 1. You may not care about electricity forecasting, but there is probably some similar time series in your organisation you do care about.\nWhat is the forecast demand for the next week?\nWho knows? I certainly don’t know, despite doing forecasting for a job.\nIn fact, anyone who tells you they do know (with certainty) is wrong."
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#but-i-need-to-make-a-forecast-so-what-do-i-do",
+    "href": "posts/2023-05-29-forecasting/index.html#but-i-need-to-make-a-forecast-so-what-do-i-do",
+    "title": "Level up your Forecasting",
+    "section": "But I need to make a forecast, so what do I do?",
+    "text": "But I need to make a forecast, so what do I do?\nOften you have to come up with something. Finance needs an estimate of sales or budgets, or your manager needs something to take to the board. So you have to churn out some numbers. But what numbers?\nHere are two extremes:\n\nYou could ignore all historical data and just use the most recent data point as the most reliable forecast.\n\nYou could ignore any specific value and just take the average of everything.\n\n\n\n\n\n\n\n\n\n\nBoth are in the ballpark but they aren’t very squiggly like the real data. They clearly aren’t capturing the seasonality.\nYou could be lazy (clever) and just use the same time period from last week as your current forecast. It actually looks really good. But it’s just one, fixed realization of what could happen. Will it play out exactly like your forecast? Exactly like last week? Almost certainly not.\n\n\n\n\n\n\n\n\n\nLet’s simulate another way history could play out. (By statistically resampling the residuals in the training data)\n\n\n\n\n\n\n\n\n\nAnd another\n\n\n\n\n\n\n\n\n\nAnd 20 more:\n\n\n\n\n\n\n\n\n\nSo instead of blindly relying on one (kind of okay looking, but totally unrealistic) forecast, we now have a ‘fuzzy’ region of plausible values."
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#ok-but-why-bother",
+    "href": "posts/2023-05-29-forecasting/index.html#ok-but-why-bother",
+    "title": "Level up your Forecasting",
+    "section": "Ok but why bother?",
+    "text": "Ok but why bother?\nIf you don’t know with certainty what your forecast is going to be, then don’t just give one concrete number. It’s misleading.\n\nIts more important to know how uncertain your forecast is rather than what your forecast is.\n\nYou can still pull out a mean or point estimate but by delivering the whole story you are conveying not just what you think is likely to happen, but how certain you are about it.\nOften this can lead to more meaningful discussions. Perhaps it’s not the mean of your forecast distribution that you care about, its the extreme values. For example, If I was stress testing business cash flows and forecasting the cost of a maintenance activity, I’d be more interested in forecasting the 95% upper limit of forecast costs rather than the ‘expected’ cost.\nIn practice, you often don’t have to do any mathematical simulations. Proper time series forecasts have methods to calculate prediction intervals out of the box (see below)."
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#spoiler",
+    "href": "posts/2023-05-29-forecasting/index.html#spoiler",
+    "title": "Level up your Forecasting",
+    "section": "Spoiler",
+    "text": "Spoiler\nWant to know what actually happened? Here it is in red.\n\n\n\n\n\n\n\n\n\nA huge criticism of providing probabilistic forecasts is that is seems like you are ‘hedging your bets’ and being evasive. The reality is, in our electricity example, it was just very hot and demand surged (much higher than even our 95% prediction interval). So if it’s realistic and plausible to see forecast values in these ranges (or even more extreme) - Why wouldn’t you want to include that information in your forecast??"
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#aside",
+    "href": "posts/2023-05-29-forecasting/index.html#aside",
+    "title": "Level up your Forecasting",
+    "section": "Aside",
+    "text": "Aside\nIn practice a statistician will likely use a more sophisticated model than presented here. These models may take into account temperature and other factors but there will still be unexplained variance that will need to be quantified if you want a quality forecast produced.\nIf you or your organisation want to get serious about making proper forecasts and being proactive when making critical decisions - drop me a line, I can help."
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#references",
+    "href": "posts/2023-05-29-forecasting/index.html#references",
+    "title": "Level up your Forecasting",
+    "section": "References",
+    "text": "References\nO’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). tsibbledata: Diverse Datasets for ‘tsibble’. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/."
+  },
+  {
+    "objectID": "posts/2023-05-29-forecasting/index.html#footnotes",
+    "href": "posts/2023-05-29-forecasting/index.html#footnotes",
+    "title": "Level up your Forecasting",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSource: Australian Energy Market Operator. tsibbledata R package.↩︎"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "",
+    "text": "A recent project with repeated measures data involved fitting a random intercept term, and eventually making predictions for new groups not in the training sample. Importantly there was a need for individual predictions rather than population mean level predictions. Now, you obviously cannot include the random effect for a level that is not in your data, so the idea was to make a population level prediction with an adequate prediction interval that reflected the variation from both the fixed and random effects. This is complicated.\nIn the help page for lme4::predict.merMod() is the following note:\nThere are some useful resources out there but it took a while to track down, so this post may serve as a good reference in the future.\nLet’s go through an example using the famous sleepstudy data showing the average reaction time per day (in milliseconds) for subjects in a sleep deprivation study.\nlibrary(lme4)\nlibrary(tidyverse)\n\ndata(\"sleepstudy\")"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-model",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-model",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "Linear Model",
+    "text": "Linear Model\nWe would like to model the relationship between Reaction and Days\n\nggplot(sleepstudy, aes(Days, Reaction)) +\n  geom_point(show.legend = FALSE) +\n  theme_bw()\n\n\n\n\n\n\n\n\nFitting a basic linear model:\n\nfit_lm &lt;- lm(Reaction ~ Days, data = sleepstudy)\n\nsummary(fit_lm)\n\n\nCall:\nlm(formula = Reaction ~ Days, data = sleepstudy)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-110.848  -27.483    1.546   26.142  139.953 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  251.405      6.610  38.033  &lt; 2e-16 ***\nDays          10.467      1.238   8.454 9.89e-15 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 47.71 on 178 degrees of freedom\nMultiple R-squared:  0.2865,    Adjusted R-squared:  0.2825 \nF-statistic: 71.46 on 1 and 178 DF,  p-value: 9.894e-15\n\n\n\nggplot(sleepstudy, aes(Days, Reaction)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw()\n\n\n\n\n\n\n\n\nBut this ignores the fact these data are not independent. We have multiple observation per subject. Some look like a good fit, others not.\n\nggplot(sleepstudy, aes(Days, Reaction, col = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  facet_wrap(~Subject) +\n  theme_bw()"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-mixed-effects-model",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#linear-mixed-effects-model",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "Linear Mixed Effects Model",
+    "text": "Linear Mixed Effects Model\nLet’s add a random intercept term for Subject. For simplicity we will leave out any other random effects.\n\nfit &lt;- lme4::lmer(Reaction ~ Days + (1|Subject), data = sleepstudy)\n\nsummary(fit)\n\nLinear mixed model fit by REML ['lmerMod']\nFormula: Reaction ~ Days + (1 | Subject)\n   Data: sleepstudy\n\nREML criterion at convergence: 1786.5\n\nScaled residuals: \n    Min      1Q  Median      3Q     Max \n-3.2257 -0.5529  0.0109  0.5188  4.2506 \n\nRandom effects:\n Groups   Name        Variance Std.Dev.\n Subject  (Intercept) 1378.2   37.12   \n Residual              960.5   30.99   \nNumber of obs: 180, groups:  Subject, 18\n\nFixed effects:\n            Estimate Std. Error t value\n(Intercept) 251.4051     9.7467   25.79\nDays         10.4673     0.8042   13.02\n\nCorrelation of Fixed Effects:\n     (Intr)\nDays -0.371\n\n\nNew fitted lines can be drawn, showing the adjusted intercept for each subject (original regression line kept for reference).\n\nsleepstudy |&gt; \n  mutate(pred = predict(fit, re.form = NULL)) |&gt; \n  ggplot(aes(Days, Reaction, col = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1], col = \"grey\") +\n  geom_line(aes(Days, pred), show.legend = FALSE) +\n  facet_wrap(~Subject) +\n  theme_bw()"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#bootstrapped-prediction-intervals-observed-data",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#bootstrapped-prediction-intervals-observed-data",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "Bootstrapped Prediction Intervals (observed data)",
+    "text": "Bootstrapped Prediction Intervals (observed data)\nLet’s try and generate prediction intervals using lme4::bootMer() as suggested.\nFirst on the in-sample data.\n\n# predict function for bootstrapping\npredfn &lt;- function(.) {\n  predict(., newdata=new, re.form=NULL)\n}\n\n# summarise output of bootstrapping\nsumBoot &lt;- function(merBoot) {\n  return(\n    data.frame(fit = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.5, na.rm=TRUE))),\n               lwr = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.025, na.rm=TRUE))),\n               upr = apply(merBoot$t, 2, function(x) as.numeric(quantile(x, probs=.975, na.rm=TRUE)))\n    )\n  )\n}\n\n# 'new' data\nnew &lt;- sleepstudy\n\nNotes:\n\nIn the predict() function we specify re.form=NULL which identifies which random effects to condition on. Here NULL includes all random effects. Obviously here you can compute individual predictions assuming you feed it with the correct grouping level in your data.\nIn the lme4::bootMer() function we set use.u=TRUE. This conditions on the random effects and only provides uncertainly estimates for the i.i.d. errors resulting from the fixed effects of the model.\n\n\nIf use.u is TRUE and type==“parametric”, only the i.i.d. errors are resampled, with the values of u staying fixed at their estimated values.\n\n\nboot &lt;- lme4::bootMer(fit, predfn, nsim=250, use.u=TRUE, type=\"parametric\")\n\n\nnew |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  ggplot(aes(Days, Reaction, col = Subject, fill = Subject)) +\n  geom_point(show.legend = FALSE) +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  facet_wrap(~Subject) +\n  theme_bw()"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#dealing-with-unobserved-data",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#dealing-with-unobserved-data",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "Dealing with unobserved data",
+    "text": "Dealing with unobserved data\nHowever, this gets complicated if we want to make predictions for new subjects.\nWe can no longer condition on the random effects, as the new subject level will not have a fitted random intercept value. Instead we need to effectively make a population level prediction (i.e. set the random effect to zero.). This makes sense as we don’t know what the random effect ought to be for a given, unobserved subject.\nBut we don’t want the prediction interval to just cover the uncertainty in the population level estimate. If we are interested in individual predictions, how can we incorporate the uncertainly of the random effects in the prediction intervals?\nLets generate a new, unobserved subject.\n\nnew_subject &lt;- tibble(\n  Days = 0:9,\n  Subject = factor(\"999\")\n  )\n\nWe provide a new predict function that doesn’t condition on the random effects by using re.form = ~0. This lets us input and obtain predictions for new subjects.\n\npredfn &lt;- function(.) {\n  predict(., newdata=new_subject, re.form=~0, allow.new.levels=TRUE)\n}\n\n\nnew_subject |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nHowever using predict just results in a completely deterministic prediction as shown above.\nAn alternative approach is to use lme4::simulate() which will simulate responses for subjects non-deterministically using the fitted model object.\nBelow we can see a comparison on both approaches.\n\npredfn &lt;- function(.) {\n  predict(., newdata=new_subject, re.form=~0, allow.new.levels=TRUE)\n}\n\nsfun &lt;- function(.) {\n    simulate(., newdata=new_subject, re.form=NULL, allow.new.levels=TRUE)[[1]]\n}\n\n\nnew_subject |&gt; \n  bind_cols(simulated = sfun(fit)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  pivot_longer(cols = c(3, 4), names_to = \"type\", values_to = \"val\") |&gt; \n  ggplot(aes(Days, val, col = type)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nWe can use this simulate() function in our bootstrapping to resample responses from the fitted model (rather than resampling deterministic population predictions).\nThis time we set use.u=FALSE to provide uncertainly estimates from both the model errors and the random effects.\n\nIf use.u is FALSE and type is “parametric”, each simulation generates new values of both the “spherical” random effects uu and the i.i.d. errors , using rnorm() with parameters corresponding to the fitted model x.\n\n\nboot &lt;- lme4::bootMer(fit, sfun, nsim=250, use.u=FALSE, type=\"parametric\", seed = 100)\n\n\nnew_subject |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject, fill = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  theme_bw() +\n  ylim(c(150, 450))\n\n\n\n\n\n\n\n\nSo while we don’t have a conditional mode of the random effect (because its a new subject) we can derive a bootstrapped estimate of the prediction interval by resampling the random effects and model errors on simulated data values."
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#aside",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#aside",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "Aside",
+    "text": "Aside\nFor comparison, here is what the same prediction interval would look like if we just used an unconditional population prediction. While the overall gist is the same, despite also resampling both the random effects and the i.i.d. errors, the interval is narrower as it is resampling just the deterministic population predictions of the model.\n\nboot &lt;- lme4::bootMer(fit, predfn, nsim=250, use.u=FALSE, type=\"parametric\", seed = 100)\n\n\nnew_subject |&gt; \n  bind_cols(sumBoot(boot)) |&gt; \n  bind_cols(predicted = predfn(fit)) |&gt; \n  ggplot(aes(Days, predicted, col = Subject, fill = Subject)) +\n  geom_point() +\n  geom_abline(slope = fit_lm$coefficients[2], intercept = fit_lm$coefficients[1]) +\n  geom_line(aes(Days, fit), show.legend = FALSE) +\n  geom_ribbon(aes(ymin = lwr, ymax = upr), alpha = 0.3, show.legend = FALSE) +\n  theme_bw() +\n  ylim(c(150, 450))"
+  },
+  {
+    "objectID": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#references",
+    "href": "posts/2023-02-06-prediction-intervals-for-linear-mixed-effects-models/index.html#references",
+    "title": "Prediction Intervals for Linear Mixed Effects Models",
+    "section": "References",
+    "text": "References\nMost of the material and code is taken from a variety of sources below. In particular the lme4 github issue. Also, the merTools package has a nice vignette comparing these methods with their own solution.\nhttps://tmalsburg.github.io/predict-vs-simulate.html https://github.com/lme4/lme4/issues/388 https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html http://bbolker.github.io/mixedmodels-misc/glmmFAQ.html#predictions-andor-confidence-or-prediction-intervals-on-predictions"
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html",
+    "href": "posts/2023-09-11-enterprise-ml/index.html",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "",
+    "text": "Are you about to scale up your data analytics team to do more AI/ML work? Here are 5 things you need to know up front to make your life easier.\nThese are tips focused on enterprise-level organisations wanting to implement Microsoft’s Azure Machine Learning studio. But I’m sure the content translates well to other settings."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#people---process---platform-pick-any-three",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#people---process---platform-pick-any-three",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "1) People - Process - Platform (pick any three)",
+    "text": "1) People - Process - Platform (pick any three)\nEffective analytics and machine learning requires coordination of People, Process & Platform. But do you need all three?\nYes. But you don’t need all three to get started.\nMost Data Scientists will not care about and will not identify as owning MLOps. They want to lead experimentation and innovation, not building production-grade ML pipelines. You will either have to:\n\nFind an internal champion to lead this and train others.\nHire an ML engineer if you have enough work to keep them busy (A recent ML Engineer job ad I saw was around $650k, so bear that in mind).\n\nWork with a specialist partner / consultant to fill this gap and support your teams doing what they are good at.\n\nConverting experimental analytics POCs into robust MLOps-style pipelines is not trivial. It takes real, behind the scenes work which is kind of thankless. But sometimes you need to eat your vegetables and do this. Ensuring you have a well crafted process for governing how, when and why MLOps should exist will help secure the time, funding and social capital you need."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#dont-overlook-security",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#dont-overlook-security",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "2) Don’t overlook security",
+    "text": "2) Don’t overlook security\nWant to know where you are going to face challenges and delays implementing an AI/Ml platform?\nWonder no more: Network Security.\nAzure ML Studio (and any ML platform) will require serious planning around network architecture and security, and for good reason. It’s not as scary as it sounds, but it does require expertise. You need to have strong representation on your project from a decision maker and a ‘doer’ in network security. If these people aren’t inside the tent with you, your project will grind to a halt."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#think-about-dev-work-not-just-mlops",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#think-about-dev-work-not-just-mlops",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "3) Think about dev work, not just MLOps",
+    "text": "3) Think about dev work, not just MLOps\nIf we are being honest, not many organisations are ready for scalable, reproducible, high performance ML deployments. But almost all orgs are building toward this in the next 5 years. So what’s most useful in the here and now?\n\nEasy to access online notebooks with various kernels\nClick of a button scalable compute, without fussing about with the infra layer\nAutoML tools to find performance ceilings and explore the solution space of new problems\n\nWant to get your data scientist on board? Tell them they wont have to run jobs on their laptops overnight anymore."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#its-python-heavy-sorry-r-users",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#its-python-heavy-sorry-r-users",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "4) It’s Python heavy (sorry R users)",
+    "text": "4) It’s Python heavy (sorry R users)\nThere a lot to complain about if you are an R user. Azure ML studio is decidedly a Python oriented tool. While admittedly, most high-level AI development work is in Python, in reality a lot of so called “ML” projects are classical statistical models anyway. There are nice tools within R ecosystem for putting R in prod. However if you work in an enterprise setting, you may need to deploy your models on the chosen enterprise analytics platform. This is not ideal for R users, but hopefully in a future post I can show you how to have the best of both worlds."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#its-not-an-etl-environment",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#its-not-an-etl-environment",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "5) Its not an ETL environment",
+    "text": "5) Its not an ETL environment\nLike any tool its only good for what it’s good for. When we think of true end-to-end machine learning projects there are steps in that process that are better fit in other tools. A common suspect here is the data import and processing. It’s nice to coordinate ML deployments with your data engineering teams to ensure you are using the right tools for the right jobs."
+  },
+  {
+    "objectID": "posts/2023-09-11-enterprise-ml/index.html#want-to-learn-more",
+    "href": "posts/2023-09-11-enterprise-ml/index.html#want-to-learn-more",
+    "title": "Deploying Enterprise Scale AI & Machine Learning Infrastucture",
+    "section": "Want to learn more?",
+    "text": "Want to learn more?\nIf you are wanting to take the next steps in setting up people, process and platforms for high performance machine learning, get in touch for a chat."
+  },
+  {
+    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html",
+    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html",
+    "title": "When should you be using the Hypergeometric distribution in practice?",
+    "section": "",
+    "text": "We have a manufacturing process in the day job that is subject to sample auditing.\nThere are \\(N\\) widgets produced and we need to audit \\(n\\) of them. Some sort of rejection threshold is needed on that sample to decide if the whole batch of widgets has met a specified quality level.\nTypically, a binomial distribution would be appropriate for measuring the probability of \\(k\\) successes (in this case defects found) in \\(n\\) independent trials with probability \\(p\\).\n\\[\nPr(X=k) = {n \\choose k} p^k(1-p)^{n-k}\n\\]\nThe word independent is doing a lot of work here as it implies that we are sampling with replacement in order to maintain a fixed probability parameter \\(p\\).\nIn cases where you are taking draws from a population without replacement (such as when you do destructive inspections on a widget) the underlying population changes with each draw and so does the probability \\(p\\).\nIn this case, modelling the process using a hypergeometric distribution may be a more appropriate choice.\n\\[\nPr(X=k) = \\frac{{K \\choose k}{N-K \\choose n-k}}{{N \\choose n}}\n\\]\nIt similarly describes the probability of \\(k\\) successes in \\(n\\) draws without replacement. However, instead of specifying a parameter \\(p\\), we provide the population size \\(N\\), which contains \\(K\\) success states in the population."
+  },
+  {
+    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#example",
+    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#example",
+    "title": "When should you be using the Hypergeometric distribution in practice?",
+    "section": "Example",
+    "text": "Example\nLet’s say we have 2000 widgets manufactured and we want to sample 50 (ignore why 50, that is a whole separate question). We have an assumed quality level of 10% defective units (which we define as ‘success’ for complicated reasons).\nQ: Based on a sample of 50 widgets how many defective units would be considered unlikely (95% CI) to occur randomly given our assumed quality level, and therefore result in us rejecting the entire batch?\nWe can compare the binomial probability mass function with the hypergeometric and observe they are essentially the same.\n\nlibrary(tidyverse)\n\n\ntibble(\n       x =  seq.int(0, 50, by = 1),\n       binomial = dbinom(x, size = 50, prob = 0.1),\n       hypergeom_2000 = dhyper(x, m = 200, n = 1800, k = 50),\n       ) |&gt; \n  pivot_longer(cols = -1, names_to = 'distribution', values_to = 'density') |&gt; \n  ggplot(aes(x, density, col = distribution)) +\n  geom_line() +\n  geom_point() +\n  xlim(c(0, 20)) +\n  theme_bw() +\n  labs(x = \"Observed defective units in sample\")\n\n\n\n\n\n\n\n\nHowever, if we had a smaller population of say 100 or 70 widgets, how would this compare?\n\ntibble(\n       x =  seq.int(0, 50, by = 1),\n       binomial = dbinom(x, size = 50, prob = 0.1),\n       hypergeom_2000 = dhyper(x, m = 200, n = 1800, k = 50),\n       hypergeom_100 = dhyper(x, m = 10, n = 90, k = 50),\n       hypergeom_070 = dhyper(x, m = 7, n = 63, k = 50)\n       ) |&gt; \n  pivot_longer(cols = -1, names_to = 'distribution', values_to = 'density') |&gt; \n  ggplot(aes(x, density, col = distribution)) +\n  geom_line() +\n  geom_point() +\n  xlim(c(0, 20)) +\n  theme_bw() +\n  labs(x = \"Observed defective units in sample\")\n\n\n\n\n\n\n\n\nWe can see these curves are markedly different. And indeed the 95% confidence intervals obtained are narrower for the hypergeometric case.\n\nqbinom(p = c(0.025, 0.975), size = 50, prob = 0.1)\n\n[1] 1 9\n\nqhyper(p = c(0.025, 0.975), m = 10, n = 90, k = 50)\n\n[1] 2 8\n\n\nWe can see from a random draw of 1 million samples from each PMF that they both have the same expected values, but the variance is smaller in the hypergeometric case.\n\nX &lt;- rbinom(n = 1e6, size = 50, prob = 0.1)\nY &lt;- rhyper(nn = 1e6, m = 10, n = 90, k = 50)\n\nmean(X)\n\n[1] 5.003297\n\nvar(X)\n\n[1] 4.503315\n\nmean(Y)\n\n[1] 5.000162\n\nvar(Y)\n\n[1] 2.27195"
+  },
+  {
+    "objectID": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#does-it-matter-which-one-you-use",
+    "href": "posts/2023-02-20-when-should-you-be-using-the-hypergeometric-distribution-in-practice/index.html#does-it-matter-which-one-you-use",
+    "title": "When should you be using the Hypergeometric distribution in practice?",
+    "section": "Does it matter which one you use?",
+    "text": "Does it matter which one you use?\nAs a consequence of removing samples in each draw we influence the probability of a subsequent success. If our \\(N\\) and \\(K\\) is very large relative to our sample \\(n\\) this wont make much of an impact, but it can be impactful for smaller populations, or relatively larger samples.\nFrom our example above, failing to use a hypergeometric distribution to model this process for smaller populations will result in wider, more conservative acceptance regions which can increase consumer risk in a manufacturing process.\nTypical guidance on when to use each distribution is given in manufacturing standards such as AS 1199.1-2003: Sampling Procedures for Inspection by Attributes and typically involves how you structure your sampling scheme."
+  },
+  {
+    "objectID": "posts/2023-06-26-failure/index.html",
+    "href": "posts/2023-06-26-failure/index.html",
+    "title": "Why your data science projects are failing",
+    "section": "",
+    "text": "The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience.\nA number that seems to be floating around is 80% of data science projects will FAIL. Ouch.\nMany of these types of numbers are ‘predictions’ from consultancies who stand to benefit from making big claims.\nhttps://blogs.gartner.com/andrew_white/2019/01/03/our-top-data-and-analytics-predicts-for-2019/\nCited reasons to fix this include:\nThese are all lovely ideas, but moving the lever on these are often impossible or impractical."
+  },
+  {
+    "objectID": "posts/2023-06-26-failure/index.html#so-what-are-some-easy-things-you-can-you-do",
+    "href": "posts/2023-06-26-failure/index.html#so-what-are-some-easy-things-you-can-you-do",
+    "title": "Why your data science projects are failing",
+    "section": "So what are some easy things you can you do?",
+    "text": "So what are some easy things you can you do?\n\nChange your mindset (and how you run projects)\n\nData analytics is an exploratory and scientific endeavour that isn’t supposed to succeed every time. Just like not all lab experiments yield positive results. Instead of lamenting failures, develop a mindset of innovation and agile working where new ideas are prototyped and investment in R&D promoted but capped and balanced.\n\nPick better projects\n\nA question I get all the time, is how to get started with data science projects in an established business. Often there is a disconnect between those doing the work and those deciding what to do. The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience and it requires a balance of hands-on technical skills, with commercial awareness."
+  },
+  {
+    "objectID": "posts/2023-06-26-failure/index.html#how-can-we-help",
+    "href": "posts/2023-06-26-failure/index.html#how-can-we-help",
+    "title": "Why your data science projects are failing",
+    "section": "How can we help?",
+    "text": "How can we help?\nWe have a dedicated program for businesses looking to get started or deepen their data analytics journey. We can help change your attitude and pick better projects.\nBook in a Demo"
+  },
+  {
+    "objectID": "consulting/fire/index.html",
+    "href": "consulting/fire/index.html",
+    "title": "An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions",
+    "section": "",
+    "text": "Electrical infrastructure is one of the major causes of bushfire in Australia alongside arson and lightning strikes. The two main causes of electrical-infrastructure-initiated fires are asset failure and powerline vegetation interactions. In this paper, we focus on powerline–vegetation interactions that are caused by vegetation falling onto or blowing onto electrical infrastructure. Currently, there is very limited understanding of both the spatio-temporal variability of these events and their causative factors. Bridging this knowledge gap provides an opportunity for electricity utility companies to optimally allocate vegetation management resources and to understand the risk profile presented by vegetation fall-in initiated fires, thereby improving both operational planning and strategic resource allocation. To bridge this knowledge gap, we developed a statistical rare-event modelling and simulation framework based on Endeavour Energy’s fire start and incident records from the last 10 years. The modelling framework consists of nested, rare-event-corrected, conditional probability models for vegetation events and consequent ignition events that provide an overall model for vegetation-initiated ignitions. Model performance was tested on an out-of-time test set to determine the predictive utility of the models. Predictive performance was reasonable with test set AUC values of 0.79 and 0.66 for the vegetation event and ignition event models, respectively. The modelling indicates that wind speed and vegetation features are strongly associated with vegetation events, and that Forest Fire Danger Index (FFDI) and soil type are strongly associated with ignition events. The framework can be used by energy utilities to optimize resource allocation and prepare future networks for climate change.\nLink: https://www.mdpi.com/2571-6255/6/2/61"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html",
+    "href": "consulting/data-viz/index.html",
+    "title": "Data Visualisations",
+    "section": "",
+    "text": "These data visualizations are all scripted and made 100% in R.\nFor the full collection go to the Github Repo"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
+    "href": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
+    "title": "Data Visualisations",
+    "section": "Entry for Pacific DataViz Competition",
+    "text": "Entry for Pacific DataViz Competition"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
+    "href": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
+    "title": "Data Visualisations",
+    "section": "Trees of San Francisco - Tidy Tuesday Project",
+    "text": "Trees of San Francisco - Tidy Tuesday Project"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
+    "href": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
+    "title": "Data Visualisations",
+    "section": "Simpsons Guest Stars - Tidy Tuesday Project",
+    "text": "Simpsons Guest Stars - Tidy Tuesday Project"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
+    "href": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
+    "title": "Data Visualisations",
+    "section": "Town Map Made From Open Street Map (OSM) Data",
+    "text": "Town Map Made From Open Street Map (OSM) Data"
+  },
+  {
+    "objectID": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
+    "href": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
+    "title": "Data Visualisations",
+    "section": "Australian Meterorite Strikes - Tidy Tuesday Project",
+    "text": "Australian Meterorite Strikes - Tidy Tuesday Project"
+  },
+  {
+    "objectID": "talks/siligong2022/index.html",
+    "href": "talks/siligong2022/index.html",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "section": "",
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+  },
+  {
+    "objectID": "talks/siligong2022/index.html#abstract",
+    "href": "talks/siligong2022/index.html#abstract",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "section": "",
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+  },
+  {
+    "objectID": "talks/siligong2022/index.html#links",
+    "href": "talks/siligong2022/index.html#links",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "section": "Links",
+    "text": "Links\nGithub\nSlides"
+  },
+  {
+    "objectID": "talks/smart-outlier/index.html",
+    "href": "talks/smart-outlier/index.html",
+    "title": "Unsupervised outlier detection systems for e-commerce",
+    "section": "",
+    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
+  },
+  {
+    "objectID": "talks/smart-outlier/index.html#abstract",
+    "href": "talks/smart-outlier/index.html#abstract",
+    "title": "Unsupervised outlier detection systems for e-commerce",
+    "section": "",
+    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
+  },
+  {
+    "objectID": "talks/smart-outlier/index.html#links",
+    "href": "talks/smart-outlier/index.html#links",
+    "title": "Unsupervised outlier detection systems for e-commerce",
+    "section": "Links",
+    "text": "Links\nRecorded Video"
+  },
+  {
+    "objectID": "talks/keeping-up-with-data/index.html",
+    "href": "talks/keeping-up-with-data/index.html",
+    "title": "Keeping Up with Data - Podcast S2E1",
+    "section": "",
+    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
+  },
+  {
+    "objectID": "talks/keeping-up-with-data/index.html#abstract",
+    "href": "talks/keeping-up-with-data/index.html#abstract",
+    "title": "Keeping Up with Data - Podcast S2E1",
+    "section": "",
+    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
+  },
+  {
+    "objectID": "talks/keeping-up-with-data/index.html#links",
+    "href": "talks/keeping-up-with-data/index.html#links",
+    "title": "Keeping Up with Data - Podcast S2E1",
+    "section": "Links",
+    "text": "Links\nURL\nVideo"
+  },
+  {
+    "objectID": "talks/SSA_early_career/index.html",
+    "href": "talks/SSA_early_career/index.html",
+    "title": "Statistics Early Career Talk",
+    "section": "",
+    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
+  },
+  {
+    "objectID": "talks/SSA_early_career/index.html#abstract",
+    "href": "talks/SSA_early_career/index.html#abstract",
+    "title": "Statistics Early Career Talk",
+    "section": "",
+    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
+  },
+  {
+    "objectID": "talks/SSA_early_career/index.html#links",
+    "href": "talks/SSA_early_career/index.html#links",
+    "title": "Statistics Early Career Talk",
+    "section": "Links",
+    "text": "Links\nSlides"
+  },
+  {
+    "objectID": "talks/smart-r-academics/index.html",
+    "href": "talks/smart-r-academics/index.html",
+    "title": "R for Research - Essential Tools for Academics",
+    "section": "",
+    "text": "R for Research - Essential Tools for Academics"
+  },
+  {
+    "objectID": "talks/smart-r-academics/index.html#abstract",
+    "href": "talks/smart-r-academics/index.html#abstract",
+    "title": "R for Research - Essential Tools for Academics",
+    "section": "",
+    "text": "R for Research - Essential Tools for Academics"
+  },
+  {
+    "objectID": "talks/smart-r-academics/index.html#links",
+    "href": "talks/smart-r-academics/index.html#links",
+    "title": "R for Research - Essential Tools for Academics",
+    "section": "Links",
+    "text": "Links\nSlides"
   }
 ]

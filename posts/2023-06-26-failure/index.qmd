@@ -1,0 +1,50 @@
+---
+title: "Why your data science projects are failing"  
+subtitle: "and what you can't do about it"
+author: "Dean Marchiori"
+date: "2023-06-26"
+categories: [analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---
+
+>The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience. 
+
+A number that seems to be floating around is 80% of data science projects will FAIL. Ouch. 
+
+Many of these types of numbers are 'predictions' from consultancies who stand to benefit from making big claims.
+
+>"Through 2022, only 20% of analytic insights will deliver business outcomes."  
+
+[https://blogs.gartner.com/andrew_white/2019/01/03/our-top-data-and-analytics-predicts-for-2019/](https://blogs.gartner.com/andrew_white/2019/01/03/our-top-data-and-analytics-predicts-for-2019/)
+
+Cited reasons to fix this include:
+
+- Getting better data 
+* Getting a Data strategy and governance framework
+* Hiring smarter people
+* Something..something DataOps, AI
+
+These are all lovely ideas, but moving the lever on these are often impossible or impractical. 
+
+## So what are some easy things you can you do?
+
+1. Change your mindset (and how you run projects)
+
+Data analytics is an exploratory and scientific endeavour that isn't supposed to succeed every time. Just like not all lab experiments yield positive results.  Instead of lamenting failures, develop a mindset of innovation and agile working where new ideas are prototyped and investment in R&D promoted but capped and balanced.  
+
+2. Pick better projects  
+
+A question I get all the time, is how to get started with data science projects in an established business. Often there is a disconnect between those doing the work and those deciding what to do. The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience and it requires a balance of hands-on technical skills, with commercial awareness. 
+
+## How can we help? 
+
+We have a dedicated program for businesses looking to get started or deepen their data analytics journey. We can help change your attitude and pick better projects. 
+
+[Book in a Demo](https://www.wavedatalabs.com.au/services/2023-06-20-dds/)
+

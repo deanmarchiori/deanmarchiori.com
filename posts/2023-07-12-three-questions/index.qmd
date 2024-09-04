@@ -1,0 +1,79 @@
+---
+title: "Three Questions to Ask Your Data Scientist"  
+subtitle: "Are your predictive models doing what you think they are?"
+author: "Dean Marchiori"
+date: "2023-07-12"
+categories: [analysis, statistics]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---
+
+If you have hired a data scientist or run a team of data people, you may not be an expert yourself (that's why you hired an expert, right?). So how do you know you are receiving a quality predictive model and not some BS that was thrown carelessly at a [black-box](https://en.wikipedia.org/wiki/Black_box) machine learning model.
+
+The consequences of poorly built statistical models are not trivial. In 2015, Amazon realized its 'AI recruiting tool' didn't like women[^1]. In the US, facial recognition models used by police were found to have biases that more commonly misidentified underrepresented communities.[^2]
+
+[^1]: https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G
+
+[^2]: https://www.nytimes.com/2019/07/08/us/detroit-facial-recognition-cameras.html
+
+So what can you do about it?
+
+## Three questions you can ask your data scientist
+
+### 1. How could the model be unfair?
+
+-   What training data was used, and how was this collected?
+-   Could certain sub-populations be over or under-represented in this data?
+-   Have customer details been anonymised?  
+-   Are sensitive features used in the model training (race, religion, gender, political preferences).
+
+Algorithmic unfairness and biases are already huge issues which are only getting worse. Further reading on this topic is covered by Cathy O'Neil's excellent book *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*[^3].
+
+[^3]: https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction
+
+### 2. What assumptions does the model make, and how have these been tested?
+
+All statistical models have assumptions that are made in order for the math to work out. Models are intended to be simplified representations of reality, deliberately so statisticians can exploit properties like the [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem) to help make inferences. For example the assumptions behind a simple linear regression include:
+
+a)  The response variable can be expressed as a linear combination of the predictors.  
+b)  The variance of the error terms is homoscedastic (has constant variance).  
+c)  The errors in the response are independent.
+
+In many cases these can be checked using standard diagnostics tests and plots. However in most cases it requires more in depth domain knowledge and context.
+
+### 3. How accurate is the model?
+
+Ever been told a model is 99% accurate? I'd be very worried if you had. Be skeptical of very high performance.  
+
+[xkcd.com](https://xkcd.com/2236/) highlight this well with their 'Is it Christmas?' predictive model.
+
+![](https://imgs.xkcd.com/comics/is_it_christmas.png)   
+
+- On what data has the model been tested? Is it a completely independent test set? Was there any leakage from the training data? Was the feature engineering done before or after the training/test split (hint: it usually needs to be after).
+
+-   If your model is a binary classification model, you should know what the 'null model' is and whether it outperforms this.
+
+-   *Accuracy* is just one measure and is the proportion of correct classifications (both positive and negative class) but you may have different tolerance for misclassifications of each class. For example, you might be predicting the presence of a disease from a test. If you make a false positive, will the risk of side-effects or cost outweigh the risk the making a false negative and having the patient get sicker or die? It's tricky.
+
+-   In addition to accuracy ask for the following metrics, along with an explanation of what they mean.
+
+    -   Sensitivity / Recall
+    -   Specificity
+    -   Precision / Positive Predictive Value
+    -   Negative Predictive Value
+    -   ROC AUC  
+
+-   Ask for a [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix). All of the above measures (except ROC) can be calculated from the confusion matrix. Despite its name, it will be instantly clear where the model is working well versus not.
+
+-   Ask what cut-off or threshold was used to make the predicted classifications. Many classification models return conditional class probabilities, which need to be converted into labels such as (Yes/No, Cancer/Not Cancer, Churn/Not Churn). A default value is to use a 0.5 probability for the crisp cutoff, but it's subjective and depends on the desired trade off in sensitivity / specificity as well as other complicated factors like training class imbalance.
+
+## What now?
+
+If you don't get good answers to these questions, you should probably give me a call.  
+
+Have I missed something? Let me know!  

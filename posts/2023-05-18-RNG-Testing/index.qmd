@@ -1,0 +1,69 @@
+---
+title: "Random Number Generator Testing"  
+subtitle: "A tale of an unemployed ice-cream man, secret societies and a $10 radio"
+author: "Dean Marchiori"
+date: "2023-05-19"
+categories: [R, statistics]
+image: "featured.jpg"
+---
+
+We had really interesting discussion with a company recently who needed a random number generator certified.  
+
+Randomness, like time or space, is one of these deep concepts that are super hard to reason about. Despite this, it's fairly common to see random number generators in practice. A casino will use one in their gaming software to 
+randomise outcomes; A lottery or competition website will use one to pick winners; Scientists use them to run simulations and cryptographic applications are powered by some form of randomness.  
+
+Flash back to the 1980's where down-on-his-luck unemployed ice cream man Michael Larsen cracked the (non-random) pattern in TV game show *Press Your Luck* and took them for over $100k. Sadly it [didnt end well for Larsen](https://web.archive.org/web/20170712041017/http://www.rotten.com/library/conspiracy/press-your-luck/) with Ponzi schemes, radio station challenges awry and a break and enter. But it goes to show what can happen if you don't take randomness seriously.  
+
+![Game show wizz and ice cream man Michael Larsen](larsen.jpg)
+
+## (Aside) Ok but what is random?  And who is Ramsey?
+
+Randomness is an actual or apparent lack of pattern, but it's kind of hard to test and even its very nature is somewhat unclear. In 1903, a British mathematician called [Frank Ramsey](https://en.wikipedia.org/wiki/Frank_Ramsey_(mathematician)) was born. Ramsey was a militant atheist, but interestingly his brother went on to become Archbishop of Canterbury. He went on to study mathematics and economics, becoming a student of famous economist John Maynard Keynes. Somehow he ended up also translating a German book of logical philosophy into English and joined a [secret intellectual society](https://en.wikipedia.org/wiki/Cambridge_Apostles) just after the war. A minor discovery of his ended up blossoming into what is known as Ramsey theory, which is a theory in mathematical combinatorics showing that in any sufficiently large system, however disordered, there is always *some* order. This has had interesting (and conspiratorial) implications for whether there is even such a thing as 'random'. Oh and by the way, all this happened before he died at age 26 after complications from liver disease likely caused by swimming in a river. 
+
+## Types of Random Number Generators (RNGs)   
+
+Generally RNG's can generate **True** random numbers or **Pseudo** random numbers. True RNGs generate random bits from natural stochastic sources like background radiation, quantum effects, atmospheric noise etc. Next time you are tempted to toss a coin, perhaps head over to [random.org](random.org) instead for some 'true' randomness. 
+
+There is a fun [history lesson](https://www.random.org/history/) for how random.org got started with true RNG's generated using random static from a cheap $10 radio, laden with a post-it note advising passers by not to fiddle with the knobs. 
+
+![Early true RNG using atmospheric noise from a cheap radio](random.jpg)
+
+Pseudo-random numbers are generated using a 'seed' that deterministically produces numbers that look random, but can be entirely reproduced from the initial seed condition. This is often useful (and used by me all the time) when you need a random sample, but you need it to replicated exactly for scientific reproducibility purposes. 
+
+## Statistical Tests  
+
+Given randomness itself is hard to test, there are a number of statistical test suites that perform a battery of diagnostics on a large sample of random numbers in order to test various aspects of randomness. One prominent test suite for cryptographic random bits is developed by [NIST](https://www.nist.gov/) which uses [15 different statistical tests.](https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final) 
+
+1. The Frequency (Monobit) Test
+2. Frequency Test within a Block
+3. The Runs Test
+4. Tests for the Longest-Run-of-Ones in a Block
+5. The Binary Matrix Rank Test
+6. The Discrete Fourier Transform (Spectral) Test
+7. The Non-overlapping Template Matching Test
+8. The Overlapping Template Matching Test
+9. Maurer's "Universal Statistical" Test
+10. The Linear Complexity Test
+11. The Serial Test
+12. The Approximate Entropy Test
+13. The Cumulative Sums (Cusums) Test
+14. The Random Excursions Test
+15. The Random Excursions Variant Test 
+
+So, like much of the mathematics behind every day scenarios there is a fascinating history and deep technical and philosophical implications. Given what is on the line for organisations relying on randomness, its useful to engage a specialist to help run and interpret these test suites.  
+
+And remember, if you get it wrong, someone unemployed ice-cream man is just waiting to swoop in and take advantage.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+

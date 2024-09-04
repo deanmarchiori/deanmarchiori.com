@@ -16,7 +16,7 @@
 <height>138</height>
 <width>144</width>
 </image>
-<generator>quarto-1.4.550</generator>
+<generator>quarto-1.4.554</generator>
 <lastBuildDate>Tue, 18 Jun 2024 14:00:00 GMT</lastBuildDate>
 <item>
   <title>Is ChatGPT is a bullshit machine?</title>
@@ -256,6 +256,205 @@ out skel qt;</code></pre>
   <guid>https://www.deanmarchiori.com/posts/2023-09-17-geolocating/</guid>
   <pubDate>Sat, 16 Sep 2023 14:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2023-09-17-geolocating/featured.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+<item>
+  <title>Deploying Enterprise Scale AI &amp; Machine Learning Infrastucture</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-09-11-enterprise-ml/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Are you about to scale up your data analytics team to do more AI/ML work? Here are 5 things you need to know up front to make your life easier.</p>
+<p>These are tips focused on enterprise-level organisations wanting to implement Microsoft’s <a href="https://azure.microsoft.com/en-au/products/machine-learning">Azure Machine Learning studio</a>. But I’m sure the content translates well to other settings.</p>
+<p><img src="https://www.deanmarchiori.com/posts/2023-09-11-enterprise-ml/featured.png" class="img-fluid"></p>
+<section id="people---process---platform-pick-any-three" class="level2">
+<h2 class="anchored" data-anchor-id="people---process---platform-pick-any-three">1) People - Process - Platform (pick any three)</h2>
+<p>Effective analytics and machine learning requires coordination of <strong>People, Process &amp; Platform</strong>. But do you need all three?</p>
+<p>Yes. But you don’t need all three to get started.</p>
+<p>Most Data Scientists will not care about and will not identify as owning MLOps. They want to lead experimentation and innovation, not building production-grade ML pipelines. You will either have to:</p>
+<ol type="a">
+<li>Find an internal champion to lead this and train others.</li>
+<li>Hire an ML engineer if you have enough work to keep them busy (A recent ML Engineer job ad I saw was around $650k, so bear that in mind).<br>
+</li>
+<li>Work with a specialist partner / consultant to fill this gap and support your teams doing what they are good at.</li>
+</ol>
+<p>Converting experimental analytics POCs into robust MLOps-style pipelines is not trivial. It takes real, behind the scenes work which is kind of thankless. But sometimes you need to eat your vegetables and do this. Ensuring you have a well crafted process for governing how, when and why MLOps should exist will help secure the time, funding and social capital you need.</p>
+</section>
+<section id="dont-overlook-security" class="level2">
+<h2 class="anchored" data-anchor-id="dont-overlook-security">2) Don’t overlook security</h2>
+<p>Want to know where you are going to face challenges and delays implementing an AI/Ml platform?</p>
+<p>Wonder no more: Network Security.</p>
+<p>Azure ML Studio (and any ML platform) will require serious planning around network architecture and security, and for good reason. It’s not as scary as it sounds, but it does require expertise. You need to have strong representation on your project from a decision maker and a ‘doer’ in network security. If these people aren’t inside the tent with you, your project will grind to a halt.</p>
+</section>
+<section id="think-about-dev-work-not-just-mlops" class="level2">
+<h2 class="anchored" data-anchor-id="think-about-dev-work-not-just-mlops">3) Think about dev work, not just MLOps</h2>
+<p>If we are being honest, not many organisations are ready for scalable, reproducible, high performance ML deployments. But almost all orgs are building toward this in the next 5 years. So what’s most useful in the here and now?</p>
+<ol type="a">
+<li>Easy to access online notebooks with various kernels</li>
+<li>Click of a button scalable compute, without fussing about with the infra layer</li>
+<li>AutoML tools to find performance ceilings and explore the solution space of new problems</li>
+</ol>
+<p>Want to get your data scientist on board? Tell them they wont have to run jobs on their laptops overnight anymore.</p>
+</section>
+<section id="its-python-heavy-sorry-r-users" class="level2">
+<h2 class="anchored" data-anchor-id="its-python-heavy-sorry-r-users">4) It’s Python heavy (sorry R users)</h2>
+<p>There a lot to complain about if you are an R user. Azure ML studio is decidedly a Python oriented tool. While admittedly, most high-level AI development work is in Python, in reality a lot of so called “ML” projects are classical statistical models anyway. There are nice tools within R ecosystem for <a href="https://putrinprod.com/">putting R in prod</a>. However if you work in an enterprise setting, you may need to deploy your models on the chosen enterprise analytics platform. This is not ideal for R users, but hopefully in a future post I can show you how to have the best of both worlds.</p>
+</section>
+<section id="its-not-an-etl-environment" class="level2">
+<h2 class="anchored" data-anchor-id="its-not-an-etl-environment">5) Its not an ETL environment</h2>
+<p>Like any tool its only good for what it’s good for. When we think of true end-to-end machine learning projects there are steps in that process that are better fit in other tools. A common suspect here is the data import and processing. It’s nice to coordinate ML deployments with your data engineering teams to ensure you are using the right tools for the right jobs.</p>
+</section>
+<section id="want-to-learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="want-to-learn-more">Want to learn more?</h2>
+<p>If you are wanting to take the next steps in setting up people, process and platforms for high performance machine learning, <a href="https://www.wavedatalabs.com.au/contact/">get in touch for a chat.</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>analysis</category>
+  <category>statistics</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-09-11-enterprise-ml/</guid>
+  <pubDate>Sun, 10 Sep 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-09-11-enterprise-ml/featured.png" medium="image" type="image/png" height="123" width="144"/>
+</item>
+<item>
+  <title>Three Questions to Ask Your Data Scientist</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-07-12-three-questions/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>If you have hired a data scientist or run a team of data people, you may not be an expert yourself (that’s why you hired an expert, right?). So how do you know you are receiving a quality predictive model and not some BS that was thrown carelessly at a <a href="https://en.wikipedia.org/wiki/Black_box">black-box</a> machine learning model.</p>
+<p>The consequences of poorly built statistical models are not trivial. In 2015, Amazon realized its ‘AI recruiting tool’ didn’t like women<sup>1</sup>. In the US, facial recognition models used by police were found to have biases that more commonly misidentified underrepresented communities.<sup>2</sup></p>
+<p>So what can you do about it?</p>
+<section id="three-questions-you-can-ask-your-data-scientist" class="level2">
+<h2 class="anchored" data-anchor-id="three-questions-you-can-ask-your-data-scientist">Three questions you can ask your data scientist</h2>
+<section id="how-could-the-model-be-unfair" class="level3">
+<h3 class="anchored" data-anchor-id="how-could-the-model-be-unfair">1. How could the model be unfair?</h3>
+<ul>
+<li>What training data was used, and how was this collected?</li>
+<li>Could certain sub-populations be over or under-represented in this data?</li>
+<li>Have customer details been anonymised?<br>
+</li>
+<li>Are sensitive features used in the model training (race, religion, gender, political preferences).</li>
+</ul>
+<p>Algorithmic unfairness and biases are already huge issues which are only getting worse. Further reading on this topic is covered by Cathy O’Neil’s excellent book <em>Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy</em><sup>3</sup>.</p>
+</section>
+<section id="what-assumptions-does-the-model-make-and-how-have-these-been-tested" class="level3">
+<h3 class="anchored" data-anchor-id="what-assumptions-does-the-model-make-and-how-have-these-been-tested">2. What assumptions does the model make, and how have these been tested?</h3>
+<p>All statistical models have assumptions that are made in order for the math to work out. Models are intended to be simplified representations of reality, deliberately so statisticians can exploit properties like the <a href="https://en.wikipedia.org/wiki/Central_limit_theorem">Central Limit Theorem</a> to help make inferences. For example the assumptions behind a simple linear regression include:</p>
+<ol type="a">
+<li>The response variable can be expressed as a linear combination of the predictors.<br>
+</li>
+<li>The variance of the error terms is homoscedastic (has constant variance).<br>
+</li>
+<li>The errors in the response are independent.</li>
+</ol>
+<p>In many cases these can be checked using standard diagnostics tests and plots. However in most cases it requires more in depth domain knowledge and context.</p>
+</section>
+<section id="how-accurate-is-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="how-accurate-is-the-model">3. How accurate is the model?</h3>
+<p>Ever been told a model is 99% accurate? I’d be very worried if you had. Be skeptical of very high performance.</p>
+<p><a href="https://xkcd.com/2236/">xkcd.com</a> highlight this well with their ‘Is it Christmas?’ predictive model.</p>
+<p><img src="https://imgs.xkcd.com/comics/is_it_christmas.png" class="img-fluid"></p>
+<ul>
+<li><p>On what data has the model been tested? Is it a completely independent test set? Was there any leakage from the training data? Was the feature engineering done before or after the training/test split (hint: it usually needs to be after).</p></li>
+<li><p>If your model is a binary classification model, you should know what the ‘null model’ is and whether it outperforms this.</p></li>
+<li><p><em>Accuracy</em> is just one measure and is the proportion of correct classifications (both positive and negative class) but you may have different tolerance for misclassifications of each class. For example, you might be predicting the presence of a disease from a test. If you make a false positive, will the risk of side-effects or cost outweigh the risk the making a false negative and having the patient get sicker or die? It’s tricky.</p></li>
+<li><p>In addition to accuracy ask for the following metrics, along with an explanation of what they mean.</p>
+<ul>
+<li>Sensitivity / Recall</li>
+<li>Specificity</li>
+<li>Precision / Positive Predictive Value</li>
+<li>Negative Predictive Value</li>
+<li>ROC AUC</li>
+</ul></li>
+<li><p>Ask for a <a href="https://en.wikipedia.org/wiki/Confusion_matrix">confusion matrix</a>. All of the above measures (except ROC) can be calculated from the confusion matrix. Despite its name, it will be instantly clear where the model is working well versus not.</p></li>
+<li><p>Ask what cut-off or threshold was used to make the predicted classifications. Many classification models return conditional class probabilities, which need to be converted into labels such as (Yes/No, Cancer/Not Cancer, Churn/Not Churn). A default value is to use a 0.5 probability for the crisp cutoff, but it’s subjective and depends on the desired trade off in sensitivity / specificity as well as other complicated factors like training class imbalance.</p></li>
+</ul>
+</section>
+</section>
+<section id="what-now" class="level2">
+<h2 class="anchored" data-anchor-id="what-now">What now?</h2>
+<p>If you don’t get good answers to these questions, you should probably give me a call.</p>
+<p>Have I missed something? Let me know!</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G↩︎</p></li>
+<li id="fn2"><p>https://www.nytimes.com/2019/07/08/us/detroit-facial-recognition-cameras.html↩︎</p></li>
+<li id="fn3"><p>https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>analysis</category>
+  <category>statistics</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-07-12-three-questions/</guid>
+  <pubDate>Tue, 11 Jul 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-07-12-three-questions/featured.png" medium="image" type="image/png" height="136" width="144"/>
+</item>
+<item>
+  <title>Why your data science projects are failing</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-06-26-failure/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<blockquote class="blockquote">
+<p>The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience.</p>
+</blockquote>
+<p>A number that seems to be floating around is 80% of data science projects will FAIL. Ouch.</p>
+<p>Many of these types of numbers are ‘predictions’ from consultancies who stand to benefit from making big claims.</p>
+<blockquote class="blockquote">
+<p>“Through 2022, only 20% of analytic insights will deliver business outcomes.”</p>
+</blockquote>
+<p><a href="https://blogs.gartner.com/andrew_white/2019/01/03/our-top-data-and-analytics-predicts-for-2019/">https://blogs.gartner.com/andrew_white/2019/01/03/our-top-data-and-analytics-predicts-for-2019/</a></p>
+<p>Cited reasons to fix this include:</p>
+<ul>
+<li>Getting better data</li>
+<li>Getting a Data strategy and governance framework</li>
+<li>Hiring smarter people</li>
+<li>Something..something DataOps, AI</li>
+</ul>
+<p>These are all lovely ideas, but moving the lever on these are often impossible or impractical.</p>
+<section id="so-what-are-some-easy-things-you-can-you-do" class="level2">
+<h2 class="anchored" data-anchor-id="so-what-are-some-easy-things-you-can-you-do">So what are some easy things you can you do?</h2>
+<ol type="1">
+<li>Change your mindset (and how you run projects)</li>
+</ol>
+<p>Data analytics is an exploratory and scientific endeavour that isn’t supposed to succeed every time. Just like not all lab experiments yield positive results. Instead of lamenting failures, develop a mindset of innovation and agile working where new ideas are prototyped and investment in R&amp;D promoted but capped and balanced.</p>
+<ol start="2" type="1">
+<li>Pick better projects</li>
+</ol>
+<p>A question I get all the time, is how to get started with data science projects in an established business. Often there is a disconnect between those doing the work and those deciding what to do. The most undervalued skill in delivering value with data science teams is picking projects that are likely to succeed. There is no shortcut - it takes years of hard earned experience and it requires a balance of hands-on technical skills, with commercial awareness.</p>
+</section>
+<section id="how-can-we-help" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-we-help">How can we help?</h2>
+<p>We have a dedicated program for businesses looking to get started or deepen their data analytics journey. We can help change your attitude and pick better projects.</p>
+<p><a href="https://www.wavedatalabs.com.au/services/2023-06-20-dds/">Book in a Demo</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>analysis</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-06-26-failure/</guid>
+  <pubDate>Sun, 25 Jun 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-06-26-failure/featured.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Man vs Machine Learning</title>
@@ -525,6 +724,216 @@ out skel qt;</code></pre>
   <guid>https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/</guid>
   <pubDate>Thu, 01 Jun 2023 14:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Level up your Forecasting</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-05-29-forecasting/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is a time series data set of half-hourly electricity demand for Victoria, Australia <sup>1</sup>. You may not care about electricity forecasting, but there is probably some similar time series in your organisation you do care about.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>What is the forecast demand for the next week?</strong></p>
+<p>Who knows? I certainly don’t know, despite doing forecasting for a job.</p>
+<p>In fact, anyone who tells you they do know (with certainty) is wrong.</p>
+<section id="but-i-need-to-make-a-forecast-so-what-do-i-do" class="level2">
+<h2 class="anchored" data-anchor-id="but-i-need-to-make-a-forecast-so-what-do-i-do">But I need to make a forecast, so what do I do?</h2>
+<p>Often you have to come up with something. Finance needs an estimate of sales or budgets, or your manager needs something to take to the board. So you have to churn out some numbers. But what numbers?</p>
+<p>Here are two extremes:</p>
+<ol type="1">
+<li>You could ignore all historical data and just use the most recent data point as the most reliable forecast.<br>
+</li>
+<li>You could ignore any specific value and just take the average of everything.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Both are in the ballpark but they aren’t very squiggly like the real data. They clearly aren’t capturing the <em>seasonality</em>.</p>
+<p>You could be lazy (clever) and just use the same time period from <em>last</em> week as your current forecast. It actually looks really good. But it’s just one, fixed realization of what could happen. Will it play out exactly like your forecast? <em>Exactly</em> like last week? Almost certainly not.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Let’s simulate another way history could play out. (By statistically resampling the residuals in the training data)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>And another</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>And 20 more:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>So instead of blindly relying on one (kind of okay looking, but totally unrealistic) forecast, we now have a ‘fuzzy’ region of plausible values.</p>
+</section>
+<section id="ok-but-why-bother" class="level2">
+<h2 class="anchored" data-anchor-id="ok-but-why-bother">Ok but why bother?</h2>
+<p>If you don’t know with certainty what your forecast is going to be, then don’t just give one concrete number. It’s misleading.</p>
+<blockquote class="blockquote">
+<p>Its more important to know how uncertain your forecast is rather than what your forecast is.</p>
+</blockquote>
+<p>You can still pull out a mean or point estimate but by delivering the whole story you are conveying not just what you think is likely to happen, but how certain you are about it.</p>
+<p>Often this can lead to more meaningful discussions. Perhaps it’s not the mean of your forecast distribution that you care about, its the extreme values. For example, If I was stress testing business cash flows and forecasting the cost of a maintenance activity, I’d be more interested in forecasting the 95% upper limit of forecast costs rather than the ‘expected’ cost.</p>
+<p>In practice, you often don’t have to do any mathematical simulations. Proper time series forecasts have methods to calculate prediction intervals out of the box (see below).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="spoiler" class="level2">
+<h2 class="anchored" data-anchor-id="spoiler">Spoiler</h2>
+<p>Want to know what actually happened? Here it is in red.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A huge criticism of providing probabilistic forecasts is that is seems like you are ‘hedging your bets’ and being evasive. The reality is, in our electricity example, it was just very hot and demand surged (much higher than even our 95% prediction interval). So if it’s realistic and plausible to see forecast values in these ranges (or even more extreme) - Why wouldn’t you want to include that information in your forecast??</p>
+</section>
+<section id="aside" class="level2">
+<h2 class="anchored" data-anchor-id="aside">Aside</h2>
+<p>In practice a statistician will likely use a more sophisticated model than presented here. These models may take into account temperature and other factors but there will still be unexplained variance that will need to be quantified if you want a quality forecast produced.</p>
+<p><strong>If you or your organisation want to get serious about making proper forecasts and being proactive when making critical decisions - <a href="https://www.wavedatalabs.com.au/contact/">drop me a line</a>, I can help.</strong></p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). <em>tsibbledata: Diverse Datasets for ‘tsibble’</em>. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Source: Australian Energy Market Operator. <em>tsibbledata</em> R package.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>R</category>
+  <category>statistics</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-05-29-forecasting/</guid>
+  <pubDate>Sun, 28 May 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/featured.png" medium="image" type="image/png" height="103" width="144"/>
+</item>
+<item>
+  <title>Random Number Generator Testing</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>We had really interesting discussion with a company recently who needed a random number generator certified.</p>
+<p>Randomness, like time or space, is one of these deep concepts that are super hard to reason about. Despite this, it’s fairly common to see random number generators in practice. A casino will use one in their gaming software to randomise outcomes; A lottery or competition website will use one to pick winners; Scientists use them to run simulations and cryptographic applications are powered by some form of randomness.</p>
+<p>Flash back to the 1980’s where down-on-his-luck unemployed ice cream man Michael Larsen cracked the (non-random) pattern in TV game show <em>Press Your Luck</em> and took them for over $100k. Sadly it <a href="https://web.archive.org/web/20170712041017/http://www.rotten.com/library/conspiracy/press-your-luck/">didnt end well for Larsen</a> with Ponzi schemes, radio station challenges awry and a break and enter. But it goes to show what can happen if you don’t take randomness seriously.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/larsen.jpg" class="img-fluid figure-img"></p>
+<figcaption>Game show wizz and ice cream man Michael Larsen</figcaption>
+</figure>
+</div>
+<section id="aside-ok-but-what-is-random-and-who-is-ramsey" class="level2">
+<h2 class="anchored" data-anchor-id="aside-ok-but-what-is-random-and-who-is-ramsey">(Aside) Ok but what is random? And who is Ramsey?</h2>
+<p>Randomness is an actual or apparent lack of pattern, but it’s kind of hard to test and even its very nature is somewhat unclear. In 1903, a British mathematician called <a href="https://en.wikipedia.org/wiki/Frank_Ramsey_(mathematician)">Frank Ramsey</a> was born. Ramsey was a militant atheist, but interestingly his brother went on to become Archbishop of Canterbury. He went on to study mathematics and economics, becoming a student of famous economist John Maynard Keynes. Somehow he ended up also translating a German book of logical philosophy into English and joined a <a href="https://en.wikipedia.org/wiki/Cambridge_Apostles">secret intellectual society</a> just after the war. A minor discovery of his ended up blossoming into what is known as Ramsey theory, which is a theory in mathematical combinatorics showing that in any sufficiently large system, however disordered, there is always <em>some</em> order. This has had interesting (and conspiratorial) implications for whether there is even such a thing as ‘random’. Oh and by the way, all this happened before he died at age 26 after complications from liver disease likely caused by swimming in a river.</p>
+</section>
+<section id="types-of-random-number-generators-rngs" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-random-number-generators-rngs">Types of Random Number Generators (RNGs)</h2>
+<p>Generally RNG’s can generate <strong>True</strong> random numbers or <strong>Pseudo</strong> random numbers. True RNGs generate random bits from natural stochastic sources like background radiation, quantum effects, atmospheric noise etc. Next time you are tempted to toss a coin, perhaps head over to <a href="random.org">random.org</a> instead for some ‘true’ randomness.</p>
+<p>There is a fun <a href="https://www.random.org/history/">history lesson</a> for how random.org got started with true RNG’s generated using random static from a cheap $10 radio, laden with a post-it note advising passers by not to fiddle with the knobs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/random.jpg" class="img-fluid figure-img"></p>
+<figcaption>Early true RNG using atmospheric noise from a cheap radio</figcaption>
+</figure>
+</div>
+<p>Pseudo-random numbers are generated using a ‘seed’ that deterministically produces numbers that look random, but can be entirely reproduced from the initial seed condition. This is often useful (and used by me all the time) when you need a random sample, but you need it to replicated exactly for scientific reproducibility purposes.</p>
+</section>
+<section id="statistical-tests" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-tests">Statistical Tests</h2>
+<p>Given randomness itself is hard to test, there are a number of statistical test suites that perform a battery of diagnostics on a large sample of random numbers in order to test various aspects of randomness. One prominent test suite for cryptographic random bits is developed by <a href="https://www.nist.gov/">NIST</a> which uses <a href="https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final">15 different statistical tests.</a></p>
+<ol type="1">
+<li>The Frequency (Monobit) Test</li>
+<li>Frequency Test within a Block</li>
+<li>The Runs Test</li>
+<li>Tests for the Longest-Run-of-Ones in a Block</li>
+<li>The Binary Matrix Rank Test</li>
+<li>The Discrete Fourier Transform (Spectral) Test</li>
+<li>The Non-overlapping Template Matching Test</li>
+<li>The Overlapping Template Matching Test</li>
+<li>Maurer’s “Universal Statistical” Test</li>
+<li>The Linear Complexity Test</li>
+<li>The Serial Test</li>
+<li>The Approximate Entropy Test</li>
+<li>The Cumulative Sums (Cusums) Test</li>
+<li>The Random Excursions Test</li>
+<li>The Random Excursions Variant Test</li>
+</ol>
+<p>So, like much of the mathematics behind every day scenarios there is a fascinating history and deep technical and philosophical implications. Given what is on the line for organisations relying on randomness, its useful to engage a specialist to help run and interpret these test suites.</p>
+<p>And remember, if you get it wrong, someone unemployed ice-cream man is just waiting to swoop in and take advantage.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>statistics</category>
+  <guid>https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/</guid>
+  <pubDate>Thu, 18 May 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Deploy Your Own R Data Science Lab in the Cloud</title>

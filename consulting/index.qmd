@@ -4,8 +4,7 @@ subtitle: "All science, no hype."
 listing: "default"
 ---
 
-I am open to discussing short or long term consulting and contract opportunities 
-in a range of fields. If you are interesting in hiring me [get in touch here.](../contact/index.qmd)
+I am open to discussing short or long term consulting projects through my company [Wave Data Labs](https://wavedatalabs.com.au). If you are interesting in hiring me [get in touch here.](../contact/index.qmd)
 
 + Statistical Modelling 
 + Advanced Analytics
