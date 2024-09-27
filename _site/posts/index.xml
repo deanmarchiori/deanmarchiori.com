@@ -17,7 +17,71 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Tue, 18 Jun 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 25 Sep 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Science Workflows: CRISP-DM</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2024-09-26-crispdm/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The <a href="https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining">cross-industry standard process for data mining (CRISP-DM)</a> is a process model and framework for carrying out data mining projects.</p>
+<p>‘Data mining’ is quite a funny term and will instantly carbon-date you if you use it. It very much of a late 90’s era. If you were around then your WFH setup probably looked like this. So good.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/PC.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Still room for a CD burner</figcaption>
+</figure>
+</div>
+<p>Nostalgia aside, it remains a popular choice for contemporary data analysis workflows. In my practice I use a version of it for almost every project. I’m not going to bother doing a deep dive (although <a href="http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf">here</a> is a nice overview) into each step, as honestly I don’t think any framework should be rigidly adopted, but here is the thrust of it:</p>
+<ul>
+<li>You start with <em>Business Understanding</em> and <em>Data Understanding</em> as a simultaneous, iterative step. Can’t do one without the other.</li>
+<li>Eventually you want to do some <em>Modeling</em> which will require <em>Data Preparation</em> and feature engineering etc.</li>
+<li>Once you have some results you want to <em>Evaluate</em> they solve the business problem</li>
+<li>Eventually you want to <em>Deploy</em> something.</li>
+<li>There is also a ‘meta’ step of this whole thing not being just a one-shot framework and you may need to cycle through it a few times at different levels of detail.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/crisp.png" class="img-fluid figure-img"></p>
+<figcaption>Kenneth Jensen, CC BY-SA 3.0 <a href="https://creativecommons.org/licenses/by-sa/3.0" class="uri">https://creativecommons.org/licenses/by-sa/3.0</a>, via Wikimedia Commons</figcaption>
+</figure>
+</div>
+<p>I like it, but want to focus on some of the more important insights I have found in practice:</p>
+<ol type="1">
+<li>You don’t have to (and shouldn’t) do the steps in a rigid order. It’s just a framework.</li>
+<li>Don’t skimp on <em>Business Understanding</em> and <em>Data Understanding</em>. I know you want to start modelling straight away, just slow down cowboy.<br>
+</li>
+<li>Evaluation doesnt mean model-evaluation (like ROC, AIC etc). That is done in the ‘Modelling’ step. Here it means going back to the business owner or expert and stress-testing the results to see if it solves the problem and makes real-world sense.</li>
+<li>A key reason I use this is to show your stakeholder that you have <em>a process</em> to follow. This will give everyone confidence.</li>
+<li>It’s a great tool to facilitate status and project updates. i.e.&nbsp;We are here, and next we are moving in this direction.<br>
+</li>
+<li>That said, if you try to integrate this into waterfall or scrum project management frameworks you will find it a little unsatisfying, as it is recognised as not a real project management framework.</li>
+<li>For smaller exploratory or discovery projects I tend to use these 6 phases as ‘stages’ of a project, which makes it easier to draw up a proposal and quote a job. In practice for larger projects you do need to be more iterative and cycle through 2 or three times, so be careful not to timebox each step unless you know you are just going around one time.<br>
+</li>
+<li>The deployment phase is a little tricky. It used to mean writing a paper or report. Now this is more of a full-blooded discipline in a tech sense. This is where is see the biggest modern drawback: Reconciling analysis work with product development and deployment.</li>
+</ol>
+<p>In a future post I will discuss another framework on how to use CRISP-DM in the context of building and shipping something to production.</p>
+<p>So should you use it? Yes. It’s great, and it’s changed my analysis projects profoundly. Rather than whipping off the curtain at the ‘results’ presentation and hear everyone in the room gulp at the same time, you manage the flow of results throughout the process so there are no surprises and its truly more collaborative.</p>
+<p>Want to read more? Sign up to my mailing list <a href="https://www.wavedatalabs.com.au/">here</a> for weekly emails and no spam.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/featured.png" class="img-fluid figure-img"></p>
+<figcaption>Don’t do this</figcaption>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>Analysis</category>
+  <guid>https://www.deanmarchiori.com/posts/2024-09-26-crispdm/</guid>
+  <pubDate>Wed, 25 Sep 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/featured.png" medium="image" type="image/png" height="67" width="144"/>
+</item>
 <item>
   <title>Is ChatGPT is a bullshit machine?</title>
   <dc:creator>Dean Marchiori</dc:creator>

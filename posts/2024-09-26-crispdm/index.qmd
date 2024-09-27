@@ -1,0 +1,64 @@
+---
+title: "Data Science Workflows: CRISP-DM"  
+subtitle: "90's nostaglia that holds up"
+author: "Dean Marchiori"
+date: "2024-09-26"
+categories: [Analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+The [cross-industry standard process for data mining (CRISP-DM)](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) is a process model and
+framework for carrying out data mining projects. 
+
+'Data mining' is quite a funny term and will instantly carbon-date you if you use it. It
+very much of a late 90's era. If you were around then your WFH setup probably looked
+like this. So good. 
+
+![Still room for a CD burner](PC.png){width=50%}
+
+Nostalgia aside, it remains a popular choice for contemporary data analysis workflows. 
+In my practice I use a version of it for almost every project. I'm not going to bother
+doing a deep dive (although [here](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf) is a nice overview) into each step, as honestly I don't think any framework should
+be rigidly adopted, but here is the thrust of it: 
+
+- You start with *Business Understanding* and *Data Understanding* as a simultaneous,
+iterative step. Can't do one without the other. 
+- Eventually you want to do some *Modeling* which will require *Data Preparation*
+and feature engineering etc. 
+- Once you have some results you want to *Evaluate* they solve the business problem
+- Eventually you want to *Deploy* something. 
+- There is also a 'meta' step of this whole thing not being just a one-shot framework and
+you may need to cycle through it a few times at different levels of detail. 
+
+![Kenneth Jensen, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons](crisp.png)
+
+I like it, but want to focus on some of the more important insights I have found in 
+practice: 
+
+1) You don't have to (and shouldn't) do the steps in a rigid order. It's just a framework. 
+2) Don't skimp on *Business Understanding* and *Data Understanding*. I know you want to start modelling
+straight away, just slow down cowboy.  
+2) Evaluation doesnt mean model-evaluation (like ROC, AIC etc). That is done in the 'Modelling' step. Here it means
+going back to the business owner or expert and stress-testing the results to see if it solves
+the problem and makes real-world sense. 
+3) A key reason I use this is to show your stakeholder that you have *a process* to follow. This will give everyone confidence. 
+4) It's a great tool to facilitate status and project updates. i.e. We are here, and next we are moving in this direction.  
+4) That said, if you try to integrate this into waterfall or scrum project management frameworks you will find it a little 
+unsatisfying, as it is recognised as not a real project management framework. 
+5) For smaller exploratory or discovery projects I tend to use these 6 phases as 'stages' of a project, which makes it easier to draw up a proposal and quote a job. In practice for larger projects you do need to be more iterative and cycle through 2 or three times, so be careful not to timebox each step unless you know you are just going around one time.    
+6) The deployment phase is a little tricky. It used to mean writing a paper or report. Now this is more
+of a full-blooded discipline in a tech sense. This is where is see the biggest modern drawback: Reconciling analysis work with product development and deployment.   
+
+In a future post I will discuss another framework on how to use CRISP-DM in the context of building and shipping something to production. 
+
+So should you use it? Yes. It's great, and it's changed my analysis projects profoundly. Rather than whipping off the curtain at the 'results' presentation and hear everyone in the room gulp at the same time, you manage the flow of results throughout the process so there are no surprises and its truly more collaborative.    
+
+>**Want to read more? Sign up to my mailing list [here](https://www.wavedatalabs.com.au/) for weekly emails and no spam.** 
+
+![Don't do this](featured.png)
