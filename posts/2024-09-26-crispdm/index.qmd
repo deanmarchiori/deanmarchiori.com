@@ -59,6 +59,7 @@ In a future post I will discuss another framework on how to use CRISP-DM in the 
 
 So should you use it? Yes. It's great, and it's changed my analysis projects profoundly. Rather than whipping off the curtain at the 'results' presentation and hear everyone in the room gulp at the same time, you manage the flow of results throughout the process so there are no surprises and its truly more collaborative.    
 
->**Want to read more? Sign up to my mailing list [here](https://www.wavedatalabs.com.au/) for weekly emails and no spam.** 
+>**Want to read more? Sign up to my mailing list [here](https://www.wavedatalabs.com.au/) for weekly emails and no spam.**  
+> **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**
 
 ![Don't do this](featured.png)

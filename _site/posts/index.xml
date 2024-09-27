@@ -66,7 +66,10 @@
 </ol>
 <p>In a future post I will discuss another framework on how to use CRISP-DM in the context of building and shipping something to production.</p>
 <p>So should you use it? Yes. It’s great, and it’s changed my analysis projects profoundly. Rather than whipping off the curtain at the ‘results’ presentation and hear everyone in the room gulp at the same time, you manage the flow of results throughout the process so there are no surprises and its truly more collaborative.</p>
-<p>Want to read more? Sign up to my mailing list <a href="https://www.wavedatalabs.com.au/">here</a> for weekly emails and no spam.</p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.wavedatalabs.com.au/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/featured.png" class="img-fluid figure-img"></p>
