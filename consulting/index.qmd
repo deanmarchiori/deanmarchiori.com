@@ -4,16 +4,29 @@ subtitle: "All science, no hype."
 listing: "default"
 ---
 
-I am open to discussing short or long term consulting projects through my company [Wave Data Labs](https://wavedatalabs.com.au). If you are interesting in hiring me [get in touch here.](../contact/index.qmd)
+I specialise in solving real-world, complex data problems that have high social impact.   
 
-+ Statistical Modelling 
-+ Advanced Analytics
-+ R Programming  
-+ Data Visualisation 
-+ Geospatial Analysis  
-+ Time Series Forecasting
-+ Anomaly and Outlier Detection 
-+ A/B Testing and Experimentation
+I use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.    
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+{{< fa chart-line title="chart-line">}}  Statistical Modelling and Analysis  
+{{< fa square-root-variable title="square-root-variable">}} Expert R Programming   
+{{< fa robot title="robot">}} Machine Learning 
+:::
+
+::: {.column width="50%"}
+{{< fa globe title="globe">}} Responsible AI Advisory   
+{{< fa magnifying-glass title="magnifying-glass">}} Career Mentoring & Coaching    
+{{< fa clipboard title="clipboard">}} Data Science Training  
+:::
+
+::::  
+
+<a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get started!</a>
 
 ## Some of my work  
 

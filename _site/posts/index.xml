@@ -17,7 +17,69 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Wed, 25 Sep 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 03 Oct 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Science Workflows: Inner Loop vs Outer Loop</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2024-10-04-innerloop/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In a <a href="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/">previous post</a> I discussed the charming nostalgia of CRISP-DM as a data analysis workflow choice.</p>
+<p>A modern limitation of this model is how it handles the <em>Deployment</em> step. In the olden days this was usually some form of static report to a client. It’s a loaded topic now with deployment usually having something to do with giving money to AWS/MSFT or a battle to the death with your IT department.</p>
+<p>In a practical sense this usually means rigging up an endpoint for your analysis like an API, shiny app, dashboard or similar. Managing this process is rapidly becoming it’s own sub-speciality, fashionably called MLOps.</p>
+<p>A useful way to think about this is in terms of <strong>Inner Loop vs Outer Loop</strong> thinking. I first observed this (for better or worse) in Microsoft’s <a href="https://github.com/Azure/mlops-v2/blob/main/documentation/architecture/classical.md">Azure Machine Learning Classical ML Architecture</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.deanmarchiori.com/posts/2024-10-04-innerloop/arch.png" class="img-fluid figure-img"></p>
+<figcaption>Source: Microsoft MLOps Accelerator. MIT Licence</figcaption>
+</figure>
+</div>
+<p>The <strong>Inner Loop</strong> (Item 3 in the above diagram) is everything in CRISP-DM <em>except</em> ‘Deployment’. It covers the whole data identification, EDA and modelling processes. For lack of a better term I usually call this ‘experimental’ code. It’s usually circular, iterative and experimental in nature.</p>
+<p>At some point you will be happy with an output and want to push it out into the world. This is the <strong>Outer Loop</strong> (Item 5 in the diagram). It’s its own process and involves more engineer-y tasks like provisioning infrastructure, testing &amp; deployment (usually using some CI/CD pipeline) versioning your model and monitoring for drift, quality etc.</p>
+<p>I see two big issues with this in practice:</p>
+<ol type="1">
+<li><p>Analysts do the inner loop, declare victory and have no awareness or interest managing the outer loop. This means the analyst needs to re-run the model on their laptop every month and email the results to Kevin, or some such process. Heaven forbid they live in an area of dense, fast moving buses.</p></li>
+<li><p>The analysts want to more formally deploy their models but don’t have the skills, support or permission. In the end, everything gets shoehorned into a PowerBI dashboard or some half-way solution.</p></li>
+</ol>
+<p>My proposed solutions to this in ascending order of complexity are:</p>
+<ol type="1">
+<li>Start implementing more robust controls over how you save, version, monitor and document the outputs of your analysis - including models.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MLOps in R
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are an R programmer, the tidymodels team at Posit have recently plugged this gaping hole with the <code>{vetiver}</code> package. <a href="https://vetiver.posit.co/">https://vetiver.posit.co/</a></p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Get some really light-weight deployment solution to get off the ground like <a href="https://www.shinyapps.io/">shinyapps.io</a> or a development/sandpit Virtual Machine (in a sensible network location) to throw stuff up on manually and build some goodwill with IT.</p></li>
+<li><p>Move to a more commercially palatable ‘walled-garden’ solution like <a href="https://posit.co/products/enterprise/connect/">Posit Connect</a>. This strikes a nice balance between being licensed, managed software and giving analysts autonomy in what and how they deploy.</p></li>
+<li><p>Utilize your existing cloud providers ML Ops solutions to automate the build and deployment from your version control system - just be careful, this is a slippery slope in terms of complexity and you don’t need to go all-in. This typically keeps IT happy in a heavily regulated environment due to the native integration of network/cloud security protocols.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
+
+
+
+ ]]></description>
+  <category>Analysis</category>
+  <guid>https://www.deanmarchiori.com/posts/2024-10-04-innerloop/</guid>
+  <pubDate>Thu, 03 Oct 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2024-10-04-innerloop/featured.png" medium="image" type="image/png" height="132" width="144"/>
+</item>
 <item>
   <title>Data Science Workflows: CRISP-DM</title>
   <dc:creator>Dean Marchiori</dc:creator>
@@ -3655,144 +3717,6 @@ https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps
   <guid>https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/</guid>
   <pubDate>Sun, 16 Jan 2022 13:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png" medium="image" type="image/png" height="37" width="144"/>
-</item>
-<item>
-  <title>Mapping NSW Fire Incidents in R</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="current-incidents-feed-geojson" class="level2">
-<h2 class="anchored" data-anchor-id="current-incidents-feed-geojson">Current Incidents Feed (GeoJSON)</h2>
-<p>This feed contains a list of current incidents from the NSW RFS, and includes location data and Major Fire Update summary information where available. Click through from the feed to the NSW RFS website for full details of the update.</p>
-<p>GeoJSON is a lightweight data standard that has emerged to support the sharing of information with location or geospatial data. It is widely supported by modern applications and mobile devices.</p>
-<p>See here: https://www.rfs.nsw.gov.au/news-and-media/stay-up-to-date/feeds for attribution and guidelines. Please read these important guidelines before using this data.</p>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p>Load packages</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(sf)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(mapview)</span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
-</div>
-<p>Pull incidents</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">url <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"http://www.rfs.nsw.gov.au/feeds/majorIncidents.json"</span></span>
-<span id="cb2-2">fires <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">st_read</span>(url)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Reading layer `majorIncidents' from data source 
-  `http://www.rfs.nsw.gov.au/feeds/majorIncidents.json' using driver `GeoJSON'
-Simple feature collection with 22 features and 7 fields
-Geometry type: GEOMETRY
-Dimension:     XY
-Bounding box:  xmin: 141.9267 ymin: -37.06285 xmax: 153.0005 ymax: -29.11298
-Geodetic CRS:  WGS 84</code></pre>
-</div>
-</div>
-<p>Optional step to get points only</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># points only</span></span>
-<span id="cb4-2">fire_pt <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> fires <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb4-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">st_cast</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"POINT"</span>) </span></code></pre></div>
-</div>
-<p>Optional Step to get Polygons only. Note the hack to aply a zero distance buffer.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#' Polygons only</span></span>
-<span id="cb5-2">fire_poly <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> fires <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb5-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">st_buffer</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">dist =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb5-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">st_union</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">by_feature =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>)</span></code></pre></div>
-</div>
-<p>Mapping data interactively</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mapview</span>(fire_poly, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">layer.name =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"RFS Current Incident Polygons"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">zcol =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"category"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb6-2">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mapview</span>(fire_pt, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">layer.name =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"RFS Current Incident Locations"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">zcol =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"category"</span>)</span></code></pre></div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/featured.png" class="img-fluid figure-img"></p>
-<figcaption>screenshot of leafet interactive map of fire incidents</figcaption>
-</figure>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <guid>https://www.deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/</guid>
-  <pubDate>Sat, 16 Jan 2021 13:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2021-01-17-mapping-nsw-current-incidents-in-r/featured.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 </channel>
 </rss>

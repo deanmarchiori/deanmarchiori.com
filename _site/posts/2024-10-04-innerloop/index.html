@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dean Marchiori">
+<meta name="dcterms.date" content="2024-10-04">
 
-<title>Dean Marchiori - Data Science &amp; Statistical Consulting</title>
+<title>Dean Marchiori - Data Science Workflows: Inner Loop vs Outer Loop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <script type="text/javascript">
 
@@ -114,44 +83,19 @@ ga('send', {
 });
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Dean Marchiori - Data Science &amp; Statistical Consulting">
-<meta property="og:description" content="All science, no hype.">
-<meta property="og:image" content="https://www.deanmarchiori.com/consulting/img/profile.png">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Dean Marchiori - Data Science Workflows: Inner Loop vs Outer Loop">
+<meta property="og:description" content="Experiment and Deploy">
+<meta property="og:image" content="https://www.deanmarchiori.com/posts/2024-10-04-innerloop/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta name="twitter:title" content="Dean Marchiori - Data Science &amp; Statistical Consulting">
-<meta name="twitter:description" content="All science, no hype.">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/consulting/img/profile.png">
+<meta property="og:image:height" content="493">
+<meta property="og:image:width" content="538">
+<meta name="twitter:title" content="Dean Marchiori - Data Science Workflows: Inner Loop vs Outer Loop">
+<meta name="twitter:description" content="Experiment and Deploy">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2024-10-04-innerloop/featured.png">
+<meta name="twitter:image-height" content="493">
+<meta name="twitter:image-width" content="538">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -162,7 +106,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dean Marchiori</span>
     </a>
   </div>
@@ -173,29 +117,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../consulting/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../consulting/index.html"> 
 <span class="menu-text">Consulting</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
+    <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/index.html"> 
+    <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact/index.html"> 
+    <a class="nav-link" href="../../contact/index.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../posts/index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts/index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -225,15 +169,30 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Data Science &amp; Statistical Consulting</h1>
-            <p class="subtitle lead">All science, no hype.</p>
-                      </div>
+      <h1 class="title">Data Science Workflows: Inner Loop vs Outer Loop</h1>
+            <p class="subtitle lead">Experiment and Deploy</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Analysis</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dean Marchiori </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 4, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -250,118 +209,53 @@ window.Quarto = {
 
 
 
-<p>I specialise in solving real-world, complex data problems that have high social impact.</p>
-<p>I use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><i class="fa-solid fa-chart-line" title="chart-line" aria-label="chart-line"></i> Statistical Modelling and Analysis<br>
-<i class="fa-solid fa-square-root-variable" title="square-root-variable" aria-label="square-root-variable"></i> Expert R Programming<br>
-<i class="fa-solid fa-robot" title="robot" aria-label="robot"></i> Machine Learning</p>
-</div><div class="column" style="width:50%;">
-<p><i class="fa-solid fa-globe" title="globe" aria-label="globe"></i> Responsible AI Advisory<br>
-<i class="fa-solid fa-magnifying-glass" title="magnifying-glass" aria-label="magnifying-glass"></i> Career Mentoring &amp; Coaching<br>
-<i class="fa-solid fa-clipboard" title="clipboard" aria-label="clipboard"></i> Data Science Training</p>
+<p>In a <a href="https://www.deanmarchiori.com/posts/2024-09-26-crispdm/">previous post</a> I discussed the charming nostalgia of CRISP-DM as a data analysis workflow choice.</p>
+<p>A modern limitation of this model is how it handles the <em>Deployment</em> step. In the olden days this was usually some form of static report to a client. It’s a loaded topic now with deployment usually having something to do with giving money to AWS/MSFT or a battle to the death with your IT department.</p>
+<p>In a practical sense this usually means rigging up an endpoint for your analysis like an API, shiny app, dashboard or similar. Managing this process is rapidly becoming it’s own sub-speciality, fashionably called MLOps.</p>
+<p>A useful way to think about this is in terms of <strong>Inner Loop vs Outer Loop</strong> thinking. I first observed this (for better or worse) in Microsoft’s <a href="https://github.com/Azure/mlops-v2/blob/main/documentation/architecture/classical.md">Azure Machine Learning Classical ML Architecture</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="arch.png" class="img-fluid figure-img"></p>
+<figcaption>Source: Microsoft MLOps Accelerator. MIT Licence</figcaption>
+</figure>
+</div>
+<p>The <strong>Inner Loop</strong> (Item 3 in the above diagram) is everything in CRISP-DM <em>except</em> ‘Deployment’. It covers the whole data identification, EDA and modelling processes. For lack of a better term I usually call this ‘experimental’ code. It’s usually circular, iterative and experimental in nature.</p>
+<p>At some point you will be happy with an output and want to push it out into the world. This is the <strong>Outer Loop</strong> (Item 5 in the diagram). It’s its own process and involves more engineer-y tasks like provisioning infrastructure, testing &amp; deployment (usually using some CI/CD pipeline) versioning your model and monitoring for drift, quality etc.</p>
+<p>I see two big issues with this in practice:</p>
+<ol type="1">
+<li><p>Analysts do the inner loop, declare victory and have no awareness or interest managing the outer loop. This means the analyst needs to re-run the model on their laptop every month and email the results to Kevin, or some such process. Heaven forbid they live in an area of dense, fast moving buses.</p></li>
+<li><p>The analysts want to more formally deploy their models but don’t have the skills, support or permission. In the end, everything gets shoehorned into a PowerBI dashboard or some half-way solution.</p></li>
+</ol>
+<p>My proposed solutions to this in ascending order of complexity are:</p>
+<ol type="1">
+<li>Start implementing more robust controls over how you save, version, monitor and document the outputs of your analysis - including models.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MLOps in R
 </div>
 </div>
-<p><a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get started!</a></p>
-<section id="some-of-my-work" class="level2">
-<h2 class="anchored" data-anchor-id="some-of-my-work">Some of my work</h2>
+<div class="callout-body-container callout-body">
+<p>If you are an R programmer, the tidymodels team at Posit have recently plugged this gaping hole with the <code>{vetiver}</code> package. <a href="https://vetiver.posit.co/">https://vetiver.posit.co/</a></p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Get some really light-weight deployment solution to get off the ground like <a href="https://www.shinyapps.io/">shinyapps.io</a> or a development/sandpit Virtual Machine (in a sensible network location) to throw stuff up on manually and build some goodwill with IT.</p></li>
+<li><p>Move to a more commercially palatable ‘walled-garden’ solution like <a href="https://posit.co/products/enterprise/connect/">Posit Connect</a>. This strikes a nice balance between being licensed, managed software and giving analysts autonomy in what and how they deploy.</p></li>
+<li><p>Utilize your existing cloud providers ML Ops solutions to automate the build and deployment from your version control system - just be careful, this is a slippery slope in terms of complexity and you don’t need to go all-in. This typically keeps IT happy in a heavily regulated environment due to the native integration of network/cloud security protocols.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
 
 
 
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R,analysis" data-listing-date-sort="1679749200000" data-listing-file-modified-sort="1725428481781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
-<div class="thumbnail">
-<p><a href="../consulting/fire/index.html" class="no-external"></a></p><a href="../consulting/fire/index.html" class="no-external">
-<p><img src="../consulting/fire/fire.png" class="thumbnail-image"></p>
-</a><p><a href="../consulting/fire/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../consulting/fire/index.html" class="no-external">An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../consulting/fire/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../consulting/fire/index.html" class="no-external"><!-- desc(5A0113B34292)[max=175]:consulting/fire/index.html --></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../consulting/fire/index.html" class="no-external">
-<div class="listing-date">
-Mar 26, 2023
-</div>
-<div class="listing-author">
-Dean Marchiori
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="R,dataviz,analysis" data-listing-date-sort="1679749200000" data-listing-file-modified-sort="1725428481767" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
-<div class="thumbnail">
-<p><a href="../consulting/data-viz/index.html" class="no-external"></a></p><a href="../consulting/data-viz/index.html" class="no-external">
-<p><img src="../consulting/data-viz/pacific.png" class="thumbnail-image"></p>
-</a><p><a href="../consulting/data-viz/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../consulting/data-viz/index.html" class="no-external">Data Visualisations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../consulting/data-viz/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../consulting/data-viz/index.html" class="no-external"><!-- desc(5A0113B34292)[max=175]:consulting/data-viz/index.html --></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../consulting/data-viz/index.html" class="no-external">
-<div class="listing-date">
-Mar 26, 2023
-</div>
-<div class="listing-author">
-Dean Marchiori
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,analysis" data-listing-date-sort="1679749200000" data-listing-file-modified-sort="1725428481765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
-<div class="thumbnail">
-<p><a href="../consulting/bluey/index.html" class="no-external"></a></p><a href="../consulting/bluey/index.html" class="no-external">
-<p><img src="../consulting/bluey/bluey.png" class="thumbnail-image"></p>
-</a><p><a href="../consulting/bluey/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../consulting/bluey/index.html" class="no-external">What was thay Bluey Episode?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../consulting/bluey/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../consulting/bluey/index.html" class="no-external"><!-- desc(5A0113B34292)[max=175]:consulting/bluey/index.html --></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../consulting/bluey/index.html" class="no-external">
-<div class="listing-date">
-Mar 26, 2023
-</div>
-<div class="listing-author">
-Dean Marchiori
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

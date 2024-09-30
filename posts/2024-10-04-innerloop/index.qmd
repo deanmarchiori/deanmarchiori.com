@@ -1,0 +1,75 @@
+---
+title: "Data Science Workflows: Inner Loop vs Outer Loop"  
+subtitle: "Experiment and Deploy"
+author: "Dean Marchiori"
+date: "2024-10-04"
+categories: [Analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+In a [previous post](https://www.deanmarchiori.com/posts/2024-09-26-crispdm/) I discussed
+the charming nostalgia of CRISP-DM as a data analysis workflow choice.  
+
+A modern limitation of this model is how it handles the *Deployment* step. In the olden
+days this was usually some form of static report to a client. It's a loaded topic
+now with deployment usually having something to do with giving money to AWS/MSFT or a battle to the death with your IT department.  
+
+In a practical sense this usually means rigging up an endpoint for your analysis
+like an API, shiny app, dashboard or similar. Managing this process is rapidly becoming it's own sub-speciality,
+fashionably called MLOps. 
+
+A useful way to think about this is in terms of **Inner Loop vs Outer Loop** thinking. 
+I first observed this (for better or worse) in Microsoft's [Azure Machine Learning Classical ML Architecture](https://github.com/Azure/mlops-v2/blob/main/documentation/architecture/classical.md).  
+
+![Source: Microsoft MLOps Accelerator. MIT Licence](arch.png) 
+
+The **Inner Loop** (Item 3 in the above diagram) is everything in CRISP-DM *except* 'Deployment'. It covers the whole data identification, EDA and modelling processes. For lack of a better term I usually
+call this 'experimental' code. It's usually circular, iterative and experimental 
+in nature.  
+
+At some point you will be happy with an output and want to push it out into the world. This
+is the **Outer Loop** (Item 5 in the diagram). It's its own process and involves more engineer-y tasks like provisioning infrastructure, testing & deployment (usually using some CI/CD pipeline) versioning your model and monitoring for
+drift, quality etc.  
+
+I see two big issues with this in practice:  
+
+1. Analysts do the inner loop, declare victory and have no awareness or interest managing the 
+outer loop. This means the analyst needs to re-run the model on their laptop 
+every month and email the results to Kevin, or some such process. Heaven forbid
+they live in an area of dense, fast moving buses. 
+
+2. The analysts want to more formally deploy their models but don't have the skills, support or
+permission. In the end, everything gets shoehorned into a PowerBI dashboard or some half-way
+solution. 
+
+My proposed solutions to this in ascending order of complexity are:  
+
+1. Start implementing more robust controls over how you save, version, monitor and
+document the outputs of your analysis - including models.  
+
+::: {.callout-tip}
+## MLOps in R
+
+If you are an R programmer, the tidymodels team at Posit have recently plugged this 
+gaping hole with the `{vetiver}` package. [https://vetiver.posit.co/](https://vetiver.posit.co/)
+:::
+
+2. Get some really light-weight deployment solution to get off the ground like [shinyapps.io](https://www.shinyapps.io/) 
+or a development/sandpit Virtual Machine (in a sensible network location) to throw stuff up on manually and build some
+goodwill with IT.  
+
+2. Move to a more commercially palatable 'walled-garden' solution like [Posit Connect](https://posit.co/products/enterprise/connect/). This strikes a nice balance between being licensed, managed software and giving analysts autonomy in what and how they deploy. 
+
+3. Utilize your existing cloud providers ML Ops solutions to automate the build and deployment from your
+version control system - just be careful, this is a slippery slope in terms of complexity and you don't need to go
+all-in. This typically keeps IT happy 
+in a heavily regulated environment due to the native integration of network/cloud security protocols.  
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/) for weekly emails and no spam.**  
+> **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**
