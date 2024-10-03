@@ -1,5 +1,5 @@
 ---
-title: "Data Science Workflows: Chosing the Right One"  
+title: "Data Science Workflows: Choosing the Right One"  
 subtitle: "Do a Repro-Retro"
 author: "Dean Marchiori"
 date: "2024-10-08"
