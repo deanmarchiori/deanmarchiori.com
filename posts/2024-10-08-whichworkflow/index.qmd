@@ -1,0 +1,65 @@
+---
+title: "Data Science Workflows: Chosing the Right One"  
+subtitle: "Do a Repro-Retro"
+author: "Dean Marchiori"
+date: "2024-10-08"
+categories: [Analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+In [previous posts](https://www.deanmarchiori.com/posts/) I have discussed frameworks for thinking about data science
+projects. When it comes to actually writing R code, there are a number of
+*coding* workflows you can adopt to get the work done. For example: 
+
+- Monolithic Notebook (RMarkdown, Quarto)
+- Directory structure with `run.R` control scripts (e.g. ProjectTemplate)
+- Opinionated pipeline tools (`{targets}`, `{drake}` etc)  
+- R Package  
+
+So which R workflow should you use?  
+
+Unfortunately this is not a straightforward decision. For quick experimental
+code you are unlikely to create a new R package. For a complex production
+deployed model, you really don't want all your code in one giant R script. It's 
+hard to know ahead of time what to do and where on this spectrum you will end up. 
+
+In my view, picking the correct workflow needs to align the project goals and scope. Often this
+choice can evolve throughout the project.  
+
+### An evolution  
+
+A concept or idea might be tested in a single R script, like how you would use the 
+back of a napkin for an idea.   
+
+Next you might break this down into chunks and add some prose, heading and plots so
+you can share and have other understand it.   
+
+Next you might refactor the messy
+code into functions to better control the flow and the improve development
+practices. These functions can be documented and unit tested once you know you
+want to rely on them.   
+
+To orchestrate the running and dependency structure to 
+avoid re-running slow and complex code you may use the `{targets}` package.   
+
+Finally to re-use, share and improve on the functions you might spin these
+out into their own R package!   
+
+### REPRO-RETRO 
+
+A few years back I gave a short talk at the [rstudio::global](https://posit.co/blog/rstudio-global-2021/) conference. I talked about how you might want to weight and prioritise the elements of your analysis to make an appropriate choice. 
+
+I framed this through the concept of a reproducibility-retrospective (repro-retro)
+
+Enjoy. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4T8gz9AmNOA?si=8rGopHO-9r0iwh_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/) for weekly emails and no spam.**  
+> **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**

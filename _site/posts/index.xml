@@ -17,7 +17,57 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Thu, 03 Oct 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 07 Oct 2024 13:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Science Workflows: Chosing the Right One</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2024-10-08-whichworkflow/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In <a href="https://www.deanmarchiori.com/posts/">previous posts</a> I have discussed frameworks for thinking about data science projects. When it comes to actually writing R code, there are a number of <em>coding</em> workflows you can adopt to get the work done. For example:</p>
+<ul>
+<li>Monolithic Notebook (RMarkdown, Quarto)</li>
+<li>Directory structure with <code>run.R</code> control scripts (e.g.&nbsp;ProjectTemplate)</li>
+<li>Opinionated pipeline tools (<code>{targets}</code>, <code>{drake}</code> etc)<br>
+</li>
+<li>R Package</li>
+</ul>
+<p>So which R workflow should you use?</p>
+<p>Unfortunately this is not a straightforward decision. For quick experimental code you are unlikely to create a new R package. For a complex production deployed model, you really don’t want all your code in one giant R script. It’s hard to know ahead of time what to do and where on this spectrum you will end up.</p>
+<p>In my view, picking the correct workflow needs to align the project goals and scope. Often this choice can evolve throughout the project.</p>
+<section id="an-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="an-evolution">An evolution</h3>
+<p>A concept or idea might be tested in a single R script, like how you would use the back of a napkin for an idea.</p>
+<p>Next you might break this down into chunks and add some prose, heading and plots so you can share and have other understand it.</p>
+<p>Next you might refactor the messy code into functions to better control the flow and the improve development practices. These functions can be documented and unit tested once you know you want to rely on them.</p>
+<p>To orchestrate the running and dependency structure to avoid re-running slow and complex code you may use the <code>{targets}</code> package.</p>
+<p>Finally to re-use, share and improve on the functions you might spin these out into their own R package!</p>
+</section>
+<section id="repro-retro" class="level3">
+<h3 class="anchored" data-anchor-id="repro-retro">REPRO-RETRO</h3>
+<p>A few years back I gave a short talk at the <a href="https://posit.co/blog/rstudio-global-2021/">rstudio::global</a> conference. I talked about how you might want to weight and prioritise the elements of your analysis to make an appropriate choice.</p>
+<p>I framed this through the concept of a reproducibility-retrospective (repro-retro)</p>
+<p>Enjoy.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4T8gz9AmNOA?si=8rGopHO-9r0iwh_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>Analysis</category>
+  <guid>https://www.deanmarchiori.com/posts/2024-10-08-whichworkflow/</guid>
+  <pubDate>Mon, 07 Oct 2024 13:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2024-10-08-whichworkflow/featured.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>Data Science Workflows: Inner Loop vs Outer Loop</title>
   <dc:creator>Dean Marchiori</dc:creator>
@@ -3586,137 +3636,6 @@ font-style: inherit;">1</span>)</span></code></pre></div>
   <guid>https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/</guid>
   <pubDate>Wed, 02 Feb 2022 13:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/featured.png" medium="image" type="image/png" height="48" width="144"/>
-</item>
-<item>
-  <title>Running Shiny in a Docker container</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Basic minimal example for running shiny in Docker. It is assumed you have Docker installed.</p>
-<section id="structure" class="level1">
-<h1>Structure</h1>
-<p>Our directory contains a folder called <code>myapp</code> which contains our shiny app file and other supporting files.</p>
-<p>At the top level we have our dockerfile and other config files. These should be modified accordingly.</p>
-<p>This directory structure can be cloned from my <a href="https://github.com/deanmarchiori/dockerised-shiny">github repo</a></p>
-<pre><code>dockerised-shiny/
-├── Dockerfile
-├── myapp
-│&nbsp;&nbsp; └── app.R
-├── README.md
-├── shiny-server.conf
-└── shiny-server.sh
-</code></pre>
-<section id="dockerfile" class="level2">
-<h2 class="anchored" data-anchor-id="dockerfile">Dockerfile</h2>
-<p>This should be adapted as required.</p>
-<pre><code># Using rocker/rver::version, update version as appropriate
-FROM rocker/r-ver:3.5.0
-
-# install dependencies
-RUN apt-get update &amp;&amp; apt-get install -y \
-    sudo \
-    gdebi-core \
-    pandoc \
-    pandoc-citeproc \
-    libcurl4-gnutls-dev \
-    libcairo2-dev \
-    libxt-dev \  
-    libxml2-dev \  
-    libssl-dev \  
-    wget
-
-
-# Download and install shiny server
-RUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION -O "version.txt" &amp;&amp; \
-    VERSION=$(cat version.txt)  &amp;&amp; \
-    wget --no-verbose "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb &amp;&amp; \
-    gdebi -n ss-latest.deb &amp;&amp; \
-    rm -f version.txt ss-latest.deb &amp;&amp; \
-    . /etc/environment &amp;&amp; \
-    R -e "install.packages(c('shiny', 'rmarkdown'), repos='$MRAN')" &amp;&amp; \
-    cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/
-
-# Copy configuration files into the Docker image
-COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
-COPY shiny-server.sh /usr/bin/shiny-server.sh
-
-# Copy shiny app to Docker image
-COPY /myapp /srv/shiny-server/myapp
-
-# Expose desired port
-EXPOSE 80
-
-CMD ["/usr/bin/shiny-server.sh"] 
-</code></pre>
-</section>
-</section>
-<section id="build" class="level1">
-<h1>Build</h1>
-<p>To build the Docker image (called <code>myapp</code>)</p>
-<pre><code>docker build -t myapp .</code></pre>
-</section>
-<section id="run" class="level1">
-<h1>Run</h1>
-<p>To run a container based on our Docker image:</p>
-<p>This will run the docker image ‘myapp’ in a container (in detached mode) and expose post 80. It will name it ‘myapp’ and remove it when exited.</p>
-<pre><code>docker run --rm -p 80:80 --name myapp -d myapp</code></pre>
-</section>
-<section id="use" class="level1">
-<h1>Use</h1>
-<p>http://127.0.0.1/myapp/</p>
-</section>
-<section id="some-helpful-commands" class="level1">
-<h1>Some helpful commands</h1>
-<section id="list-images" class="level2">
-<h2 class="anchored" data-anchor-id="list-images">List Images</h2>
-<pre><code>docker images </code></pre>
-</section>
-<section id="list-all-containers" class="level2">
-<h2 class="anchored" data-anchor-id="list-all-containers">List All Containers</h2>
-<pre><code>docker ps -a</code></pre>
-</section>
-<section id="remove-containers" class="level2">
-<h2 class="anchored" data-anchor-id="remove-containers">Remove Containers</h2>
-<p>For individual containers add the container ID</p>
-<pre><code>$ docker rm</code></pre>
-<p>To remove all exited containers :</p>
-<pre><code>$ docker rm $(docker ps -a -q -f status=exited)</code></pre>
-</section>
-<section id="system-prune" class="level2">
-<h2 class="anchored" data-anchor-id="system-prune">System Prune</h2>
-<p>Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.</p>
-<pre><code>docker system prune -a</code></pre>
-</section>
-<section id="save-as-tar-archive" class="level2">
-<h2 class="anchored" data-anchor-id="save-as-tar-archive">Save as tar-archive</h2>
-<pre><code>docker save -o ~/myapp.tar myapp</code></pre>
-</section>
-<section id="load-and-run-archive" class="level2">
-<h2 class="anchored" data-anchor-id="load-and-run-archive">Load and Run Archive</h2>
-<pre><code>docker load -i myapp.tar
-docker run myapp</code></pre>
-</section>
-</section>
-<section id="more-info-and-references" class="level1">
-<h1>More info and References</h1>
-<p>https://github.com/deanmarchiori/dockerised-shiny https://hub.docker.com/r/rocker/shiny<br>
-https://www.docker.com/get-started<br>
-https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/</p>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>analysis</category>
-  <guid>https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/</guid>
-  <pubDate>Sun, 16 Jan 2022 13:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png" medium="image" type="image/png" height="37" width="144"/>
 </item>
 </channel>
 </rss>
