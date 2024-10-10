@@ -1,5 +1,7 @@
 ---
-title: "What was thay Bluey Episode?"
+title: "What was thay Bluey Episode?"  
+subtitle: "This website lets you type in the vague descriptions of a small child and it will
+return a mathematically ranked list of closest matching Bluey episodes.  "
 author: "Dean Marchiori"
 date: "2023-03-26"
 categories: [R, analysis]

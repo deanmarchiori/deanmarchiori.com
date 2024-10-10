@@ -1,5 +1,6 @@
 ---
-title: "An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions"
+title: "An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions"  
+subtitle: "Spatial rare-event modelling framework"
 author: "Dean Marchiori"
 date: "2023-03-26"
 categories: [R, analysis]

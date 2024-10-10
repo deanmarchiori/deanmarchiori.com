@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dean Marchiori">
-<meta name="dcterms.date" content="2023-03-26">
+<meta name="dcterms.date" content="2024-10-11">
 
-<title>Dean Marchiori - An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions</title>
+<title>Dean Marchiori - Data Systems and Analytics for Vector-Borne Disease Threat Reduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,17 +85,17 @@ ga('send', {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Dean Marchiori - An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions">
-<meta property="og:description" content="Spatial rare-event modelling framework">
-<meta property="og:image" content="https://www.deanmarchiori.com/consulting/fire/fire.png">
+<meta property="og:title" content="Dean Marchiori - Data Systems and Analytics for Vector-Borne Disease Threat Reduction">
+<meta property="og:description" content="A real-world case study of reproducible workflows">
+<meta property="og:image" content="https://www.deanmarchiori.com/consulting/eco/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="767">
-<meta property="og:image:width" content="1047">
-<meta name="twitter:title" content="Dean Marchiori - An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions">
-<meta name="twitter:description" content="Spatial rare-event modelling framework">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/consulting/fire/fire.png">
-<meta name="twitter:image-height" content="767">
-<meta name="twitter:image-width" content="1047">
+<meta property="og:image:height" content="321">
+<meta property="og:image:width" content="925">
+<meta name="twitter:title" content="Dean Marchiori - Data Systems and Analytics for Vector-Borne Disease Threat Reduction">
+<meta name="twitter:description" content="A real-world case study of reproducible workflows">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/consulting/eco/featured.png">
+<meta name="twitter:image-height" content="321">
+<meta name="twitter:image-width" content="925">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -169,11 +169,11 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions</h1>
-            <p class="subtitle lead">Spatial rare-event modelling framework</p>
+      <h1 class="title">Data Systems and Analytics for Vector-Borne Disease Threat Reduction</h1>
+            <p class="subtitle lead">A real-world case study of reproducible workflows</p>
                                 <div class="quarto-categories">
+                <div class="quarto-category">Analysis</div>
                 <div class="quarto-category">R</div>
-                <div class="quarto-category">analysis</div>
               </div>
                   </div>
   </div>
@@ -191,7 +191,7 @@ ga('send', {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 26, 2023</p>
+        <p class="date">October 11, 2024</p>
       </div>
     </div>
     
@@ -210,9 +210,27 @@ ga('send', {
 
 
 
-<p>Electrical infrastructure is one of the major causes of bushfire in Australia alongside arson and lightning strikes. The two main causes of electrical-infrastructure-initiated fires are asset failure and powerline vegetation interactions. In this paper, we focus on powerline–vegetation interactions that are caused by vegetation falling onto or blowing onto electrical infrastructure. Currently, there is very limited understanding of both the spatio-temporal variability of these events and their causative factors. Bridging this knowledge gap provides an opportunity for electricity utility companies to optimally allocate vegetation management resources and to understand the risk profile presented by vegetation fall-in initiated fires, thereby improving both operational planning and strategic resource allocation. To bridge this knowledge gap, we developed a statistical rare-event modelling and simulation framework based on Endeavour Energy’s fire start and incident records from the last 10 years. The modelling framework consists of nested, rare-event-corrected, conditional probability models for vegetation events and consequent ignition events that provide an overall model for vegetation-initiated ignitions. Model performance was tested on an out-of-time test set to determine the predictive utility of the models. Predictive performance was reasonable with test set AUC values of 0.79 and 0.66 for the vegetation event and ignition event models, respectively. The modelling indicates that wind speed and vegetation features are strongly associated with vegetation events, and that Forest Fire Danger Index (FFDI) and soil type are strongly associated with ignition events. The framework can be used by energy utilities to optimize resource allocation and prepare future networks for climate change.</p>
-<p>Link: <a href="https://www.mdpi.com/2571-6255/6/2/61">https://www.mdpi.com/2571-6255/6/2/61</a></p>
-<p><img src="fire.png" class="img-fluid"></p>
+<p>Earlier this year I was fortunate enough to work with EcoHealth Alliance on a major project focused on two WHO priority zoonoses, Rift Valley fever virus and Crimean-Congo hemorrhagic fever virus. Over a 10 year period, research teams sampled over 800 people and livestock, sampled over 300 rodents, and conducted ecological site characterizations at 150 sites in each Tanzania and South Africa.</p>
+<p>To integrate data from disparate datasets we developed a novel R pipeline to standardize data cleaning, quality control and integration following reproducible science principals. This was one of the first projects of this scale that I have seen using so many tools that align to current industry best practice:</p>
+<ul>
+<li>Version controlled code in Github with strict code review</li>
+<li>Full CI/CD automation with Github Actions<br>
+</li>
+<li><code>{targets}</code> as a pipeline tool<br>
+</li>
+<li>R package to store and document all functions<br>
+</li>
+<li><code>{renv}</code> for package dependency management<br>
+</li>
+<li>Proper encrypted environment files for all credentials</li>
+</ul>
+<p>A common deterrent I hear from begginers around using tools to aid reproducility often center around the barriers to entry. They are seen as adding complexity and overhead into the process. Which they do (on small projects), but as projects become more and more complex, the benefits quickly outweigh the costs.</p>
+<p>An overview of this project was given as a poster at the recent 8th World One Health Congress in Cape Town</p>
+<p><img src="poster.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
 
 
 

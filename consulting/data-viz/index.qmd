@@ -1,5 +1,6 @@
 ---
-title: "Data Visualisations"
+title: "Data Visualisations"  
+subtitle: "Graphics made from 100% reproducbile R code (mostly for fun)"
 author: "Dean Marchiori"
 date: "2023-03-26"
 categories: [R, dataviz, analysis]

@@ -17,9 +17,50 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Mon, 07 Oct 2024 13:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Oct 2024 13:00:00 GMT</lastBuildDate>
 <item>
-  <title>Data Science Workflows: Chosing the Right One</title>
+  <title>Data Systems and Analytics for Vector-Borne Disease Threat Reduction</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2024-10-11-eco/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Earlier this year I was fortunate enough to work with EcoHealth Alliance on a major project focused on two WHO priority zoonoses, Rift Valley fever virus and Crimean-Congo hemorrhagic fever virus. Over a 10 year period, research teams sampled over 800 people and livestock, sampled over 300 rodents, and conducted ecological site characterizations at 150 sites in each Tanzania and South Africa.</p>
+<p>To integrate data from disparate datasets we developed a novel R pipeline to standardize data cleaning, quality control and integration following reproducible science principals. This was one of the first projects of this scale that I have seen using so many tools that align to current industry best practice:</p>
+<ul>
+<li>Version controlled code in Github with strict code review</li>
+<li>Full CI/CD automation with Github Actions<br>
+</li>
+<li><code>{targets}</code> as a pipeline tool<br>
+</li>
+<li>R package to store and document all functions<br>
+</li>
+<li><code>{renv}</code> for package dependency management<br>
+</li>
+<li>Proper encrypted environment files for all credentials</li>
+</ul>
+<p>A common deterrent I hear from begginers around using tools to aid reproducility often center around the barriers to entry. They are seen as adding complexity and overhead into the process. Which they do (on small projects), but as projects become more and more complex, the benefits quickly outweigh the costs.</p>
+<p>An overview of this project was given as a poster at the recent 8th World One Health Congress in Cape Town</p>
+<p><img src="https://www.deanmarchiori.com/posts/2024-10-11-eco/poster.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
+
+
+
+ ]]></description>
+  <category>Analysis</category>
+  <category>R</category>
+  <guid>https://www.deanmarchiori.com/posts/2024-10-11-eco/</guid>
+  <pubDate>Thu, 10 Oct 2024 13:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2024-10-11-eco/featured.png" medium="image" type="image/png" height="50" width="144"/>
+</item>
+<item>
+  <title>Data Science Workflows: Choosing the Right One</title>
   <dc:creator>Dean Marchiori</dc:creator>
   <link>https://www.deanmarchiori.com/posts/2024-10-08-whichworkflow/</link>
   <description><![CDATA[ 
@@ -3604,38 +3645,6 @@ font-style: inherit;">1</span>)</span></code></pre></div>
   <category>statistics</category>
   <guid>https://www.deanmarchiori.com/posts/2022-09-25-three-stick-statistics/</guid>
   <pubDate>Fri, 23 Sep 2022 14:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>What was that Bluey Episode?</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Does your child explain <a href="https://en.wikipedia.org/wiki/Bluey_(2018_TV_series)">Bluey</a> episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?</p>
-<p>Problem solved.</p>
-<p>This website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.</p>
-<p>https://deanmarchiori.shinyapps.io/blueysearch/</p>
-<p><img src="https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/featured.png" class="img-fluid"></p>
-<section id="development-notes" class="level2">
-<h2 class="anchored" data-anchor-id="development-notes">Development notes</h2>
-<p>The website is a Shiny app (deployed to shinyapps.io), which contains all 130 episode titles, descriptions and thumbnails.</p>
-<p>All of the episode descriptions were tokenized into ‘terms’ using the {tidytext} R package and formed into a Document-Term-Matrix. Rather than use the typical term counts, a binary indicator was used if a term appears in an episode. This was preferred as the user’s text input is unlikely to really mimic the detail of an episode description, which threw the similarity measure out a bit.</p>
-<p>Once a user inputs text, the Shiny app dynamically forms a new term vector and compares it to the all-episode’s matrix using cosine distance. The episodes are then ranked based on smallest cosine distance and displayed to the users.</p>
-<p>For the source code visit: https://github.com/deanmarchiori/bluey-search</p>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>shiny</category>
-  <guid>https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/</guid>
-  <pubDate>Wed, 02 Feb 2022 13:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2022-02-03-what-was-that-bluey-episode/featured.png" medium="image" type="image/png" height="48" width="144"/>
 </item>
 </channel>
 </rss>
