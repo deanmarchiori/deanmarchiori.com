@@ -26,7 +26,7 @@ I use cutting-edge techniques in applied mathematics, statistical modelling and 
 
 ::::  
 
-<a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get started!</a>
+<a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Contact Me</a>
 
 ## Some of my work  
 
