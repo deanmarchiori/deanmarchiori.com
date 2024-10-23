@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dean Marchiori">
-<meta name="dcterms.date" content="2022-01-17">
+<meta name="dcterms.date" content="2024-10-24">
 
-<title>Dean Marchiori - Running Shiny in a Docker container</title>
+<title>Dean Marchiori - Tutorial - Turning R code into production quality software</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,17 +84,17 @@ ga('send', {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Dean Marchiori - Running Shiny in a Docker container">
+<meta property="og:title" content="Dean Marchiori - Tutorial - Turning R code into production quality software">
 <meta property="og:description" content="Data Science and Statistical Consulting">
-<meta property="og:image" content="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png">
+<meta property="og:image" content="https://www.deanmarchiori.com/talks/WOMBAT_2024/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="309">
-<meta property="og:image:width" content="1202">
-<meta name="twitter:title" content="Dean Marchiori - Running Shiny in a Docker container">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1080">
+<meta name="twitter:title" content="Dean Marchiori - Tutorial - Turning R code into production quality software">
 <meta name="twitter:description" content="Data Science and Statistical Consulting">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png">
-<meta name="twitter:image-height" content="309">
-<meta name="twitter:image-width" content="1202">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/talks/WOMBAT_2024/featured.png">
+<meta name="twitter:image-height" content="1350">
+<meta name="twitter:image-width" content="1080">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,28 +172,18 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Running Shiny in a Docker container</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">analysis</div>
-              </div>
-                  </div>
+      <h1 class="title">Tutorial - Turning R code into production quality software</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Dean Marchiori </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 17, 2022</p>
+        <p class="date">October 24, 2024</p>
       </div>
     </div>
     
@@ -213,116 +202,16 @@ ga('send', {
 
 
 
-<p>Basic minimal example for running shiny in Docker. It is assumed you have Docker installed.</p>
-<section id="structure" class="level1">
-<h1>Structure</h1>
-<p>Our directory contains a folder called <code>myapp</code> which contains our shiny app file and other supporting files.</p>
-<p>At the top level we have our dockerfile and other config files. These should be modified accordingly.</p>
-<p>This directory structure can be cloned from my <a href="https://github.com/deanmarchiori/dockerised-shiny">github repo</a></p>
-<pre><code>dockerised-shiny/
-├── Dockerfile
-├── myapp
-│&nbsp;&nbsp; └── app.R
-├── README.md
-├── shiny-server.conf
-└── shiny-server.sh
-</code></pre>
-<section id="dockerfile" class="level2">
-<h2 class="anchored" data-anchor-id="dockerfile">Dockerfile</h2>
-<p>This should be adapted as required.</p>
-<pre><code># Using rocker/rver::version, update version as appropriate
-FROM rocker/r-ver:3.5.0
-
-# install dependencies
-RUN apt-get update &amp;&amp; apt-get install -y \
-    sudo \
-    gdebi-core \
-    pandoc \
-    pandoc-citeproc \
-    libcurl4-gnutls-dev \
-    libcairo2-dev \
-    libxt-dev \  
-    libxml2-dev \  
-    libssl-dev \  
-    wget
-
-
-# Download and install shiny server
-RUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION -O "version.txt" &amp;&amp; \
-    VERSION=$(cat version.txt)  &amp;&amp; \
-    wget --no-verbose "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb &amp;&amp; \
-    gdebi -n ss-latest.deb &amp;&amp; \
-    rm -f version.txt ss-latest.deb &amp;&amp; \
-    . /etc/environment &amp;&amp; \
-    R -e "install.packages(c('shiny', 'rmarkdown'), repos='$MRAN')" &amp;&amp; \
-    cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/
-
-# Copy configuration files into the Docker image
-COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
-COPY shiny-server.sh /usr/bin/shiny-server.sh
-
-# Copy shiny app to Docker image
-COPY /myapp /srv/shiny-server/myapp
-
-# Expose desired port
-EXPOSE 80
-
-CMD ["/usr/bin/shiny-server.sh"] 
-</code></pre>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others.</p>
 </section>
-</section>
-<section id="build" class="level1">
-<h1>Build</h1>
-<p>To build the Docker image (called <code>myapp</code>)</p>
-<pre><code>docker build -t myapp .</code></pre>
-</section>
-<section id="run" class="level1">
-<h1>Run</h1>
-<p>To run a container based on our Docker image:</p>
-<p>This will run the docker image ‘myapp’ in a container (in detached mode) and expose post 80. It will name it ‘myapp’ and remove it when exited.</p>
-<pre><code>docker run --rm -p 80:80 --name myapp -d myapp</code></pre>
-</section>
-<section id="use" class="level1">
-<h1>Use</h1>
-<p>http://127.0.0.1/myapp/</p>
-</section>
-<section id="some-helpful-commands" class="level1">
-<h1>Some helpful commands</h1>
-<section id="list-images" class="level2">
-<h2 class="anchored" data-anchor-id="list-images">List Images</h2>
-<pre><code>docker images </code></pre>
-</section>
-<section id="list-all-containers" class="level2">
-<h2 class="anchored" data-anchor-id="list-all-containers">List All Containers</h2>
-<pre><code>docker ps -a</code></pre>
-</section>
-<section id="remove-containers" class="level2">
-<h2 class="anchored" data-anchor-id="remove-containers">Remove Containers</h2>
-<p>For individual containers add the container ID</p>
-<pre><code>$ docker rm</code></pre>
-<p>To remove all exited containers :</p>
-<pre><code>$ docker rm $(docker ps -a -q -f status=exited)</code></pre>
-</section>
-<section id="system-prune" class="level2">
-<h2 class="anchored" data-anchor-id="system-prune">System Prune</h2>
-<p>Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.</p>
-<pre><code>docker system prune -a</code></pre>
-</section>
-<section id="save-as-tar-archive" class="level2">
-<h2 class="anchored" data-anchor-id="save-as-tar-archive">Save as tar-archive</h2>
-<pre><code>docker save -o ~/myapp.tar myapp</code></pre>
-</section>
-<section id="load-and-run-archive" class="level2">
-<h2 class="anchored" data-anchor-id="load-and-run-archive">Load and Run Archive</h2>
-<pre><code>docker load -i myapp.tar
-docker run myapp</code></pre>
-</section>
-</section>
-<section id="more-info-and-references" class="level1">
-<h1>More info and References</h1>
-<p>https://github.com/deanmarchiori/dockerised-shiny https://hub.docker.com/r/rocker/shiny<br>
-https://www.docker.com/get-started<br>
-https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/</p>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p>Live in person, not recorded.</p>
+<p><a href="https://datasciworkflows.netlify.app/">Data Science Workflows in R e-book</a><br>
+<a href="https://wombat2024.numbat.space/">Event Page</a></p>
+<p><img src="featured.png" class="img-fluid" style="width:50.0%"></p>
 
 
 </section>

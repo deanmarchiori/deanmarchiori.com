@@ -11,7 +11,7 @@
     "href": "index.html#some-of-my-work",
     "title": "Dean Marchiori",
     "section": "Some of my work",
-    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks.. I also publish a weekly note with resources and updates in the data science space."
+    "text": "Some of my work\nYou can check out my writing in the blog or you can watch some of my recorded talks. I also publish a weekly note with resources and updates in the data science space."
   },
   {
     "objectID": "index.html#bio",
@@ -95,28 +95,35 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\n01 Dec 2023\n\n\nDeploying your model code into production with Microsoft Azure\n\n\nStatistical Society of Australia - Tutorial\n\n\n\n\n24 Nov 2022\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\nSiligong.Data\n\n\n\n\n09 Feb 2022\n\n\nKeeping Up with Data - Podcast S2E1\n\n\nPodcast Episode\n\n\n\n\n01 Dec 2021\n\n\nStatistics Early Career Talk\n\n\nSSA NSW - Early Career and Student Statisticians Event 2021\n\n\n\n\n21 Jan 2021\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\nrstudio::global 2021\n\n\n\n\n23 Mar 2020\n\n\nSmarter Data People\n\n\nPodcast Episode\n\n\n\n\n29 Nov 2019\n\n\nPearls and pitfalls of time series analysis using Google Analytics data\n\n\nMonash University Business Analytics Team- WOMBAT 2019 Workshop\n\n\n\n\n21 May 2019\n\n\nR for Research - Essential Tools for Academics\n\n\nUniversity of Wollongong - SMART Infrastructure Facility\n\n\n\n\n16 Oct 2018\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\nUniversity of Wollongong SMART Infrastructure Facility\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\n24 Oct 2024\n\n\nTutorial - Turning R code into production quality software\n\n\nWOMBAT 2024 - Monash University\n\n\n\n\n01 Dec 2023\n\n\nDeploying your model code into production with Microsoft Azure\n\n\nStatistical Society of Australia - Tutorial\n\n\n\n\n24 Nov 2022\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\nSiligong.Data\n\n\n\n\n09 Feb 2022\n\n\nKeeping Up with Data - Podcast S2E1\n\n\nPodcast Episode\n\n\n\n\n01 Dec 2021\n\n\nStatistics Early Career Talk\n\n\nSSA NSW - Early Career and Student Statisticians Event 2021\n\n\n\n\n21 Jan 2021\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\nrstudio::global 2021\n\n\n\n\n23 Mar 2020\n\n\nSmarter Data People\n\n\nPodcast Episode\n\n\n\n\n29 Nov 2019\n\n\nPearls and pitfalls of time series analysis using Google Analytics data\n\n\nMonash University Business Analytics Team- WOMBAT 2019 Workshop\n\n\n\n\n21 May 2019\n\n\nR for Research - Essential Tools for Academics\n\n\nUniversity of Wollongong - SMART Infrastructure Facility\n\n\n\n\n16 Oct 2018\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\nUniversity of Wollongong SMART Infrastructure Facility\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html",
-    "href": "talks/smarter_data_people/index.html",
-    "title": "Smarter Data People",
+    "objectID": "talks/siligong2022/index.html",
+    "href": "talks/siligong2022/index.html",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
     "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#abstract",
-    "href": "talks/smarter_data_people/index.html#abstract",
-    "title": "Smarter Data People",
+    "objectID": "talks/siligong2022/index.html#abstract",
+    "href": "talks/siligong2022/index.html#abstract",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
     "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#links",
-    "href": "talks/smarter_data_people/index.html#links",
-    "title": "Smarter Data People",
+    "objectID": "talks/siligong2022/index.html#links",
+    "href": "talks/siligong2022/index.html#links",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
     "section": "Links",
-    "text": "Links\nURL"
+    "text": "Links\nGithub\nSlides"
+  },
+  {
+    "objectID": "book/index.html",
+    "href": "book/index.html",
+    "title": "Data Science Workflows in R",
+    "section": "",
+    "text": "Click here for link to free e-book\n\n\nThis guide is a resource for data analysts and data scientists looking to improve the way they write R code. While R remains a popular choice for statistical modelling and data analysis, its rapid development has enabled users to progress their work right through to being deployed into Production. However the type of work done when conducting experiments and developing models is very different to packaging up this work so it can reliably drive decisions in an organisation. This book will provide readers with an overview of contemporary frameworks for how data analysis is done in practice. It will cover how R projects are usually structured and how this can evolve based on project complexity. It will examine what is meant by experimental vs production analysis code and which principles need to be adopted. Finally it will show current tools and frameworks for taking experimental R code and strengthening it to align with best practice for reliable production grade software. Readers can step through a case study and download code to follow along."
   },
   {
     "objectID": "consulting/eco/index.html",
@@ -826,25 +833,46 @@
     "text": "Australian Meterorite Strikes - Tidy Tuesday Project"
   },
   {
-    "objectID": "talks/siligong2022/index.html",
-    "href": "talks/siligong2022/index.html",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "objectID": "talks/smarter_data_people/index.html",
+    "href": "talks/smarter_data_people/index.html",
+    "title": "Smarter Data People",
     "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
   },
   {
-    "objectID": "talks/siligong2022/index.html#abstract",
-    "href": "talks/siligong2022/index.html#abstract",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "objectID": "talks/smarter_data_people/index.html#abstract",
+    "href": "talks/smarter_data_people/index.html#abstract",
+    "title": "Smarter Data People",
     "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
+    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
   },
   {
-    "objectID": "talks/siligong2022/index.html#links",
-    "href": "talks/siligong2022/index.html#links",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "objectID": "talks/smarter_data_people/index.html#links",
+    "href": "talks/smarter_data_people/index.html#links",
+    "title": "Smarter Data People",
     "section": "Links",
-    "text": "Links\nGithub\nSlides"
+    "text": "Links\nURL"
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html",
+    "href": "talks/WOMBAT_2024/index.html",
+    "title": "Tutorial - Turning R code into production quality software",
+    "section": "",
+    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html#abstract",
+    "href": "talks/WOMBAT_2024/index.html#abstract",
+    "title": "Tutorial - Turning R code into production quality software",
+    "section": "",
+    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html#links",
+    "href": "talks/WOMBAT_2024/index.html#links",
+    "title": "Tutorial - Turning R code into production quality software",
+    "section": "Links",
+    "text": "Links\nLive in person, not recorded.\nData Science Workflows in R e-book\nEvent Page"
   },
   {
     "objectID": "talks/smart-outlier/index.html",

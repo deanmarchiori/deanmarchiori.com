@@ -1,0 +1,22 @@
+---
+date: 2024-10-24
+title: Tutorial - Turning R code into production quality software
+venue: WOMBAT 2024 - Monash University
+image: "featured.png"
+---
+
+
+## Abstract 
+
+Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment.
+Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others.
+
+## Links  
+
+Live in person, not recorded. 
+
+[Data Science Workflows in R e-book](https://datasciworkflows.netlify.app/)  
+[Event Page](https://wombat2024.numbat.space/)
+
+![](featured.png){width=50%}
+

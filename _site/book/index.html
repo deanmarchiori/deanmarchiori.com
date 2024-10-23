@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dean Marchiori">
-<meta name="dcterms.date" content="2022-01-17">
 
-<title>Dean Marchiori - Running Shiny in a Docker container</title>
+<title>Dean Marchiori - Data Science Workflows in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,29 +82,27 @@ ga('send', {
 </script>
 
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Dean Marchiori - Running Shiny in a Docker container">
-<meta property="og:description" content="Data Science and Statistical Consulting">
-<meta property="og:image" content="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dean Marchiori - Data Science Workflows in R">
+<meta property="og:description" content="An introduction to deploying production quality R code">
+<meta property="og:image" content="https://www.deanmarchiori.com/book/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="309">
-<meta property="og:image:width" content="1202">
-<meta name="twitter:title" content="Dean Marchiori - Running Shiny in a Docker container">
-<meta name="twitter:description" content="Data Science and Statistical Consulting">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/featured.png">
-<meta name="twitter:image-height" content="309">
-<meta name="twitter:image-width" content="1202">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1080">
+<meta name="twitter:title" content="Dean Marchiori - Data Science Workflows in R">
+<meta name="twitter:description" content="An introduction to deploying production quality R code">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/book/img/profile.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dean Marchiori</span>
     </a>
   </div>
@@ -117,33 +113,33 @@ ga('send', {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../consulting/index.html"> 
+    <a class="nav-link" href="../consulting/index.html"> 
 <span class="menu-text">Consulting</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../book/index.html"> 
+    <a class="nav-link active" href="../book/index.html" aria-current="page"> 
 <span class="menu-text">Book</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks/index.html"> 
+    <a class="nav-link" href="../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html"> 
+    <a class="nav-link" href="../posts/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact/index.html"> 
+    <a class="nav-link" href="../contact/index.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../../posts/index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../posts/index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -170,162 +166,45 @@ ga('send', {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Running Shiny in a Docker container</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">analysis</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Dean Marchiori </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">January 17, 2022</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Science Workflows in R</h1>
+<p class="subtitle lead">An introduction to deploying production quality R code</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>Basic minimal example for running shiny in Docker. It is assumed you have Docker installed.</p>
-<section id="structure" class="level1">
-<h1>Structure</h1>
-<p>Our directory contains a folder called <code>myapp</code> which contains our shiny app file and other supporting files.</p>
-<p>At the top level we have our dockerfile and other config files. These should be modified accordingly.</p>
-<p>This directory structure can be cloned from my <a href="https://github.com/deanmarchiori/dockerised-shiny">github repo</a></p>
-<pre><code>dockerised-shiny/
-├── Dockerfile
-├── myapp
-│&nbsp;&nbsp; └── app.R
-├── README.md
-├── shiny-server.conf
-└── shiny-server.sh
-</code></pre>
-<section id="dockerfile" class="level2">
-<h2 class="anchored" data-anchor-id="dockerfile">Dockerfile</h2>
-<p>This should be adapted as required.</p>
-<pre><code># Using rocker/rver::version, update version as appropriate
-FROM rocker/r-ver:3.5.0
-
-# install dependencies
-RUN apt-get update &amp;&amp; apt-get install -y \
-    sudo \
-    gdebi-core \
-    pandoc \
-    pandoc-citeproc \
-    libcurl4-gnutls-dev \
-    libcairo2-dev \
-    libxt-dev \  
-    libxml2-dev \  
-    libssl-dev \  
-    wget
+</header>
 
 
-# Download and install shiny server
-RUN wget --no-verbose https://download3.rstudio.org/ubuntu-14.04/x86_64/VERSION -O "version.txt" &amp;&amp; \
-    VERSION=$(cat version.txt)  &amp;&amp; \
-    wget --no-verbose "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb &amp;&amp; \
-    gdebi -n ss-latest.deb &amp;&amp; \
-    rm -f version.txt ss-latest.deb &amp;&amp; \
-    . /etc/environment &amp;&amp; \
-    R -e "install.packages(c('shiny', 'rmarkdown'), repos='$MRAN')" &amp;&amp; \
-    cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/
+<p><a href="https://datasciworkflows.netlify.app/">Click here for link to free e-book</a></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>This guide is a resource for data analysts and data scientists looking to improve the way they write R code. While R remains a popular choice for statistical modelling and data analysis, its rapid development has enabled users to progress their work right through to being deployed into Production. However the type of work done when conducting experiments and developing models is very different to packaging up this work so it can reliably drive decisions in an organisation. This book will provide readers with an overview of contemporary frameworks for how data analysis is done in practice. It will cover how R projects are usually structured and how this can evolve based on project complexity. It will examine what is meant by experimental vs production analysis code and which principles need to be adopted. Finally it will show current tools and frameworks for taking experimental R code and strengthening it to align with best practice for reliable production grade software. Readers can step through a case study and download code to follow along.</p>
+</div><div class="column" style="width:10%;">
 
-# Copy configuration files into the Docker image
-COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
-COPY shiny-server.sh /usr/bin/shiny-server.sh
-
-# Copy shiny app to Docker image
-COPY /myapp /srv/shiny-server/myapp
-
-# Expose desired port
-EXPOSE 80
-
-CMD ["/usr/bin/shiny-server.sh"] 
-</code></pre>
-</section>
-</section>
-<section id="build" class="level1">
-<h1>Build</h1>
-<p>To build the Docker image (called <code>myapp</code>)</p>
-<pre><code>docker build -t myapp .</code></pre>
-</section>
-<section id="run" class="level1">
-<h1>Run</h1>
-<p>To run a container based on our Docker image:</p>
-<p>This will run the docker image ‘myapp’ in a container (in detached mode) and expose post 80. It will name it ‘myapp’ and remove it when exited.</p>
-<pre><code>docker run --rm -p 80:80 --name myapp -d myapp</code></pre>
-</section>
-<section id="use" class="level1">
-<h1>Use</h1>
-<p>http://127.0.0.1/myapp/</p>
-</section>
-<section id="some-helpful-commands" class="level1">
-<h1>Some helpful commands</h1>
-<section id="list-images" class="level2">
-<h2 class="anchored" data-anchor-id="list-images">List Images</h2>
-<pre><code>docker images </code></pre>
-</section>
-<section id="list-all-containers" class="level2">
-<h2 class="anchored" data-anchor-id="list-all-containers">List All Containers</h2>
-<pre><code>docker ps -a</code></pre>
-</section>
-<section id="remove-containers" class="level2">
-<h2 class="anchored" data-anchor-id="remove-containers">Remove Containers</h2>
-<p>For individual containers add the container ID</p>
-<pre><code>$ docker rm</code></pre>
-<p>To remove all exited containers :</p>
-<pre><code>$ docker rm $(docker ps -a -q -f status=exited)</code></pre>
-</section>
-<section id="system-prune" class="level2">
-<h2 class="anchored" data-anchor-id="system-prune">System Prune</h2>
-<p>Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.</p>
-<pre><code>docker system prune -a</code></pre>
-</section>
-<section id="save-as-tar-archive" class="level2">
-<h2 class="anchored" data-anchor-id="save-as-tar-archive">Save as tar-archive</h2>
-<pre><code>docker save -o ~/myapp.tar myapp</code></pre>
-</section>
-<section id="load-and-run-archive" class="level2">
-<h2 class="anchored" data-anchor-id="load-and-run-archive">Load and Run Archive</h2>
-<pre><code>docker load -i myapp.tar
-docker run myapp</code></pre>
-</section>
-</section>
-<section id="more-info-and-references" class="level1">
-<h1>More info and References</h1>
-<p>https://github.com/deanmarchiori/dockerised-shiny https://hub.docker.com/r/rocker/shiny<br>
-https://www.docker.com/get-started<br>
-https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/</p>
+</div><div class="column" style="width:40%;">
+<p><img src="featured.png" class="img-fluid"></p>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

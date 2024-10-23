@@ -44,7 +44,7 @@ If you are interested in hiring me for a project, get in touch.
 ## Some of my work 
 
 You can check out my writing in the [blog](posts/index.qmd) or you can 
-watch some of my recorded [talks.](talks/index.qmd). I also publish a weekly note with resources and updates in the data science space. 
+watch some of my recorded [talks.](talks/index.qmd) I also publish a weekly note with resources and updates in the data science space. 
 
 <div class="ml-embedded" data-form="jStmTX"></div>
 

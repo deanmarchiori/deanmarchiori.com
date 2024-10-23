@@ -19,6 +19,8 @@ website:
         text: Home
       - href: consulting/index.qmd  
         text: Consulting
+      - href: book/index.qmd 
+        text: Book
       - href: talks/index.qmd
         text: Talks
       - href: posts/index.qmd

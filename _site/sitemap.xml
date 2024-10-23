@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.deanmarchiori.com/index.html</loc>
-    <lastmod>2024-10-13T21:13:13.364Z</lastmod>
+    <lastmod>2024-10-23T22:08:14.119Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/talks/SSA-tutorial/index.html</loc>
@@ -21,8 +21,12 @@
     <lastmod>2024-09-04T05:48:51.329Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/smarter_data_people/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.853Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/siligong2022/index.html</loc>
+    <lastmod>2024-09-04T05:41:21.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/book/index.html</loc>
+    <lastmod>2024-10-23T22:01:04.359Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/consulting/eco/index.html</loc>
@@ -138,15 +142,19 @@
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/consulting/index.html</loc>
-    <lastmod>2024-10-13T21:11:01.609Z</lastmod>
+    <lastmod>2024-10-13T21:54:58.390Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/consulting/data-viz/index.html</loc>
     <lastmod>2024-10-10T21:23:09.901Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/siligong2022/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.847Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/smarter_data_people/index.html</loc>
+    <lastmod>2024-09-04T05:41:21.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/talks/WOMBAT_2024/index.html</loc>
+    <lastmod>2024-10-23T22:07:43.836Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/talks/smart-outlier/index.html</loc>
