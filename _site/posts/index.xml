@@ -19,6 +19,89 @@
 <generator>quarto-1.4.554</generator>
 <lastBuildDate>Thu, 10 Oct 2024 13:00:00 GMT</lastBuildDate>
 <item>
+  <title>OceaniaR 2024</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The first ever <a href="https://statsocaus.github.io/oceaniaR-hack/">OceaniaR</a> meeting took place this week in Melbourne!</p>
+<p>The event took place the day before the Monash WOMBAT 2024 conference and was designed as a hackathon/unconference style event with a focus on promoting projects and participation from R users in the Oceania region including Australia, New Zealand and the Pacific Islands.</p>
+<p>It was such as nice day with R developers, researchers, scientists, statisticians of all career levels coming together to learn and make new connections. We were also lucky to have participants from Sydney, Brisbane, Perth, Canberra, New Zealand, Noumea, Vanuatu, Papua New Guinea, USA.</p>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<section id="alt-text-for-data-plots" class="level3">
+<h3 class="anchored" data-anchor-id="alt-text-for-data-plots"><a href="https://numbats.github.io/alt-text-for-data-plots/">alt-text-for-data-plots</a></h3>
+<p>Alt text provides a textual alternative to non-text content in HTML documents. It serves various purposes:</p>
+<ul>
+<li>It is necessary for accessibility guidelines.<br>
+</li>
+<li>ensures your data visualisations communicate to everybody.<br>
+</li>
+<li>Assistive technologies can convert alt text into other formats such as speech or Braille, providing a description for people using screen reading software.<br>
+</li>
+<li>alt text is displayed in place of the figure if it fails to load, or is viewed in a text-based browser.<br>
+</li>
+<li>alt text can assist both general and image-specific search engines.</li>
+</ul>
+</section>
+<section id="symbolic" class="level3">
+<h3 class="anchored" data-anchor-id="symbolic"><a href="https://github.com/mitchelloharawild/symbolic">symbolic</a></h3>
+<p>symbolic is an R package designed to provide symbolic algebra capabilities natively in R using R functions. It is highly experimental and dependent on external contributors to be a fully fledged Computer Algebra System (CAS). It will be developed to the extent needed for my upstream packages, specifically distributional which requires many symbolic algebra tools not yet readily available in R. Currently powered by yacas via Ryacas.</p>
+</section>
+<section id="popular" class="level3">
+<h3 class="anchored" data-anchor-id="popular"><a href="https://github.com/chitrams/populaR">populaR</a></h3>
+<p>populaR provides a convenient interface to the UN’s World Population Prospects API. Several pre-baked datasets are included, as well as a convenient wrapper for more advanced API users</p>
+</section>
+<section id="ozroaddeaths" class="level3">
+<h3 class="anchored" data-anchor-id="ozroaddeaths"><a href="https://github.com/njtierney/ozroaddeaths">ozroaddeaths</a></h3>
+<p>ozroaddeaths is a package that pulls data from the Australian Road Deaths Database, run by the Bureau of Infrastructure, Transport and Regional Economics (BITRE). This provides basic details of road transport crash fatalities in Australia as reported by the police each month to the State and Territory road safety authorities.</p>
+</section>
+<section id="nzbabynames-ozbabynames" class="level3">
+<h3 class="anchored" data-anchor-id="nzbabynames-ozbabynames"><a href="">nzbabynames</a> &amp; <a href="https://github.com/robjhyndman/ozbabynames">ozbabynames</a></h3>
+<p>The ozbabynames package provides the dataset ozbabynames. This contains popular Australian baby names by sex, state and year.</p>
+</section>
+<section id="case-study-unpaid-labour-in-australia" class="level3">
+<h3 class="anchored" data-anchor-id="case-study-unpaid-labour-in-australia"><a href="https://open-data-for-us.github.io/aus-unpaid-labour/unpaid-labour.html">Case study: Unpaid Labour in Australia</a></h3>
+<p>Unpaid labor includes essential tasks like housework, caregiving, volunteering. These tasks sustains households and communities but are often unrecognized. Women disproportionately bear the burden of unpaid labor, limiting their participation in the paid workforce and contributing to gender inequality. This imbalance affects women’s economic security and career opportunities, while the value of unpaid work remains largely invisible in traditional economic measures. Recognizing and addressing unpaid labor is key to achieving gender equity and a more inclusive economy.</p>
+</section>
+<section id="tools-for-detecting-misidentified-species-in-biodiversity-databases" class="level3">
+<h3 class="anchored" data-anchor-id="tools-for-detecting-misidentified-species-in-biodiversity-databases"><a href="https://github.com/StatSocAus/oceaniaR-hack/issues/15">Tools for detecting misidentified species in biodiversity databases</a></h3>
+<p>Biodiversity databases such as the Global Biodiversity Information Facility (GBIF) or Atlas of Living Australia (ALA) contain large amounts of open data, but also face persistent challenges in detecting ‘wrong’ points; observations of plants and animals that appear to be in the wrong place, be allocated to the wrong species, or both. Detecting these records is notoriously difficult for those who lack expert knowledge of species biogeography.</p>
+</section>
+<section id="package-for-mapping-pacific-countries-and-spatial-objects" class="level3">
+<h3 class="anchored" data-anchor-id="package-for-mapping-pacific-countries-and-spatial-objects"><a href="https://github.com/PacificCommunity/pdh-stat-plotr_map">Package for mapping Pacific countries and spatial objects</a></h3>
+<p>A customised package for mapping and dealing with spatial data relating to pacific countries and regions could help standardise and speed up the production of insights such as choropleth maps etc.</p>
+</section>
+<section id="improved-package-for-r-sdmx-integration-for-pacific-data" class="level3">
+<h3 class="anchored" data-anchor-id="improved-package-for-r-sdmx-integration-for-pacific-data"><a href="https://github.com/PacificCommunity/pdh-stat-pecheuse">Improved Package for R SDMX Integration for Pacific Data</a></h3>
+<p>{rsdmx} is an existing library exists to parse/read SDMX data and metadata in R. See here: https://github.com/opensdmx/rsdmx. This package is extensive but not tailored for use by Pacific Statistical Agencies and experts. Could a fork or domain specific implementation of this tool be achieved, specifically to improve usability for Pacific statistical data.</p>
+</section>
+</section>
+<section id="photos" class="level2">
+<h2 class="anchored" data-anchor-id="photos">Photos</h2>
+<p><img src="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/PXL_20241020_233512369.jpg" class="img-fluid"><br>
+<img src="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/PXL_20241021_022140589.jpg" class="img-fluid"><br>
+<img src="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/PXL_20241021_023628078.jpg" class="img-fluid"> <img src="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/PXL_20241021_233649378.jpg" class="img-fluid"> <img src="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/PXL_20241021_233827659.jpg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for weekly emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to get in touch at <a href="https://www.wavedatalabs.com.au/">wavedatalabs.com.au</a></strong></p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>Analysis</category>
+  <category>R</category>
+  <guid>https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/</guid>
+  <pubDate>Thu, 10 Oct 2024 13:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2024-10-24-oceaniar/featured.png" medium="image" type="image/png"/>
+</item>
+<item>
   <title>Data Systems and Analytics for Vector-Borne Disease Threat Reduction</title>
   <dc:creator>Dean Marchiori</dc:creator>
   <link>https://www.deanmarchiori.com/posts/2024-10-11-eco/</link>
@@ -3610,41 +3693,6 @@ font-style: inherit;">1</span>)</span></code></pre></div>
   <guid>https://www.deanmarchiori.com/posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/</guid>
   <pubDate>Tue, 27 Sep 2022 14:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2022-09-28-solving-the-optimal-stopping-problem-in-r/featured.png" medium="image" type="image/png" height="103" width="144"/>
-</item>
-<item>
-  <title>Three Stick Statistics</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2022-09-25-three-stick-statistics/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>When I was a teenager I was very popular among my peers, which is why I spent every second Saturday playing in a retiree’s social golf club. For each event we would travel via air-conditioned coach to a local public golf course and play some sort of themed game. The most exciting event was the <em>three stick event</em>. This game requires players to pick just <strong>three</strong> golf clubs out of their bag (plus a putter) to play their entire round (you can take up to 14 clubs on a normal round).</p>
-<p>So which three clubs do you pick?</p>
-<p>This was easy for me as I could only reliably hit two clubs: the five iron and the seven iron. I usually included a driver so as not be mocked by the septuagenarians at the par-5 tees.</p>
-<p>I also have an embarrassingly crap collection of golf clubs as many have been sent to an early retirement in water features.</p>
-<p>However, many friends who now play golf have a bewildering selection of exotic clubs from hybrid driving irons to 60-degree lob-wedges.</p>
-<p>It seems like in there is always some new technology or method to master in data science broadly. This is interesting, but also exhausting and fills me with existential dread that I am becoming irrelevant.</p>
-<p>It got me thinking, if you had to play statistics (or data science) for the rest of your career with just three algorithms/models, what would they be?</p>
-<section id="my-three-sticks" class="level2">
-<h2 class="anchored" data-anchor-id="my-three-sticks">My three sticks:</h2>
-<ol type="1">
-<li><p><strong>Random Forest</strong>: Uncontroversial ensemble method that can quickly get a performance ceiling with minimal fuss. It lacks some interpretability, but I’ll keep it in my bag for when I want to squeeze as much AUC as I can in a prediction setting.</p></li>
-<li><p><strong>Generalised Additive Model (GAM)</strong>: You could argue this is quite broad, but that’s okay. I’ve had good luck with GAMs as they provide a solid statistical approach that I am comfortable with, along with the flexibility of using smooths for non-linear terms that seems to be a key feature in the problems I have to solve. If I had to only pick one club this would probably be it.</p></li>
-<li><p><strong>k-medoids clustering:</strong> Clustering methods are a great third club to have in your bag. They solve a different problem to the modelling tasks above and provide a good hedge for those unsupervised tasks that come along fairly regularly. While everyone knows k-means, I enjoy the increased interpretation of k-medoids as the cluster centers are always one of the input data points. It also allows for more generalised distance methods (such as Gower’s distance) which I have found useful for mixed data types.</p></li>
-</ol>
-<p>We can include <code>lm()</code> as the default putter you get for free.</p>
-<p>Which three clubs would you pick in your bag?</p>
-
-
-</section>
-
- ]]></description>
-  <category>statistics</category>
-  <guid>https://www.deanmarchiori.com/posts/2022-09-25-three-stick-statistics/</guid>
-  <pubDate>Fri, 23 Sep 2022 14:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
