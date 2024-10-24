@@ -4,7 +4,7 @@ subtitle: "R Development and Open Source Software Hackathon - Melbourne 2024"
 author: "Dean Marchiori"
 date: "2024-10-11"
 categories: [Analysis, R]
-image: "featured.png"
+image: "featured.jpg"
 editor_options: 
   chunk_output_type: console
 execute: 
