@@ -1,0 +1,74 @@
+---
+title: "5 tips for dealing with IT"  
+subtitle: "Getting data science done with your IT team"
+author: "Dean Marchiori"
+date: "2024-11-18"
+categories: [Analysis, R]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+> No plan survives first contact with IT  
+
+In most organisations the single biggest challenge you will face 
+as a data scientist is dealing with IT (Information Technology / Technical Support) to support and enable your data science workflows in Production. 
+
+Why?  
+
+It's not really anyones fault, it's just a lack of alignment. 
+
+IT teams don't care heaps about enabling 1% of users to run wild 
+with Open Source technology or free software or wierd programming languages. 
+
+They care about managing risk. They want to enable 99% of users to do their job safely and
+productively without interruption. They want you to succeed, but they deliberately want 
+friction in the change management process to reduce the risk of breaking changes.  
+
+## Tips to getting stuff done with IT  
+
+1. **Have empathy**: Understand what their role is. Learn how little you matter to them. Figure
+out what would make them look good. Find your common enemies and work together. Don't get 
+frustrated at them. It's a feature not a bug. You just want different things. You have no idea the shit they have to deal with every day.   
+
+2. **Political alignment**: You can go into battle with some poor IT manager with
+a million bigger fish to fry, or you can try to influence your own manager. They
+are actually motivated to ensure your success and will be able to influence IT 
+in a more effective way on your behalf. 
+
+3. **Find supporters**: Okay sometimes you just need a favour. Find out who likes you
+and if they are willing to give you a hand now and then. Reward generously with 
+coffee and thanks. Swing by their desk, ask about cricket or what flavour of
+Linux they are running at home.
+
+4. **Find (safe) workarounds**: There are areas of grey where policy meets reality. Live
+in those areas. IT staff are smart technologists, they exploit this grey area too. Just
+do it ethically. If you org has actively blocked something and have no risk appetite to do something,
+then don't bypass it. Otherwise, sometimes it's better to beg for forgiveness than ask for permission. 
+
+
+5. **Buy commercially licensed software**: If you go to your IT manager with arguments 
+like: R/python is free, its open source, it wont cost anything, I can manage it myself, 
+everyone cool on the Internet is using it, SAS/STATA are crap - then you wont get far. 
+IT don't care about free and open source. They want to know the software is supported so they can get help
+when inevitably users call them for help. They want to know the legal terms and 
+conditions to keep legal happy. They want to ensure security vulnerabilities
+are patched (not by you). They want to know how it will integrate with the
+enterprise identity management solution. How will users be managed and authorised. 
+They want to manage software in-line with the other billion apps they support and 
+not by some exception because of some nerdy business user (you). Consider buying commercially licensed software like [Posit Connect or Workbench](https://posit.co/products/enterprise/). All of these problems go away and its just another piece of software. The argument then just devolves into who pays. And guess what? Everyone in a big organisation has it in their head that software licences are expensive so the sticker price won't really surprise anyone. 
+
+
+**Bonus tip: Share success**: Don't be a jerk and twist arms in other departments and get what you want then
+take all the credit yourself. Share success. Present to your IT team's monthly meetings, 
+include them in yours. Develop a 'partnership'. They might have to be the 'gatekeepers'
+but they work for the same company because they want to make an impact too. So recognise 
+it and appreciate it. You can't do impactful work without them. 
+
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
+> **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**
