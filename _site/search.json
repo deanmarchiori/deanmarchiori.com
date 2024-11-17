@@ -529,7 +529,7 @@
     "href": "posts/2024-11-18-dealing-with-it/index.html",
     "title": "5 tips for dealing with IT",
     "section": "",
-    "text": "No plan survives first contact with IT\nIn most organisations the single biggest challenge you will face as a data scientist is dealing with IT (Information Technology / Technical Support) to support and enable your data science workflows in Production.\nWhy?\nIt’s not really anyones fault, it’s just a lack of alignment.\nIT teams don’t care heaps about enabling 1% of users to run wild with Open Source technology or free software or wierd programming languages.\nThey care about managing risk. They want to enable 99% of users to do their job safely and productively without interruption. They want you to succeed, but they deliberately want friction in the change management process to reduce the risk of breaking changes."
+    "text": "No plan survives first contact with IT\nIn most organisations the single biggest challenge you will face as a data scientist is dealing with IT (Information Technology / Technical Support) to support and enable your data science workflows in Production.\nWhy?\nIt’s not really anyone’s fault, it’s just a lack of alignment.\nIT teams don’t care heaps about enabling 1% of users to run wild with Open Source technology or free software or weird programming languages.\nThey care about managing risk. They want to enable 99% of users to do their job safely and productively without interruption. They want you to succeed, but they deliberately want friction in the change management process to reduce the risk of breaking changes."
   },
   {
     "objectID": "posts/2024-11-18-dealing-with-it/index.html#tips-to-getting-stuff-done-with-it",

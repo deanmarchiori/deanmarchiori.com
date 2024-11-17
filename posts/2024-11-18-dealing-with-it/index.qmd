@@ -20,10 +20,10 @@ as a data scientist is dealing with IT (Information Technology / Technical Suppo
 
 Why?  
 
-It's not really anyones fault, it's just a lack of alignment. 
+It's not really anyone's fault, it's just a lack of alignment. 
 
 IT teams don't care heaps about enabling 1% of users to run wild 
-with Open Source technology or free software or wierd programming languages. 
+with Open Source technology or free software or weird programming languages. 
 
 They care about managing risk. They want to enable 99% of users to do their job safely and
 productively without interruption. They want you to succeed, but they deliberately want 
