@@ -4,8 +4,9 @@ subtitle: "All science, no hype."
 listing: "default"
 ---
 
-I specialise in helping science & technology start-ups and scale-ups innovate
-rapidly and build their data science capability.   
+I'm a data scientist specialising in helping science & technology start-ups and scale-ups innovate
+rapidly and build their data science capability. Unlike my competitors I use data
+and maths, not AI or hype.     
 
 I use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.    
 
