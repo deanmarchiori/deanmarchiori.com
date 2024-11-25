@@ -5,9 +5,10 @@ venue: Siligong.Data
 image: "featured.png"
 ---
 
-## Abstract 
 
 Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R  
+
+[blueysearch app](https://deanmarchiori.shinyapps.io/blueysearch/)
 
 ![](featured.png)
 

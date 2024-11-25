@@ -1,52 +1,17 @@
 [
   {
-    "objectID": "index.html#work-with-me",
-    "href": "index.html#work-with-me",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
     "title": "Dean Marchiori",
-    "section": "Work with me",
-    "text": "Work with me\nI’m a data scientist specialising in helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data and maths, not AI or hype.\nIf you are interested in hiring me for a project, get in touch.\nContact Me"
+    "section": "",
+    "text": "Contact Me\n  \n  \n    \n     LinkedIn\n  \n\n  \n  \nDean Marchiori is an applied statistician and specialist in statistical analysis, data science and R programming. He operates an independent consultant through his practice Wave Data Labs and is co-chair of the Statistical Society of Australia’s section for statistical computing and visualisation. Previously Dean was also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA)."
   },
   {
-    "objectID": "index.html#some-of-my-work",
-    "href": "index.html#some-of-my-work",
-    "title": "Dean Marchiori",
-    "section": "Some of my work",
-    "text": "Some of my work\nTo learn more about organisations I’ve helped Check out our work here.\nYou can check out my writing in the blog or you can watch some of my recorded talks.\nI also publish a weekly note with resources and updates in the data science space."
-  },
-  {
-    "objectID": "index.html#bio",
-    "href": "index.html#bio",
-    "title": "Dean Marchiori",
-    "section": "Bio",
-    "text": "Bio\nDean Marchiori is an applied mathematician and specialist in statistical analysis, data science and R programming. He is the Director and Principal Data Scientist at Wave Data Labs and co-chair of the Statistical Society of Australia’s section for statistical computing and visualisation. Previously Dean was also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA)."
-  },
-  {
-    "objectID": "index.html#licence-and-accreditation",
-    "href": "index.html#licence-and-accreditation",
+    "objectID": "about/index.html#licence-and-accreditation",
+    "href": "about/index.html#licence-and-accreditation",
     "title": "Dean Marchiori",
     "section": "Licence and Accreditation",
     "text": "Licence and Accreditation\nAccredited Statistician - Statistical Society of Australia\n(Lic 53250221, Exp 12/25)\n\nAzure Certified Data Science Associate - Microsoft"
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html",
-    "href": "talks/SSA-tutorial/index.html",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "",
-    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html#abstract",
-    "href": "talks/SSA-tutorial/index.html#abstract",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "",
-    "text": "Objectives:\nTo educate attendees on processes and tools to deploy local python or R modelling code into high-quality, robust, scalable production code.\nTo provide attendees with a practical overview of Microsoft Azure Machine Learning Studio\nTarget Audience:\nData Science practitioners who write python or R code to build predictive models, and are interested in industry best practice for converting experimental code into reliable ML services for their users.\nAgenda and Schedule:\nWelcome and Introduction\n1 hour – Session 1: Intro to Azure Machine Learning Studio\n15 min – Break\n1 hour – Session 2: Model Training and Inference\n15 min – Break\n45 min – Session 3: Deployment and Monitoring\n15 min – Conclusion and Next Steps"
-  },
-  {
-    "objectID": "talks/SSA-tutorial/index.html#links",
-    "href": "talks/SSA-tutorial/index.html#links",
-    "title": "Deploying your model code into production with Microsoft Azure",
-    "section": "Links",
-    "text": "Links\nEvent\nSlides"
   },
   {
     "objectID": "talks/rstudioconf_2021/index.html",
@@ -63,81 +28,88 @@
     "text": "Reproducibility is a critical aspect in science to enable trust & communication. In R, many tools exist to bring in the best practices of reproducibility into the hands of data scientists. However, outside of a research setting, how does reproducibility hold up in commercial data science projects? In this talk I take an honest retrospective of my own commercial R projects in the last year. I look at the various types of analyses completed, and which workflows were selected and why. Through this process we can learn how workflow choices may help in the short term but hinder in the long term. More importantly what can be done strike the balance between progress and perfection when doing data science in the wild?"
   },
   {
-    "objectID": "talks/rstudioconf_2021/index.html#links",
-    "href": "talks/rstudioconf_2021/index.html#links",
-    "title": "How reproducible am I? A retrospective on a year of commercial data science projects in R",
+    "objectID": "talks/smart-outlier/index.html",
+    "href": "talks/smart-outlier/index.html",
+    "title": "Unsupervised outlier detection systems for e-commerce",
+    "section": "",
+    "text": "Dean Marchiori presented a seminar titled “Unsupervised outlier detection systems for e-commerce” as part of the SMART Seminar Series on 16th October 2018.\nFor large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
+  },
+  {
+    "objectID": "talks/smart-outlier/index.html#abstract",
+    "href": "talks/smart-outlier/index.html#abstract",
+    "title": "Unsupervised outlier detection systems for e-commerce",
+    "section": "",
+    "text": "Dean Marchiori presented a seminar titled “Unsupervised outlier detection systems for e-commerce” as part of the SMART Seminar Series on 16th October 2018.\nFor large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html",
+    "href": "talks/WOMBAT_2024/index.html",
+    "title": "Tutorial - Turning R code into production quality software",
+    "section": "",
+    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html#abstract",
+    "href": "talks/WOMBAT_2024/index.html#abstract",
+    "title": "Tutorial - Turning R code into production quality software",
+    "section": "",
+    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
+  },
+  {
+    "objectID": "talks/WOMBAT_2024/index.html#links",
+    "href": "talks/WOMBAT_2024/index.html#links",
+    "title": "Tutorial - Turning R code into production quality software",
     "section": "Links",
-    "text": "Links\nVideo\nslides"
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html",
-    "href": "talks/WOMBAT_2019/index.html",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "",
-    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html#abstract",
-    "href": "talks/WOMBAT_2019/index.html#abstract",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "",
-    "text": "Google Analytics is a popular service that tracks and reports website traffic. Using R to query, clean and model Google Analytics data can add significant value, but also significant complexity. From API’s to BigQuery, in this talk I will provide on overview of Google’s unique approach to structuring web data, an overview of the R landscape and share some pearls and pitfalls of using Google Analytics data at scale for data analysis projects."
-  },
-  {
-    "objectID": "talks/WOMBAT_2019/index.html#links",
-    "href": "talks/WOMBAT_2019/index.html#links",
-    "title": "Pearls and pitfalls of time series analysis using Google Analytics data",
-    "section": "Links",
-    "text": "Links\nSlides"
-  },
-  {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\n24 Oct 2024\n\n\nTutorial - Turning R code into production quality software\n\n\nWOMBAT 2024 - Monash University\n\n\n\n\n01 Dec 2023\n\n\nDeploying your model code into production with Microsoft Azure\n\n\nStatistical Society of Australia - Tutorial\n\n\n\n\n24 Nov 2022\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\nSiligong.Data\n\n\n\n\n09 Feb 2022\n\n\nKeeping Up with Data - Podcast S2E1\n\n\nPodcast Episode\n\n\n\n\n01 Dec 2021\n\n\nStatistics Early Career Talk\n\n\nSSA NSW - Early Career and Student Statisticians Event 2021\n\n\n\n\n21 Jan 2021\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\nrstudio::global 2021\n\n\n\n\n23 Mar 2020\n\n\nSmarter Data People\n\n\nPodcast Episode\n\n\n\n\n29 Nov 2019\n\n\nPearls and pitfalls of time series analysis using Google Analytics data\n\n\nMonash University Business Analytics Team- WOMBAT 2019 Workshop\n\n\n\n\n21 May 2019\n\n\nR for Research - Essential Tools for Academics\n\n\nUniversity of Wollongong - SMART Infrastructure Facility\n\n\n\n\n16 Oct 2018\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\nUniversity of Wollongong SMART Infrastructure Facility\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/siligong2022/index.html",
-    "href": "talks/siligong2022/index.html",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
-    "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
-  },
-  {
-    "objectID": "talks/siligong2022/index.html#abstract",
-    "href": "talks/siligong2022/index.html#abstract",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
-    "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R"
-  },
-  {
-    "objectID": "talks/siligong2022/index.html#links",
-    "href": "talks/siligong2022/index.html#links",
-    "title": "Building and deploying a Bluey episode recommendation system in R",
-    "section": "Links",
-    "text": "Links\nGithub\nSlides"
+    "text": "Links\nLive in person, not recorded.\nData Science Workflows in R e-book\nEvent Page"
   },
   {
     "objectID": "book/index.html",
     "href": "book/index.html",
     "title": "Data Science Workflows in R",
     "section": "",
-    "text": "Click here for link to free e-book\n\n\nThis guide is a resource for data analysts and data scientists looking to improve the way they write R code. While R remains a popular choice for statistical modelling and data analysis, its rapid development has enabled users to progress their work right through to being deployed into Production. However the type of work done when conducting experiments and developing models is very different to packaging up this work so it can reliably drive decisions in an organisation. This book will provide readers with an overview of contemporary frameworks for how data analysis is done in practice. It will cover how R projects are usually structured and how this can evolve based on project complexity. It will examine what is meant by experimental vs production analysis code and which principles need to be adopted. Finally it will show current tools and frameworks for taking experimental R code and strengthening it to align with best practice for reliable production grade software. Readers can step through a case study and download code to follow along."
+    "text": "Read Now\n\n\nThis guide is a resource for data analysts and data scientists looking to improve the way they write R code. While R remains a popular choice for statistical modelling and data analysis, its rapid development has enabled users to progress their work right through to being deployed into Production. However the type of work done when conducting experiments and developing models is very different to packaging up this work so it can reliably drive decisions in an organisation. This book will provide readers with an overview of contemporary frameworks for how data analysis is done in practice. It will cover how R projects are usually structured and how this can evolve based on project complexity. It will examine what is meant by experimental vs production analysis code and which principles need to be adopted. Finally it will show current tools and frameworks for taking experimental R code and strengthening it to align with best practice for reliable production grade software. Readers can step through a case study and download code to follow along."
   },
   {
-    "objectID": "consulting/eco/index.html",
-    "href": "consulting/eco/index.html",
-    "title": "Data Systems and Analytics for Vector-Borne Disease Threat Reduction",
+    "objectID": "consulting/2024-01-01-service-3/index.html",
+    "href": "consulting/2024-01-01-service-3/index.html",
+    "title": "Youth mental health geospatial hotspot analysis",
     "section": "",
-    "text": "Earlier this year I was fortunate enough to work with EcoHealth Alliance on a major project focused on two WHO priority zoonoses, Rift Valley fever virus and Crimean-Congo hemorrhagic fever virus. Over a 10 year period, research teams sampled over 800 people and livestock, sampled over 300 rodents, and conducted ecological site characterizations at 150 sites in each Tanzania and South Africa.\nTo integrate data from disparate datasets we developed a novel R pipeline to standardize data cleaning, quality control and integration following reproducible science principals. This was one of the first projects of this scale that I have seen using so many tools that align to current industry best practice:\n\nVersion controlled code in Github with strict code review\nFull CI/CD automation with Github Actions\n\n{targets} as a pipeline tool\n\nR package to store and document all functions\n\n{renv} for package dependency management\n\nProper encrypted environment files for all credentials\n\nA common deterrent I hear from beginners around using tools to aid reproducibility in R code often center around the barriers to entry. They are seen as adding complexity and overhead into the process. Which they do (on small projects), but as projects become more and more complex, the benefits quickly outweigh the costs.\nAn overview of this project was given as a poster at the recent 8th World One Health Congress in Cape Town\n\n\nWant to read more? Sign up to my mailing list here for weekly emails and no spam.\nLooking for a data science consultant? Feel free to get in touch at wavedatalabs.com.au"
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nThe hot spot methods involved using a geospatial analytics technique for uncovering local areas of spatial association.\nFull source code can be viewed on Github"
   },
   {
-    "objectID": "consulting/fire/index.html",
-    "href": "consulting/fire/index.html",
-    "title": "An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions",
+    "objectID": "consulting/2024-01-01-service-3/index.html#project",
+    "href": "consulting/2024-01-01-service-3/index.html#project",
+    "title": "Youth mental health geospatial hotspot analysis",
     "section": "",
-    "text": "Electrical infrastructure is one of the major causes of bushfire in Australia alongside arson and lightning strikes. The two main causes of electrical-infrastructure-initiated fires are asset failure and powerline vegetation interactions. In this paper, we focus on powerline–vegetation interactions that are caused by vegetation falling onto or blowing onto electrical infrastructure. Currently, there is very limited understanding of both the spatio-temporal variability of these events and their causative factors. Bridging this knowledge gap provides an opportunity for electricity utility companies to optimally allocate vegetation management resources and to understand the risk profile presented by vegetation fall-in initiated fires, thereby improving both operational planning and strategic resource allocation. To bridge this knowledge gap, we developed a statistical rare-event modelling and simulation framework based on Endeavour Energy’s fire start and incident records from the last 10 years. The modelling framework consists of nested, rare-event-corrected, conditional probability models for vegetation events and consequent ignition events that provide an overall model for vegetation-initiated ignitions. Model performance was tested on an out-of-time test set to determine the predictive utility of the models. Predictive performance was reasonable with test set AUC values of 0.79 and 0.66 for the vegetation event and ignition event models, respectively. The modelling indicates that wind speed and vegetation features are strongly associated with vegetation events, and that Forest Fire Danger Index (FFDI) and soil type are strongly associated with ignition events. The framework can be used by energy utilities to optimize resource allocation and prepare future networks for climate change.\nLink: https://www.mdpi.com/2571-6255/6/2/61"
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nThe hot spot methods involved using a geospatial analytics technique for uncovering local areas of spatial association.\nFull source code can be viewed on Github"
+  },
+  {
+    "objectID": "consulting/2024-01-01-service-3/index.html#outcomes",
+    "href": "consulting/2024-01-01-service-3/index.html#outcomes",
+    "title": "Youth mental health geospatial hotspot analysis",
+    "section": "Outcomes",
+    "text": "Outcomes\nThis analysis of census data reveals youth mental health hot spots: areas with higher mental health diagnosis rates in young people than neighbouring areas.\nTo reference this analysis see here"
+  },
+  {
+    "objectID": "consulting/index.html",
+    "href": "consulting/index.html",
+    "title": "Data Science & Statistical Consulting",
+    "section": "",
+    "text": "I’m a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data and maths, not AI or hype.\nI use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value."
+  },
+  {
+    "objectID": "consulting/index.html#how-i-have-helped-other-clients",
+    "href": "consulting/index.html#how-i-have-helped-other-clients",
+    "title": "Data Science & Statistical Consulting",
+    "section": "How I have helped other clients",
+    "text": "How I have helped other clients"
+  },
+  {
+    "objectID": "consulting/2024-01-01-service-5/index.html#footnotes",
+    "href": "consulting/2024-01-01-service-5/index.html#footnotes",
+    "title": "Customer segmentation and recommender system build for e-commerce company",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nName and industry changed/withheld to respect client privacy.↩︎\nExact methods used are confidential and cannot be disclosed↩︎"
   },
   {
     "objectID": "posts/2024-10-04-innerloop/index.html",
@@ -460,13 +432,6 @@
     "title": "Contact Me",
     "section": "Location",
     "text": "Location\n Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500 Australia"
-  },
-  {
-    "objectID": "contact/index.html#other-platforms",
-    "href": "contact/index.html#other-platforms",
-    "title": "Contact Me",
-    "section": "Other platforms",
-    "text": "Other platforms\n LinkedIn \n Github \n Mastodon"
   },
   {
     "objectID": "posts/2022-01-17-running-shiny-in-a-docker-container/index.html",
@@ -805,192 +770,108 @@
     "text": "How can we help?\nWe have a dedicated program for businesses looking to get started or deepen their data analytics journey. We can help change your attitude and pick better projects.\nBook in a Demo"
   },
   {
-    "objectID": "consulting/bluey/index.html",
-    "href": "consulting/bluey/index.html",
-    "title": "What was thay Bluey Episode?",
+    "objectID": "consulting/2024-01-01-service-2/index.html",
+    "href": "consulting/2024-01-01-service-2/index.html",
+    "title": "Anomaly detection and cluster analysis for financial crime detection",
     "section": "",
-    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 131 of them?\nProblem solved.\nThis website lets you type in the vague descriptions of a small child and it will return a mathematically ranked list of closest matching Bluey episodes.\nShiny App\nSlides\nGithub"
+    "text": "Financial crime has become increasingly complex. Criminals are leveraging intricate methods to conceal illicit activities, making it vital for organizations to stay ahead by using advanced analytical techniques. One such method involves using anomaly detection and cluster analysis on corporate registry data to identify suspicious behavior that could indicate financial crime."
   },
   {
-    "objectID": "consulting/index.html",
-    "href": "consulting/index.html",
-    "title": "Data Science & Statistical Consulting",
+    "objectID": "consulting/2024-01-01-service-2/index.html#footnotes",
+    "href": "consulting/2024-01-01-service-2/index.html#footnotes",
+    "title": "Anomaly detection and cluster analysis for financial crime detection",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSpecific details of the client relationship, methods and code are confidential and cannot be released.↩︎"
+  },
+  {
+    "objectID": "consulting/2024-01-01-service-4/index.html",
+    "href": "consulting/2024-01-01-service-4/index.html",
+    "title": "Analysis and mapping of access to Assisted Reproductive Technologies",
     "section": "",
-    "text": "I’m a data scientist specialising in helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data and maths, not AI or hype.\nI use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.\nContact Me"
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nFull source code available on Github"
   },
   {
-    "objectID": "consulting/index.html#some-of-my-work",
-    "href": "consulting/index.html#some-of-my-work",
-    "title": "Data Science & Statistical Consulting",
-    "section": "Some of my work",
-    "text": "Some of my work"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html",
-    "href": "consulting/data-viz/index.html",
-    "title": "Data Visualisations",
+    "objectID": "consulting/2024-01-01-service-4/index.html#project",
+    "href": "consulting/2024-01-01-service-4/index.html#project",
+    "title": "Analysis and mapping of access to Assisted Reproductive Technologies",
     "section": "",
-    "text": "These data visualizations are all scripted and made 100% in R.\nFor the full collection go to the Github Repo"
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nFull source code available on Github"
   },
   {
-    "objectID": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
-    "href": "consulting/data-viz/index.html#entry-for-pacific-dataviz-competition",
-    "title": "Data Visualisations",
-    "section": "Entry for Pacific DataViz Competition",
-    "text": "Entry for Pacific DataViz Competition"
+    "objectID": "consulting/2024-01-01-service-4/index.html#outcomes",
+    "href": "consulting/2024-01-01-service-4/index.html#outcomes",
+    "title": "Analysis and mapping of access to Assisted Reproductive Technologies",
+    "section": "Outcomes",
+    "text": "Outcomes\nOver half a million Australians live more than 240km from an Assisted reproductive technology clinic and would likely have to sleep nearby in order to visit.\nTo reference this analysis see here"
   },
   {
-    "objectID": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#trees-of-san-francisco---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Trees of San Francisco - Tidy Tuesday Project",
-    "text": "Trees of San Francisco - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#simpsons-guest-stars---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Simpsons Guest Stars - Tidy Tuesday Project",
-    "text": "Simpsons Guest Stars - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
-    "href": "consulting/data-viz/index.html#town-map-made-from-open-street-map-osm-data",
-    "title": "Data Visualisations",
-    "section": "Town Map Made From Open Street Map (OSM) Data",
-    "text": "Town Map Made From Open Street Map (OSM) Data"
-  },
-  {
-    "objectID": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
-    "href": "consulting/data-viz/index.html#australian-meterorite-strikes---tidy-tuesday-project",
-    "title": "Data Visualisations",
-    "section": "Australian Meterorite Strikes - Tidy Tuesday Project",
-    "text": "Australian Meterorite Strikes - Tidy Tuesday Project"
-  },
-  {
-    "objectID": "talks/smarter_data_people/index.html",
-    "href": "talks/smarter_data_people/index.html",
-    "title": "Smarter Data People",
+    "objectID": "consulting/2024-10-11-eco/index.html",
+    "href": "consulting/2024-10-11-eco/index.html",
+    "title": "Data Systems and Analytics for Vector-Borne Disease Threat Reduction",
     "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "text": "Earlier this year I was fortunate enough to work with EcoHealth Alliance on a major project focused on two WHO priority zoonoses, Rift Valley fever virus and Crimean-Congo hemorrhagic fever virus. Over a 10 year period, research teams sampled over 800 people and livestock, sampled over 300 rodents, and conducted ecological site characterizations at 150 sites in each Tanzania and South Africa.\nTo integrate data from disparate datasets we developed a novel R pipeline to standardize data cleaning, quality control and integration following reproducible science principals. This was one of the first projects of this scale that I have seen using so many tools that align to current industry best practice:\n\nVersion controlled code in Github with strict code review\nFull CI/CD automation with Github Actions\n\n{targets} as a pipeline tool\n\nR package to store and document all functions\n\n{renv} for package dependency management\n\nProper encrypted environment files for all credentials\n\nA common deterrent I hear from beginners around using tools to aid reproducibility in R code often center around the barriers to entry. They are seen as adding complexity and overhead into the process. Which they do (on small projects), but as projects become more and more complex, the benefits quickly outweigh the costs.\nAn overview of this project was given as a poster at the recent 8th World One Health Congress in Cape Town\n\n\nWant to read more? Sign up to my mailing list here for weekly emails and no spam.\nLooking for a data science consultant? Feel free to get in touch at wavedatalabs.com.au"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#abstract",
-    "href": "talks/smarter_data_people/index.html#abstract",
-    "title": "Smarter Data People",
+    "objectID": "consulting/2024-01-01-service-1/index.html",
+    "href": "consulting/2024-01-01-service-1/index.html",
+    "title": "Australian Bushfire Risk Analysis & Mapping",
     "section": "",
-    "text": "Podcast Episode - Smarter Data People - Building Data Capability"
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nFull source code can be viewed on Github"
   },
   {
-    "objectID": "talks/smarter_data_people/index.html#links",
-    "href": "talks/smarter_data_people/index.html#links",
-    "title": "Smarter Data People",
+    "objectID": "consulting/2024-01-01-service-1/index.html#project",
+    "href": "consulting/2024-01-01-service-1/index.html#project",
+    "title": "Australian Bushfire Risk Analysis & Mapping",
+    "section": "",
+    "text": "This project was completed with 360info. 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.\nFull source code can be viewed on Github"
+  },
+  {
+    "objectID": "consulting/2024-01-01-service-1/index.html#outcomes",
+    "href": "consulting/2024-01-01-service-1/index.html#outcomes",
+    "title": "Australian Bushfire Risk Analysis & Mapping",
+    "section": "Outcomes",
+    "text": "Outcomes\n360info has collated data from New South Wales (below), and all other states and territories which shows which suburbs are most prone to bushfire. This interactive analysis was the first of its kind to highlight bushfire planning risk for the entire Australian mainland.\nTo reference this analysis see here."
+  },
+  {
+    "objectID": "talks/siligong2022/index.html",
+    "href": "talks/siligong2022/index.html",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
+    "section": "",
+    "text": "Does your child explain Bluey episodes to you but you have no idea what episode they are talking about? This talk will show how to build and deploy a basic data science backed web application in R\nblueysearch app"
+  },
+  {
+    "objectID": "talks/siligong2022/index.html#links",
+    "href": "talks/siligong2022/index.html#links",
+    "title": "Building and deploying a Bluey episode recommendation system in R",
     "section": "Links",
-    "text": "Links\nURL"
+    "text": "Links\nGithub\nSlides"
   },
   {
-    "objectID": "talks/WOMBAT_2024/index.html",
-    "href": "talks/WOMBAT_2024/index.html",
-    "title": "Tutorial - Turning R code into production quality software",
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Selected Talks",
     "section": "",
-    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
-  },
-  {
-    "objectID": "talks/WOMBAT_2024/index.html#abstract",
-    "href": "talks/WOMBAT_2024/index.html#abstract",
-    "title": "Tutorial - Turning R code into production quality software",
-    "section": "",
-    "text": "Most analyses start with the analyst experimenting with R code in a script or a notebook. But what happens when this experimental work becomes mission critical and starts being used to make real-world decisions? This tutorial will cover the basics of converting experimental R code into high-quality Production grade R software that can be relied on. It will cover hands-on demonstrations of tools and techniques such as R packages, functional code, documentation, testing, hosting and deployment. Background: This is an introductory course perfect for users familiar with writing R code for themselves who now want it work well with others."
-  },
-  {
-    "objectID": "talks/WOMBAT_2024/index.html#links",
-    "href": "talks/WOMBAT_2024/index.html#links",
-    "title": "Tutorial - Turning R code into production quality software",
-    "section": "Links",
-    "text": "Links\nLive in person, not recorded.\nData Science Workflows in R e-book\nEvent Page"
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html",
-    "href": "talks/smart-outlier/index.html",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "",
-    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html#abstract",
-    "href": "talks/smart-outlier/index.html#abstract",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "",
-    "text": "For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses."
-  },
-  {
-    "objectID": "talks/smart-outlier/index.html#links",
-    "href": "talks/smart-outlier/index.html#links",
-    "title": "Unsupervised outlier detection systems for e-commerce",
-    "section": "Links",
-    "text": "Links\nRecorded Video"
+    "text": "Tutorial - Turning R code into production quality software\n\n\n\n\n\n\nOct 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeeping Up with Data - Podcast S2E1\n\n\n\n\n\n\nFeb 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\n\n\n\n\nJan 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\n\n\n\n\nOct 16, 2018\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/keeping-up-with-data/index.html",
     "href": "talks/keeping-up-with-data/index.html",
     "title": "Keeping Up with Data - Podcast S2E1",
     "section": "",
-    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
+    "text": "Joel and Emily are back for another season! Today they had a chat with Statistician and Senior Data Scientist, Dean Marchiori about checking in with your ego, the importance of feedback and how he leads the data science team for an Australian energy utility where his work focuses on modelling bushfire and vegetation risk on the electricity network. In 2019, he was named one of the top 10 analytics leaders in Australia by the Institute of Analytics Professionals of Australia.\nThis is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
   },
   {
     "objectID": "talks/keeping-up-with-data/index.html#abstract",
     "href": "talks/keeping-up-with-data/index.html#abstract",
     "title": "Keeping Up with Data - Podcast S2E1",
     "section": "",
-    "text": "This is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
+    "text": "Joel and Emily are back for another season! Today they had a chat with Statistician and Senior Data Scientist, Dean Marchiori about checking in with your ego, the importance of feedback and how he leads the data science team for an Australian energy utility where his work focuses on modelling bushfire and vegetation risk on the electricity network. In 2019, he was named one of the top 10 analytics leaders in Australia by the Institute of Analytics Professionals of Australia.\nThis is Keeping Up With Data, the podcast that keeps data enthusiasts up to speed with what is happening in the world of data. We bring in the leading minds from the data industry to talk all things career, news, embarrassing stories, failures and successes."
   },
   {
-    "objectID": "talks/keeping-up-with-data/index.html#links",
-    "href": "talks/keeping-up-with-data/index.html#links",
-    "title": "Keeping Up with Data - Podcast S2E1",
-    "section": "Links",
-    "text": "Links\nURL\nVideo"
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html",
-    "href": "talks/SSA_early_career/index.html",
-    "title": "Statistics Early Career Talk",
-    "section": "",
-    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html#abstract",
-    "href": "talks/SSA_early_career/index.html#abstract",
-    "title": "Statistics Early Career Talk",
-    "section": "",
-    "text": "The New South Wales branch of the Statistical Society of Australia warmly invites all undergraduate, postgraduate and early career statisticians and data scientists to attend our annual event for Early Career and Student Statisticians on Wednesday 1st December 2021 at 6pm. The event will take place at The Occidental (43 York St, Sydney NSW 2000), near Wynyard Station."
-  },
-  {
-    "objectID": "talks/SSA_early_career/index.html#links",
-    "href": "talks/SSA_early_career/index.html#links",
-    "title": "Statistics Early Career Talk",
-    "section": "Links",
-    "text": "Links\nSlides"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html",
-    "href": "talks/smart-r-academics/index.html",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "",
-    "text": "R for Research - Essential Tools for Academics"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html#abstract",
-    "href": "talks/smart-r-academics/index.html#abstract",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "",
-    "text": "R for Research - Essential Tools for Academics"
-  },
-  {
-    "objectID": "talks/smart-r-academics/index.html#links",
-    "href": "talks/smart-r-academics/index.html#links",
-    "title": "R for Research - Essential Tools for Academics",
-    "section": "Links",
-    "text": "Links\nSlides"
+    "objectID": "index.html#trusted-by",
+    "href": "index.html#trusted-by",
+    "title": "Dean Marchiori",
+    "section": "Trusted by",
+    "text": "Trusted by\n     \n\n  \n    \n      \n    \n    \n      \n        \"You were able to work toward our goals, making suggestions to improve the workflow and then execute those suggestions in the code. You were friendly, thoughtful and hard working. We're really happy with the package you delivered. Thanks!\"\n      \n      Dr Melinda Rostal, Principal Scientist, EcoHealth Alliance\n    \n  \n\n\n  \n    \n      \n    \n    \n      \n        \"Dean's ability to unpack problems, package, engage, present, influence, validate, mentor and resolve is fantastic and highly sought after.\"\n      \n      Paul Oyston, Group Head of IT Data Analytics, IRT Group"
   }
 ]

@@ -1,12 +1,10 @@
 ---
 title: "Data Science & Statistical Consulting"
-subtitle: "All science, no hype."
-listing: "default"
+listing: "grid"
 ---
 
-I'm a data scientist specialising in helping science & technology start-ups and scale-ups innovate
-rapidly and build their data science capability. Unlike my competitors I use data
-and maths, not AI or hype.     
+I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data
+and maths, not AI or hype.  
 
 I use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.    
 
@@ -28,7 +26,25 @@ I use cutting-edge techniques in applied mathematics, statistical modelling and 
 
 ::::  
 
-<a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Contact Me</a>
+:::: {.columns}
 
-## Some of my work  
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="30%"}
+<a href="/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get Started</a> 
+:::
+
+::: {.column width="35%"}
+
+:::
+
+
+::::
+
+
+<br> 
+
+## How I have helped other clients
 

@@ -1,0 +1,43 @@
+---
+title: "Data Systems and Analytics for Vector-Borne Disease Threat Reduction"  
+subtitle: "A real-world case study of reproducible workflows"
+categories: [Analysis, R]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+![](featured.png)
+
+Earlier this year I was fortunate enough to work with EcoHealth Alliance on a 
+major project focused on two WHO priority zoonoses, Rift Valley fever virus and 
+Crimean-Congo hemorrhagic fever virus. Over a 10 year period, research teams sampled 
+over 800 people and livestock, sampled over 300 rodents, and conducted ecological site
+characterizations at 150 sites in each Tanzania and South Africa.  
+
+To integrate data from disparate datasets we developed a novel R pipeline to standardize data cleaning, 
+quality control and integration following reproducible science principals. This was one of the first projects of this scale that I have seen using so many tools
+that align to current industry best practice: 
+
+- Version controlled code in Github with strict code review
+- Full CI/CD automation with Github Actions  
+- `{targets}` as a pipeline tool  
+- R package to store and document all functions  
+- `{renv}` for package dependency management  
+- Proper encrypted environment files for all credentials    
+
+A common deterrent I hear from beginners around using tools to aid reproducibility in R code often center 
+around the barriers to entry.  They are seen as adding complexity and overhead into
+the process. Which they do (on small projects), but as projects become more and more complex, the benefits
+quickly outweigh the costs. 
+
+An overview of this project was given as a poster at the recent 8th World One Health Congress in Cape Town 
+
+![](poster.png)
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
+> **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**

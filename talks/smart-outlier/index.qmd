@@ -7,11 +7,8 @@ image: "featured.png"
 
 ## Abstract 
 
+Dean Marchiori presented a seminar titled "Unsupervised outlier detection systems for e-commerce" as part of the SMART Seminar Series on 16th October 2018. 
+
 For large e-commerce businesses, monitoring the rate at which users convert on their websites is essential. Given conversion rate data exhibits certain unique characteristics such as sub-daily time series, multiple seasonality, presence of trend and strictly non-negative values, detecting outliers by business users is non-trivial. We have explored a range of time series outlier detection methods to test and build a system for automatic outlier detection for e-commerce businesses.  
 
-![](featured.png)
-
-## Links  
-
-[Recorded Video](https://www.youtube.com/watch?v=BMODMydyrR8)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BMODMydyrR8?si=UAMcm7WFXUJm9RBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,1 +1,39 @@
 /* css styles */
+.testimonial-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+}
+
+.client-photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: -50px; 
+  object-fit: cover;
+}
+
+.testimonial-text blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+}
+
+.client-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shadow-image {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; /* Optional: for rounded corners */
+}

@@ -1,0 +1,19 @@
+---
+title: "Youth mental health geospatial hotspot analysis"  
+image: "featured.png"  
+---
+
+## Project  
+This project was completed with [360info](https://360info.org/). 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.  
+
+The hot spot methods involved using a geospatial analytics technique for uncovering local areas of spatial association.   
+
+Full source code can be viewed on [Github](https://github.com/360-info/report-youth-mental-health-social-media)
+
+## Outcomes  
+
+This analysis of census data reveals youth mental health hot spots: areas with higher mental health diagnosis rates in young people than neighbouring areas.  
+
+To reference this analysis see [here](https://360info.org/visuals/map-australian-youth-mental-health-hot-spots/)
+
+<div class="embed-block"><div><div style="left: 0; width: 100%; height: 575px; position: relative;"><iframe src="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fpublic.flourish.studio%2Fstory%2F2047299%2F&key=87ca3314a9fa775b5c3a7726100694b0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no"></iframe></div></div></div>

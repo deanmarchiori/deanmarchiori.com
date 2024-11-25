@@ -25,6 +25,8 @@ website:
         text: Talks
       - href: posts/index.qmd
         text: Blog
+      - href: about/index.qmd
+        text: About
       - href: contact/index.qmd
         text: Contact
     tools:

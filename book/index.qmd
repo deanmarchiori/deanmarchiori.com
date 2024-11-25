@@ -1,9 +1,10 @@
 ---
 title: "Data Science Workflows in R"  
 subtitle: "An introduction to deploying production quality R code"
+css: ../styles.css
 ---  
 
-[Click here for link to free e-book](https://datasciworkflows.netlify.app/)
+<a href="https://datasciworkflows.netlify.app/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Read Now</a>
 
 :::: {.columns}
 
@@ -16,7 +17,7 @@ This guide is a resource for data analysts and data scientists looking to improv
 :::  
 
 ::: {.column width="40%"}
-![](featured.png)
+![](featured.png){.shadow-image}
 :::
 
 ::::  

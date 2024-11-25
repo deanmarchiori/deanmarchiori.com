@@ -1,8 +1,8 @@
 ---
 title: "Dean Marchiori"
-subtitle: "Director & Principal Data Scientist"
-description: "Wave Data Labs"
+subtitle: "Principal Data Scientist | Statistician"
 image: "img/profile.png"
+css: styles.css
 about:
   id: hero-heading
   template: trestles
@@ -30,43 +30,67 @@ include-in-header:
 
 :::{#hero-heading}
 
-## Work with me  
+### What I can help with...  
 
-I'm a data scientist specialising in helping science & technology start-ups and scale-ups innovate
-rapidly and build their data science capability. Unlike my competitors I use data
+I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data
 and maths, not AI or hype.  
 
-If you are interested in hiring me for a project, get in touch.   
+{{< fa chart-line title="chart-line">}}  Statistical Modelling and Analysis  
+{{< fa square-root-variable title="square-root-variable">}} Expert R Programming   
+{{< fa robot title="robot">}} Machine Learning 
 
-<a href="https://www.wavedatalabs.com.au/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Contact Me</a>
+<a href="/contact/index.qmd" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Contact Me</a>
 
+### More about me...   
 
-## Some of my work 
-
-To learn more about organisations I've helped [Check out our work here.](https://www.wavedatalabs.com.au/services/)  
-
-You can check out my writing in the [blog](posts/index.qmd) or you can 
-watch some of my recorded [talks.](talks/index.qmd)   
-
-I also publish a weekly note with resources and updates in the data science space. 
-
-<div class="ml-embedded" data-form="jStmTX"></div>
+[See how I have helped other clients](/consulting/index.qmd)  
+[Sign up to my regular mailing list](/posts/index.qmd)  
+[Read my blog](/posts/index.qmd)  
+[Watch some of my public talks and interviews](/talks/index.qmd)  
+[Read my free e-book on data science workflows](/book/index.qmd)  
 
 :::   
 
-## Bio 
-Dean Marchiori is an applied mathematician and specialist in statistical analysis, data science and R programming. He is the Director and Principal Data Scientist at [Wave Data Labs](https://www.wavedatalabs.com.au/) and co-chair of the Statistical Society of Australia’s section for statistical computing and visualisation. Previously Dean was also a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the Accredited Statistician (AStat) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the Institute of Analytics Professionals of Australia (IAPA).
+
+## Trusted by   
+![](img/kyckr.png)
+![](img/ecohealth.png)
+![](img/monash.png)
+![](img/irt.png)
+![](img/mitre10.png)
+![](img/scalapay.png)  
 
 
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="img/test_1.png" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "You were able to work toward our goals, making suggestions to improve the workflow and then execute those suggestions in the code. You were friendly, thoughtful and hard working. We're really happy with the package you delivered. Thanks!"
+      </blockquote>
+      <p class="client-name">Dr Melinda Rostal, Principal Scientist, EcoHealth Alliance</p>
+    </div>
+  </div>
+</div>
+```
 
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="img/test_2.png" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "Dean's ability to unpack problems, package, engage, present, influence, validate, mentor and resolve is fantastic and highly sought after."
+      </blockquote>
+      <p class="client-name">Paul Oyston, Group Head of IT Data Analytics, IRT Group</p>
+    </div>
+  </div>
+</div>
+```
 
-## Licence and Accreditation  
-
- **Accredited Statistician** - *Statistical Society of Australia*   
- ([Lic 53250221](https://www.statsoc.org.au/Sys/PublicProfile/53250221/4702721), Exp 12/25)
-
-![](img/SSA_2025.png)
- 
- **Azure Certified Data Science Associate** - *Microsoft*   
- 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="80e6017b-6e52-4d87-a9e4-d84781bf7280" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div class="ml-embedded" data-form="jStmTX"></div>

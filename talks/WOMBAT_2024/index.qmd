@@ -2,7 +2,7 @@
 date: 2024-10-24
 title: Tutorial - Turning R code into production quality software
 venue: WOMBAT 2024 - Monash University
-image: "featured.png"
+image: "featured.jpeg"
 ---
 
 

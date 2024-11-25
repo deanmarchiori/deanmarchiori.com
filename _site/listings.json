@@ -1,17 +1,13 @@
 [
   {
-    "listing": "/talks/index.html",
+    "listing": "/consulting/index.html",
     "items": [
-      "/talks/WOMBAT_2024/index.html",
-      "/talks/SSA-tutorial/index.html",
-      "/talks/siligong2022/index.html",
-      "/talks/keeping-up-with-data/index.html",
-      "/talks/SSA_early_career/index.html",
-      "/talks/rstudioconf_2021/index.html",
-      "/talks/smarter_data_people/index.html",
-      "/talks/WOMBAT_2019/index.html",
-      "/talks/smart-r-academics/index.html",
-      "/talks/smart-outlier/index.html"
+      "/consulting/2024-01-01-service-4/index.html",
+      "/consulting/2024-01-01-service-2/index.html",
+      "/consulting/2024-01-01-service-1/index.html",
+      "/consulting/2024-01-01-service-5/index.html",
+      "/consulting/2024-10-11-eco/index.html",
+      "/consulting/2024-01-01-service-3/index.html"
     ]
   },
   {
@@ -45,12 +41,13 @@
     ]
   },
   {
-    "listing": "/consulting/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/consulting/fire/index.html",
-      "/consulting/eco/index.html",
-      "/consulting/data-viz/index.html",
-      "/consulting/bluey/index.html"
+      "/talks/WOMBAT_2024/index.html",
+      "/talks/siligong2022/index.html",
+      "/talks/keeping-up-with-data/index.html",
+      "/talks/rstudioconf_2021/index.html",
+      "/talks/smart-outlier/index.html"
     ]
   }
 ]

@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.deanmarchiori.com/index.html</loc>
-    <lastmod>2024-11-18T01:15:57.479Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.deanmarchiori.com/talks/SSA-tutorial/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.826Z</lastmod>
+    <loc>https://www.deanmarchiori.com/about/index.html</loc>
+    <lastmod>2024-11-25T00:58:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/talks/rstudioconf_2021/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.846Z</lastmod>
+    <lastmod>2024-11-24T21:38:27.744Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/WOMBAT_2019/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.846Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/smart-outlier/index.html</loc>
+    <lastmod>2024-11-24T21:34:49.324Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/index.html</loc>
-    <lastmod>2024-09-04T05:48:51.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.deanmarchiori.com/talks/siligong2022/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.847Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/WOMBAT_2024/index.html</loc>
+    <lastmod>2024-11-24T21:47:06.939Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/book/index.html</loc>
-    <lastmod>2024-10-23T22:01:04.359Z</lastmod>
+    <lastmod>2024-11-24T22:55:20.946Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/consulting/eco/index.html</loc>
-    <lastmod>2024-10-10T21:47:15.841Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/2024-01-01-service-3/index.html</loc>
+    <lastmod>2024-09-26T00:05:59.481Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/consulting/fire/index.html</loc>
-    <lastmod>2024-10-10T21:22:30.377Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/index.html</loc>
+    <lastmod>2024-11-25T00:54:44.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.deanmarchiori.com/consulting/2024-01-01-service-5/index.html</loc>
+    <lastmod>2024-11-24T22:54:19.039Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/posts/2024-10-04-innerloop/index.html</loc>
@@ -90,7 +86,7 @@
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/contact/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.781Z</lastmod>
+    <lastmod>2024-11-24T22:30:23.050Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/posts/2022-01-17-running-shiny-in-a-docker-container/index.html</loc>
@@ -145,39 +141,35 @@
     <lastmod>2024-09-03T06:21:35.942Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/consulting/bluey/index.html</loc>
-    <lastmod>2024-10-10T21:23:28.297Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/2024-01-01-service-2/index.html</loc>
+    <lastmod>2024-11-24T22:53:31.579Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/consulting/index.html</loc>
-    <lastmod>2024-11-18T01:14:44.515Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/2024-01-01-service-4/index.html</loc>
+    <lastmod>2024-11-24T22:54:11.087Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/consulting/data-viz/index.html</loc>
-    <lastmod>2024-10-10T21:23:09.901Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/2024-10-11-eco/index.html</loc>
+    <lastmod>2024-11-24T22:54:28.958Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/smarter_data_people/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.853Z</lastmod>
+    <loc>https://www.deanmarchiori.com/consulting/2024-01-01-service-1/index.html</loc>
+    <lastmod>2024-09-26T00:05:59.481Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/WOMBAT_2024/index.html</loc>
-    <lastmod>2024-10-23T22:07:43.836Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/siligong2022/index.html</loc>
+    <lastmod>2024-11-24T22:57:01.292Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/smart-outlier/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.848Z</lastmod>
+    <loc>https://www.deanmarchiori.com/talks/index.html</loc>
+    <lastmod>2024-11-24T21:53:59.820Z</lastmod>
   </url>
   <url>
     <loc>https://www.deanmarchiori.com/talks/keeping-up-with-data/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.846Z</lastmod>
+    <lastmod>2024-11-24T21:31:30.662Z</lastmod>
   </url>
   <url>
-    <loc>https://www.deanmarchiori.com/talks/SSA_early_career/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.833Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.deanmarchiori.com/talks/smart-r-academics/index.html</loc>
-    <lastmod>2024-09-04T05:41:21.848Z</lastmod>
+    <loc>https://www.deanmarchiori.com/index.html</loc>
+    <lastmod>2024-11-24T22:31:44.992Z</lastmod>
   </url>
 </urlset>

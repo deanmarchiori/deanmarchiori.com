@@ -1,0 +1,17 @@
+---
+title: "Analysis and mapping of access to Assisted Reproductive Technologies"  
+image: "featured.png"  
+---
+
+## Project  
+This project was completed with [360info](https://360info.org/). 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.      
+
+Full source code available on [Github](https://github.com/360-info/report-fertility/tree/main/data)
+
+## Outcomes 
+
+Over half a million Australians live more than 240km from an Assisted reproductive technology clinic and would likely have to sleep nearby in order to visit.  
+
+To reference this analysis see [here](https://360info.org/visuals/map-assisted-reproductive-technology-clinics-in-australia/) 
+
+<div class="embed-block"><div><div style="left: 0; width: 100%; height: 575px; position: relative;"><iframe src="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fpublic.flourish.studio%2Fvisualisation%2F15345428%2F&key=87ca3314a9fa775b5c3a7726100694b0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no"></iframe></div></div></div>

@@ -1,0 +1,18 @@
+---
+title: "Australian Bushfire Risk Analysis & Mapping"  
+image: "featured.png"  
+---
+
+## Project  
+
+This project was completed with [360info](https://360info.org/). 360info is an independent nonprofit public information service with headquarters in Melbourne hosted at Monash University. Monash is Australia’s largest and most globally connected university with campuses around the world.    
+
+Full source code can be viewed on [Github](https://github.com/360-info/report-bushfire-prone-land)
+
+## Outcomes   
+
+360info has collated data from New South Wales (below), and all other states and territories which shows which suburbs are most prone to bushfire. This interactive analysis was the first of its kind to highlight bushfire planning risk for the entire Australian mainland.   
+
+To reference this analysis see [here](https://360info.org/visuals/map-suburbs-in-nsw-most-at-risk-of-bushfires/).  
+
+<div class="embed-block"><div style="position:relative; padding-bottom: 75%"> <iframe allow="fullscreen; clipboard-write self https://dec2023-news.360info-bushfire-prone-land.pages.dev" allowfullscreen="true" src="https://dec2023-news.360info-bushfire-prone-land.pages.dev/map/?state=nsw" title="Interactive: bushfire prone areas" style="width:100%; height:100%; position: absolute; top: 0; left: 0; border:none; background-color: white;" scrolling="no"></iframe> </div></div>
