@@ -847,11 +847,11 @@
     "text": "Links\nGithub\nSlides"
   },
   {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Selected Talks",
-    "section": "",
-    "text": "Tutorial - Turning R code into production quality software\n\n\n\n\n\n\nOct 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding and deploying a Bluey episode recommendation system in R\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeeping Up with Data - Podcast S2E1\n\n\n\n\n\n\nFeb 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\n\n\n\n\nJan 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised outlier detection systems for e-commerce\n\n\n\n\n\n\nOct 16, 2018\n\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "talks/index.html#selected-presentations",
+    "href": "talks/index.html#selected-presentations",
+    "title": "Selected Talks & Interviews",
+    "section": "Selected presentations",
+    "text": "Selected presentations"
   },
   {
     "objectID": "talks/keeping-up-with-data/index.html",
