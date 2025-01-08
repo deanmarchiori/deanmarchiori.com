@@ -26,13 +26,13 @@ include-in-header:
     </script>
 ---
 
-### I'm a data scientist who helps science & technology teams innovate faster with data and maths. Not hype. 
+### I'm a statistician & data scientist who helps science & technology teams innovate faster with data and maths. Not hype. 
 
 :::{#hero-heading}
 
 ### What I can help with...  
 
-I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data
+I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. I use data
 and maths, not AI or hype.  
 
 {{< fa chart-line title="chart-line">}}  Statistical Modelling and Analysis  
