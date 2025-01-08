@@ -1,0 +1,158 @@
+---
+title: "The CEO’s Guide to Predicting the Future"  
+subtitle: "Time Series Analysis Made Simple"
+author: "Dean Marchiori"
+date: "2025-01-08"
+categories: [time-series, analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+```{r echo=FALSE, message=FALSE} 
+library(tidyverse)
+library(fpp3)
+
+theme_set(theme_minimal())
+```
+
+I had an interesting discussion with a client recently about the value proposition
+for collecting large amounts of time series data. I thought it might be worthwhile
+recording my thoughts here in case of interest to others. 
+
+- I want to highlight 3 key applications where time series analysis can add value.  
+- I want to answer three common questions I get on the topic. 
+
+### What is time series data?  
+
+Time series data are data collected at specific time intervals. e.g. daily stock
+market prices, weekly ice cream sales, annual tourism numbers etc.   
+
+```{r}
+library(fpp3)
+```
+
+```{r}
+vic_elec <- tsibbledata::vic_elec |> 
+  filter_index("2014-10-01" ~ "2014-11-29") 
+```
+
+```{r}
+#| fig-cap: "Half-hourly electricity demand for Victoria, Australia. Source: Australian Energy Market Operator."
+autoplot(vic_elec)
+```
+
+
+### Key Applications of Time Series Data
+
+#### 1. Decomposition: Mathematically determining the components of a time series 'signal'  
+
+Below we can decompose the long term trend or cyclicality, the seasonal periods (weekly, daily, hourly) and the remaining unexplained 'noise' so the underlying dynamics can be better understood and exploited. 
+ 
+```{r}
+decomp <- vic_elec |>
+  model(STL(Demand ~ trend() + season(window = "periodic"))) |>
+  components()
+
+decomp |>  
+  tail(2000) |> 
+  autoplot()
+```
+ 
+ 
+#### 2. Forecasting: Predicting future values in a range of scenarios  
+
+Forecasts can be applied in many ways. Statistical or machine learning models can generate estimates and realistic prediction intervals to forecast future values. We can layer extreme value analysis methods if the goal is worse-case rather than expected-case forecasting. Basic scenario driven forecasts can aid strategy development or sensitivity testing.    
+ 
+```{r}
+#| fig-cap: "Scenario driven forecasts can help model basic assumptions that can be tested." 
+fit <- vic_elec |> 
+  model(
+        `Last Value` = NAIVE(Demand),
+        `Average` = MEAN(Demand),
+        `Same as last week` = SNAIVE(Demand ~ lag(2*24*7))
+        )
+
+fcast <- forecast(fit, h = 2*24*7)
+
+autoplot(fcast, level = NULL) +
+  autolayer(filter_index(vic_elec, "2014-11-20" ~ .), Demand, alpha = 0.3)
+```
+ 
+```{r}
+#| fig-cap: "More sophisticated distributional forecasts offer prediction intervals to better capture the undercertainty present in effective forecasting." 
+fit <- vic_elec |> 
+  model(
+        `Same as last week` = SNAIVE(Demand ~ lag(2*24*7))
+        )
+
+sim <- fit |> generate(h = 2*24*7, times = 1, bootstrap = TRUE)
+
+fcast <- forecast(fit, h = 2*24*7)
+
+autoplot(fcast) +
+  autolayer(filter_index(vic_elec, "2014-11-20" ~ .), Demand, alpha = 0.3)
+
+```
+ 
+ 
+#### 3. Anomaly Detection: Finding and investigating outliers  
+
+By understanding and decomposing the components of a time series signal we can then screen the remaining 'noise' for 
+anomalous or outlying values. 
+
+```{r}
+od <- decomp |> 
+  mutate(outlier = remainder > (quantile(remainder, 0.75) + IQR(remainder) * 3) | remainder < (quantile(remainder, 0.25) - IQR(remainder) * 3)) |> 
+   filter_index("2014-10-20" ~ .) 
+
+
+od |>
+  ggplot(aes(x = Time)) +
+  geom_line(aes(y = Demand), alpha = 0.3) +
+  geom_point(data = filter(od, outlier == TRUE), aes(y = Demand, colour = outlier)) +
+  guides(colour = "none", alpha = "none")
+
+
+```
+
+
+### FAQ  
+
+#### Why can't we go with simple point estimates?   
+
+You never really know what is going to happen in the future. And no model can tell you for sure either. The
+only responsible course of action is to acknowledge there is uncertainty and quantify this through making a *distributional* forecast. 
+
+Read here for more: [Level up your Forecasting Quantify uncertainty with distributional forecasts](https://www.deanmarchiori.com/posts/2023-05-29-forecasting/)
+
+
+#### Why can't I just AI the shit out of this?  
+
+Time series analysis may not be as sexy as AI, but the methods behind it are robust and address
+fundamental properties that exist in data structured through time. It's easy to trip over
+your own feet here if you aren't careful.  
+
+Here is an example of me beating Microsoft's AutoML system on a basic time series task: [Man vs Machine Learning: I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.](https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619t002502z-001/2023-06-02-man-vs-ml/)
+
+
+#### Why bother modelling things at all?  
+
+You don't have to. After all an entire field exists based on meaningless, post-hoc rationalisations of
+random fluctuations in time series data (finance). 
+
+See here: [Is the share market just random noise?](https://www.deanmarchiori.com/posts/2024-01-04-randomshares/)
+
+
+## References 
+
+O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). tsibbledata: Diverse Datasets for ‘tsibble’. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.  
+
+
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
+> **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

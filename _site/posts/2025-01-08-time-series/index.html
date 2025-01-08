@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dean Marchiori">
-<meta name="dcterms.date" content="2023-06-02">
+<meta name="dcterms.date" content="2025-01-08">
 
-<title>Dean Marchiori - Man vs Machine Learning</title>
+<title>Dean Marchiori - The CEO’s Guide to Predicting the Future</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,18 +84,18 @@ ga('send', {
 </script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Dean Marchiori - Man vs Machine Learning">
-<meta property="og:description" content="I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.">
-<meta property="og:image" content="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Dean Marchiori - The CEO’s Guide to Predicting the Future">
+<meta property="og:description" content="Time Series Analysis Made Simple">
+<meta property="og:image" content="https://www.deanmarchiori.com/posts/2025-01-08-time-series/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="540">
-<meta property="og:image:width" content="960">
-<meta name="twitter:title" content="Dean Marchiori - Man vs Machine Learning">
-<meta name="twitter:description" content="I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.">
-<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/featured.png">
-<meta name="twitter:image-height" content="540">
-<meta name="twitter:image-width" content="960">
+<meta property="og:image:height" content="651">
+<meta property="og:image:width" content="462">
+<meta name="twitter:title" content="Dean Marchiori - The CEO’s Guide to Predicting the Future">
+<meta name="twitter:description" content="Time Series Analysis Made Simple">
+<meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2025-01-08-time-series/featured.png">
+<meta name="twitter:image-height" content="651">
+<meta name="twitter:image-width" content="462">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -106,7 +106,7 @@ ga('send', {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dean Marchiori</span>
     </a>
   </div>
@@ -117,37 +117,37 @@ ga('send', {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../consulting/index.html"> 
+    <a class="nav-link" href="../../consulting/index.html"> 
 <span class="menu-text">Consulting</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../book/index.html"> 
+    <a class="nav-link" href="../../book/index.html"> 
 <span class="menu-text">Book</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../talks/index.html"> 
+    <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/index.html"> 
+    <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../about/index.html"> 
+    <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../contact/index.html"> 
+    <a class="nav-link" href="../../contact/index.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../../../posts/index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts/index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -177,12 +177,11 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Man vs Machine Learning</h1>
-            <p class="subtitle lead">I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.</p>
+      <h1 class="title">The CEO’s Guide to Predicting the Future</h1>
+            <p class="subtitle lead">Time Series Analysis Made Simple</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">Azure</div>
                 <div class="quarto-category">time-series</div>
+                <div class="quarto-category">analysis</div>
               </div>
                   </div>
   </div>
@@ -200,7 +199,7 @@ ga('send', {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 2, 2023</p>
+        <p class="date">January 8, 2025</p>
       </div>
     </div>
     
@@ -219,259 +218,109 @@ ga('send', {
 
 
 
-<p>Over the past few years I have been doing more and more work in Microsoft Azure and the Azure Machine Learning Studio. One feature of the Azure ML studio is an <a href="https://azure.microsoft.com/en-au/products/machine-learning/automatedml/#overview">automated machine learning feature</a>. This is essentially a no-code UI that ‘empowers professional and <em>nonprofessional</em> data scientists to build machine learning models rapidly’ (emphasis mine).</p>
-<p>While many (including me) have leveled a fair amount of criticism towards such solutions, I thought it would be worth seeing what the fuss was about.</p>
-<p>Could I go head-to-head on the same predictive modelling challenge and compete with the might of Microsoft’s AutoML solution? Even worse, would I enjoy it? Even more worse, could I win??</p>
-<section id="time-series-forecasting-challenge" class="level1">
-<h1>Time Series Forecasting Challenge</h1>
-<p><strong>Objective</strong>: Create the most accurate time series forecasting model</p>
-<p><strong>Data Source</strong>: Half-hourly electricity demand for Victoria, Australia<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p><strong>Training data</strong>: 51,120 records from 2012-01-01 to 2014-11-30</p>
-<p><strong>Test data</strong>: 1488 records from 2014-12-01 to 2014-12-31</p>
-<p><strong>Method 1</strong>: Use Microsoft Azure’s <a href="https://azure.microsoft.com/en-au/products/machine-learning/automatedml/#overview">Automatic ML</a> product.</p>
-<p><strong>Method 2</strong>: Hand code a statistical time series model in R</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">names</th>
-<th style="text-align: left;">type</th>
-<th style="text-align: left;">description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Time</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time stamp</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Demand</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Target Variable: Electricity Demand</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Temperature</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Temperature for the day</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Date</td>
-<td style="text-align: left;">date</td>
-<td style="text-align: left;">Date</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Holiday</td>
-<td style="text-align: left;">logical</td>
-<td style="text-align: left;">Was it a holiday date?</td>
-</tr>
-</tbody>
-</table>
-<p><img src="plot_1.png" class="img-fluid"></p>
-<section id="method-1-azure-automl" class="level2">
-<h2 class="anchored" data-anchor-id="method-1-azure-automl">Method 1: Azure AutoML</h2>
-<p>The process to set up a new AutoML job was very easy and assumes you are working under somewhat sanitized conditions (which I was in this case).</p>
-<p><img src="automl.png" class="img-fluid"></p>
-<p>Once you kick it off, it chugged away for an hour and 33 minutes. To my horror, I realized it takes the ‘kitchen sink’ approach and fits a suite of 41 (!) different machine learning models at the training data. Hyperparameter tuning is done by constructing a validation set using K-Fold cross validation.</p>
-<p><video src="models.webm" class="img-fluid" controls=""><a href="models.webm">Video</a></video></p>
-<p>The best performing model is then selected and then predictions are run on the test set. It’s a little concerning that Test set evaluation is only in ‘Preview’ mode. It was also very confusing to dig out the results on the test set. Most of the metrics prominently displayed are overly confident in-sample accuracy results.</p>
-<p>The winning model in my case was a ‘Voting Ensemble’ of three models</p>
+<p>I had an interesting discussion with a client recently about the value proposition for collecting large amounts of time series data. I thought it might be worthwhile recording my thoughts here in case of interest to others.</p>
 <ul>
-<li>MaxAbsScaler, ExtremeRandomTrees</li>
-<li>StandardScalerWrapper, XGBoostRegressor<br>
+<li>I want to highlight 3 key applications where time series analysis can add value.<br>
 </li>
-<li>StandardScalerWrapper, LightGBM</li>
+<li>I want to answer three common questions I get on the topic.</li>
 </ul>
-<p>Overall the process was very easy and user friendly. It look a long time to train, but I didn’t have to think about anything - at all (which is usually time consuming) so overall it was a quick solution. I trained the model on a Standard_DS11_v2 (2 cores, 14 GB RAM, 28 GB disk) compute instance which costs $0.2 per hour. So it cost money, but not much.</p>
-<p>Performance evaluation to follow below…</p>
+<section id="what-is-time-series-data" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-time-series-data">What is time series data?</h3>
+<p>Time series data are data collected at specific time intervals. e.g.&nbsp;daily stock market prices, weekly ice cream sales, annual tourism numbers etc.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Half-hourly electricity demand for Victoria, Australia. Source: Australian Energy Market Operator.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="method-2-manual-time-series-model-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="method-2-manual-time-series-model-in-r">Method 2: Manual Time Series Model in R</h2>
-<p>The process for doing this myself involved much more thought and brain-effort. Here are some notes.</p>
-<p>The data set is quite complicated as its sub-daily and has (probably) three seasonal periods (daily, weekly, yearly). There was also maybe some trend and outliers to deal with. The data set also contained covariates such as Temperature and Holiday indicators.</p>
-<p>Due to the seasonal complexity many traditional statistical methods were not appropriate like straight ARIMA (autoregressive integrated moving average) and ETS (exponential smoothing). While STL (Seasonal and Trend decomposition using Loess) can handle multiple seasonal periods I wanted a method to handle the covariates (like Temperature and Holidays). My next step was to think of Time Series Linear Regression models. However, accounting for yearly seasonality with 30min data meant fitting 17,520 (2 * 24 * 365) parameters just for this seasonal period. Which seemed excessive.</p>
-<p>For longer, multiple-seasonal periods, using Fourier terms can be a good idea. Here a smaller number of terms in a <a href="https://en.wikipedia.org/wiki/Fourier_series">fourier series</a> can be estimated to approximate a more complex function. This type of <em>Dynamic Harmonic Regression</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> can also handle exogenous covariates and we can even fit the model with ARIMA errors to account for the short term dynamics of time series data.</p>
-<p>In fact, this very approach was outlined in the excellent <em>Forecasting: Principles and Practice</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> using this very same example data set. I decided to borrow (steal) the ideas of creating a piece-wise linear trend for temperature. I also went a bit crazy with encoding specific holiday dummy variables and some other tweaks.</p>
-<p>Overall I found this method slow to fit, and not overly performant. I decided next to try fitting a Prophet<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> model. Prophet is an open-source automated algorithm for time series forecasting developed by Facebook. It uses a Bayesian framework to fit complex, non-linear, piece-wise regression models. For complex time series data, it provides a decent, fast framework including exogenous variables, holiday and seasonal effects. I didn’t do any principled hyperparameter tuning, but I did fiddle around with the model a bit.</p>
+<section id="key-applications-of-time-series-data" class="level3">
+<h3 class="anchored" data-anchor-id="key-applications-of-time-series-data">Key Applications of Time Series Data</h3>
+<section id="decomposition-mathematically-determining-the-components-of-a-time-series-signal" class="level4">
+<h4 class="anchored" data-anchor-id="decomposition-mathematically-determining-the-components-of-a-time-series-signal">1. Decomposition: Mathematically determining the components of a time series ‘signal’</h4>
+<p>Below we can decompose the long term trend or cyclicality, the seasonal periods (weekly, daily, hourly) and the remaining unexplained ‘noise’ so the underlying dynamics can be better understood and exploited.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>So who won?</p>
-<p>The AutoML platform did :( , but only just. Below is the comparison of RMSE and MAPE. The AutoML is red, my predictions are in blue. I stuffed up over Christmas a bit, which admittedly is a tricky hold-out month for testing.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Metric</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Azure AutoML</td>
-<td>RMSE</td>
-<td>213</td>
-</tr>
-<tr class="even">
-<td>Azure AutoML</td>
-<td>MAPE</td>
-<td>3.56</td>
-</tr>
-<tr class="odd">
-<td>Me</td>
-<td>RMSE</td>
-<td>274</td>
-</tr>
-<tr class="even">
-<td>Me</td>
-<td>MAPE</td>
-<td>4.96</td>
-</tr>
-</tbody>
-</table>
-<p><img src="plot_2.png" class="img-fluid"></p>
+<section id="forecasting-predicting-future-values-in-a-range-of-scenarios" class="level4">
+<h4 class="anchored" data-anchor-id="forecasting-predicting-future-values-in-a-range-of-scenarios">2. Forecasting: Predicting future values in a range of scenarios</h4>
+<p>Forecasts can be applied in many ways. Statistical or machine learning models can generate estimates and realistic prediction intervals to forecast future values. We can layer extreme value analysis methods if the goal is worse-case rather than expected-case forecasting. Basic scenario driven forecasts can aid strategy development or sensitivity testing.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Scenario driven forecasts can help model basic assumptions that can be tested.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>More sophisticated distributional forecasts offer prediction intervals to better capture the undercertainty present in effective forecasting.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="discussion" class="level2">
-<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-<p>So overall it was pretty close, but in terms of pure predictive performance, the AutoML platform did pip me at the post. Admittedly, the solution I arrived at was probably more of an ML solution than a ‘classical’ time series method given it is still an automated algorithm. If I had more time and patience I probably could have pursued a more complex regression model. In fact in <em>Forecasting: Principles and Practice</em>, the authors also cite the performance of a straight Dynamic Harmonic Regression is limited, however they go on to propose other innovative approaches<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, including splitting the problem into separate models for each 30min period and using regression splines to better capture exogenous effects. So it can be done, but not without a huge amount of effort.</p>
-</section>
-</section>
-<section id="bonus-round-medicare-cost-forecast" class="level1">
-<h1>Bonus Round: Medicare Cost Forecast</h1>
-<p>This all led me to think: If the data are quite complex for a time series problem, then of course a more Machine Learn-y solution would outperform. I wonder what would happen if we repeated the same exercise but with many fewer data points and some quirky time series characteristics.</p>
-<p>My hypothesis is, the machine learning models will not have sufficient data to fit well. On the other hand, my experience and gestalt will enable me to select and encode a statistical model that is appropriate and gain an edge on a black-box type of solution.</p>
-<p><strong>Objective</strong>: Create the most accurate time series forecasting model</p>
-<p><strong>Data Source</strong>: Monthly Medicare Australia prescription data<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, Anatomical Therapeutic Chemical index classification A10</p>
-<p><strong>Training data</strong>: 163 records from Jul 1991 to Jan 2005 (black line)</p>
-<p><strong>Test data</strong>: 41 records from Feb 2005 to Jun 2008 (grey line)</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">names</th>
-<th style="text-align: left;">type</th>
-<th style="text-align: left;">description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Cost</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Cost of the scripts in $AUD</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Month</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Month time stamp</td>
-</tr>
-</tbody>
-</table>
-<p><img src="plot_3.png" class="img-fluid"></p>
-<p>Here we have less than 200 data points, but we can visually inspect the time series and see that there is a clear trend, the process is multiplicative and there is a single, yearly seasonal pattern.</p>
-<section id="automl-solution" class="level2">
-<h2 class="anchored" data-anchor-id="automl-solution">AutoML solution</h2>
-<p>The AutoML platform again used a Voting Ensemble, churned out in 43 minutes, but this time using:</p>
-<ul>
-<li>ProphetModel (it must have copied me from last round ;))<br>
-</li>
-<li>Exponential Smoothing</li>
-</ul>
-<p><img src="ml2.png" class="img-fluid"></p>
-</section>
-<section id="my-solution" class="level2">
-<h2 class="anchored" data-anchor-id="my-solution">My solution</h2>
-<p>Given the multiplicative process here, I modeled the log transformed data. (I did try a more generalized Box-Cox transformation, but got better performance with a straight natural log transform). I tried an ARIMA model, using model selection via the Hyndman-Khandakar algorithm<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>, which resulted in a <code>ARIMA(2,0,1)(1,1,2)[12] w/ drift&gt;</code>.</p>
-</section>
-<section id="results-1" class="level2">
-<h2 class="anchored" data-anchor-id="results-1">Results</h2>
-<p>Yay! I won this round. Quite easily.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Metric</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Azure AutoML</td>
-<td>RMSE</td>
-<td>2.43</td>
-</tr>
-<tr class="even">
-<td>Azure AutoML</td>
-<td>MAPE</td>
-<td>9.22</td>
-</tr>
-<tr class="odd">
-<td>Me</td>
-<td>RMSE</td>
-<td>1.63</td>
-</tr>
-<tr class="even">
-<td>Me</td>
-<td>MAPE</td>
-<td>7.23</td>
-</tr>
-</tbody>
-</table>
-<p><img src="plot_4.png" class="img-fluid"></p>
+<section id="anomaly-detection-finding-and-investigating-outliers" class="level4">
+<h4 class="anchored" data-anchor-id="anomaly-detection-finding-and-investigating-outliers">3. Anomaly Detection: Finding and investigating outliers</h4>
+<p>By understanding and decomposing the components of a time series signal we can then screen the remaining ‘noise’ for anomalous or outlying values.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="who-is-the-winner" class="level1">
-<h1>Who is the winner?</h1>
-<p>Well, I call it a draw.</p>
-<p>Here are some of my closing thoughts from this experiment.</p>
-<p>An ML solution might be a good choice if:</p>
-<ul>
-<li>You have lots of data<br>
-</li>
-<li>You care a lot about prediction<br>
-</li>
-<li>You don’t have to be too transparent<br>
-</li>
-<li>Interpretation is not very important<br>
-</li>
-<li>You have a very complex time series data set</li>
-</ul>
-<p>I would caveat this with not just blindly modelling your problems away. You still need to understand the process to ensure your predictions are well calibrated and you don’t fall prey to over fitting.</p>
-<p>A more classical statistical modelling approach might be a good choice if:</p>
-<ul>
-<li>You want a more flexible framework<br>
-</li>
-<li>You need to / want to encode domain knowledge<br>
-</li>
-<li>You want a more interpretable model</li>
-<li>You have fewer data</li>
-</ul>
-<p>The good news is, if you are sufficiently smart and motivated (which I am sure you are) you can certainly compete in terms of model performance with an ML solution, even on complex problems. The bad news is, it’s harder and you need to think a bit. You can’t just delegate all your thinking to the machines. Not yet anyway.</p>
+<section id="faq" class="level3">
+<h3 class="anchored" data-anchor-id="faq">FAQ</h3>
+<section id="why-cant-we-go-with-simple-point-estimates" class="level4">
+<h4 class="anchored" data-anchor-id="why-cant-we-go-with-simple-point-estimates">Why can’t we go with simple point estimates?</h4>
+<p>You never really know what is going to happen in the future. And no model can tell you for sure either. The only responsible course of action is to acknowledge there is uncertainty and quantify this through making a <em>distributional</em> forecast.</p>
+<p>Read here for more: <a href="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/">Level up your Forecasting Quantify uncertainty with distributional forecasts</a></p>
+</section>
+<section id="why-cant-i-just-ai-the-shit-out-of-this" class="level4">
+<h4 class="anchored" data-anchor-id="why-cant-i-just-ai-the-shit-out-of-this">Why can’t I just AI the shit out of this?</h4>
+<p>Time series analysis may not be as sexy as AI, but the methods behind it are robust and address fundamental properties that exist in data structured through time. It’s easy to trip over your own feet here if you aren’t careful.</p>
+<p>Here is an example of me beating Microsoft’s AutoML system on a basic time series task: <a href="https://www.deanmarchiori.com/posts/2023-06-02-man-vs-ml-20230619t002502z-001/2023-06-02-man-vs-ml/">Man vs Machine Learning: I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge.</a></p>
+</section>
+<section id="why-bother-modelling-things-at-all" class="level4">
+<h4 class="anchored" data-anchor-id="why-bother-modelling-things-at-all">Why bother modelling things at all?</h4>
+<p>You don’t have to. After all an entire field exists based on meaningless, post-hoc rationalisations of random fluctuations in time series data (finance).</p>
+<p>See here: <a href="https://www.deanmarchiori.com/posts/2024-01-04-randomshares/">Is the share market just random noise?</a></p>
+</section>
+</section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<p>O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). <em>tsibbledata: Diverse Datasets for ‘tsibble’</em>. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.</p>
-<p>Hyndman, R.J., &amp; Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2023-06-05.</p>
-</section>
-<section id="other" class="level2">
-<h2 class="anchored" data-anchor-id="other">Other</h2>
-<p>Thanks to the Tidyverts team <a href="https://tidyverts.org/">https://tidyverts.org/</a>. The new an improved time series stack in R makes all this so easy.</p>
-<p><strong>Note</strong>: None of this was super-rigorous, and I certainly tilted the board in my favour here and there. It was just fun and a chance to play around with a tool that I have previously avoided for no real reason.</p>
+<p>O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). tsibbledata: Diverse Datasets for ‘tsibble’. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.</p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for occasional emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to <a href="https://www.deanmarchiori.com">get in touch here</a></strong></p>
+</blockquote>
 
 
 </section>
-</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Source: Australian Energy Market Operator; <em>tsibbledata</em> R package<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Young, P. C., Pedregal, D. J., &amp; Tych, W. (1999). Dynamic harmonic regression. Journal of Forecasting, 18, 369–394. https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1099-131X(199911)18:6%3C369::AID-FOR748%3E3.0.CO;2-K<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Hyndman, R.J., &amp; Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2023-06-05.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Taylor SJ, Letham B. 2017. Forecasting at scale. PeerJ Preprints 5:e3190v2 https://doi.org/10.7287/peerj.preprints.3190v2<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Fan, S., &amp; Hyndman, R. J. (2012). Short-term load forecasting based on a semi-parametric additive model. IEEE Transactions on Power Systems, 27(1), 134–141. https://ieeexplore.ieee.org/document/5985500<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Hyndman, R. J., &amp; Fan, S. (2010). Density forecasting for long-term peak electricity demand. IEEE Transactions on Power Systems, 25(2), 1142–1153. https://ieeexplore.ieee.org/document/5345698<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Source: Medicare Australia; <em>tsibbledata</em> R package<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Hyndman, R. J., &amp; Khandakar, Y. (2008). Automatic time series forecasting: The forecast package for R. Journal of Statistical Software, 27(1), 1–22. https://doi.org/10.18637/jss.v027.i03<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -3,7 +3,7 @@ title: "Level up your Forecasting"
 subtitle: "Quantify uncertainty with distributional forecasts"
 author: "Dean Marchiori"
 date: "2023-05-29"
-categories: [R, statistics]
+categories: [R, statistics, time-series]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
