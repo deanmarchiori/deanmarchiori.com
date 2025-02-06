@@ -14,7 +14,7 @@ execute:
 ---  
 
 Do you ever wake up at night, slightly disoriented, breathless, wondering how artificial
-neaural nets are able to optimise weights without encountering discontinutities?  
+neural nets are able to optimise weights without encountering discontinutities?  
 
 Do you ever stare at your boss's mouth while it's moving but you can't hear a word they
 are saying because you are realise the words we use are just an artibrary token system
