@@ -1,0 +1,128 @@
+---
+title: ""  
+subtitle: ""
+draft: true
+author: "Dean Marchiori"
+date: "2025-01-24"
+categories: [survival, analysis]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+```{r echo=FALSE, message=FALSE} 
+library(tidyverse)
+
+theme_set(theme_minimal())
+```
+
+- what is the problem
+
+The use of classiciation algorithms to model binary response data are so ubiquitous there 
+is a significant risk that in some settings this type of model is inappropriate. 
+
+In many cases the response variable shouldnt
+be dichotomoised into an event/non-event occurence but instead view non-event as censored 
+data. In effect, an event can either occur, or it is viewed to have not yet occurred (but may
+occur in the future). This inclusion of a temporal dimension allows the model to more
+accurately deal with cases when subjects can drop-out or non experience the response
+condition during the analysis period. Typical classification algorthms (think logistic
+regression) has to assume we only case about the response at the end of the study period
+and sweep under the rug and time-to-event information. 
+
+This framework is known as survival analysis or time-to-event modelling. It's commonly
+applied in biostaticial settings but is thoroughly un-sexy and I have discovered not
+even in the repertoir for many 'non-statistical' data scientists. 
+
+This is a small field guide with pearls and pitfalls for modelling time-to-event data. 
+
+
+## main categories of survival models
+
+There are three main categories of survival models
+
+1. Non-Parametric: Most commonly the Kaplan-Meier estimator where no assumptions are imposed on either the shape of the survival function nor on the form of the relation ship between predictor variables and survival time.     
+
+
+2. Semi-Parametric: The standard approach here is the Cox Proportional HAzards Model (PH Model). The hazard function gives the instantaneous potential of having an event at a time, given survival up to that time. It is used primarily as a diagnostic
+tool or for specifying a mathematical model for survival analysis. A functional form for covariates is specified to model the hazard curve, but no distributional assumptions are made about the survival times or baseline hazard function. This effectively results in a model that scales a 'baseline' hazard function that is never actually estimated, hence the model being a 'proportional hazards' model and using only a partial-maximum likelihood estimation method.  
+
+
+3. Parametric: Fully parametic models exist and rely on the analyst specifying the functional form of the survival curve (exponential, lognormal etc). I won't wade into these waters on this post. 
+
+## Workflows  
+
+- A recommended workflow is to start by using a non-parametric approach such as the
+Kaplan-Meier estimator as a descriptive tool. For between group comparisons the 
+Log-rank test is the typical standard.  
+
+- Next, a Cox-Proportional Hazards model is a safe choice to enable the inclusion
+of covariates of interest.  
+
+- A Cox PH model will be not suitable to quantify the underlying baseline hazard but has good
+properties for interpreting and testing hazard ratios from the model's coeeficients (essentially
+an anology to odds ratios in logisitic regression).  
+
+- If the diagnostic tests indicate a poor fit, an alternative model should be tried. If
+this is from class of parametric survival models, some knowledge and testing of the 
+distribution will be required as an explicit input.   
+
+- Other more exotic model types exist and can be used but typically these are only
+done with strong justification and are much less common. 
+
+
+```{mermaid}
+flowchart TD
+  A[(survival data)] --> B[Kaplan-Meier Estimator]
+  B --> C[Log Rank Test]  
+  C --> D[Cox Proportional Hazards Model]
+  C -.-> E[Fully parametric model]  
+  C -.-> F[AFT, other exotic..]
+  style D fill:#f9f
+```
+
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C -> E[Result two]
+
+
+## Assumptions  
+
+1. Proportional Hazards: Across time the relative hazard remains constant across covariate levels. This
+hypothesis can be tested using the scaled Schoenfeld residuals. It can also be visually examined using a log(-log(survival)) plot. If a PH model is valid, a plot of the logarithm of the cumulative hazard function in each group against the
+logarithm of time should give rise to lines that are parallel.
+
+2. Sample size: A heuristic exists that there shoul dbe at least 10 events observed for each covariate considered. 
+
+3. Non-Informative Censoring:  While this class of model is designed to handle censored data, the cause 
+of censoring should be unrelated to the response and be entirely non-informative. 
+
+
+## Diagnostics   
+
+- Goodness of fit can be evaluated visually by comparing the Kaplan-Meirer curve to the 
+model-based predicted survival. 
+
+- Cox-Snell residuals can be used to visually inspect goodness-of-fit
+
+- Interpretation
+
+- Good texts
+
+- Good Packages  
+
+- Lunk to workflow  
+
+
+
+
+
+
+
+>**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
+> **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

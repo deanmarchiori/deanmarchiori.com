@@ -17,7 +17,53 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Tue, 07 Jan 2025 13:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 05 Feb 2025 13:00:00 GMT</lastBuildDate>
+<item>
+  <title>How AI Works</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2025-02-06-how-ai-works/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Do you ever wake up at night, slightly disoriented, breathless, wondering how artificial neaural nets are able to optimise weights without encountering discontinutities?</p>
+<p>Do you ever stare at your boss’s mouth while it’s moving but you can’t hear a word they are saying because you are realise the words we use are just an artibrary token system that doesn’t make much sense until we use our little monkey mouths to make sounds.</p>
+<p>Well, regardless here are some enjoyable videos that nicely explain the underlying mathematical concepts and intuition behind common AI models like neural nets and LLM’s.</p>
+<p>Now you too can be an AI expert without the interminable tedium of doing a mathematics or computer science degree.</p>
+<section id="if-you-want-some-intuition-behing-the-atomic-building-blocks-of-ai" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-want-some-intuition-behing-the-atomic-building-blocks-of-ai">If you want some intuition behing the ‘atomic’ building blocks of AI</h2>
+<p>This is a cute video that build the intuition behind neural nets and a little bit on underlying maths, but still mercifully short.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l-9ALe3U-Fg?si=bhKve8iqARdA4QbH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="if-you-like-a-litte-math-and-code" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-like-a-litte-math-and-code">If you like a litte math and code</h2>
+<p>This is a old-ish series on hand-rolling a neural net program in python, which is cool, but assumes a fair bit of basic maths knowledge. But bonus points for the episodes also being short.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bxe2T-V8XRs?si=4DVrSYqvPlLPv5iX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="if-you-are-super-keen-and-have-a-spare-3-hours" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-are-super-keen-and-have-a-spare-3-hours">If you are super keen and have a spare 3 hours</h2>
+<p>This is a slog, but it’s very well explained by a real expert, in very accessible language.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7xTGNNLPyMI?si=mLuBlzkreSW_ze2i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>Enjoy.</p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for occasional emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to <a href="https://www.deanmarchiori.com">get in touch here</a></strong></p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <guid>https://www.deanmarchiori.com/posts/2025-02-06-how-ai-works/</guid>
+  <pubDate>Wed, 05 Feb 2025 13:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2025-02-06-how-ai-works/featured.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>The CEO’s Guide to Predicting the Future</title>
   <dc:creator>Dean Marchiori</dc:creator>
@@ -1669,268 +1715,6 @@ out skel qt;</code></pre>
   <guid>https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/</guid>
   <pubDate>Tue, 14 Mar 2023 13:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/featured.png" medium="image" type="image/png" height="84" width="144"/>
-</item>
-<item>
-  <title>Beware of Boundaries in Binominal Proportion Confidence Intervals</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Binomial proportion confidence intervals are often employed when attempting to perform tests for significance, or sample size calculations around sample measurements resulting from a <a href="https://en.wikipedia.org/wiki/Bernoulli_process">Bernoulli process.</a></p>
-<p>The typical choice when calculating binomial proportion confidence intervals is the asymptotic, or normally approximated ‘Wald’ interval where success probability is measured by:</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7Bp%7D%20%5Cpm%20z_%7B%5Calpha/2%7D%5Csqrt%7B%5Cfrac%7B%5Chat%7Bp%7D(1-%5Chat%7Bp%7D)%7D%7Bn%7D%7D%0A"></p>
-<p>In many settings, such as marketing analytics or manufacturing processes the sample proportion is close to 0 or 1. Evaluating asymptotic confidence intervals near these boundary conditions will lead to underestimation of the error, and in some cases producing an interval outside <img src="https://latex.codecogs.com/png.latex?%5B0,%201%5D">.</p>
-<p>Fortunately other methods exist, such as Wilson’s score interval, exact methods and Bayesian approaches. The recommendation here is to examine the probability coverage and explore alternative methods for sample size and CI calculation, especially when the parameter is near the boundary conditions, or in cases of very small n.&nbsp;</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(binom)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-3"></span>
-<span id="cb1-4">n <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">50</span></span>
-<span id="cb1-5">p <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.01</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.99</span>)</span></code></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">x <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> purrr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_df</span>(p, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">.f =</span>  <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">binom.confint</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> n <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> .x, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">n =</span> n, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">methods =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'all'</span>))</span></code></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(x, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">colour =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">factor</span>(x))) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-2">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(mean, method), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">show.legend =</span> F) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_errorbarh</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xmin =</span> lower, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xmax =</span> upper, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> method), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">show.legend =</span> F) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xintercept =</span>  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">lty =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">col =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"grey"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span>(x<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-6">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_bw</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb3-7">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"A variety of binomial confidence interval methods for p = 0.01, 0.5 &amp; 0.99"</span>,</span>
-<span id="cb3-8">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Note unusual behaviour near 0.01 and 0.99"</span>)</span></code></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">cov <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> purrr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_df</span>(p, <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">binom.coverage</span>(.x, n, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">conf.level =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.95</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">method =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"all"</span>))</span></code></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(cov, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">colour =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">factor</span>(p))) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb5-2">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(coverage, method), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">show.legend =</span> F) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb5-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xintercept =</span>  <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.95</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">lty =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb5-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span>(p)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb5-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_bw</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb5-6">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Probability coverage for a variety of binomial confidence interval methods"</span>,</span>
-<span id="cb5-7">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Reference line at 0.95 coverage"</span>)</span></code></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>A good discussion is contained in:</p>
-<p>Wallis, Sean A. (2013). “Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods” (PDF). <strong>Journal of Quantitative Linguistics.</strong> 20 (3): 178–208. doi:10.1080/09296174.2013.799918. S2CID 16741749.</p>
-<p>https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval</p>
-
-
-
- ]]></description>
-  <category>R</category>
-  <category>statistics</category>
-  <guid>https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/</guid>
-  <pubDate>Sun, 12 Mar 2023 13:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2023-03-13-choosing-the-right-binomial-confidence-interval/featured.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>
