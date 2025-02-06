@@ -368,7 +368,7 @@
     "href": "posts/2025-02-06-how-ai-works/index.html",
     "title": "How AI Works",
     "section": "",
-    "text": "Do you ever wake up at night, slightly disoriented, breathless, wondering how artificial neural nets are able to optimise weights without encountering discontinutities?\nDo you ever stare at your boss’s mouth while it’s moving but you can’t hear a word they are saying because you are realise the words we use are just an artibrary token system that doesn’t make much sense until we use our little monkey mouths to make sounds.\nWell, regardless here are some enjoyable videos that nicely explain the underlying mathematical concepts and intuition behind common AI models like neural nets and LLM’s.\nNow you too can be an AI expert without the interminable tedium of doing a mathematics or computer science degree."
+    "text": "Do you ever wake up at night, slightly disoriented, breathless, wondering how artificial neural nets are able to optimise weights without encountering discontinutities?\nDo you ever stare at your boss’s mouth while it’s moving but you can’t hear a word they are saying because you realise the words we use are just an artibrary token system that doesn’t make much sense until we use our little monkey mouths to make sounds.\nWell, regardless here are some enjoyable videos that nicely explain the underlying mathematical concepts and intuition behind common AI models like neural nets and LLM’s.\nNow you too can be an AI expert without the interminable tedium of doing a mathematics or computer science degree."
   },
   {
     "objectID": "posts/2025-02-06-how-ai-works/index.html#if-you-want-some-intuition-behing-the-atomic-building-blocks-of-ai",
@@ -922,5 +922,19 @@
     "title": "Dean Marchiori",
     "section": "Trusted by",
     "text": "Trusted by\n     \n\n  \n    \n      \n    \n    \n      \n        \"You were able to work toward our goals, making suggestions to improve the workflow and then execute those suggestions in the code. You were friendly, thoughtful and hard working. We're really happy with the package you delivered. Thanks!\"\n      \n      Dr Melinda Rostal, Principal Scientist, EcoHealth Alliance\n    \n  \n\n\n  \n    \n      \n    \n    \n      \n        \"Dean's ability to unpack problems, package, engage, present, influence, validate, mentor and resolve is fantastic and highly sought after.\"\n      \n      Paul Oyston, Group Head of IT Data Analytics, IRT Group"
+  },
+  {
+    "objectID": "posts/2025-02-06-how-ai-works/index.html#if-you-want-some-intuition-behind-the-atomic-building-blocks-of-ai",
+    "href": "posts/2025-02-06-how-ai-works/index.html#if-you-want-some-intuition-behind-the-atomic-building-blocks-of-ai",
+    "title": "How AI Works",
+    "section": "If you want some intuition behind the ‘atomic’ building blocks of AI",
+    "text": "If you want some intuition behind the ‘atomic’ building blocks of AI\nThis is a cute video that build the intuition behind neural nets and a little bit on underlying maths, but still mercifully short."
+  },
+  {
+    "objectID": "posts/2025-02-06-how-ai-works/index.html#if-you-like-a-little-math-and-code",
+    "href": "posts/2025-02-06-how-ai-works/index.html#if-you-like-a-little-math-and-code",
+    "title": "How AI Works",
+    "section": "If you like a little math and code",
+    "text": "If you like a little math and code\nThis is a old-ish series on hand-rolling a neural net program in python, which is cool, but assumes a fair bit of basic maths knowledge. But bonus points for the episodes also being short."
   }
 ]
