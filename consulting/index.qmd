@@ -1,6 +1,8 @@
 ---
 title: "Data Science & Statistical Consulting"
-listing: "grid"
+listing:
+  type: "grid"
+  sort: "date desc"
 ---
 
 I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data

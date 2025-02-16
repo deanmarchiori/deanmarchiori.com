@@ -1,6 +1,6 @@
 ---
 title: "Dean Marchiori"
-subtitle: "Principal Data Scientist | Statistician"
+subtitle: "Statistician | Principal Data Scientist"
 image: "img/profile.png"
 css: styles.css
 about:
@@ -26,14 +26,12 @@ include-in-header:
     </script>
 ---
 
-### I'm a statistician & data scientist who helps science & technology teams innovate faster with data and maths. Not hype. 
 
 :::{#hero-heading}
 
 ### What I can help with...  
 
-I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. I use data
-and maths, not AI or hype.  
+I'm a statistician & specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype.  
 
 {{< fa chart-line title="chart-line">}}  Statistical Modelling and Analysis  
 {{< fa square-root-variable title="square-root-variable">}} Expert R Programming   
@@ -56,10 +54,29 @@ and maths, not AI or hype.
 ![](img/kyckr.png)
 ![](img/ecohealth.png)
 ![](img/monash.png)
-![](img/irt.png)
 ![](img/mitre10.png)
-![](img/scalapay.png)  
+![](img/scalapay.png)
+![](img/irt.png)
+<img src="img/aptonow.png" class="center">
 
+
+
+
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="img/img_testimonial.jpeg" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "Dean and Wave Data Labs brought a rare combination of high-level technical skill, with seamless collaboration and flexibility. They were able to quickly identify and scope critical improvements to our data model and machine learning algorithms. As well as producing high-quality technical outputs, Wave Data Labs worked in a way that uplifted the capability of our internal team, delivering lasting improvements to our ways of working."
+      </blockquote>
+      <p class="client-name">Tom O’Connor, CEO AptoNow</p>
+    </div>
+  </div>
+</div>
+```  
 
 ```{=html}
 <div class="testimonial-box">

@@ -1,6 +1,7 @@
 ---
 title: "Australian Bushfire Risk Analysis & Mapping"  
 image: "featured.png"  
+date: "2024-01-01"
 ---
 
 ## Project  

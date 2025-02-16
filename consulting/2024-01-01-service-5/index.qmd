@@ -1,6 +1,7 @@
 ---
 title: "Customer segmentation and recommender system build for e-commerce company"  
 image: "featured.png"  
+date: "2024-05-05"
 ---
 
 ![](featured.png)

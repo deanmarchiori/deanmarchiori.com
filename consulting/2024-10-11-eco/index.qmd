@@ -3,6 +3,7 @@ title: "Data Systems and Analytics for Vector-Borne Disease Threat Reduction"
 subtitle: "A real-world case study of reproducible workflows"
 categories: [Analysis, R]
 image: "featured.png"
+date: "2024-06-06"
 editor_options: 
   chunk_output_type: console
 execute: 

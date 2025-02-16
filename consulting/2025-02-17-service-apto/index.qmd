@@ -1,0 +1,68 @@
+---
+title: "Case Study: Innovating Faster with Data Science"  
+image: "featured.png"  
+date: "2025-02-17"
+---
+
+AptoNow is an innovative technology business with a mission to be the world’s leading co-pilot for higher education institutions. To support and accelerate their product development priorities, AptoNow engaged Wave Data Labs, a data science consulting practice that helps science and technology teams innovate faster and scale their data science capability. 
+
+In just 3 months this engagement helped the team at AptoNow:
+
+* Identify 7 clear, actionable recommendations that would add value instantly.  
+* Implement best practice frameworks that have cut code review times from hours to minutes.  
+* Reduced tech debt and redesigned core algorithms to allow the team to integrate new client features in half the usual time.  
+* Maintained uptime and assurance of core products at all times.
+
+## AptoNow’s challenges and key objectives
+
+AptoNow empowers their clients to deliver exceptional student experiences through advanced data and AI-assisted technology to solve complex challenges around timetable optimisation, student engagement, space optimisation and auto-scheduling. The team were at an inflection point where they wanted to continue scaling both their client servicing projects and the continued development of their core data products. In the face of a growing and complex code-base, the AptoNow team wanted to maintain client focus and needed technical solutions that would help them realise immediate value without the cost, overhead and risk of hiring additional full-time data scientists until they were ready. 
+
+AptoNow’s goals with this engagement were to:
+
+1. Find a technical expert in mathematical modelling, R programming and their preferred tech stack.  
+2. Find a consultant who understands not only the technical but also the commercial and business objectives.   
+3. Enable value quickly and affordably so the core team could focus working with their clients to ensure they were always solving the right problems.   
+
+>"Dean and Wave Data Labs brought a rare combination of high-level technical skill, with seamless collaboration and flexibility" says AptoNow CEO, Tom O'Connor.  
+
+## Wave Data Lab’s approach and methodology 
+
+The engagement with Dean and Wave Data Labs offered a low risk, high reward approach with a two-stage implementation:
+
+**Stage 1: One day on-site rapid review and diagnostic report:** This phase focused on three technical elements: *Speed, Scalability and Stability*. The outputs were 7 clear, technical recommendations that were achievable across three ‘horizons’ that aligned to the value proposition AptoNow had committed to delivering to their clients. 
+
+**Step 2: Hands-on delivery of high-value improvements:** Following this Wave Data Labs partnered closely with the engineering and product team at AptoNow to do hands-on work to implement these ideas and make them a reality. From a technical perspective this covered:
+
+* Reproducibility and code dependency management  
+* Implementing data pipeline tools  
+* Algorithm review and re-factoring tech debt  
+* Working flexibly and pivoting to solve critical client needs when required.   
+
+## Results and impact
+
+Over three months, Wave Data Labs was able to partner with AptoNow to deliver several tangible benefits:
+
+* The team is now able to review and test new client features in minutes rather than hours.  
+* At all times there is complete assurance and stability of the core product performance.  
+* The code base and its orchestration are simpler and in line with industry best practice, setting the team up for scaling and hiring additional developers to support their clients growth. 
+
+
+
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="img_testimonial.jpeg" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "Dean and Wave Data Labs brought a rare combination of high-level technical skill, with seamless collaboration and flexibility. They were able to quickly identify and scope critical improvements to our data model and machine learning algorithms. As well as producing high-quality technical outputs, Wave Data Labs worked in a way that uplifted the capability of our internal team, delivering lasting improvements to our ways of working."
+      </blockquote>
+      <p class="client-name">Tom O’Connor, CEO AptoNow</p>
+    </div>
+  </div>
+</div>
+```
+
+
+
