@@ -53,10 +53,11 @@ I'm a statistician & specialist independent data science consultant helping scie
 ## Trusted by   
 ![](img/kyckr.png)
 ![](img/ecohealth.png)
-![](img/monash.png)
+![](img/monash.png)  
+![](img/irt.png)
 ![](img/mitre10.png)
 ![](img/scalapay.png)
-![](img/irt.png)
+
 <img src="img/aptonow.png" class="center">
 
 
