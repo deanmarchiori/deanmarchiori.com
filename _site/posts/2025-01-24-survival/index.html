@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dean Marchiori">
-<meta name="dcterms.date" content="2025-01-24">
+<meta name="dcterms.date" content="2025-02-20">
 
-<title>Dean Marchiori -</title>
+<title>Dean Marchiori - Survival Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,19 +86,48 @@ ga('send', {
 <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Dean Marchiori -">
-<meta property="og:description" content="Data Science and Statistical Consulting">
+<meta property="og:title" content="Dean Marchiori - Survival Analysis">
+<meta property="og:description" content="Pearls and pitfalls for time-to-event modelling">
 <meta property="og:image" content="https://www.deanmarchiori.com/posts/2025-01-24-survival/featured.png">
 <meta property="og:site_name" content="Dean Marchiori">
-<meta property="og:image:height" content="651">
-<meta property="og:image:width" content="462">
-<meta name="twitter:title" content="Dean Marchiori -">
-<meta name="twitter:description" content="Data Science and Statistical Consulting">
+<meta property="og:image:height" content="957">
+<meta property="og:image:width" content="958">
+<meta name="twitter:title" content="Dean Marchiori - Survival Analysis">
+<meta name="twitter:description" content="Pearls and pitfalls for time-to-event modelling">
 <meta name="twitter:image" content="https://www.deanmarchiori.com/posts/2025-01-24-survival/featured.png">
-<meta name="twitter:image-height" content="651">
-<meta name="twitter:image-width" content="462">
+<meta name="twitter:image-height" content="957">
+<meta name="twitter:image-width" content="958">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -180,7 +209,8 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      
+      <h1 class="title">Survival Analysis</h1>
+            <p class="subtitle lead">Pearls and pitfalls for time-to-event modelling</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">survival</div>
                 <div class="quarto-category">analysis</div>
@@ -201,7 +231,7 @@ ga('send', {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 24, 2025</p>
+        <p class="date">February 20, 2025</p>
       </div>
     </div>
     
@@ -220,31 +250,58 @@ ga('send', {
 
 
 
-<ul>
-<li>what is the problem</li>
-</ul>
-<p>The use of classiciation algorithms to model binary response data are so ubiquitous there is a significant risk that in some settings this type of model is inappropriate.</p>
-<p>In many cases the response variable shouldnt be dichotomoised into an event/non-event occurence but instead view non-event as censored data. In effect, an event can either occur, or it is viewed to have not yet occurred (but may occur in the future). This inclusion of a temporal dimension allows the model to more accurately deal with cases when subjects can drop-out or non experience the response condition during the analysis period. Typical classification algorthms (think logistic regression) has to assume we only case about the response at the end of the study period and sweep under the rug and time-to-event information.</p>
-<p>This framework is known as survival analysis or time-to-event modelling. It’s commonly applied in biostaticial settings but is thoroughly un-sexy and I have discovered not even in the repertoir for many ‘non-statistical’ data scientists.</p>
-<p>This is a small field guide with pearls and pitfalls for modelling time-to-event data.</p>
-<section id="main-categories-of-survival-models" class="level2">
-<h2 class="anchored" data-anchor-id="main-categories-of-survival-models">main categories of survival models</h2>
-<p>There are three main categories of survival models</p>
-<ol type="1">
-<li><p>Non-Parametric: Most commonly the Kaplan-Meier estimator where no assumptions are imposed on either the shape of the survival function nor on the form of the relation ship between predictor variables and survival time.</p></li>
-<li><p>Semi-Parametric: The standard approach here is the Cox Proportional HAzards Model (PH Model). The hazard function gives the instantaneous potential of having an event at a time, given survival up to that time. It is used primarily as a diagnostic tool or for specifying a mathematical model for survival analysis. A functional form for covariates is specified to model the hazard curve, but no distributional assumptions are made about the survival times or baseline hazard function. This effectively results in a model that scales a ‘baseline’ hazard function that is never actually estimated, hence the model being a ‘proportional hazards’ model and using only a partial-maximum likelihood estimation method.</p></li>
-<li><p>Parametric: Fully parametic models exist and rely on the analyst specifying the functional form of the survival curve (exponential, lognormal etc). I won’t wade into these waters on this post.</p></li>
-</ol>
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">tl;dr</h2>
+<p>The use of classification algorithms to model binary response data are so ubiquitous there is a risk that in some settings this type of model is inappropriate. In cases when the response data occur over time and subjects may drop out (due to death, loss to follow up etc), traditional methods like logistic regression will not result in accurate estimations. Time to event models like survival analysis may provide a more appropriate way to address this type of data generating system.</p>
+<p>The below are some brief notes and resources on typical workflows for time-to-event or survival modelling.</p>
 </section>
-<section id="workflows" class="level2">
-<h2 class="anchored" data-anchor-id="workflows">Workflows</h2>
+<section id="types-of-survival-models" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-survival-models">Types of Survival Models</h2>
+<p>There are several categories of survival models:</p>
+<p><strong>1. Non-Parametric:</strong> Most commonly the <em>Kaplan-Meier estimator</em> where no assumptions are imposed on either the shape of the survival function nor on the form of the relationship between predictor variables and survival time.</p>
+<p><strong>2. Semi-Parametric:</strong> The standard approach here is the <em>Cox Proportional Hazards Model (PH Model)</em>. The hazard function gives the instantaneous potential of having an event at a time, given survival up to that time. No distributional assumptions are made about the survival times or baseline hazard function. This effectively results in a model that scales a ‘baseline’ hazard function that is never actually estimated, hence the model being a ‘proportional hazards’ model and using only a partial-maximum likelihood estimation method.</p>
+<p><strong>3. Parametric:</strong> Fully parametric models exist and rely on the analyst specifying the functional form of the survival curve (exponential, Weibull, log-normal etc.).</p>
+<p><strong>4. Others:</strong> Other specialised methods exists such as AFT models exist and can be selected if there is significant justification or if the more traditional methods fail.</p>
+</section>
+<section id="workflow-notes" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-notes">Workflow Notes</h2>
 <ul>
-<li><p>A recommended workflow is to start by using a non-parametric approach such as the Kaplan-Meier estimator as a descriptive tool. For between group comparisons the Log-rank test is the typical standard.</p></li>
-<li><p>Next, a Cox-Proportional Hazards model is a safe choice to enable the inclusion of covariates of interest.</p></li>
-<li><p>A Cox PH model will be not suitable to quantify the underlying baseline hazard but has good properties for interpreting and testing hazard ratios from the model’s coeeficients (essentially an anology to odds ratios in logisitic regression).</p></li>
-<li><p>If the diagnostic tests indicate a poor fit, an alternative model should be tried. If this is from class of parametric survival models, some knowledge and testing of the distribution will be required as an explicit input.</p></li>
-<li><p>Other more exotic model types exist and can be used but typically these are only done with strong justification and are much less common.</p></li>
+<li>If working with tabular binary outcome data for a specific event, start by defining:
+<ul>
+<li>The observed event time of the event: <span class="math inline">\(T_i\)</span><br>
+</li>
+<li>The censoring time (when the subject was last followed up or known to have dropped out, or the end of the observation period): <span class="math inline">\(C_i\)</span></li>
+</ul></li>
+<li>The event time can be calculated as <span class="math inline">\(Y_i = min(T_i, C_i)\)</span> with a binary event indicator (<span class="math inline">\(\delta_i\)</span>):</li>
 </ul>
+<p><span class="math display">\[
+\begin{equation}
+\delta_i =
+   \left\{\begin{array}{lr}
+       1, &amp; T_i \leq C_i \\
+       0 &amp; T_i &gt; C_i
+    \end{array}\right.
+\end{equation}
+\]</span></p>
+<ul>
+<li><p>A recommended workflow is to start by using a non-parametric approach such as the Kaplan-Meier estimator as a descriptive tool.</p></li>
+<li><p>For between group comparisons, a group-wise KM-curve can be estimated.</p></li>
+<li><p>Formal hypothesis testing between groups can be done using a <em>Log-rank test</em> as the typical standard.</p></li>
+<li><p>A <em>Cox proportional hazards model</em> is a safe choice to enable the inclusion of multiple covariates of interest. It will not measure the underlying baseline hazard but has good properties for interpreting and testing hazard ratios from the model’s coefficients (essentially an analogy to odds ratios in logistic regression).</p></li>
+<li><p>The Cox PH model has a number of assumptions:</p>
+<ul>
+<li><strong>Proportional Hazards:</strong> Across time the relative hazard remains constant across covariate levels. This hypothesis can be tested using the scaled Schoenfeld residuals and should graphically be assessed to ensure there is no slope. A formal test can also be conducted using the <code>cox.zph</code> function in the <code>{survival}</code> package in R.<br>
+</li>
+<li><strong>Non-Informative Censoring:</strong> While this class of model is designed to handle censored data, the cause of censoring should be unrelated to the response and be entirely non-informative.<br>
+</li>
+<li><strong>Residual diagnostics</strong> can also be performed as the primary way to gauge influential observations, possible transformations and issues with non-proportional hazards. They can also be used to test for linearity and additivity in the covariates. There are several types of residuals available (Martingale, Deviance, Score etc.). See <a href="https://doi.org/10.1038/sj.bjc.6601120">here</a> for guidance.</li>
+</ul></li>
+<li><p>Time dependent covariates (covariates that change after baseline) can also be incorporated but require specialised data re-shaping. See this <a href="https://cran.r-project.org/web/packages/survival/vignettes/timedep.pdf">vignette</a> for a detailed overview first.</p></li>
+<li><p>If the diagnostic tests indicate a poor fit there are several remedies (see <a href="https://doi.org/10.1038/sj.bjc.6601120">here</a>), or an alternative model should be tried. If this is from class of parametric survival models, some knowledge and testing of the distribution will be required as an explicit input.</p></li>
+<li><p>Results are typically presented through interpretation of the regression coefficients. The raw coefficients are exponentiated to form a ‘hazard ratio’ which represents the percentage increase(decrease) over(under) the null value of 1 in the instantaneous hazard.</p></li>
+<li><p>Subject matter experts are more comfortable interpreting increasing values that are associated with poorer survival experience, rather than protective effects.</p></li>
+</ul>
+<p>Below is a basic flow chart for a standard survival analysis:</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -256,6 +313,10 @@ ga('send', {
   C --&gt; D[Cox Proportional Hazards Model]
   C -.-&gt; E[Fully parametric model]  
   C -.-&gt; F[AFT, other exotic..]
+  D --&gt; G[Diagnostics]
+  G --&gt; D
+  
+  
   style D fill:#f9f
 </pre>
 </div>
@@ -263,26 +324,28 @@ ga('send', {
 </div>
 </div>
 </div>
-<p>A[Hard edge] –&gt; B(Round edge) B –&gt; C{Decision} C –&gt; D[Result one] C -&gt; E[Result two]</p>
 </section>
-<section id="assumptions" class="level2">
-<h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
-<ol type="1">
-<li><p>Proportional Hazards: Across time the relative hazard remains constant across covariate levels. This hypothesis can be tested using the scaled Schoenfeld residuals. It can also be visually examined using a log(-log(survival)) plot. If a PH model is valid, a plot of the logarithm of the cumulative hazard function in each group against the logarithm of time should give rise to lines that are parallel.</p></li>
-<li><p>Sample size: A heuristic exists that there shoul dbe at least 10 events observed for each covariate considered.</p></li>
-<li><p>Non-Informative Censoring: While this class of model is designed to handle censored data, the cause of censoring should be unrelated to the response and be entirely non-informative.</p></li>
-</ol>
+<section id="introductory-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="introductory-tutorials">Introductory tutorials</h2>
+<p><a href="https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html">Survival Analysis in R</a><br>
+<a href="https://www.youtube.com/watch?v=VenrZGkDJcU">An Introduction to Survival Analysis in R with Emily Zabor</a></p>
 </section>
-<section id="diagnostics" class="level2">
-<h2 class="anchored" data-anchor-id="diagnostics">Diagnostics</h2>
-<ul>
-<li><p>Goodness of fit can be evaluated visually by comparing the Kaplan-Meirer curve to the model-based predicted survival.</p></li>
-<li><p>Cox-Snell residuals can be used to visually inspect goodness-of-fit</p></li>
-<li><p>Interpretation</p></li>
-<li><p>Good texts</p></li>
-<li><p>Good Packages</p></li>
-<li><p>Lunk to workflow</p></li>
-</ul>
+<section id="more-in-depth-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="more-in-depth-tutorials">More in-depth tutorials</h2>
+<p>Clark, T., Bradburn, M., Love, S. et al.&nbsp;Survival Analysis Part I: Basic concepts and first analyses. Br J Cancer 89, 232–238 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601118">https://doi.org/10.1038/sj.bjc.6601118</a></p>
+<p>Bradburn, M., Clark, T., Love, S. et al.&nbsp;Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. Br J Cancer 89, 431–436 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601119">https://doi.org/10.1038/sj.bjc.6601119</a></p>
+<p>Bradburn, M., Clark, T., Love, S. et al.&nbsp;Survival Analysis Part III: Multivariate data analysis – choosing a model and assessing its adequacy and fit. Br J Cancer 89, 605–611 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601120">https://doi.org/10.1038/sj.bjc.6601120</a></p>
+<p>Clark, T., Bradburn, M., Love, S. et al.&nbsp;Survival Analysis Part IV: Further concepts and methods in survival analysis. Br J Cancer 89, 781–786 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601117">https://doi.org/10.1038/sj.bjc.6601117</a></p>
+</section>
+<section id="text-books" class="level2">
+<h2 class="anchored" data-anchor-id="text-books">Text books</h2>
+<p>Harrell, F. E. (2001). Regression modeling strategies: with applications to linear models, logistic regression, and survival analysis (Vol. 608). New York: springer.</p>
+<p>Hosmer Jr, D. W., Lemeshow, S., &amp; May, S. (2008). Applied survival analysis: regression modeling of time-to-event data (Vol. 618). John Wiley &amp; Sons.</p>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
+<p><a href="https://cran.r-project.org/web/packages/survival/index.html">survival R package</a></p>
+<p><a href="https://cran.r-project.org/web/packages/ggsurvfit/index.html">ggsurvfit: Flexible Time-to-Event Figures</a></p>
 <blockquote class="blockquote">
 <p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for occasional emails and no spam.</strong><br>
 <strong>Looking for a data science consultant? Feel free to <a href="https://www.deanmarchiori.com">get in touch here</a></strong></p>

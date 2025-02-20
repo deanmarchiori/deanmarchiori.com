@@ -17,7 +17,120 @@
 <width>144</width>
 </image>
 <generator>quarto-1.4.554</generator>
-<lastBuildDate>Wed, 05 Feb 2025 13:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 19 Feb 2025 13:00:00 GMT</lastBuildDate>
+<item>
+  <title>Survival Analysis</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2025-01-24-survival/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">tl;dr</h2>
+<p>The use of classification algorithms to model binary response data are so ubiquitous there is a risk that in some settings this type of model is inappropriate. In cases when the response data occur over time and subjects may drop out (due to death, loss to follow up etc), traditional methods like logistic regression will not result in accurate estimations. Time to event models like survival analysis may provide a more appropriate way to address this type of data generating system.</p>
+<p>The below are some brief notes and resources on typical workflows for time-to-event or survival modelling.</p>
+</section>
+<section id="types-of-survival-models" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-survival-models">Types of Survival Models</h2>
+<p>There are several categories of survival models:</p>
+<p><strong>1. Non-Parametric:</strong> Most commonly the <em>Kaplan-Meier estimator</em> where no assumptions are imposed on either the shape of the survival function nor on the form of the relationship between predictor variables and survival time.</p>
+<p><strong>2. Semi-Parametric:</strong> The standard approach here is the <em>Cox Proportional Hazards Model (PH Model)</em>. The hazard function gives the instantaneous potential of having an event at a time, given survival up to that time. No distributional assumptions are made about the survival times or baseline hazard function. This effectively results in a model that scales a ‘baseline’ hazard function that is never actually estimated, hence the model being a ‘proportional hazards’ model and using only a partial-maximum likelihood estimation method.</p>
+<p><strong>3. Parametric:</strong> Fully parametric models exist and rely on the analyst specifying the functional form of the survival curve (exponential, Weibull, log-normal etc.).</p>
+<p><strong>4. Others:</strong> Other specialised methods exists such as AFT models exist and can be selected if there is significant justification or if the more traditional methods fail.</p>
+</section>
+<section id="workflow-notes" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-notes">Workflow Notes</h2>
+<ul>
+<li>If working with tabular binary outcome data for a specific event, start by defining:
+<ul>
+<li>The observed event time of the event: <img src="https://latex.codecogs.com/png.latex?T_i"><br>
+</li>
+<li>The censoring time (when the subject was last followed up or known to have dropped out, or the end of the observation period): <img src="https://latex.codecogs.com/png.latex?C_i"></li>
+</ul></li>
+<li>The event time can be calculated as <img src="https://latex.codecogs.com/png.latex?Y_i%20=%20min(T_i,%20C_i)"> with a binary event indicator (<img src="https://latex.codecogs.com/png.latex?%5Cdelta_i">):</li>
+</ul>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bequation%7D%0A%5Cdelta_i%20=%0A%20%20%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%0A%20%20%20%20%20%20%201,%20&amp;%20T_i%20%5Cleq%20C_i%20%5C%5C%0A%20%20%20%20%20%20%200%20&amp;%20T_i%20%3E%20C_i%0A%20%20%20%20%5Cend%7Barray%7D%5Cright.%0A%5Cend%7Bequation%7D%0A"></p>
+<ul>
+<li><p>A recommended workflow is to start by using a non-parametric approach such as the Kaplan-Meier estimator as a descriptive tool.</p></li>
+<li><p>For between group comparisons, a group-wise KM-curve can be estimated.</p></li>
+<li><p>Formal hypothesis testing between groups can be done using a <em>Log-rank test</em> as the typical standard.</p></li>
+<li><p>A <em>Cox proportional hazards model</em> is a safe choice to enable the inclusion of multiple covariates of interest. It will not measure the underlying baseline hazard but has good properties for interpreting and testing hazard ratios from the model’s coefficients (essentially an analogy to odds ratios in logistic regression).</p></li>
+<li><p>The Cox PH model has a number of assumptions:</p>
+<ul>
+<li><strong>Proportional Hazards:</strong> Across time the relative hazard remains constant across covariate levels. This hypothesis can be tested using the scaled Schoenfeld residuals and should graphically be assessed to ensure there is no slope. A formal test can also be conducted using the <code>cox.zph</code> function in the <code>{survival}</code> package in R.<br>
+</li>
+<li><strong>Non-Informative Censoring:</strong> While this class of model is designed to handle censored data, the cause of censoring should be unrelated to the response and be entirely non-informative.<br>
+</li>
+<li><strong>Residual diagnostics</strong> can also be performed as the primary way to gauge influential observations, possible transformations and issues with non-proportional hazards. They can also be used to test for linearity and additivity in the covariates. There are several types of residuals available (Martingale, Deviance, Score etc.). See <a href="https://doi.org/10.1038/sj.bjc.6601120">here</a> for guidance.</li>
+</ul></li>
+<li><p>Time dependent covariates (covariates that change after baseline) can also be incorporated but require specialised data re-shaping. See this <a href="https://cran.r-project.org/web/packages/survival/vignettes/timedep.pdf">vignette</a> for a detailed overview first.</p></li>
+<li><p>If the diagnostic tests indicate a poor fit there are several remedies (see <a href="https://doi.org/10.1038/sj.bjc.6601120">here</a>), or an alternative model should be tried. If this is from class of parametric survival models, some knowledge and testing of the distribution will be required as an explicit input.</p></li>
+<li><p>Results are typically presented through interpretation of the regression coefficients. The raw coefficients are exponentiated to form a ‘hazard ratio’ which represents the percentage increase(decrease) over(under) the null value of 1 in the instantaneous hazard.</p></li>
+<li><p>Subject matter experts are more comfortable interpreting increasing values that are associated with poorer survival experience, rather than protective effects.</p></li>
+</ul>
+<p>Below is a basic flow chart for a standard survival analysis:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A[(survival data)] --&gt; B[Kaplan-Meier Estimator]
+  B --&gt; C[Log Rank Test]  
+  C --&gt; D[Cox Proportional Hazards Model]
+  C -.-&gt; E[Fully parametric model]  
+  C -.-&gt; F[AFT, other exotic..]
+  D --&gt; G[Diagnostics]
+  G --&gt; D
+  
+  
+  style D fill:#f9f
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="introductory-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="introductory-tutorials">Introductory tutorials</h2>
+<p><a href="https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html">Survival Analysis in R</a><br>
+<a href="https://www.youtube.com/watch?v=VenrZGkDJcU">An Introduction to Survival Analysis in R with Emily Zabor</a></p>
+</section>
+<section id="more-in-depth-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="more-in-depth-tutorials">More in-depth tutorials</h2>
+<p>Clark, T., Bradburn, M., Love, S. et al.&nbsp;Survival Analysis Part I: Basic concepts and first analyses. Br J Cancer 89, 232–238 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601118">https://doi.org/10.1038/sj.bjc.6601118</a></p>
+<p>Bradburn, M., Clark, T., Love, S. et al.&nbsp;Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. Br J Cancer 89, 431–436 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601119">https://doi.org/10.1038/sj.bjc.6601119</a></p>
+<p>Bradburn, M., Clark, T., Love, S. et al.&nbsp;Survival Analysis Part III: Multivariate data analysis – choosing a model and assessing its adequacy and fit. Br J Cancer 89, 605–611 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601120">https://doi.org/10.1038/sj.bjc.6601120</a></p>
+<p>Clark, T., Bradburn, M., Love, S. et al.&nbsp;Survival Analysis Part IV: Further concepts and methods in survival analysis. Br J Cancer 89, 781–786 (2003). <a href="https://doi.org/10.1038/sj.bjc.6601117">https://doi.org/10.1038/sj.bjc.6601117</a></p>
+</section>
+<section id="text-books" class="level2">
+<h2 class="anchored" data-anchor-id="text-books">Text books</h2>
+<p>Harrell, F. E. (2001). Regression modeling strategies: with applications to linear models, logistic regression, and survival analysis (Vol. 608). New York: springer.</p>
+<p>Hosmer Jr, D. W., Lemeshow, S., &amp; May, S. (2008). Applied survival analysis: regression modeling of time-to-event data (Vol. 618). John Wiley &amp; Sons.</p>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
+<p><a href="https://cran.r-project.org/web/packages/survival/index.html">survival R package</a></p>
+<p><a href="https://cran.r-project.org/web/packages/ggsurvfit/index.html">ggsurvfit: Flexible Time-to-Event Figures</a></p>
+<blockquote class="blockquote">
+<p><strong>Want to read more? Sign up to my mailing list <a href="https://www.deanmarchiori.com/posts/">here</a> for occasional emails and no spam.</strong><br>
+<strong>Looking for a data science consultant? Feel free to <a href="https://www.deanmarchiori.com">get in touch here</a></strong></p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>survival</category>
+  <category>analysis</category>
+  <guid>https://www.deanmarchiori.com/posts/2025-01-24-survival/</guid>
+  <pubDate>Wed, 19 Feb 2025 13:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2025-01-24-survival/featured.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>How AI Works</title>
   <dc:creator>Dean Marchiori</dc:creator>
@@ -1680,41 +1793,6 @@ out skel qt;</code></pre>
   <guid>https://www.deanmarchiori.com/posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/</guid>
   <pubDate>Sat, 25 Mar 2023 13:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2023-03-17-deploy-your-own-rstudio-server-in-the-cloud/featured.png" medium="image" type="image/png" height="75" width="144"/>
-</item>
-<item>
-  <title>Building your own R Data Science Lab in the browser</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Most R users probably just run <a href="https://posit.co/download/rstudio-desktop/">RStudio Desktop</a> from Posit on their local computers. This involves manually installing R, RStudio and all other packages.</p>
-<p>However it is often the case that users are operating in a restricted computing environment, such as in a corporate or government setting. Alternatively you may wish to create a custom development environment to test or replicate some other specific setup. This is a good case to move away from locally managed software to containerization, such as Docker.</p>
-<p>I have set up a <a href="https://github.com/deanmarchiori/ds-env-setup">Github repository</a> that sets up a local data science development environment in the browser.</p>
-<p>It builds a docker container including:</p>
-<ul>
-<li>Ubuntu 20.04 LTS</li>
-<li>R version 4.2</li>
-<li>RStudio Server 2022.02.3+492</li>
-<li>All tidyverse packages and devtools</li>
-<li>tex &amp; publishing-related package</li>
-</ul>
-<p>The image builds on the rocker/verse image from <a href="https://rocker-project.org/">Rocker Project.</a></p>
-<p>Some other enhanced configuration options are included in the Dockerfile, such as preloading you RStudio preferences to get the same look and feel you have locally, the option to install other CRAN packages &amp; mounting local volumes to persist your work locally.</p>
-<p>Go here for Step by step instructions:</p>
-<p><a href="https://github.com/deanmarchiori/ds-env-setup">https://github.com/deanmarchiori/ds-env-setup</a></p>
-
-
-
- ]]></description>
-  <category>R</category>
-  <category>docker</category>
-  <guid>https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/</guid>
-  <pubDate>Tue, 14 Mar 2023 13:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2023-03-17-building-your-own-r-data-science-lab/featured.png" medium="image" type="image/png" height="84" width="144"/>
 </item>
 </channel>
 </rss>
