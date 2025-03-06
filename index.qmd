@@ -33,11 +33,12 @@ include-in-header:
 
 I'm a statistician & specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype.  
 
-{{< fa chart-line title="chart-line">}}  Statistical Modelling and Analysis  
-{{< fa square-root-variable title="square-root-variable">}} Expert R Programming   
-{{< fa robot title="robot">}} Machine Learning 
+{{< fa square-root-variable title="square-root-variable">}} Mathematical Modelling & Optimisation    
+{{< fa chart-line title="chart-line">}}  Statistical Data Analysis  
+{{< fa robot title="robot">}} Machine Learning  
+{{< fa keyboard title="keyboard">}} Expert Level R Programming
 
-<a href="/contact/index.qmd" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Contact Me</a>
+<a href="/contact/index.qmd" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Hire Me</a>
 
 ### More about me...   
 
