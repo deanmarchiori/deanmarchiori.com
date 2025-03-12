@@ -3,7 +3,7 @@ title: "★★★★★"
 subtitle: "Choosing an Airbnb using mathematical analysis of review data"
 author: "Dean Marchiori"
 date: "2025-03-05"
-categories: [analysis, R, bayes]
+categories: [analysis, R, bayesian]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -296,7 +296,7 @@ When we focus on just 4.5 - 5 star rated products, we can locate situations wher
 #| webgl: true
 
 rating <- seq(4.6, 5, length.out = 100)
-n_reviews <- seq(1, 30, length.out = 100)
+n_reviews <- seq(1, 200, length.out = 100)
 
 grid <- expand_grid(
   rating = rating,
@@ -322,6 +322,8 @@ z <- matrix(data = sim$prob_thresh_exceed,
             ncol = length(n_reviews), 
             byrow = T)
 
+
+
 # Generate colors mapped to z values
 colors <- colorRampPalette(c("blue", "green", "yellow", "red"))(100)
 color_index <- cut(z, breaks = 100, labels = FALSE)
@@ -334,6 +336,26 @@ rgl::persp3d(
   zlab = "Bad Experience Prob.",
   xlab = "Average Rating",
   ylab = "Number of Reviews"
+)
+
+rgl::points3d(x = c(4.72, 5), 
+              y = c(171, 3), 
+              z = c(
+                0.03,
+                0.0461
+                ), 
+              col = "red", 
+              size = 32)
+
+
+text3d(
+  x = c(4.72, 5),
+  y = c(171, 3),
+  z = c(0.03, 0.0461),
+  text = c("Apartment Deza 4.72 (171)", "Apartment Monticiano 5.0 (3)"),
+  adj = c(1, 1, 10),
+  col = "grey50",
+  cex = 1.5
 )
 
 ```
@@ -361,6 +383,4 @@ accessible and free resource: [Probability and Bayesian Modeling](https://bayesb
 
 
 
-
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
 > **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

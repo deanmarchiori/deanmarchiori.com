@@ -3,7 +3,7 @@ title: "Is the share market just random noise?"
 subtitle: "Modelling market prices using a random walk"
 author: "Dean Marchiori"
 date: "2024-01-04"
-categories: [R, time-series]
+categories: [R, time series]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console

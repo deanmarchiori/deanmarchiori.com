@@ -3,7 +3,7 @@ title: "Man vs Machine Learning"
 subtitle: "I went head-to-head with Microsoft's AutoML platform in a predictive modelling challenge."
 author: "Dean Marchiori"
 date: "2023-06-02"
-categories: [R, Azure, time-series]
+categories: [R, azure, time series]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console

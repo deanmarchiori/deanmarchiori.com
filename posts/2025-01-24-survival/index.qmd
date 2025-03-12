@@ -140,5 +140,4 @@ Hosmer Jr, D. W., Lemeshow, S., & May, S. (2008). Applied survival analysis: reg
 
 [ggsurvfit: Flexible Time-to-Event Figures](https://cran.r-project.org/web/packages/ggsurvfit/index.html)
 
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
 > **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

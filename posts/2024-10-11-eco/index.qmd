@@ -3,7 +3,7 @@ title: "Data Systems and Analytics for Vector-Borne Disease Threat Reduction"
 subtitle: "A real-world case study of reproducible workflows"
 author: "Dean Marchiori"
 date: "2024-10-11"
-categories: [Analysis, R]
+categories: [analysis, R]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -39,5 +39,4 @@ An overview of this project was given as a poster at the recent 8th World One He
 
 ![](poster.png)
 
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
 > **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**

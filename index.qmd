@@ -1,121 +1,94 @@
 ---
 title: "Dean Marchiori"
 subtitle: "Statistician | Principal Data Scientist"
-image: "img/profile.png"
-css: styles.css
 about:
-  id: hero-heading
-  template: trestles
+  id: hero-heading 
+  template: jolla
   image: "img/profile.png"
   image-shape: round
   links:
     - icon: envelope
       text: Contact Me
-      href: https://www.deanmarchiori.com/contact/
+      href: mailto:dean@wavedatalabs.com.au
+    - icon: calendar
+      text: Book a meeting
+      href: https://calendly.com/wavedata/meeting
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/deanmarchiori
-include-in-header: 
-  text: |
-    <script>
-        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-        ml('account', '1118449');
-    </script>
+    - icon: github
+      text: Github
+      href: https://github.com/deanmarchiori
+    - icon: twitter
+      text: Bluesky
+      href: https://bsky.app/profile/deanmarchiori.bsky.social
+    - icon: file-pdf
+      text: Download CV
+      href: https://github.com/deanmarchiori/CV/blob/master/CV/CV.pdf
+
 ---
 
 
 :::{#hero-heading}
+I'm a specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype. I work with clients on complex problems across applied mathematics, statistical modelling, data analysis & machine learning.  
 
-### What I can help with...  
-
-I'm a statistician & specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype.  
-
-{{< fa square-root-variable title="square-root-variable">}} Mathematical Modelling & Optimisation    
-{{< fa chart-line title="chart-line">}}  Statistical Data Analysis  
-{{< fa robot title="robot">}} Machine Learning  
-{{< fa keyboard title="keyboard">}} Expert Level R Programming
-
-<a href="/contact/index.qmd" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Hire Me</a>
-
-### More about me...   
-
-[See how I have helped other clients](/consulting/index.qmd)  
-[Sign up to my regular mailing list](/posts/index.qmd)  
-[Read my blog](/posts/index.qmd)  
-[Watch some of my public talks and interviews](/talks/index.qmd)  
-[Read my free e-book on data science workflows](/book/index.qmd)  
-
-:::   
+If you are interested in hiring me for a project get in touch here: [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)
+::: 
 
 
-## Trusted by   
-![](img/kyckr.png)
-![](img/ecohealth.png)
-![](img/monash.png)  
-![](img/irt.png)
-![](img/mitre10.png)
-![](img/scalapay.png)
+## Bio  
 
-<img src="img/aptonow.png" class="center">
+Dean Marchiori is an applied statistician and founder of [Wave Data Labs](https://www.wavedatalabs.com.au/) an independent data science consulting practice. He is co-chair of the Statistical Society of Australia’s section for [statistical computing and visualisation](https://statsoc.org.au/Statistical-Computing-and-Visualisation-Section). Previously Dean was a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the [Accredited Statistician (AStat)](https://statsoc.org.au/Professional-accreditation) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the [Institute of Analytics Professionals of Australia (IAPA)](https://www.iapa.org.au/).   
+
+## [Consulting](consulting/) 
+
+If you are interested in my work you can read some case studies, or see what my clients have to say about working with me. Check out my [consulting page](consulting/index.qmd). Below are some recent projects delivered.
+
+- 🕵 [**Anomaly detection and cluster analysis for financial crime detection:**](consulting/2024-01-01-service-2/) I built an automated system to detect suspicious companies and complex shell relationships. 
+- 🔥 [**Australian Bushfire Risk Analysis & Mapping:**](consulting/2024-01-01-service-1/) This interactive analysis was the first of its kind to highlight bushfire planning risk for the entire Australian mainland and recieved nationwide media coverage.   
+- 🦟 [**Data Systems and Analytics for Vector-Borne Disease Threat Reduction:**](consulting/2024-10-11-eco/) I partnered with EcoHealth Alliance on a major scientific research project focused on two WHO priority zoonoses, Rift Valley fever virus and Crimean-Congo hemorrhagic fever virus.
+- 👶 [**Analysis and mapping of access to Assisted Reproductive Technologies:**](consulting/2024-01-01-service-4/) Did you know over half a million Australians live more than 240km from an Assisted reproductive technology clinic and would likely have to sleep nearby in order to visit.  
 
 
+## [Blog](posts/)  
+
+I occassionally write [blog posts](/posts/) about data and statistics. Some of my greatest hits are below:  
+
+- 🌏 [**Geolocating Sydney’s weirdest property:**](posts/2023-09-17-geolocating/) Using Open Street Map and R to geolocate a tweet of Sydney's strangest house.  
+- 🥊 [**Man vs Machine Learning:**](posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/) I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge - and won! (sort of)
+- 🔧 [**Integrating R with Modern Tech Stacks:**](posts/2024-12-02-r-docker/) A Practical Guide to Using R and Docker for Integrating Statistical Analysis into Modern Tech Stacks
 
 
-```{=html}
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="client-photo">
-      <img src="img/img_testimonial.jpeg" alt="Client Photo" />
-    </div>
-    <div class="testimonial-text">
-      <blockquote>
-        "Dean and Wave Data Labs brought a rare combination of high-level technical skill, with seamless collaboration and flexibility. They were able to quickly identify and scope critical improvements to our data model and machine learning algorithms. As well as producing high-quality technical outputs, Wave Data Labs worked in a way that uplifted the capability of our internal team, delivering lasting improvements to our ways of working."
-      </blockquote>
-      <p class="client-name">Tom O’Connor, CEO AptoNow</p>
-    </div>
-  </div>
-</div>
-```  
+## Publications  
 
-```{=html}
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="client-photo">
-      <img src="img/test_1.png" alt="Client Photo" />
-    </div>
-    <div class="testimonial-text">
-      <blockquote>
-        "You were able to work toward our goals, making suggestions to improve the workflow and then execute those suggestions in the code. You were friendly, thoughtful and hard working. We're really happy with the package you delivered. Thanks!"
-      </blockquote>
-      <p class="client-name">Dr Melinda Rostal, Principal Scientist, EcoHealth Alliance</p>
-    </div>
-  </div>
-</div>
-```
+To view a verified list of my scientific publications see [ORCiD](https://orcid.org/0000-0002-3430-7225)  
 
-```{=html}
-<div class="testimonial-box">
-  <div class="testimonial-content">
-    <div class="client-photo">
-      <img src="img/test_2.png" alt="Client Photo" />
-    </div>
-    <div class="testimonial-text">
-      <blockquote>
-        "Dean's ability to unpack problems, package, engage, present, influence, validate, mentor and resolve is fantastic and highly sought after."
-      </blockquote>
-      <p class="client-name">Paul Oyston, Group Head of IT Data Analytics, IRT Group</p>
-    </div>
-  </div>
-</div>
-```
+- Pires et al., (2024). **weatherOz: An API Client for Australian Weather and Climate Data Resources in R**. Journal of Open Source Software, 9(98), 6717, [https://doi.org/10.21105/joss.06717](https://doi.org/10.21105/joss.06717)   
+- Wilson R, Wickramasuriya R, Marchiori D. **An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions.** Fire. 2023; 6(2):61. [https://doi.org/10.3390/fire6020061](https://doi.org/10.3390/fire6020061)  
+- Marchiori, D. (2022). **Meta-Analysis of Clinical Phenotype and Patient Survival in Neurodevelopmental Disorder with Microcephaly, Arthrogryposis, and Structural Brain Anomalies Due to Bi-allelic Loss of Function Variants in SMPD4.** medRxiv, 2022-10. [https://doi.org/10.1101/2022.10.08.22280875](https://doi.org/10.1101/2022.10.08.22280875)
 
-<div class="ml-embedded" data-form="jStmTX"></div>
+## Open Source   
 
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/wavedata', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-<!-- Calendly badge widget end -->
+If you would like to see how I code, all of my public projects are hosted on [Github](https://github.com/deanmarchiori) 
+
+
+- [**Data Science Workflows in R:**](https://datasciworkflows.netlify.app/) An introduction to deploying production quality R code [e-book, author]
+- [**{weatherOz}:**](https://docs.ropensci.org/weatherOz/) An API Client for Australian Weather and Climate Data Resources [R Package, co-author]  
+- [**bluey-search:**](https://deanmarchiori.shinyapps.io/blueysearch/) Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can't handle flicking through all 130 of them? Problem solved. [shiny app, author]
+- [**analysis-flow:**](https://github.com/deanmarchiori/analysis-flow) Data Analysis Workflows & Reproducibility Learning Resources [resource list]
+
+
+## Talks  
+
+Below are some invited talks, workshops and other events of note:  
+
+- **2024-10-22:** I was invited to deliver a half-day workshop for [WOMBAT2024](https://wombat2024.numbat.space/tutorial_AM3.html) the Workshop Organised by the Monash Business Analytics Team (WOMBAT). The title was *Turning R code into production quality software*. [[Resources](https://datasciworkflows.netlify.app/)]   
+- **2024-10-21:** I co-organised the first [OceaniaR Hackathon](https://statsocaus.github.io/oceaniaR-hack/) day in Melbourne, the event had a focus on promoting projects and participation from R users in the Oceania region including Australia, New Zealand and the Pacific Islands. [[repo](https://github.com/StatSocAus/oceaniaR-hack)]  
+- **2023-12-01:** I gave a half-day workshop for the [Statistical Society of Australia](https://statsoc.org.au/event-5490184) on *Deploying your model code into production with Microsoft Azure* [[Resources](https://github.com/StatSocAus/tutorial_deploywithazure)]  
+- **2022-11-08:** I gave a talk called *BlueySearch: how to build and deploy a basic data science backed web app in R* at the Siligong Data Tech Meetup in Wollongong. [[slides](https://github.com/deanmarchiori/siligong-data-talk)]   
+- **2021-01-21:** I gave a lightning talk at [rstudio::global](https://cloud.rstudio.com/resources/rstudioglobal-2021/) conference called *How reproducible am I? A retrospective on a year of commercial data science projects in R* [[video](https://youtu.be/4T8gz9AmNOA)]  
+- **2021-12-01:** I presented at the Statistical Society of Australia's [Early Career and Student Statisticians Career Event 2021](https://www.statsoc.org.au/event-4559340) in Sydney. 
+- **2021-12-01:** I was interviewed on the [Keeping Up With Data](https://pod.link/1561894306) podcast. [[video](https://pod.link/1561894306)]  
+- **2019-11-28:** I gave an invited talk titled *Pearls and pitfalls of time series analysis using Google Analytics data* at [WOMBAT2019](https://www.monash.edu/business/events/past-events/general/wombat2019) workshop organised by the Monash Business Analytics Team, at the State Library Victoria. [[slides](https://github.com/deanmarchiori/WOMBAT2019)]
+- **2018-10-16:** I Presented a seminar titled *Unsupervised outlier detection systems for e-commerce* as part of the SMART Seminar Series at the University of Wollongong. [[video](https://youtu.be/BMODMydyrR8)]
+
