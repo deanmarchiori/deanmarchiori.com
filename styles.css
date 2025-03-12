@@ -38,9 +38,12 @@
     border-radius: 8px; /* Optional: for rounded corners */
 }  
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+a {
+    text-decoration: none;
 }
+
+h2 a {
+    color: inherit; /* Inherits the color of the <h2> */
+    text-decoration: none; /* Removes underline */
+}
+

@@ -3,7 +3,7 @@ title: "The CEO’s Guide to Predicting the Future"
 subtitle: "Time Series Analysis Made Simple"
 author: "Dean Marchiori"
 date: "2025-01-08"
-categories: [time-series, analysis]
+categories: [time series, analysis]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -153,6 +153,4 @@ See here: [Is the share market just random noise?](https://www.deanmarchiori.com
 O’Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022). tsibbledata: Diverse Datasets for ‘tsibble’. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/.  
 
 
-
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
 > **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

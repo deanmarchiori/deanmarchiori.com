@@ -52,6 +52,4 @@ This is a slog, but it's very well explained by a real expert, in very accessibl
 Enjoy. 
 
 
-
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for occasional emails and no spam.**  
 > **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

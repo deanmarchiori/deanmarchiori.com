@@ -9,41 +9,25 @@ website:
   image: "img/profile.png"
   twitter-card:
     image: "img/profile.png"
-  google-analytics: "UA-XXXXXXXX"
-  navbar:
-    right:
-      - icon: rss
-        href: posts/index.xml
-    left:
-      - href: index.qmd
-        text: Home
-      - href: consulting/index.qmd  
-        text: Consulting
-      - href: book/index.qmd 
-        text: Book
-      - href: talks/index.qmd
-        text: Talks
-      - href: posts/index.qmd
-        text: Blog
-      - href: about/index.qmd
-        text: About
-      - href: contact/index.qmd
-        text: Contact
-    tools:
-      - icon: github
-        menu:
-          - text: Source Code
-            url:  https://github.com/deanmarchiori/deanmarchiori.com
-          - text: Report a Bug
-            url:  https://github.com/deanmarchiori/deanmarchiori.com/issues
   page-footer:
-    left: "Copyright 2025, Dean Marchiori"
-  
-format:
-  html:
-    theme: flatly
+    center: "Copyright 2025, Dean Marchiori"
+  navbar:
+    background: "#ffffff"
+    search: false
+    title: false
+    pinned: false
+    border: false
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        href: posts/index.qmd
+      - text: "Consulting"
+        href: consulting/index.qmd
+format: 
+  html: 
+    page-layout: article
+    theme: default 
     css: styles.css
-    toc: false
-
 
 

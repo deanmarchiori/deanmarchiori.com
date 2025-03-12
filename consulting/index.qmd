@@ -1,14 +1,14 @@
 ---
-title: "Data Science & Statistical Consulting"
+title: ""
 listing:
   type: "grid"
   sort: "date desc"
 ---
 
-I'm a specialist independent data science consultant helping science & technology start-ups and scale-ups innovate rapidly and build their data science capability. Unlike my competitors I use data
-and maths, not AI or hype.  
+# Data Science & Statistical Consulting
+I’m a specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype. I work with clients on complex problems across applied mathematics, statistical modelling, data analysis & machine learning.
 
-I use cutting-edge techniques in applied mathematics, statistical modelling and data analysis to deeply understand your problems and work with your experts to add value.    
+If you are interested in hiring me for a project get in touch.
 
 
 
@@ -35,7 +35,7 @@ I use cutting-edge techniques in applied mathematics, statistical modelling and 
 :::
 
 ::: {.column width="30%"}
-<a href="/contact/" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get Started</a> 
+<a href="https://calendly.com/wavedata/meeting" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get Started</a> 
 :::
 
 ::: {.column width="35%"}
@@ -47,6 +47,63 @@ I use cutting-edge techniques in applied mathematics, statistical modelling and 
 
 
 <br> 
+
+
+## Trusted by   
+
+![](../img/client_logo.png)
+
+
+
+
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="../img/img_testimonial.jpeg" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "Dean and Wave Data Labs brought a rare combination of high-level technical skill, with seamless collaboration and flexibility. They were able to quickly identify and scope critical improvements to our data model and machine learning algorithms. As well as producing high-quality technical outputs, Wave Data Labs worked in a way that uplifted the capability of our internal team, delivering lasting improvements to our ways of working."
+      </blockquote>
+      <p class="client-name">Tom O’Connor, CEO AptoNow</p>
+    </div>
+  </div>
+</div>
+```  
+
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="../img/test_1.png" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "You were able to work toward our goals, making suggestions to improve the workflow and then execute those suggestions in the code. You were friendly, thoughtful and hard working. We're really happy with the package you delivered. Thanks!"
+      </blockquote>
+      <p class="client-name">Dr Melinda Rostal, Principal Scientist, EcoHealth Alliance</p>
+    </div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="testimonial-box">
+  <div class="testimonial-content">
+    <div class="client-photo">
+      <img src="../img/test_2.png" alt="Client Photo" />
+    </div>
+    <div class="testimonial-text">
+      <blockquote>
+        "Dean's ability to unpack problems, package, engage, present, influence, validate, mentor and resolve is fantastic and highly sought after."
+      </blockquote>
+      <p class="client-name">Paul Oyston, Group Head of IT Data Analytics, IRT Group</p>
+    </div>
+  </div>
+</div>
+```
+
 
 ## How I have helped other clients
 

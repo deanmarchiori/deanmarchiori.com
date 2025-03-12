@@ -14,7 +14,7 @@ randomise outcomes; A lottery or competition website will use one to pick winner
 
 Flash back to the 1980's where down-on-his-luck unemployed ice cream man Michael Larsen cracked the (non-random) pattern in TV game show *Press Your Luck* and took them for over $100k. Sadly it [didnt end well for Larsen](https://web.archive.org/web/20170712041017/http://www.rotten.com/library/conspiracy/press-your-luck/) with Ponzi schemes, radio station challenges awry and a break and enter. But it goes to show what can happen if you don't take randomness seriously.  
 
-![Game show wizz and ice cream man Michael Larsen](larsen.jpg)
+![Game show wizz and ice cream man Michael Larsen](featured.jpg)
 
 ## (Aside) Ok but what is random?  And who is Ramsey?
 

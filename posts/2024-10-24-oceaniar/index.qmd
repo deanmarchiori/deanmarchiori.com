@@ -3,7 +3,7 @@ title: "OceaniaR 2024"
 subtitle: "R Development and Open Source Software Hackathon - Melbourne 2024"
 author: "Dean Marchiori"
 date: "2024-10-11"
-categories: [Analysis, R]
+categories: [analysis, R]
 image: "featured.jpg"
 editor_options: 
   chunk_output_type: console
@@ -77,6 +77,4 @@ A customised package for mapping and dealing with spatial data relating to pacif
 
 
 
-
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
 > **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**

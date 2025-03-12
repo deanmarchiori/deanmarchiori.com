@@ -3,7 +3,7 @@ title: "Is ChatGPT is a bullshit machine?"
 subtitle: "And what you should do about it"
 author: "Dean Marchiori"
 date: "2024-06-19"
-categories: [AI]
+categories: [ai]
 image: "featured.jpg"
 editor_options: 
   chunk_output_type: console

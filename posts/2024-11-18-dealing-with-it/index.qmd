@@ -3,7 +3,7 @@ title: "5 tips for dealing with IT"
 subtitle: "Getting data science done with your IT team"
 author: "Dean Marchiori"
 date: "2024-11-18"
-categories: [Analysis, R]
+categories: [analysis]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -70,5 +70,4 @@ but they work for the same company because they want to make an impact too. So r
 it and appreciate it. You can't do impactful work without them. 
 
 
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
 > **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**

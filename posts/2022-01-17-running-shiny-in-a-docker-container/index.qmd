@@ -2,7 +2,7 @@
 title: Running Shiny in a Docker container
 author: Dean Marchiori
 date: '2022-01-17'
-categories: [R, analysis]
+categories: [R, analysis, docker]
 image: "featured.png"
 ---
 

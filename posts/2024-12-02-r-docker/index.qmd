@@ -3,7 +3,7 @@ title: "Integrating R with Modern Tech Stacks"
 subtitle: "A Practical Guide to Using R and Docker for Integrating Statistical Analysis into Modern Tech Stacks"
 author: "Dean Marchiori"
 date: "2024-12-01"
-categories: [Docker, R]
+categories: [docker, R]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -135,5 +135,4 @@ portability.
 
 For teams looking to modernize their data science infrastructure, starting with Docker and R is a practical and transformative step.  
 
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/posts/) for weekly emails and no spam.**  
 > **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

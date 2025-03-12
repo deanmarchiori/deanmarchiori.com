@@ -3,7 +3,7 @@ title: "Data Science Workflows: Choosing the Right One"
 subtitle: "Do a Repro-Retro"
 author: "Dean Marchiori"
 date: "2024-10-08"
-categories: [Analysis]
+categories: [analysis]
 image: "featured.png"
 editor_options: 
   chunk_output_type: console
@@ -61,5 +61,4 @@ Enjoy.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4T8gz9AmNOA?si=8rGopHO-9r0iwh_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
->**Want to read more? Sign up to my mailing list [here](https://www.deanmarchiori.com/) for weekly emails and no spam.**  
 > **Looking for a data science consultant? Feel free to get in touch at [wavedatalabs.com.au](https://www.wavedatalabs.com.au/)**
