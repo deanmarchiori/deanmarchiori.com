@@ -5,7 +5,8 @@ listing:
   sort: "date desc"
 ---
 
-# Data Science & Statistical Consulting
+## Data Science & Statistical Consulting  
+
 I’m a specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype. I work with clients on complex problems across applied mathematics, statistical modelling, data analysis & machine learning.
 
 If you are interested in hiring me for a project get in touch.
@@ -35,7 +36,8 @@ If you are interested in hiring me for a project get in touch.
 :::
 
 ::: {.column width="30%"}
-<a href="https://calendly.com/wavedata/meeting" class="btn btn-outline-info btn-lg active" role="button" aria-pressed="true">Get Started</a> 
+<br>
+<a href="https://calendly.com/wavedata/meeting" class="btn btn-outline-primary btn-lg active" role="button" aria-pressed="true">Get Started</a> 
 :::
 
 ::: {.column width="35%"}
