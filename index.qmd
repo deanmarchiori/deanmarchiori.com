@@ -32,7 +32,8 @@ about:
 :::{#hero-heading}
 I'm a specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype. I work with clients on complex problems across applied mathematics, statistical modelling, data analysis & machine learning.  
 
-If you are interested in hiring me for a project get in touch here: [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)   
+I value long term trust and flexibility over billable hours, and use a unique [**subscription based model**](https://www.wavedatalabs.com.au/pricing) for my fees.
+If you are interested in hiring me for a project get in touch: [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)   
 ::: 
 
 
@@ -41,8 +42,6 @@ If you are interested in hiring me for a project get in touch here: [dean@waveda
 Dean Marchiori is an applied statistician and founder of [Wave Data Labs](https://www.wavedatalabs.com.au/) an independent data science consulting practice. He is co-chair of the Statistical Society of Australia’s section for [statistical computing and visualisation](https://statsoc.org.au/Statistical-Computing-and-Visualisation-Section). Previously Dean was a sessional teaching academic in the School of Mathematical and Physical Sciences at Macquarie University. His areas of specialisation are in time series modelling & anomaly detection, geospatial analytics, unsupervised clustering methods and the R programming language. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize. Dean holds the [Accredited Statistician (AStat)](https://statsoc.org.au/Professional-accreditation) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the [Institute of Analytics Professionals of Australia (IAPA)](https://www.iapa.org.au/).   
 
 ## [Consulting](consulting/) 
-
-I value long term trust and flexibility over billable hours. Unlike every other technical consultant, I offer a low-cost [**subscription based model**](https://www.wavedatalabs.com.au/pricing) for my fees.
 
 If you are interested in my work you can read some case studies, or see what my clients have to say about working with me on my [consulting page](consulting/index.qmd). Below are some recent projects delivered.
 
