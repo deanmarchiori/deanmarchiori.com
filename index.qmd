@@ -32,7 +32,7 @@ about:
 :::{#hero-heading}
 I'm a specialist independent data science consultant helping science & technology teams innovate innovate faster with data and maths. Not hype. I work with clients on complex problems across applied mathematics, statistical modelling, data analysis & machine learning.  
 
-If you are interested in hiring me for a project get in touch here: [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)
+If you are interested in hiring me for a project get in touch here: [dean@wavedatalabs.com.au](mailto:dean@wavedatalabs.com.au)   
 ::: 
 
 
@@ -42,7 +42,9 @@ Dean Marchiori is an applied statistician and founder of [Wave Data Labs](https:
 
 ## [Consulting](consulting/) 
 
-If you are interested in my work you can read some case studies, or see what my clients have to say about working with me. Check out my [consulting page](consulting/index.qmd). Below are some recent projects delivered.
+I value long term trust and flexibility over billable hours. Unlike every other technical consultant, I offer a low-cost [**subscription based model**](https://www.wavedatalabs.com.au/pricing) for my fees.
+
+If you are interested in my work you can read some case studies, or see what my clients have to say about working with me on my [consulting page](consulting/index.qmd). Below are some recent projects delivered.
 
 - 🕵 [**Anomaly detection and cluster analysis for financial crime detection:**](consulting/2024-01-01-service-2/) I built an automated system to detect suspicious companies and complex shell relationships. 
 - 🔥 [**Australian Bushfire Risk Analysis & Mapping:**](consulting/2024-01-01-service-1/) This interactive analysis was the first of its kind to highlight bushfire planning risk for the entire Australian mainland and recieved nationwide media coverage.   
