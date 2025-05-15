@@ -1,0 +1,170 @@
+---
+title: "Can you trust what AI is telling you?"  
+subtitle: "A plea for reproducible workflows for GenAI analysis"
+author: "Dean Marchiori"
+date: "2025-05-15"
+categories: [analysis, R, AI]
+image: "featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+
+### Can we trust the outputs that we are receiving from GenAI products? 
+
+Well trust is built in part, on transparency.
+
+The reason more traditional data science and analytics work found its way into mainstream decision making is because it was transparent and trusted. Most serious data scientists I speak to spend a lot of time worrying about [reproducibility](https://en.wikipedia.org/wiki/Reproducibility). From a scientific and computational perspective, this means their analysis be understood and reproduced by others and achieve the same results.
+
+### Why is this important? 
+
+Reproducibility enables us to understand, criticize and improve on the work of others. Without it, we are just making one flashy claim after another. 
+
+While the promises of GenAI are many - how can it ever be used reliably in decision making if we cannot understand, reproduce, critique and improve on each other's work?
+
+This is a challenge for Generative AI as its underlying mechanics are non-deterministic. Meaning for the exact same inputs, it will return different unpredictable outputs. 
+
+> Chat Completions are non-deterministic by default (which means model outputs may differ from request to request).  
+- https://platform.openai.com/docs/advanced-usage
+
+### How can this be addressed?  
+
+My challenge for users of GenAI is to meet the same standards as a cooking recipe book: Write down the exact steps you followed so someone else can follow them and get the same results. 
+
+Practically speaking: 
+
+1. If using a large language model (LLM), interact with it using code via an API. This will allow others to rerun it:
+  - With the exact same prompt
+  - With the exact same context (not whatever messed up history you have accumulated in your browser)  
+  - With the exact same model  
+2. [Set a seed.](https://platform.openai.com/docs/advanced-usage#reproducible-outputs) OpenAI (and possibly others) are introducing 'seeds' which allow you "some control towards deterministic outputs". 
+3. Share the code and the output (if you can) so others can replicate your work. 
+
+### Do seeds work? 
+
+Sort of. 
+
+Disappointingly, this feature is only in Beta and apparently only supported for models: `gpt-4-1106-preview` and `gpt-3.5-turbo-1106`. It also doesn't really work consistently, but I've found it does help a lot.  
+
+### Testing reproducible LLM interactions  
+
+Below I will use the [`{ellmer}`](https://ellmer.tidyverse.org/index.html) R package to generate an API call to an OpenAI model with a basic prompt: 
+
+> "Generate a short excerpt of news about a journey to Mars"
+
+I will do this twice without setting a seed value, and then I will repeat it with a seed value set and roughly compare the output. 
+
+```{r, echo=TRUE, eval = FALSE}
+library(ellmer)
+```
+
+First I will create a function to send a basic prompt to an OpenAI LLM. 
+```{r, echo=TRUE, eval = FALSE}
+generate_response <- function(prompt,
+                              system_message,
+                              model,
+                              seed = NULL) {
+    print("LLM RESPONSE ==========================")
+    chat <- ellmer::chat_openai(
+        model = model,
+        system_prompt = system_message,
+        turns = NULL,
+        seed = seed,
+        echo = "text"
+    )
+    chat$chat(prompt)
+}
+```
+
+I will run this twice with no seed value. 
+```{r, echo=TRUE, eval = FALSE}
+noseed <- replicate(n = 2, {
+    generate_response(
+        system_message = "You are a helpful assistant.",
+        prompt = "Generate a short excerpt of news about a journey to Mars",
+        model = "gpt-3.5-turbo-1106",
+        seed = NULL
+    )
+})
+```
+
+```
+[1] "LLM RESPONSE =========================="
+"Earlier today, the Mars One mission successfully launched its first crewed spacecraft towards the red planet. The crew of six astronauts will 
+embark on a historic journey, with the goal of establishing a permanent human settlement on Mars. The mission, expected to take approximately 
+nine months, marks a significant milestone in space exploration and is sure to captivate the imagination of people around the world. Stay tuned 
+for updates on this exciting journey to the final frontier."
+[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on Mars today, marking a major milestone in the exploration of the red planet. The rover will 
+conduct crucial experiments and collect samples to search for signs of ancient life and pave the way for future human missions. This historic 
+journey to Mars offers hope for new discoveries and advancements in space exploration."
+```
+
+Using [Jaccaard similarity](https://en.wikipedia.org/wiki/Jaccard_index) this has a similarity value of: 
+
+```{r}
+calc_jaccard <- function(text1, text2) {
+    tokens1 <- unique(strsplit(tolower(text1), "\\W+")[[1]])
+    tokens2 <- unique(strsplit(tolower(text2), "\\W+")[[1]])
+
+    intersection <- length(intersect(tokens1, tokens2))
+    union <- length(union(tokens1, tokens2))
+    jaccard_sim <- intersection / union
+
+    return(jaccard_sim)
+}
+```
+
+```{r, eval = FALSE}
+calc_jaccard(noseed[1], noseed[2])
+```
+
+```
+[1] 0.2588235
+```
+
+Now we repeat with with a random seed value chosen: 
+
+```{r, echo=TRUE, eval = FALSE}
+withseed <- replicate(n = 2, {
+    generate_response(
+        system_message = "You are a helpful assistant.",
+        prompt = "Generate a short excerpt of news about a journey to Mars",
+        model = "gpt-3.5-turbo-1106",
+        seed = 12345
+    )
+})
+```
+
+```
+[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on the surface of Mars today, marking a significant milestone in the mission to search for signs 
+of ancient life on the red planet. The journey, which began seven months ago, culminated in a nail-biting descent and landing in the Jezero 
+Crater. Scientists and engineers are now eagerly awaiting the first images and data from the mission, which aims to pave the way for future human
+exploration of Mars."
+[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on the surface of Mars today, marking a significant milestone in the mission to search for signs 
+of ancient life on the red planet. The journey, which began seven months ago, culminated in a nail-biting descent and landing in the Jezero 
+Crater. Scientists and engineers are now eagerly awaiting the first images and data from the mission, which aims to pave the way for future human
+exploration of Mars."
+```
+
+And we get a Jaccard Index of: 
+```{r, eval = FALSE}
+calc_jaccard(withseed[1], withseed[2])
+```
+
+```
+[1] 1
+```  
+
+This minor step has allowed me to rerun the workflow and achieve the same response. Making these workflow changes I think will go a long way to making GenAI outputs more transperent and allow robust discussions around how they work and how they can be used to help decision making. 
+
+Note: A more rigourous test with better similirty measurement (using embeddings) of this is done in this post: [https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter)
+
+
+> **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**

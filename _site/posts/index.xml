@@ -17,7 +17,235 @@
 <width>144</width>
 </image>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Tue, 04 Mar 2025 13:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 14 May 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Can you trust what AI is telling you?</title>
+  <dc:creator>Dean Marchiori</dc:creator>
+  <link>https://www.deanmarchiori.com/posts/2025-05-15-trust-in-ai/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="can-we-trust-the-outputs-that-we-are-receiving-from-genai-products" class="level3">
+<h3 class="anchored" data-anchor-id="can-we-trust-the-outputs-that-we-are-receiving-from-genai-products">Can we trust the outputs that we are receiving from GenAI products?</h3>
+<p>Well trust is built in part, on transparency.</p>
+<p>The reason more traditional data science and analytics work found its way into mainstream decision making is because it was transparent and trusted. Most serious data scientists I speak to spend a lot of time worrying about <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducibility</a>. From a scientific and computational perspective, this means their analysis be understood and reproduced by others and achieve the same results.</p>
+</section>
+<section id="why-is-this-important" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-this-important">Why is this important?</h3>
+<p>Reproducibility enables us to understand, criticize and improve on the work of others. Without it, we are just making one flashy claim after another.</p>
+<p>While the promises of GenAI are many - how can it ever be used reliably in decision making if we cannot understand, reproduce, critique and improve on each other’s work?</p>
+<p>This is a challenge for Generative AI as its underlying mechanics are non-deterministic. Meaning for the exact same inputs, it will return different unpredictable outputs.</p>
+<blockquote class="blockquote">
+<p>Chat Completions are non-deterministic by default (which means model outputs may differ from request to request).<br>
+- https://platform.openai.com/docs/advanced-usage</p>
+</blockquote>
+</section>
+<section id="how-can-this-be-addressed" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-this-be-addressed">How can this be addressed?</h3>
+<p>My challenge for users of GenAI is to meet the same standards as a cooking recipe book: Write down the exact steps you followed so someone else can follow them and get the same results.</p>
+<p>Practically speaking:</p>
+<ol type="1">
+<li>If using a large language model (LLM), interact with it using code via an API. This will allow others to rerun it:</li>
+</ol>
+<ul>
+<li>With the exact same prompt</li>
+<li>With the exact same context (not whatever messed up history you have accumulated in your browser)<br>
+</li>
+<li>With the exact same model<br>
+</li>
+</ul>
+<ol start="2" type="1">
+<li><a href="https://platform.openai.com/docs/advanced-usage#reproducible-outputs">Set a seed.</a> OpenAI (and possibly others) are introducing ‘seeds’ which allow you “some control towards deterministic outputs”.</li>
+<li>Share the code and the output (if you can) so others can replicate your work.</li>
+</ol>
+</section>
+<section id="do-seeds-work" class="level3">
+<h3 class="anchored" data-anchor-id="do-seeds-work">Do seeds work?</h3>
+<p>Sort of.</p>
+<p>Disappointingly, this feature is only in Beta and apparently only supported for models: <code>gpt-4-1106-preview</code> and <code>gpt-3.5-turbo-1106</code>. It also doesn’t really work consistently, but I’ve found it does help a lot.</p>
+</section>
+<section id="testing-reproducible-llm-interactions" class="level3">
+<h3 class="anchored" data-anchor-id="testing-reproducible-llm-interactions">Testing reproducible LLM interactions</h3>
+<p>Below I will use the <a href="https://ellmer.tidyverse.org/index.html"><code>{ellmer}</code></a> R package to generate an API call to an OpenAI model with a basic prompt:</p>
+<blockquote class="blockquote">
+<p>“Generate a short excerpt of news about a journey to Mars”</p>
+</blockquote>
+<p>I will do this twice without setting a seed value, and then I will repeat it with a seed value set and roughly compare the output.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ellmer)</span></code></pre></div>
+</div>
+<p>First I will create a function to send a basic prompt to an OpenAI LLM.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">generate_response <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(prompt,</span>
+<span id="cb2-2">                              system_message,</span>
+<span id="cb2-3">                              model,</span>
+<span id="cb2-4">                              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">seed =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span>) {</span>
+<span id="cb2-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LLM RESPONSE =========================="</span>)</span>
+<span id="cb2-6">    chat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ellmer<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">chat_openai</span>(</span>
+<span id="cb2-7">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">model =</span> model,</span>
+<span id="cb2-8">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">system_prompt =</span> system_message,</span>
+<span id="cb2-9">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">turns =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span>,</span>
+<span id="cb2-10">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">seed =</span> seed,</span>
+<span id="cb2-11">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">echo =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"text"</span></span>
+<span id="cb2-12">    )</span>
+<span id="cb2-13">    chat<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">chat</span>(prompt)</span>
+<span id="cb2-14">}</span></code></pre></div>
+</div>
+<p>I will run this twice with no seed value.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">noseed <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replicate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, {</span>
+<span id="cb3-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">generate_response</span>(</span>
+<span id="cb3-3">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">system_message =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"You are a helpful assistant."</span>,</span>
+<span id="cb3-4">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">prompt =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Generate a short excerpt of news about a journey to Mars"</span>,</span>
+<span id="cb3-5">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">model =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt-3.5-turbo-1106"</span>,</span>
+<span id="cb3-6">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">seed =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb3-7">    )</span>
+<span id="cb3-8">})</span></code></pre></div>
+</div>
+<pre><code>[1] "LLM RESPONSE =========================="
+"Earlier today, the Mars One mission successfully launched its first crewed spacecraft towards the red planet. The crew of six astronauts will 
+embark on a historic journey, with the goal of establishing a permanent human settlement on Mars. The mission, expected to take approximately 
+nine months, marks a significant milestone in space exploration and is sure to captivate the imagination of people around the world. Stay tuned 
+for updates on this exciting journey to the final frontier."
+[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on Mars today, marking a major milestone in the exploration of the red planet. The rover will 
+conduct crucial experiments and collect samples to search for signs of ancient life and pave the way for future human missions. This historic 
+journey to Mars offers hope for new discoveries and advancements in space exploration."</code></pre>
+<p>Using <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccaard similarity</a> this has a similarity value of:</p>
+<pre><code>[1] 0.2588235</code></pre>
+<p>Now we repeat with with a random seed value chosen:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">withseed <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replicate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, {</span>
+<span id="cb6-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">generate_response</span>(</span>
+<span id="cb6-3">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">system_message =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"You are a helpful assistant."</span>,</span>
+<span id="cb6-4">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">prompt =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Generate a short excerpt of news about a journey to Mars"</span>,</span>
+<span id="cb6-5">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">model =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt-3.5-turbo-1106"</span>,</span>
+<span id="cb6-6">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">seed =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12345</span></span>
+<span id="cb6-7">    )</span>
+<span id="cb6-8">})</span></code></pre></div>
+</div>
+<pre><code>[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on the surface of Mars today, marking a significant milestone in the mission to search for signs 
+of ancient life on the red planet. The journey, which began seven months ago, culminated in a nail-biting descent and landing in the Jezero 
+Crater. Scientists and engineers are now eagerly awaiting the first images and data from the mission, which aims to pave the way for future human
+exploration of Mars."
+[1] "LLM RESPONSE =========================="
+"NASA's Perseverance rover successfully landed on the surface of Mars today, marking a significant milestone in the mission to search for signs 
+of ancient life on the red planet. The journey, which began seven months ago, culminated in a nail-biting descent and landing in the Jezero 
+Crater. Scientists and engineers are now eagerly awaiting the first images and data from the mission, which aims to pave the way for future human
+exploration of Mars."</code></pre>
+<p>And we get a Jaccard Index of:</p>
+<pre><code>[1] 1</code></pre>
+<p>This minor step has allowed me to rerun the workflow and achieve the same response. Making these workflow changes I think will go a long way to making GenAI outputs more transperent and allow robust discussions around how they work and how they can be used to help decision making.</p>
+<p>Note: A more rigourous test with better similirty measurement (using embeddings) of this is done in this post: <a href="https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter">https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter</a></p>
+<blockquote class="blockquote">
+<p><strong>Looking for a data science consultant? Feel free to <a href="https://www.deanmarchiori.com">get in touch here</a></strong></p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>analysis</category>
+  <category>R</category>
+  <category>AI</category>
+  <guid>https://www.deanmarchiori.com/posts/2025-05-15-trust-in-ai/</guid>
+  <pubDate>Wed, 14 May 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://www.deanmarchiori.com/posts/2025-05-15-trust-in-ai/featured.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>★★★★★</title>
   <dc:creator>Dean Marchiori</dc:creator>
@@ -1924,73 +2152,6 @@ out skel qt;</code></pre>
   <guid>https://www.deanmarchiori.com/posts/2023-05-29-forecasting/</guid>
   <pubDate>Sun, 28 May 2023 14:00:00 GMT</pubDate>
   <media:content url="https://www.deanmarchiori.com/posts/2023-05-29-forecasting/featured.png" medium="image" type="image/png" height="103" width="144"/>
-</item>
-<item>
-  <title>Random Number Generator Testing</title>
-  <dc:creator>Dean Marchiori</dc:creator>
-  <link>https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>We had really interesting discussion with a company recently who needed a random number generator certified.</p>
-<p>Randomness, like time or space, is one of these deep concepts that are super hard to reason about. Despite this, it’s fairly common to see random number generators in practice. A casino will use one in their gaming software to randomise outcomes; A lottery or competition website will use one to pick winners; Scientists use them to run simulations and cryptographic applications are powered by some form of randomness.</p>
-<p>Flash back to the 1980’s where down-on-his-luck unemployed ice cream man Michael Larsen cracked the (non-random) pattern in TV game show <em>Press Your Luck</em> and took them for over $100k. Sadly it <a href="https://web.archive.org/web/20170712041017/http://www.rotten.com/library/conspiracy/press-your-luck/">didnt end well for Larsen</a> with Ponzi schemes, radio station challenges awry and a break and enter. But it goes to show what can happen if you don’t take randomness seriously.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/featured.jpg" class="img-fluid figure-img"></p>
-<figcaption>Game show wizz and ice cream man Michael Larsen</figcaption>
-</figure>
-</div>
-<section id="aside-ok-but-what-is-random-and-who-is-ramsey" class="level2">
-<h2 class="anchored" data-anchor-id="aside-ok-but-what-is-random-and-who-is-ramsey">(Aside) Ok but what is random? And who is Ramsey?</h2>
-<p>Randomness is an actual or apparent lack of pattern, but it’s kind of hard to test and even its very nature is somewhat unclear. In 1903, a British mathematician called <a href="https://en.wikipedia.org/wiki/Frank_Ramsey_(mathematician)">Frank Ramsey</a> was born. Ramsey was a militant atheist, but interestingly his brother went on to become Archbishop of Canterbury. He went on to study mathematics and economics, becoming a student of famous economist John Maynard Keynes. Somehow he ended up also translating a German book of logical philosophy into English and joined a <a href="https://en.wikipedia.org/wiki/Cambridge_Apostles">secret intellectual society</a> just after the war. A minor discovery of his ended up blossoming into what is known as Ramsey theory, which is a theory in mathematical combinatorics showing that in any sufficiently large system, however disordered, there is always <em>some</em> order. This has had interesting (and conspiratorial) implications for whether there is even such a thing as ‘random’. Oh and by the way, all this happened before he died at age 26 after complications from liver disease likely caused by swimming in a river.</p>
-</section>
-<section id="types-of-random-number-generators-rngs" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-random-number-generators-rngs">Types of Random Number Generators (RNGs)</h2>
-<p>Generally RNG’s can generate <strong>True</strong> random numbers or <strong>Pseudo</strong> random numbers. True RNGs generate random bits from natural stochastic sources like background radiation, quantum effects, atmospheric noise etc. Next time you are tempted to toss a coin, perhaps head over to <a href="random.org">random.org</a> instead for some ‘true’ randomness.</p>
-<p>There is a fun <a href="https://www.random.org/history/">history lesson</a> for how random.org got started with true RNG’s generated using random static from a cheap $10 radio, laden with a post-it note advising passers by not to fiddle with the knobs.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/random.jpg" class="img-fluid figure-img"></p>
-<figcaption>Early true RNG using atmospheric noise from a cheap radio</figcaption>
-</figure>
-</div>
-<p>Pseudo-random numbers are generated using a ‘seed’ that deterministically produces numbers that look random, but can be entirely reproduced from the initial seed condition. This is often useful (and used by me all the time) when you need a random sample, but you need it to replicated exactly for scientific reproducibility purposes.</p>
-</section>
-<section id="statistical-tests" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-tests">Statistical Tests</h2>
-<p>Given randomness itself is hard to test, there are a number of statistical test suites that perform a battery of diagnostics on a large sample of random numbers in order to test various aspects of randomness. One prominent test suite for cryptographic random bits is developed by <a href="https://www.nist.gov/">NIST</a> which uses <a href="https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final">15 different statistical tests.</a></p>
-<ol type="1">
-<li>The Frequency (Monobit) Test</li>
-<li>Frequency Test within a Block</li>
-<li>The Runs Test</li>
-<li>Tests for the Longest-Run-of-Ones in a Block</li>
-<li>The Binary Matrix Rank Test</li>
-<li>The Discrete Fourier Transform (Spectral) Test</li>
-<li>The Non-overlapping Template Matching Test</li>
-<li>The Overlapping Template Matching Test</li>
-<li>Maurer’s “Universal Statistical” Test</li>
-<li>The Linear Complexity Test</li>
-<li>The Serial Test</li>
-<li>The Approximate Entropy Test</li>
-<li>The Cumulative Sums (Cusums) Test</li>
-<li>The Random Excursions Test</li>
-<li>The Random Excursions Variant Test</li>
-</ol>
-<p>So, like much of the mathematics behind every day scenarios there is a fascinating history and deep technical and philosophical implications. Given what is on the line for organisations relying on randomness, its useful to engage a specialist to help run and interpret these test suites.</p>
-<p>And remember, if you get it wrong, someone unemployed ice-cream man is just waiting to swoop in and take advantage.</p>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>statistics</category>
-  <guid>https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/</guid>
-  <pubDate>Thu, 18 May 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://www.deanmarchiori.com/posts/2023-05-18-RNG-Testing/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
