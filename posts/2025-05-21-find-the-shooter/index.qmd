@@ -1,0 +1,370 @@
+---
+title: "Find the shooter"  
+subtitle: "Bayesian numerical estimation of fat-tailed distributions"
+author: "Dean Marchiori"
+date: "2025-05-21"
+categories: [analysis, R, bayesian]
+image: "img/featured.png"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: false
+  warning: false 
+  message: false
+---  
+
+```{r setup}
+library(ggplot2)
+library(tibble)
+library(dplyr)
+library(gganimate)
+library(rgl)
+library(cmdstanr)
+library(tidyr)
+
+set.seed(123)
+
+knitr::opts_chunk$set(echo = TRUE)
+knitr::knit_hooks$set(webgl = hook_webgl)
+```
+
+*A palace in the middle of a fictional city is protected by a large wall. During the night, in protest, a citizen randomly opens fire at the palace walls with a machine gun from a fixed but hidden vantage point, riddling the long, straight palace walls with bullet holes. You are called in the morning to the Emperors office to analyse the bullet holes in the wall and determine where the shooter was firing from. *  
+
+![](img/featured.png){width=50% fig-align="center"}
+
+::: {.callout-important}
+## Main Takeaways
+
+- There are many processes in the world that belong to [heavy or fat tailed distributions.](https://en.wikipedia.org/wiki/Fat-tailed_distribution)  
+- These are dangerous and difficult to work with.   
+- Often, simplifying assumptions (like gaussian approximation) can produce nice shortcuts, but when it goes wrong - it will go catastrophically wrong.  
+- Bayesian methods can give nice numerical approximations for solving these problems. 
+- Beware: They are *very* slow to converge. 
+
+:::
+
+Here is a rudimentary diagram 
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="img/diagram.png" alt="Cauchy Animation" style="width: 45%;"/>
+  <img src="img/palace.png" alt="Normal Animation" style="width: 45%;"/>
+</div>
+
+
+We can take any one bullet hole and reframe it mathematically: 
+
+![](img/mathdiag.jpg){width=50% fig-align="center"}
+
+From the diagram we express the unknown firing angle $\theta$ for some shot, $k$. The shooter is in position $(\alpha, \beta)$. We can express the following:
+
+$$
+tan (\theta_k) = \frac{x_k - \alpha}{\beta}
+$$
+
+Giving the location along the wall $x_k$ as:  
+
+$$
+x_k = \beta tan(\theta_k) + \alpha
+$$
+
+If we assume the bullets are sprayed uniformly (and angrily) across an angle of $-\pi/2$ to $\pi/2$ (-90° to 90°) we can simulate the bullet strike locations ($x_k$) for a known shooter location ($\alpha$, $\beta$). 
+
+Let's set the shooter location to 50m right of centre and 70m away from the wall. We will do this to generate the simulated bullet holes. When solving this, 
+we won't use these values directly, but rather we will try to recover them using a few analysis techniques. 
+
+```{r}
+# Shooter Location in meters from centre of wall
+alpha <- 50
+beta <- 70
+
+# Number of shots
+N <- 1000
+
+# simulated firing angles
+theta <- runif(n = N, min = -pi / 2, max = pi / 2)
+
+# Hole locations in wall
+x_k <- beta * tan(theta) + alpha
+
+```
+
+```{r}
+data.frame(x = x_k) |>
+    ggplot(aes(x)) +
+    geom_histogram() +
+    scale_x_continuous(limits = c(-500, 500)) +
+    geom_vline(xintercept = alpha, lty = 2, col = "red") +
+    theme_bw()
+```
+
+From above we assumed the shooting angle is uniformly distributed (rather than aimed at a specific narrow target). So the probability of a given firing angle is: 
+
+$$
+p(\theta) = \frac{1}{\pi}
+$$
+
+In order to find the probability density function for our *bullet strikes* $p(x)$ we can use a [rule](https://en.wikipedia.org/wiki/Probability_density_function#Function_of_random_variables_and_change_of_variables_in_the_probability_density_function) to change the variable in a probability density function: 
+
+$$
+p(x) = p(\theta)\lvert\frac{d\theta}{dx}\rvert
+$$
+
+For the last part of this equation, we can take the derivative of both sides of $\beta tan(\theta) = x - \alpha$ (see above) with respect to $x$ giving: 
+
+$$
+\beta sec^2(\theta) \times \frac{d\theta}{dx} = 1
+$$
+
+Doing some rearranging and using some trigonometric identities we get:              
+
+$$
+p(x | \alpha, \beta) = \frac{1}{\pi \beta [1 + (\frac{x-\alpha}{\beta})^2]}
+$$
+
+which happens to be the PDF of the [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_distribution).   
+
+The parameters for the Cauchy (location and scale parameters) correspond to our alpha and beta, which describe the horizontal and vertical coordinates of our shooter respectively.
+
+We can visually overlay this on our simulated sample above to verify. 
+
+```{r}
+data.frame(x = x_k) |>
+    ggplot() +
+    geom_histogram(aes(x, y = ..density..)) +
+    scale_x_continuous(limits = c(-500, 500)) +
+    geom_function(fun = dcauchy, args = list(location = alpha, scale = beta), color = "blue", size = 1) +
+    geom_vline(xintercept = alpha, lty = 2, col = "red") +
+    theme_bw()
+```
+
+This is a problem as the Cauchy distribution, while [stable](https://en.wikipedia.org/wiki/Stable_distribution), it has undefined mean and variance. The above histogram looks well behaved, but I have truncated the x-axis. It's actually extremely heavy tailed. Below is the same data in all its glory. 
+
+```{r}
+data.frame(x = x_k) |>
+    ggplot() +
+    geom_histogram(aes(x, y = ..density..)) +
+    #scale_x_continuous(limits = c(-500, 500)) +
+    geom_vline(xintercept = alpha, lty = 2, col = "red") +
+    theme_bw()
+```
+
+
+The implication here is that we cannot rely on the sample mean from a cauchy distribution to converge under the [CLT](https://en.wikipedia.org/wiki/Central_limit_theorem) to the true mean, so it's unrelibale from an inference perspective. The existence of the fat-tails will prevent this convergence as seen below in the simulation. We can compare this, for reference, to the rapid convergence of samples from a standard normal distribution to its true mean. 
+
+```{r, eval = FALSE, echo = FALSE}
+N <- 10000
+
+df <- tibble(
+draw = 1:N,
+sample = rcauchy(n = N)
+) |> 
+mutate(sample_mean = cumsum(sample)/draw)
+
+p <- ggplot(df, aes(x = draw, y = sample_mean)) +
+  geom_line(color = "red", size = 1) +
+  geom_hline(yintercept = 0, lty = 2) +
+  labs(
+    title = "Sample Mean of Cauchy Samples",
+    x = "Draw",
+    y = "Cumulative Mean"
+  ) +
+  theme_minimal() +
+  transition_reveal(draw) 
+
+# Render the animation
+animate(p, nframes = 100, fps = 50, renderer = gifski_renderer("cauchy.gif"))
+
+```
+
+```{r, eval = FALSE, echo = FALSE}
+N <- 10000
+
+df <- tibble(
+draw = 1:N,
+sample = rnorm(n = N)
+) |> 
+mutate(sample_mean = cumsum(sample)/draw)
+
+p <- ggplot(df, aes(x = draw, y = sample_mean)) +
+  geom_line(color = "blue", size = 1) +
+  geom_hline(yintercept = 0, lty = 2) +
+  labs(
+    title = "Sample Mean of Normal Samples",
+    x = "Draw",
+    y = "Cumulative Mean"
+  ) +
+  theme_minimal() +
+  transition_reveal(draw) 
+
+# Render the animation
+animate(p, nframes = 100, fps = 50, renderer = gifski_renderer("normal.gif"))
+
+```
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="img/cauchy.gif" alt="Cauchy Animation" style="width: 45%;"/>
+  <img src="img/normal.gif" alt="Normal Animation" style="width: 45%;"/>
+</div>
+
+There are a few sensible heuristics to overcome this such as relying on the mode/median estimates. Another way that is tricky but possible is to use maximum likelihood estimation. 
+
+I won't do this directly, but you can easily plot the log-likelihood of the distribution over a grid of parameter values and get a good idea of what's going on. 
+
+$$
+\hat{\ell}(x_{1}, \dotsc, x_{n} \mid \alpha, \beta) = -n \log(\beta \pi) - \sum_{i=1}^{n} \log\left(1 + \left(\frac{x_{i} - \alpha}{\beta}\right)^{2}\right)
+$$
+
+::: {.callout-tip}
+## Interactive Charts
+
+The below chart is interactive. Use your mouse to pan and zoom.
+:::
+
+```{r}
+#| webgl: true
+
+# Log-likelihood function
+loglik <- function(x_k, alpha, beta) {
+    -length(x_k) * log(beta * pi) - sum(log(1 + ((x_k - alpha) / beta)^2))
+}
+
+# Define grid of alpha and beta values
+alphas <- seq(1, 100)
+betas <- seq(1, 100)
+
+# Compute over grid of parameters
+grid <- outer(alphas, betas, Vectorize(function(alpha, beta) loglik(x_k, alpha, beta)))
+normalised_grid <- matrix(exp(grid - max(grid)), nrow = length(alphas), ncol = length(betas))
+
+# plot
+persp3d(alphas,
+    betas,
+    normalised_grid,
+    shade = 0.5, col = "light green",
+    lit = TRUE, xlab = "Alpha", ylab = "Beta", zlab = "Log-Likelihood"
+)        
+
+```
+
+
+A fun way to try and solve this is using Bayesian inference. It would be hard (maybe not possible) to solve it analytically, but we can do this numerically using [Hamiltonian Monte Carlo](https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo) (or a close variant of this) via the `stan` language in `R`.  
+
+Below is the basic model. I can set an uninformative, uniform prior essentially over a 100m x 100m grid outside the palace gate. 
+
+```{text}
+data
+{
+    int<lower = 0> N;
+    vector[N] x_k;
+}
+parameters
+{
+    real mu;
+    real<lower = 0> sigma;
+}
+model
+{
+    // Priors
+    mu ~ uniform(0, 100);
+    sigma ~ uniform(0, 100);
+
+    // Likelihood  
+    x_k ~ cauchy(mu, sigma);
+}  
+```
+
+```{r, message = FALSE}
+#Simulated data
+data_list <- list(N = N, x_k = x_k)
+
+# Compile
+model <- cmdstan_model(here::here("posts/2025-05-21-find-the-shooter/model.stan"))
+
+fit <- model$sample(
+  data = data_list,
+  seed = 123,
+  chains = 4,
+  parallel_chains = 4,
+  iter_sampling = 1000,
+  iter_warmup = 500
+)
+
+```
+
+```{r}
+fit$summary() |>
+    knitr::kable(digits = 2)
+```
+
+We can see it has recovered the parameters `mu` and `sigma`. Which are [used in stan](https://mc-stan.org/docs/functions-reference/unbounded_continuous_distributions.html#cauchy-distribution) to represent the location and scale parameters, which we have called $\alpha$ and $\beta$ representing the x and y axis locations of our shooter.
+
+Below we can see an animation of the convergence of our sampling based on how many data points we used in the estimation. 
+
+```{r, eval = FALSE, echo = FALSE}
+sim_sample <- function(N) {
+    # Simulated data
+    data_list <- list(N = N, x_k = x_k[1:N])
+
+    # Compile
+    model <- cmdstan_model(here::here("posts/2025-05-21-find-the-shooter/model.stan"))
+
+    fit <- model$sample(
+        data = data_list,
+        seed = 123,
+        chains = 4,
+        parallel_chains = 4,
+        iter_sampling = 1000,
+        iter_warmup = 500
+    )
+
+    fit$summary()
+}
+
+
+xx <- purrr::map_df(seq(from = 1, to = 1000, length.out = 100), sim_sample, .id = "id")
+
+xx_plt <- xx |>
+    filter(variable %in% c("mu", "sigma")) |>
+    select(id, variable, mean, q5, q95) |>
+    pivot_wider(names_from = c(variable), values_from = c(mean, q5, q95)) |>
+    mutate(id = round(seq(from = 1, to = 1000, length.out = 100), 0))
+
+bayes_p <- ggplot(data = xx_plt) +
+    geom_point(aes(mean_mu, mean_sigma)) +
+    geom_errorbarh(aes(y = mean_sigma, xmin = q5_mu, xmax = q95_mu), lty = 2, col = "grey50") +
+    geom_errorbar(aes(x = mean_mu, ymin = q5_sigma, ymax = q95_sigma), lty = 2, col = "grey50") +
+    geom_point(aes(x = 50, y = 70), color = "red", size = 3, inherit.aes = F, shape = 3, size = 5) +
+    annotate("text", x = 65, y = 72, label = "Shooter location", size = 5) +
+    theme_bw() +
+    transition_states(id) +
+    labs(
+        title = "Estimated using this many bullet holes: {closest_state}",
+        x = "alpha",
+        y = "beta"
+    )
+
+animate(bayes_p, nframes = 100, fps = 10, renderer = gifski_renderer("test.gif"))
+
+
+```
+
+![](img/test.gif)
+
+
+## Final thoughts  
+
+So a couple of things, firstly I have used 1000 data points to help generate my posterior samples. Is it reasonable that in this toy example the shooter would have
+unloaded 1000 rounds? No. It would still work with fewer data, but a key point here is how slow these estimates converge. I have picked a high number to easily demonstrate my point, but you can refer to the animation above to see how unstable it is with few data points. This is a reality in dealing with heavy-tailed distributions like the Cauchy. Looking at the same criticism from another perspective, the data generating process will produce outliers. How likely is it that our wall is thousands of meters long? Would we even detect the shots? Again, probably no. So you might ask why not just truncate the tails and approximate this process using a Gaussian? It would certainly give you easier to obtain estimates of the parameters and fewer headaches. The point here is it would work...until it didn't. In fields like financial markets, using gaussian assumptions for fat tailed processes will likely make you look smart in the short term, but when it goes wrong it will go catastrophically wrong. Taleb discusses this at length in this book [Statistical Consequences of Fat Tails](https://arxiv.org/abs/2001.10488).   
+
+
+**Note:** This is an adaptation of a well known problem called 'Gull's lighthouse problem', first mentioned in the paper by Gull "Bayesian inductive inference and maximum entropy"[^1]. There are loads of blog posts solving this, I haven't done anything novel except enjoy replicating this by hand to learn a bit more. The mathematical derivation I have used comes from "Data Analysis: A Bayesian Tutorial" by Sivia and Skilling.[^2]
+
+
+
+
+[^1]: Gull, Stephen F. "Bayesian inductive inference and maximum entropy." Maximum-entropy and bayesian methods in science and engineering: Foundations. Dordrecht: Springer Netherlands, 1988. 53-74.  
+
+[^2]: Sivia, D., & Skilling, J. (2006). Data analysis: a Bayesian tutorial. OUP Oxford.
+
+
+> **Looking for a data science consultant? Feel free to [get in touch here](https://www.deanmarchiori.com)**
