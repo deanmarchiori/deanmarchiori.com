@@ -1,6 +1,6 @@
 ---
 title: "Dean Marchiori"
-subtitle: "Consultant Statistician & Applied Mathematician"
+subtitle: "Consultant Statistician & Principal Data Scientist"
 about:
   id: hero-heading 
   template: jolla
@@ -24,7 +24,7 @@ about:
       href: https://bsky.app/profile/deanmarchiori.bsky.social
     - icon: file-pdf
       text: Download CV
-      href: https://github.com/deanmarchiori/CV/blob/master/CV/CV.pdf
+      href: https://github.com/deanmarchiori/CV/blob/master/CV/CV-MARCHIORI.pdf
 
 ---
 
@@ -73,10 +73,10 @@ To view a verified list of my scientific publications see [ORCiD](https://orcid.
 If you would like to see how I code, all of my public projects are hosted on [Github](https://github.com/deanmarchiori) 
 
 
-- [**Data Science Workflows in R:**](https://datasciworkflows.netlify.app/) An introduction to deploying production quality R code [e-book, author]
-- [**{weatherOz}:**](https://docs.ropensci.org/weatherOz/) An API Client for Australian Weather and Climate Data Resources [R Package, co-author]  
-- [**bluey-search:**](https://deanmarchiori.shinyapps.io/blueysearch/) Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can't handle flicking through all 130 of them? Problem solved. [shiny app, author]
-- [**analysis-flow:**](https://github.com/deanmarchiori/analysis-flow) Data Analysis Workflows & Reproducibility Learning Resources [resource list]
+- 📘 [**Data Science Workflows in R:**](https://datasciworkflows.netlify.app/) An introduction to deploying production quality R code [e-book, author]
+- ☀️ [**{weatherOz}:**](https://docs.ropensci.org/weatherOz/) An API Client for Australian Weather and Climate Data Resources [R Package, co-author]  
+- 🐶 [**bluey-search:**](https://deanmarchiori.shinyapps.io/blueysearch/) Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can't handle flicking through all 130 of them? Problem solved. [shiny app, author]
+- 📋 [**analysis-flow:**](https://github.com/deanmarchiori/analysis-flow) Data Analysis Workflows & Reproducibility Learning Resources [resource list]
 
 
 ## Talks  
@@ -93,3 +93,10 @@ Below are some invited talks, workshops and other events of note:
 - **2019-11-28:** I gave an invited talk titled *Pearls and pitfalls of time series analysis using Google Analytics data* at [WOMBAT2019](https://www.monash.edu/business/events/past-events/general/wombat2019) workshop organised by the Monash Business Analytics Team, at the State Library Victoria. [[slides](https://github.com/deanmarchiori/WOMBAT2019)]
 - **2018-10-16:** I Presented a seminar titled *Unsupervised outlier detection systems for e-commerce* as part of the SMART Seminar Series at the University of Wollongong. [[video](https://youtu.be/BMODMydyrR8)]
 
+Featured interviews and talks:  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QC6yLHkG3u8?si=XqBinGF_ge-y8BWl&amp;start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4T8gz9AmNOA?si=wx0Qm7Wz7C6c9rex" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BMODMydyrR8?si=IRV6JHQs5c_BjR2P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
