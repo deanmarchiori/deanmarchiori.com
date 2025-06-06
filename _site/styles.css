@@ -45,5 +45,6 @@ a {
 h2 a {
     color: inherit; /* Inherits the color of the <h2> */
     text-decoration: none; /* Removes underline */
+    font-weight: bold;      /* Makes the link text bold */
 }
 
