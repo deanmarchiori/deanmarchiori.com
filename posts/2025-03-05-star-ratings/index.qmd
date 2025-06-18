@@ -1,6 +1,6 @@
 ---
-title: "★★★★★"  
-subtitle: "Choosing an Airbnb using mathematical analysis of review data"
+title: "Choosing an Airbnb using mathematical analysis of review data"
+subtitle: "★★★★★" 
 author: "Dean Marchiori"
 date: "2025-03-05"
 categories: [analysis, R, bayesian]
@@ -100,15 +100,17 @@ $$
 x <- seq(0, 1, length = 100)
 
 alpha <- 11
-beta <- 16-11
+beta <- 16 - 11
 
 df <- data.frame(x = x, density = dbeta(x, alpha, beta))
 
 ggplot(df, aes(x, density)) +
-  geom_line() +
-  labs(title = "Beta Distribution (α = 2, β = 5)",
-       x = "x", y = "Density") +
-  theme_minimal()
+    geom_line() +
+    labs(
+        title = "Beta Distribution (α = 2, β = 5)",
+        x = "x", y = "Density"
+    ) +
+    theme_minimal()
 ```
 
 If we simulate lots of draws from this distribution we can then feed them into our
@@ -133,29 +135,27 @@ Firstly, the *Monticiano* apartment is just rated better than the *DEZA* apartme
 I have written some basic code to calculate that for me below. 
 
 ```{r}
-#| echo: true 
+#| echo: true
 
-# What is the simulated probability that I will have a 3 star night (or worse). 
+# What is the simulated probability that I will have a 3 star night (or worse).
 
-bad_experience_prob <- function(a = 1, b = 1, rating, n_reviews, rating_threshold, n_sim = 10000){
-  
-  # adjusted star ratings
-  n_stars_gt_min <- rating*n_reviews - n_reviews
-  n_total <- n_reviews * 4
-  
-  # update prior
-  alpha <- n_stars_gt_min + a
-  beta <-  (n_total - n_stars_gt_min) + b
+bad_experience_prob <- function(a = 1, b = 1, rating, n_reviews, rating_threshold, n_sim = 10000) {
+    # adjusted star ratings
+    n_stars_gt_min <- rating * n_reviews - n_reviews
+    n_total <- n_reviews * 4
 
-  # posterior predictions
-  beta_samples <- rbeta(n = n_sim, shape1 = alpha, shape2 = beta) 
-  posterior_samples <- rbinom(n = n_sim, size = 4, prob = beta_samples) + 1
-  
-  prob_bad <- mean(posterior_samples <= rating_threshold)
-  
-  return(prob_bad)
-  
-  }
+    # update prior
+    alpha <- n_stars_gt_min + a
+    beta <- (n_total - n_stars_gt_min) + b
+
+    # posterior predictions
+    beta_samples <- rbeta(n = n_sim, shape1 = alpha, shape2 = beta)
+    posterior_samples <- rbinom(n = n_sim, size = 4, prob = beta_samples) + 1
+
+    prob_bad <- mean(posterior_samples <= rating_threshold)
+
+    return(prob_bad)
+}
 
 ```
 
@@ -165,11 +165,11 @@ bad_experience_prob <- function(a = 1, b = 1, rating, n_reviews, rating_threshol
 x <- bad_experience_prob(rating = 5, n_reviews = 3, rating_threshold = 3, n_sim = 1e4)
 
 glue::glue("
-           Results:  
-           
+           Results:
+
            Based on 10,000 simulated ratings.
-           
-           With a ★ 5.0 (3) rating, assuming no prior view on the quality, the chance of a three star rating or worse is:  
+
+           With a ★ 5.0 (3) rating, assuming no prior view on the quality, the chance of a three star rating or worse is:
            {scales::percent(x, accuracy = 0.01)}
            ")
 
@@ -182,11 +182,11 @@ glue::glue("
 x <- bad_experience_prob(a = 1, b = 1, rating = 4.72, n_reviews = 171, rating_threshold = 3, n_sim = 1e4)
 
 glue::glue("
-           Results:  
-           
+           Results:
+
            Based on 10,000 simulated ratings.
-           
-           With a ★ 4.72 (171) rating, assuming no prior view on the quality, the chance of a three star rating or worse is:  
+
+           With a ★ 4.72 (171) rating, assuming no prior view on the quality, the chance of a three star rating or worse is:
            {scales::percent(x, accuracy = 0.01)}
            ")
 ```
@@ -201,30 +201,32 @@ helpfully propagates to our simulations.
 #| fig-cap: "Comparing the posterior distribution of both apartments"
 # Define different Beta distributions
 params <- data.frame(
-  alpha = c(12, 636.12),
-  beta = c(1, 47.88),
-  group = c("Monticiano", "The DEZA cosy")
+    alpha = c(12, 636.12),
+    beta = c(1, 47.88),
+    group = c("Monticiano", "The DEZA cosy")
 )
 x <- seq(0, 1, length = 1000)
 
 # Compute densities for each parameter set
 df_list <- lapply(1:nrow(params), function(i) {
-  data.frame(
-    x = x,
-    density = dbeta(x, params$alpha[i], params$beta[i]),
-    group = params$group[i]
-  )
+    data.frame(
+        x = x,
+        density = dbeta(x, params$alpha[i], params$beta[i]),
+        group = params$group[i]
+    )
 })
 
 df_all <- do.call(rbind, df_list)
 
 # Plot
 ggplot(df_all, aes(x, density, color = group)) +
-  geom_line(size = 1) +
-  scale_x_continuous(limits = c(0.75, 1)) +
-  labs(title = "Different Beta Distributions",
-       x = "x", y = "Density", color = "Parameters") +
-  theme_minimal()
+    geom_line(size = 1) +
+    scale_x_continuous(limits = c(0.75, 1)) +
+    labs(
+        title = "Different Beta Distributions",
+        x = "x", y = "Density", color = "Parameters"
+    ) +
+    theme_minimal()
 ```
 
 This all begs the question (at least for me) if we can visualise this probability 
@@ -247,41 +249,43 @@ rating <- seq(1, 5, length.out = 100)
 n_reviews <- seq(1, 100, length.out = 100)
 
 grid <- expand_grid(
-  rating = rating,
-  n_reviews = n_reviews
-  )
+    rating = rating,
+    n_reviews = n_reviews
+)
 
 sim <- grid |>
-  mutate(prob_thresh_exceed = map2_dbl(
-    .x = rating,
-    .y = n_reviews,
-    .f = ~ bad_experience_prob(
-      a = 1,
-      b = 1,
-      rating = .x,
-      n_reviews = .y,
-      rating_threshold = 3,
-      n_sim = 1e4
-    )
-  ))
+    mutate(prob_thresh_exceed = map2_dbl(
+        .x = rating,
+        .y = n_reviews,
+        .f = ~ bad_experience_prob(
+            a = 1,
+            b = 1,
+            rating = .x,
+            n_reviews = .y,
+            rating_threshold = 3,
+            n_sim = 1e4
+        )
+    ))
 
-z <- matrix(data = sim$prob_thresh_exceed, 
-            nrow = length(rating), 
-            ncol = length(n_reviews), 
-            byrow = T)
+z <- matrix(
+    data = sim$prob_thresh_exceed,
+    nrow = length(rating),
+    ncol = length(n_reviews),
+    byrow = T
+)
 
 # Generate colors mapped to z values
 colors <- colorRampPalette(c("blue", "green", "yellow", "red"))(100)
 color_index <- cut(z, breaks = 100, labels = FALSE)
 
 persp3d(
-  x = rating,
-  y = n_reviews,
-  z,
-  col  = colors[color_index],
-  zlab = "Bad Experience Prob.",
-  xlab = "Average Rating",
-  ylab = "Number of Reviews"
+    x = rating,
+    y = n_reviews,
+    z,
+    col = colors[color_index],
+    zlab = "Bad Experience Prob.",
+    xlab = "Average Rating",
+    ylab = "Number of Reviews"
 )
 
 ```
@@ -299,28 +303,30 @@ rating <- seq(4.6, 5, length.out = 100)
 n_reviews <- seq(1, 200, length.out = 100)
 
 grid <- expand_grid(
-  rating = rating,
-  n_reviews = n_reviews
-  )
+    rating = rating,
+    n_reviews = n_reviews
+)
 
 sim <- grid |>
-  mutate(prob_thresh_exceed = map2_dbl(
-    .x = rating,
-    .y = n_reviews,
-    .f = ~ bad_experience_prob(
-      a = 1,
-      b = 1,
-      rating = .x,
-      n_reviews = .y,
-      rating_threshold = 3,
-      n_sim = 1e4
-    )
-  ))
+    mutate(prob_thresh_exceed = map2_dbl(
+        .x = rating,
+        .y = n_reviews,
+        .f = ~ bad_experience_prob(
+            a = 1,
+            b = 1,
+            rating = .x,
+            n_reviews = .y,
+            rating_threshold = 3,
+            n_sim = 1e4
+        )
+    ))
 
-z <- matrix(data = sim$prob_thresh_exceed, 
-            nrow = length(rating), 
-            ncol = length(n_reviews), 
-            byrow = T)
+z <- matrix(
+    data = sim$prob_thresh_exceed,
+    nrow = length(rating),
+    ncol = length(n_reviews),
+    byrow = T
+)
 
 
 
@@ -329,33 +335,35 @@ colors <- colorRampPalette(c("blue", "green", "yellow", "red"))(100)
 color_index <- cut(z, breaks = 100, labels = FALSE)
 
 rgl::persp3d(
-  x = rating,
-  y = n_reviews,
-  z,
-  col  = colors[color_index],
-  zlab = "Bad Experience Prob.",
-  xlab = "Average Rating",
-  ylab = "Number of Reviews"
+    x = rating,
+    y = n_reviews,
+    z,
+    col = colors[color_index],
+    zlab = "Bad Experience Prob.",
+    xlab = "Average Rating",
+    ylab = "Number of Reviews"
 )
 
-rgl::points3d(x = c(4.72, 5), 
-              y = c(171, 3), 
-              z = c(
-                0.03,
-                0.0461
-                ), 
-              col = "red", 
-              size = 20)
+rgl::points3d(
+    x = c(4.72, 5),
+    y = c(171, 3),
+    z = c(
+        0.03,
+        0.0461
+    ),
+    col = "red",
+    size = 20
+)
 
 
 text3d(
-  x = c(4.72, 5),
-  y = c(171, 3),
-  z = c(0.03, 0.0461),
-  text = c("Apartment Deza 4.72 (171)", "Apartment Monticiano 5.0 (3)"),
-  adj = c(1, 1, 10),
-  col = "grey50",
-  cex = 1.5
+    x = c(4.72, 5),
+    y = c(171, 3),
+    z = c(0.03, 0.0461),
+    text = c("Apartment Deza 4.72 (171)", "Apartment Monticiano 5.0 (3)"),
+    adj = c(1, 1, 10),
+    col = "grey50",
+    cex = 1.5
 )
 
 ```
