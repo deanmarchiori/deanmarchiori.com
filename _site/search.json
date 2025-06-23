@@ -25,7 +25,14 @@
     "href": "index.html#blog",
     "title": "Dean Marchiori",
     "section": "Blog",
-    "text": "Blog\nI occassionally write blog posts about data and statistics. Some of my greatest hits are below:\n\n🌏 Geolocating Sydney’s weirdest property: Using Open Street Map and R to geolocate a tweet of Sydney’s strangest house.\n\n🥊 Man vs Machine Learning: I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge - and won! (sort of)\n🔧 Integrating R with Modern Tech Stacks: A Practical Guide to Using R and Docker for Integrating Statistical Analysis into Modern Tech Stacks"
+    "text": "Blog\nI occassionally write blog posts about data and statistics. Some of my greatest hits are below:\n\n🥊 Man vs Machine Learning: I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge - and won! (sort of)\n\n🏠 How to book an Airbnb with Math: Choosing an Airbnb using mathematical analysis of user review data.\n\n🌏 Geolocating Sydney’s weirdest property: Using Open Street Map and R to geolocate a tweet of Sydney’s strangest house.\n\n🔧 Integrating R with Modern Tech Stacks: A Practical Guide to Using R and Docker for Integrating Statistical Analysis into Modern Tech Stacks"
+  },
+  {
+    "objectID": "index.html#open-source",
+    "href": "index.html#open-source",
+    "title": "Dean Marchiori",
+    "section": "Open Source",
+    "text": "Open Source\nIf you would like to see how I code, all of my public projects are hosted on Github\n\n⚙️ End-to-End MLOps in R A full example project of end-to-end MLOps model deployment in R\n📘 Data Science Workflows in R: An introduction to deploying production quality R code\n☀️ {weatherOz}: An API Client for Australian Weather and Climate Data Resources [R Package, co-author]\n\n🐶 bluey-search: Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 130 of them? Problem solved. [shiny app, author]\n📋 analysis-flow: Data Analysis Workflows & Reproducibility Learning Resources [resource list]"
   },
   {
     "objectID": "index.html#publications",
@@ -33,13 +40,6 @@
     "title": "Dean Marchiori",
     "section": "Publications",
     "text": "Publications\nTo view a verified list of my scientific publications see ORCiD\n\nPires et al., (2024). weatherOz: An API Client for Australian Weather and Climate Data Resources in R. Journal of Open Source Software, 9(98), 6717, https://doi.org/10.21105/joss.06717\n\nWilson R, Wickramasuriya R, Marchiori D. An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions. Fire. 2023; 6(2):61. https://doi.org/10.3390/fire6020061\n\nMarchiori, D. (2022). Meta-Analysis of Clinical Phenotype and Patient Survival in Neurodevelopmental Disorder with Microcephaly, Arthrogryposis, and Structural Brain Anomalies Due to Bi-allelic Loss of Function Variants in SMPD4. medRxiv, 2022-10. https://doi.org/10.1101/2022.10.08.22280875"
-  },
-  {
-    "objectID": "index.html#open-source",
-    "href": "index.html#open-source",
-    "title": "Dean Marchiori",
-    "section": "Open Source",
-    "text": "Open Source\nIf you would like to see how I code, all of my public projects are hosted on Github\n\n📘 Data Science Workflows in R: An introduction to deploying production quality R code [e-book, author]\n☀️ {weatherOz}: An API Client for Australian Weather and Climate Data Resources [R Package, co-author]\n\n🐶 bluey-search: Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can’t handle flicking through all 130 of them? Problem solved. [shiny app, author]\n📋 analysis-flow: Data Analysis Workflows & Reproducibility Learning Resources [resource list]"
   },
   {
     "objectID": "index.html#talks",

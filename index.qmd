@@ -54,10 +54,20 @@ If you are interested in my work you can read some case studies, or see what my 
 
 I occassionally write [blog posts](/posts/) about data and statistics. Some of my greatest hits are below:  
 
+- 🥊 [**Man vs Machine Learning:**](posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/) I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge - and won! (sort of)  
+- 🏠 [**How to book an Airbnb with Math:**](posts/2023-09-17-geolocating/) Choosing an Airbnb using mathematical analysis of user review data.  
 - 🌏 [**Geolocating Sydney’s weirdest property:**](posts/2023-09-17-geolocating/) Using Open Street Map and R to geolocate a tweet of Sydney's strangest house.  
-- 🥊 [**Man vs Machine Learning:**](posts/2023-06-02-man-vs-ml-20230619T002502Z-001/2023-06-02-man-vs-ml/) I went head-to-head with Microsoft’s AutoML platform in a predictive modelling challenge - and won! (sort of)
 - 🔧 [**Integrating R with Modern Tech Stacks:**](posts/2024-12-02-r-docker/) A Practical Guide to Using R and Docker for Integrating Statistical Analysis into Modern Tech Stacks
 
+## Open Source   
+
+If you would like to see how I code, all of my public projects are hosted on [Github](https://github.com/deanmarchiori) 
+
+- ⚙️ [**End-to-End MLOps in R**](https://github.com/deanmarchiori/r-model-template) A full example project of end-to-end MLOps model deployment in R
+- 📘 [**Data Science Workflows in R:**](https://datasciworkflows.netlify.app/) An introduction to deploying production quality R code 
+- ☀️ [**{weatherOz}:**](https://docs.ropensci.org/weatherOz/) An API Client for Australian Weather and Climate Data Resources [R Package, co-author]  
+- 🐶 [**bluey-search:**](https://deanmarchiori.shinyapps.io/blueysearch/) Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can't handle flicking through all 130 of them? Problem solved. [shiny app, author]
+- 📋 [**analysis-flow:**](https://github.com/deanmarchiori/analysis-flow) Data Analysis Workflows & Reproducibility Learning Resources [resource list]
 
 ## Publications  
 
@@ -66,17 +76,6 @@ To view a verified list of my scientific publications see [ORCiD](https://orcid.
 - Pires et al., (2024). **weatherOz: An API Client for Australian Weather and Climate Data Resources in R**. Journal of Open Source Software, 9(98), 6717, [https://doi.org/10.21105/joss.06717](https://doi.org/10.21105/joss.06717)   
 - Wilson R, Wickramasuriya R, Marchiori D. **An Empirical Modelling and Simulation Framework for Fire Events Initiated by Vegetation and Electricity Network Interactions.** Fire. 2023; 6(2):61. [https://doi.org/10.3390/fire6020061](https://doi.org/10.3390/fire6020061)  
 - Marchiori, D. (2022). **Meta-Analysis of Clinical Phenotype and Patient Survival in Neurodevelopmental Disorder with Microcephaly, Arthrogryposis, and Structural Brain Anomalies Due to Bi-allelic Loss of Function Variants in SMPD4.** medRxiv, 2022-10. [https://doi.org/10.1101/2022.10.08.22280875](https://doi.org/10.1101/2022.10.08.22280875)
-
-## Open Source   
-
-If you would like to see how I code, all of my public projects are hosted on [Github](https://github.com/deanmarchiori) 
-
-
-- 📘 [**Data Science Workflows in R:**](https://datasciworkflows.netlify.app/) An introduction to deploying production quality R code [e-book, author]
-- ☀️ [**{weatherOz}:**](https://docs.ropensci.org/weatherOz/) An API Client for Australian Weather and Climate Data Resources [R Package, co-author]  
-- 🐶 [**bluey-search:**](https://deanmarchiori.shinyapps.io/blueysearch/) Does your child explain Bluey episodes to you but you have no idea what episode they are talking about and can't handle flicking through all 130 of them? Problem solved. [shiny app, author]
-- 📋 [**analysis-flow:**](https://github.com/deanmarchiori/analysis-flow) Data Analysis Workflows & Reproducibility Learning Resources [resource list]
-
 
 ## Talks  
 
