@@ -81,6 +81,7 @@ To view a verified list of my scientific publications see [ORCiD](https://orcid.
 
 Below are some invited talks, workshops and other events of note:  
 
+- **2025-09-29:** I delivered a half-day workshop for [WOMBAT2025](https://wombat2025.numbat.space/) the Workshop Organised by the Monash Business Analytics Team (WOMBAT). The title was *Introduction to Regression Analysis in R*. [[Resources](https://deanmarchiori.github.io/regression_course/)]   
 - **2024-10-22:** I was invited to deliver a half-day workshop for [WOMBAT2024](https://wombat2024.numbat.space/tutorial_AM3.html) the Workshop Organised by the Monash Business Analytics Team (WOMBAT). The title was *Turning R code into production quality software*. [[Resources](https://datasciworkflows.netlify.app/)]   
 - **2024-10-21:** I co-organised the first [OceaniaR Hackathon](https://statsocaus.github.io/oceaniaR-hack/) day in Melbourne, the event had a focus on promoting projects and participation from R users in the Oceania region including Australia, New Zealand and the Pacific Islands. [[repo](https://github.com/StatSocAus/oceaniaR-hack)]  
 - **2023-12-01:** I gave a half-day workshop for the [Statistical Society of Australia](https://statsoc.org.au/event-5490184) on *Deploying your model code into production with Microsoft Azure* [[Resources](https://github.com/StatSocAus/tutorial_deploywithazure)]  
