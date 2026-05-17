@@ -1,0 +1,15 @@
+{
+  "hash": "e335ddcc1b25edada1e00ff1bd668c97",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"test\"\nsubtitle: \"\"\nauthor: \"Dean Marchiori\"\ndate: \"2026-04-02\"\ncategories: [R, statistics]\nimage: \"img/featured.png\"\neditor_options: \n  chunk_output_type: console\nexecute: \n  echo: false\n  warning: false \n  message: false\n---  \n\n::: {.cell}\n\n:::\n\n\n\n\n::: {.callout-important}\n## Main Takeaways\n\n\n:::\n\n\nInterpreting logistic regression coefficients can be tricky. I stumbled across a tiny section in the excellent Regression and Other Stories[^] ",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

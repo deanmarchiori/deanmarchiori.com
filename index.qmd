@@ -1,6 +1,6 @@
 ---
 title: "Dean Marchiori"
-subtitle: "Applied Statistician & Mathematician"
+subtitle: "Applied Statistician | Data Scientist"
 about:
   id: hero-heading 
   template: jolla
@@ -31,7 +31,7 @@ If you are interested in hiring me for a project get in touch: [dean@wavedatalab
 
 
 ## Bio  
-Dean Marchiori is a Statistician specialising in computational statistics and applied mathematical modelling. He is the founder and Principal Data Scientist of independent statistical consulting practice [Wave Data Labs](https://www.wavedatalabs.com.au/). In addition, he is the Lead Data Scientist for the South Eastern Sydney Local Health District with NSW Health and Co-Chair of the Section for Statistical Computing and Visualisation with the Statistical Society of Australia. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize, and served as a sessional teaching academic in the School of Mathematical and Physical Sciences. Dean holds the [Accredited Statistician (AStat)](https://statsoc.org.au/Professional-accreditation) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the [Institute of Analytics Professionals of Australia (IAPA)](https://www.iapa.org.au/).   
+Dean Marchiori is a Statistician specialising in computational statistics and applied mathematical modelling. He is Director and Principal Data Scientist at [Wave Data Labs](https://www.wavedatalabs.com.au/), Lead Data Scientist for the South Eastern Sydney Local Health District with NSW Health and Co-Chair of the Section for Statistical Computing and Visualisation with the Statistical Society of Australia. Dean obtained his Bachelor of Science in Mathematics with University Medal from Charles Sturt University. He also holds a Master of Applied Finance degree, and a Master of Applied Statistics from Macquarie University where he was awarded the Julian Leslie Prize in Statistics, and served as a sessional teaching academic in the School of Mathematical and Physical Sciences. Dean holds the [Accredited Statistician (AStat)](https://statsoc.org.au/Professional-accreditation) qualification from the Statistical Society of Australia and was named one of the top 10 analytics professionals in Australia by the [Institute of Analytics Professionals of Australia (IAPA)](https://www.iapa.org.au/).   
 
 ## [Consulting](consulting/) 
 
